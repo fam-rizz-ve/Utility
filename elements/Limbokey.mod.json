@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "chatgpt_image_25_mag_2025_14_05_39_1",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Limbo key",

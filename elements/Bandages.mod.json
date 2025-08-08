@@ -3,8 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "minecraft:barrier",
+    "texture": "download",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Bandages",

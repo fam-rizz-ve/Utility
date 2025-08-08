@@ -112,7 +112,7 @@ public class LimboKeyRightclickedOnBlockProcedure {
 			}
 		}
 		if (entity instanceof ServerPlayer _player) {
-			Advancement _adv = _player.server.getAdvancements().getAdvancement(ResourceLocation.tryParse("utility:thelimbo"));
+			Advancement _adv = _player.server.getAdvancements().getAdvancement(ResourceLocation.parse("utility:thelimbo"));
 			AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 			if (!_ap.isDone()) {
 				for (String criteria : _ap.getRemainingCriteria())
@@ -127,7 +127,7 @@ public class LimboKeyRightclickedOnBlockProcedure {
 			});
 		}
 		if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-			ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, ResourceLocation.tryParse("utility:limbo_dimension"));
+			ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("utility:limbo_dimension"));
 			if (_player.level().dimension() == destinationType)
 				return;
 			ServerLevel nextLevel = _player.server.getLevel(destinationType);

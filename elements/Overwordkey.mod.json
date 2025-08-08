@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "chiave_pixelata_su_sfondo_a_scacchi_1",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Overword key",

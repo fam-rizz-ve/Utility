@@ -55,8 +55,8 @@
       "registry_name": "flatkey",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/flatkey.json",
-          "src/main/java/net/mcreator/utility/item/FlatkeyItem.java"
+          "src/main/java/net/mcreator/utility/item/FlatkeyItem.java",
+          "src/main/resources/assets/utility/models/item/flatkey.json"
         ]
       },
       "path": "~/key/item"
@@ -79,7 +79,7 @@
       "name": "FlatkeyRightclickedOnBlock",
       "type": "procedure",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "flatkey_rightclicked_on_block",
       "metadata": {
         "files": [
@@ -102,8 +102,8 @@
       "registry_name": "netherkey",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/netherkey.json",
-          "src/main/java/net/mcreator/utility/item/NetherkeyItem.java"
+          "src/main/java/net/mcreator/utility/item/NetherkeyItem.java",
+          "src/main/resources/assets/utility/models/item/netherkey.json"
         ]
       },
       "path": "~/key/item"
@@ -247,8 +247,8 @@
       "registry_name": "limbokey",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/limbokey.json",
-          "src/main/java/net/mcreator/utility/item/LimbokeyItem.java"
+          "src/main/java/net/mcreator/utility/item/LimbokeyItem.java",
+          "src/main/resources/assets/utility/models/item/limbokey.json"
         ]
       },
       "path": "~/key/item"
@@ -257,7 +257,7 @@
       "name": "LimboKeyRightclickedOnBlock",
       "type": "procedure",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "limbo_key_rightclicked_on_block",
       "metadata": {
         "files": [
@@ -387,12 +387,12 @@
       "registry_name": "essenctiondistilizer",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/utility/block/entity/EssenctiondistilizerBlockEntity.java",
           "src/main/resources/assets/utility/models/block/essenctiondistilizer.json",
+          "src/main/resources/data/utility/loot_tables/blocks/essenctiondistilizer.json",
           "src/main/resources/assets/utility/models/item/essenctiondistilizer.json",
           "src/main/java/net/mcreator/utility/block/EssenctiondistilizerBlock.java",
-          "src/main/resources/assets/utility/blockstates/essenctiondistilizer.json",
-          "src/main/java/net/mcreator/utility/block/entity/EssenctiondistilizerBlockEntity.java",
-          "src/main/resources/data/utility/loot_tables/blocks/essenctiondistilizer.json"
+          "src/main/resources/assets/utility/blockstates/essenctiondistilizer.json"
         ]
       },
       "path": "~/dimension/limbo/essenction distilizer"
@@ -405,8 +405,8 @@
       "registry_name": "limbo_key_part_1",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/LimboKeyPart1Item.java",
-          "src/main/resources/assets/utility/models/item/limbo_key_part_1.json"
+          "src/main/resources/assets/utility/models/item/limbo_key_part_1.json",
+          "src/main/java/net/mcreator/utility/item/LimboKeyPart1Item.java"
         ]
       },
       "path": "~/key/item"
@@ -428,7 +428,7 @@
       "name": "EssenctiondistilizerGUI",
       "type": "gui",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "essenctiondistilizer_gui",
       "metadata": {
         "files": [
@@ -1181,8 +1181,8 @@
       "registry_name": "tacticalknife",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/tacticalknife.json",
-          "src/main/java/net/mcreator/utility/item/TacticalknifeItem.java"
+          "src/main/java/net/mcreator/utility/item/TacticalknifeItem.java",
+          "src/main/resources/assets/utility/models/item/tacticalknife.json"
         ]
       },
       "path": "~/quality of life/Tactical_knife"
@@ -1248,8 +1248,8 @@
       "registry_name": "knifeblade",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/KnifebladeItem.java",
-          "src/main/resources/assets/utility/models/item/knifeblade.json"
+          "src/main/resources/assets/utility/models/item/knifeblade.json",
+          "src/main/java/net/mcreator/utility/item/KnifebladeItem.java"
         ]
       },
       "path": "~/quality of life/Tactical_knife"
@@ -1275,8 +1275,8 @@
       "registry_name": "medikit",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/medikit.json",
-          "src/main/java/net/mcreator/utility/item/MedikitItem.java"
+          "src/main/java/net/mcreator/utility/item/MedikitItem.java",
+          "src/main/resources/assets/utility/models/item/medikit.json"
         ]
       },
       "path": "~/quality of life/Med_thing"
@@ -1289,8 +1289,8 @@
       "registry_name": "bandages",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/BandagesItem.java",
-          "src/main/resources/assets/utility/models/item/bandages.json"
+          "src/main/resources/assets/utility/models/item/bandages.json",
+          "src/main/java/net/mcreator/utility/item/BandagesItem.java"
         ]
       },
       "path": "~/quality of life/Med_thing"

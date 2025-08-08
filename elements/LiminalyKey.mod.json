@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "liminali_key_textur",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Liminali Key",
