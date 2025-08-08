@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "utility:tactical_template"
+    },
+    "title": {
+      "translate": "advancements.thetacticlatemplate.title"
+    },
+    "description": {
+      "translate": "advancements.thetacticlatemplate.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "thetacticlatemplate_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "utility:tactical_template"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "utility:thebeginofconfort"
+}

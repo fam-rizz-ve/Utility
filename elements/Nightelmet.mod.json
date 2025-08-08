@@ -1,0 +1,112 @@
+{
+  "_fv": 79,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "chatgpt_image_20_giu_2025_21_51_52_1",
+    "enableBody": true,
+    "textureBody": "chatgpt_image_20_giu_2025_21_54_57_1",
+    "enableLeggings": true,
+    "textureLeggings": "chatgpt_image_20_giu_2025_22_04_35_1",
+    "enableBoots": true,
+    "textureBoots": "chatgpt_image_20_giu_2025_22_06_29_1",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Utility"
+      }
+    ],
+    "armorTextureFile": "explosive_suit",
+    "helmetName": "Tactical Helmet",
+    "bodyName": "Tactical Chestplate",
+    "leggingsName": "Tactical Leggings",
+    "bootsName": "Tactical Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "The perfect helmet for how want a easy life - use H to active it"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "The perfect chestplate for how want a easy life - use H to active it"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "the perfect leggins for how want a easy life - use H to active it"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "The perfect boots for how want a easy life - use H to active it"
+      ]
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 400,
+    "damageValueHelmet": 4,
+    "damageValueBody": 8,
+    "damageValueLeggings": 7,
+    "damageValueBoots": 4,
+    "enchantability": 15,
+    "toughness": 3.0,
+    "knockbackResistance": 0.1,
+    "equipSound": {
+      "value": "item.armor.equip_leather"
+    },
+    "repairItems": [
+      {
+        "value": "Items.PHANTOM_MEMBRANE"
+      }
+    ]
+  }
+}

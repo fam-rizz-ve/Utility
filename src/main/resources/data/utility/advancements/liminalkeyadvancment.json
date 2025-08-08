@@ -1,0 +1,36 @@
+{
+  "display": {
+    "background": "utility:textures/screens/chatgpt_image_6_lug_2025_09_46_51.png",
+    "icon": {
+      "item": "utility:liminaly_key"
+    },
+    "title": {
+      "translate": "advancements.liminalkeyadvancment.title"
+    },
+    "description": {
+      "translate": "advancements.liminalkeyadvancment.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "liminalkeyadvancment_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "utility:liminaly_key"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  }
+}

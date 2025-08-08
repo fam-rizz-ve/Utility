@@ -1,0 +1,24 @@
+{
+  "_fv": 79,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "The begin of a long journey",
+    "achievementDescription": "The key for a corruped world, for the despair ad the begin of your journey",
+    "achievementIcon": {
+      "value": "CUSTOM:LiminalyKey"
+    },
+    "background": "chatgpt_image_6_lug_2025_09_46_51.png",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardXP": 0,
+    "achievementType": "goal",
+    "parent": {
+      "value": "No parent: root"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"item_in_inventory\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:LiminalyKey</field></block></value></block></next></block></xml>"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "utility:overworldessence"
+    },
+    "title": {
+      "translate": "advancements.the_overworldessence.title"
+    },
+    "description": {
+      "translate": "advancements.the_overworldessence.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_overworldessence_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "utility:overworldessence"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "utility:thepoweressence"
+}

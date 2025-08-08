@@ -1,0 +1,29 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:Ironknife"
+    },
+    "smithingInputAdditionStack": {
+      "value": "Items.PHANTOM_MEMBRANE"
+    },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:TacticalTemplate"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:Tacticalknife"
+    },
+    "name": "tactical_knife_recipes",
+    "namespace": "mod"
+  }
+}

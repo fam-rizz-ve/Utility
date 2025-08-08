@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "UtilityModEnchantments.STORMESSECE.get()",
+    "UtilityModEnchantments.LAVAESSENCE.get()",
+    "UtilityModEnchantments.FURYESSECE.get()",
+    "UtilityModEnchantments.WINDESSECE.get()",
+    "UtilityModEnchantments.SPORETOUCH.get()",
+    "UtilityModEnchantments.WATERESSENCE.get()",
+    "UtilityModEnchantments.ICEESSENCE.get()",
+    "UtilityModEnchantments.ASHESSECE.get()"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "utility:textures/screens/chatgpt_image_6_lug_2025_09_55_14.png",
+    "icon": {
+      "item": "utility:nightelmet_helmet"
+    },
+    "title": {
+      "translate": "advancements.thebeginofconfort.title"
+    },
+    "description": {
+      "translate": "advancements.thebeginofconfort.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "thebeginofconfort_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

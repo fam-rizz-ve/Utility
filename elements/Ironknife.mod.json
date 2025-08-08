@@ -1,0 +1,66 @@
+{
+  "_fv": 79,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "minecraft:barrier",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
+    "name": "Iron knife",
+    "rarity": "COMMON",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Utility"
+      }
+    ],
+    "stackSize": 1,
+    "enchantability": 14,
+    "useDuration": 0,
+    "toolType": 15.0,
+    "damageCount": 250,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 6.0,
+    "specialInformation": {
+      "fixedValue": [
+        "A simple knife"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "enableRanged": false,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "CUSTOM:Tacticalknifeprojectile"
+    },
+    "projectileDisableAmmoCheck": false,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none",
+    "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
+    "musicDiscLengthInTicks": 100,
+    "musicDiscAnalogOutput": 0,
+    "providedBannerPatterns": []
+  }
+}

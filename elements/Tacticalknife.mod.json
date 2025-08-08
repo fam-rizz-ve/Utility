@@ -1,0 +1,66 @@
+{
+  "_fv": 79,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "minecraft:barrier",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
+    "name": "Tactical knife",
+    "rarity": "RARE",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Utility"
+      }
+    ],
+    "stackSize": 1,
+    "enchantability": 15,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 400,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 6.0,
+    "specialInformation": {
+      "fixedValue": [
+        "A throwable knife – use right-click to throw it."
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "enableRanged": true,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "CUSTOM:Tacticalknifeprojectile"
+    },
+    "projectileDisableAmmoCheck": false,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "spear",
+    "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
+    "musicDiscLengthInTicks": 100,
+    "musicDiscAnalogOutput": 0,
+    "providedBannerPatterns": []
+  }
+}

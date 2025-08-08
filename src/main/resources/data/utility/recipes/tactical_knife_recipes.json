@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "utility:tactical_template"
+  },
+  "base": {
+    "item": "utility:ironknife"
+  },
+  "addition": {
+    "item": "minecraft:phantom_membrane"
+  },
+  "result": {
+    "item": "utility:tacticalknife"
+  }
+}

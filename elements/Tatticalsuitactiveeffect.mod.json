@@ -1,0 +1,27 @@
+{
+  "_fv": 79,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Tattical suit power",
+    "icon": "chatgpt_image_30_giu_2025_15_21_09_1",
+    "color": {
+      "value": -16738048,
+      "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": ""
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [],
+    "onStarted": {
+      "name": "TatticalsuitactiveeffectQuandoLeffettoIniziavieneApplicato"
+    },
+    "onExpired": {
+      "name": "TatticalsuitactiveeffectQuandoLeffettoSvanisce"
+    }
+  }
+}

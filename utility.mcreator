@@ -1,0 +1,1893 @@
+{
+  "mod_elements": [
+    {
+      "name": "Nightelmet",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "nightelmet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/item/NightelmetItem.java",
+          "src/main/resources/assets/utility/models/item/nightelmet_helmet.json",
+          "src/main/resources/assets/utility/models/item/nightelmet_chestplate.json",
+          "src/main/resources/assets/utility/models/item/nightelmet_boots.json",
+          "src/main/resources/assets/utility/models/item/nightelmet_leggings.json"
+        ]
+      },
+      "path": "~/quality of life/armor/Tactical_Suit"
+    },
+    {
+      "name": "Flatdimention",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "flatdimention",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/dimension_type/flatdimention.json",
+          "src/main/resources/data/utility/dimension/flatdimention.json",
+          "src/main/java/net/mcreator/utility/world/teleporter/FlatdimentionTeleporter.java",
+          "src/main/java/net/mcreator/utility/block/FlatdimentionPortalBlock.java",
+          "src/main/java/net/mcreator/utility/world/teleporter/FlatdimentionPortalShape.java",
+          "src/main/resources/assets/utility/blockstates/flatdimention_portal.json",
+          "src/main/resources/assets/utility/models/block/flatdimention_portal_ew.json",
+          "src/main/resources/assets/utility/models/block/flatdimention_portal_ns.json"
+        ]
+      },
+      "path": "~/dimension/flat"
+    },
+    {
+      "name": "Utility",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "utility",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Flatkey",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flatkey",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/flatkey.json",
+          "src/main/java/net/mcreator/utility/item/FlatkeyItem.java"
+        ]
+      },
+      "path": "~/key/item"
+    },
+    {
+      "name": "Overwordkey",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overwordkey",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/item/OverwordkeyItem.java",
+          "src/main/resources/assets/utility/models/item/overwordkey.json"
+        ]
+      },
+      "path": "~/key/item"
+    },
+    {
+      "name": "FlatkeyRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "flatkey_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/FlatkeyRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/key/procedure funzionamento chiavi"
+    },
+    {
+      "name": "Netherkey",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherkey",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/netherkey.json",
+          "src/main/java/net/mcreator/utility/item/NetherkeyItem.java"
+        ]
+      },
+      "path": "~/key/item"
+    },
+    {
+      "name": "Endkey",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "endkey",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/endkey.json",
+          "src/main/java/net/mcreator/utility/item/EndkeyItem.java"
+        ]
+      },
+      "path": "~/key/item"
+    },
+    {
+      "name": "Flatbiom",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flat_biom",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/worldgen/configured_feature/flat_biom_tree.json",
+          "src/main/resources/data/utility/worldgen/biome/flat_biom.json",
+          "src/main/resources/data/utility/worldgen/placed_feature/flat_biom_tree.json"
+        ]
+      },
+      "path": "~/dimension/flat"
+    },
+    {
+      "name": "OverwordkeyRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overwordkey_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/OverwordkeyRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/key/procedure funzionamento chiavi"
+    },
+    {
+      "name": "NetherkeyRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherkey_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/NetherkeyRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/key/procedure funzionamento chiavi"
+    },
+    {
+      "name": "EndKeyRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_key_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/EndKeyRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/key/procedure funzionamento chiavi"
+    },
+    {
+      "name": "HowPlayerEnterInADimension",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "how_player_enter_in_a_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/HowPlayerEnterInADimensionProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "AttivadisattivanighthelmetQuandoIlTastoVienePremuto",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "attivadisattivanighthelmet_quando_il_tasto_viene_premuto",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/AttivadisattivanighthelmetQuandoIlTastoVienePremutoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/quality of life/armor"
+    },
+    {
+      "name": "Attivadisattivanighthelmet",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "attivadisattivanighthelmet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/network/AttivadisattivanighthelmetMessage.java"
+        ]
+      },
+      "path": "~/quality of life/armor"
+    },
+    {
+      "name": "Limbokey",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "limbokey",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/limbokey.json",
+          "src/main/java/net/mcreator/utility/item/LimbokeyItem.java"
+        ]
+      },
+      "path": "~/key/item"
+    },
+    {
+      "name": "LimboKeyRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "limbo_key_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/LimboKeyRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/key/procedure funzionamento chiavi"
+    },
+    {
+      "name": "LimboDimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "limbo_dimension",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/dimension_type/limbo_dimension.json",
+          "src/main/java/net/mcreator/utility/world/dimension/LimboDimensionDimension.java",
+          "src/main/resources/data/utility/dimension/limbo_dimension.json"
+        ]
+      },
+      "path": "~/dimension/limbo"
+    },
+    {
+      "name": "PowerEssence",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_essence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/power_essence.json",
+          "src/main/java/net/mcreator/utility/item/PowerEssenceItem.java"
+        ]
+      },
+      "path": "~/enchantment/Power_essence"
+    },
+    {
+      "name": "Poweresscrafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poweresscrafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipes/power_crafting.json"
+        ]
+      },
+      "path": "~/enchantment/Power_essence"
+    },
+    {
+      "name": "Lavaessence",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lavaessence",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/enchantment/LavaessenceEnchantment.java"
+        ]
+      },
+      "path": "~/enchantment/Power_essence_enchant"
+    },
+    {
+      "name": "Lavaessenceattivation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lavawateressenceattivation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/LavaessenceattivationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/enchantment/Power_essence_enchant"
+    },
+    {
+      "name": "Wateressence",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "wateressence",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/enchantment/WateressenceEnchantment.java"
+        ]
+      },
+      "path": "~/enchantment/Power_essence_enchant"
+    },
+    {
+      "name": "Essenctiondistilizer",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "essenctiondistilizer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/block/essenctiondistilizer.json",
+          "src/main/resources/assets/utility/models/item/essenctiondistilizer.json",
+          "src/main/java/net/mcreator/utility/block/EssenctiondistilizerBlock.java",
+          "src/main/resources/assets/utility/blockstates/essenctiondistilizer.json",
+          "src/main/java/net/mcreator/utility/block/entity/EssenctiondistilizerBlockEntity.java",
+          "src/main/resources/data/utility/loot_tables/blocks/essenctiondistilizer.json"
+        ]
+      },
+      "path": "~/dimension/limbo/essenction distilizer"
+    },
+    {
+      "name": "LimboKeyPart1",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "limbo_key_part_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/item/LimboKeyPart1Item.java",
+          "src/main/resources/assets/utility/models/item/limbo_key_part_1.json"
+        ]
+      },
+      "path": "~/key/item"
+    },
+    {
+      "name": "LimboKeyrecipes",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "limbo_keyrecipes",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipes/limbo_keyrecipes.json"
+        ]
+      },
+      "path": "~/key/item"
+    },
+    {
+      "name": "EssenctiondistilizerGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "essenctiondistilizer_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/client/gui/EssenctiondistilizerGUIScreen.java",
+          "src/main/java/net/mcreator/utility/world/inventory/EssenctiondistilizerGUIMenu.java"
+        ]
+      },
+      "path": "~/dimension/limbo/essenction distilizer"
+    },
+    {
+      "name": "LiminalyKey",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liminaly_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/item/LiminalyKeyItem.java",
+          "src/main/resources/assets/utility/models/item/liminaly_key.json"
+        ]
+      },
+      "path": "~/key/item"
+    },
+    {
+      "name": "Iceessence",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "iceessence",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/enchantment/IceessenceEnchantment.java"
+        ]
+      },
+      "path": "~/enchantment/Power_essence_enchant"
+    },
+    {
+      "name": "Ashessece",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ashessece",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/enchantment/AshesseceEnchantment.java"
+        ]
+      },
+      "path": "~/enchantment/Power_essence_enchant"
+    },
+    {
+      "name": "Stormessece",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "stormessece",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/enchantment/StormesseceEnchantment.java"
+        ]
+      },
+      "path": "~/enchantment/Power_essence_enchant"
+    },
+    {
+      "name": "Windessece",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "windessece",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/enchantment/WindesseceEnchantment.java"
+        ]
+      },
+      "path": "~/enchantment/Power_essence_enchant"
+    },
+    {
+      "name": "Sporetouch",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sporetouch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/enchantment/SporetouchEnchantment.java"
+        ]
+      },
+      "path": "~/enchantment/Power_essence_enchant"
+    },
+    {
+      "name": "Furyessece",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "furyessece",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/enchantment/FuryesseceEnchantment.java"
+        ]
+      },
+      "path": "~/enchantment/Power_essence_enchant"
+    },
+    {
+      "name": "EssenctiondistilizerGUIOgniTickMentreQuestaGUIEAperta",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "essenctiondistilizer_gui_ogni_tick_mentre_questa_guie_aperta",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/EssenctiondistilizerGUIOgniTickMentreQuestaGUIEApertaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/dimension/limbo/essenction distilizer"
+    },
+    {
+      "name": "Emptykey",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emptykey",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/emptykey.json",
+          "src/main/java/net/mcreator/utility/item/EmptykeyItem.java"
+        ]
+      },
+      "path": "~/key/item"
+    },
+    {
+      "name": "Empitkey",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empitkey",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipes/empitkey.json"
+        ]
+      },
+      "path": "~/key/item"
+    },
+    {
+      "name": "Overworldessence",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overworldessence",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/item/OverworldessenceItem.java",
+          "src/main/resources/assets/utility/models/item/overworldessence.json"
+        ]
+      },
+      "path": "~/enchantment/Power_essence"
+    },
+    {
+      "name": "Nehteressence",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nehteressence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/nehteressence.json",
+          "src/main/java/net/mcreator/utility/item/NehteressenceItem.java"
+        ]
+      },
+      "path": "~/enchantment/Power_essence"
+    },
+    {
+      "name": "Endessece",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "endessece",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/endessece.json",
+          "src/main/java/net/mcreator/utility/item/EndesseceItem.java"
+        ]
+      },
+      "path": "~/enchantment/Power_essence"
+    },
+    {
+      "name": "Flatessence",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flatessence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/flatessence.json",
+          "src/main/java/net/mcreator/utility/item/FlatessenceItem.java"
+        ]
+      },
+      "path": "~/enchantment/Power_essence"
+    },
+    {
+      "name": "Flatkeyrecipes",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flatkeyrecipes",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipes/flat_key_recipes.json"
+        ]
+      },
+      "path": "~/key/item"
+    },
+    {
+      "name": "Overworldkeyrecipes",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overworldkeyrecipes",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipes/overworld_key_recipes.json"
+        ]
+      },
+      "path": "~/key/item"
+    },
+    {
+      "name": "Netherkeyrecipes",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherkeyrecipes",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipes/nether_key_recipes.json"
+        ]
+      },
+      "path": "~/key/item"
+    },
+    {
+      "name": "Endkeyrecipes",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "endkeyrecipes",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipes/end_key_recipes.json"
+        ]
+      },
+      "path": "~/key/item"
+    },
+    {
+      "name": "TacticalTemplate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tactical_template",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/item/TacticalTemplateItem.java",
+          "src/main/resources/assets/utility/models/item/tactical_template.json"
+        ]
+      },
+      "path": "~/quality of life/armor/Tactical_Suit"
+    },
+    {
+      "name": "Tacticaltemplaterecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tacticaltemplaterecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipes/tactical_template_recipe.json"
+        ]
+      },
+      "path": "~/quality of life/armor/Tactical_Suit/crafting"
+    },
+    {
+      "name": "Tacticalhelmetrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tacticalhelmetrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipes/tactical_helmet_recipe.json"
+        ]
+      },
+      "path": "~/quality of life/armor/Tactical_Suit/crafting"
+    },
+    {
+      "name": "Tacticalchestplaterecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tacticalchestplaterecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipes/tactical_chestpla_terecipe.json"
+        ]
+      },
+      "path": "~/quality of life/armor/Tactical_Suit/crafting"
+    },
+    {
+      "name": "Tacticallegginsrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tacticallegginsrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipes/tactical_leggins_recipe.json"
+        ]
+      },
+      "path": "~/quality of life/armor/Tactical_Suit/crafting"
+    },
+    {
+      "name": "Tacticalbootsrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tacticalbootsrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipes/tactical_boots_recipe.json"
+        ]
+      },
+      "path": "~/quality of life/armor/Tactical_Suit/crafting"
+    },
+    {
+      "name": "TatticalsuitactiveeffectQuandoLeffettoIniziavieneApplicato",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tatticalsuitactiveeffect_quando_leffetto_iniziaviene_applicato",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/TatticalsuitactiveeffectQuandoLeffettoIniziavieneApplicatoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/quality of life/armor/Tactical_Suit/effect"
+    },
+    {
+      "name": "TatticalsuitactiveeffectQuandoLeffettoSvanisce",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tatticalsuitactiveeffect_quando_leffetto_svanisce",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/TatticalsuitactiveeffectQuandoLeffettoSvanisceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/quality of life/armor/Tactical_Suit/effect"
+    },
+    {
+      "name": "Tatticalsuitactiveeffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tatticalsuitactiveeffect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/potion/TatticalsuitactiveeffectMobEffect.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Tactical_Suit/effect"
+    },
+    {
+      "name": "TatticalSuitCooldownEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tattical_suit_cooldown_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/potion/TatticalSuitCooldownEffectMobEffect.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Tactical_Suit/effect"
+    },
+    {
+      "name": "LiminalDimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "liminal_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/world/dimension/LiminalDimensionDimension.java",
+          "src/main/resources/data/utility/dimension/liminal_dimension.json",
+          "src/main/resources/data/utility/dimension_type/liminal_dimension.json"
+        ]
+      },
+      "path": "~/dimension/liminal"
+    },
+    {
+      "name": "Dungeongeneratorblock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dungeongeneratorblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/dungeongeneratorblock.json",
+          "src/main/java/net/mcreator/utility/block/DungeongeneratorblockBlock.java",
+          "src/main/resources/assets/utility/blockstates/dungeongeneratorblock.json",
+          "src/main/resources/data/utility/loot_tables/blocks/dungeongeneratorblock.json",
+          "src/main/resources/assets/utility/models/block/dungeongeneratorblock.json"
+        ]
+      },
+      "path": "~/dimension/liminal/dungeon generator"
+    },
+    {
+      "name": "DungeongeneratorblockAllaggiornamentoDelTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dungeongeneratorblock_allaggiornamento_del_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/DungeongeneratorblockAllaggiornamentoDelTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/dimension/liminal/dungeon generator"
+    },
+    {
+      "name": "Creativenighthelmet",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creativenighthelmet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/creativenighthelmet_helmet.json",
+          "src/main/java/net/mcreator/utility/item/CreativenighthelmetItem.java"
+        ]
+      },
+      "path": "~/quality of life/armor/creative night helmet"
+    },
+    {
+      "name": "Liminalkeyadvancment",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liminalkeyadvancment",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/advancements/liminalkeyadvancment.json"
+        ]
+      },
+      "path": "~/acivment"
+    },
+    {
+      "name": "TheLimbokeyshard",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_limbokeyshard",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/advancements/the_limbokeyshard.json"
+        ]
+      },
+      "path": "~/acivment"
+    },
+    {
+      "name": "Thelimbokey",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thelimbokey",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/advancements/thelimbokey.json"
+        ]
+      },
+      "path": "~/acivment"
+    },
+    {
+      "name": "Thelimbo",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thelimbo",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/advancements/thelimbo.json"
+        ]
+      },
+      "path": "~/acivment"
+    },
+    {
+      "name": "Theemptykey",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "theemptykey",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/advancements/theemptykey.json"
+        ]
+      },
+      "path": "~/acivment"
+    },
+    {
+      "name": "TheOverworldkey",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_overworldkey",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/advancements/the_overworldkey.json"
+        ]
+      },
+      "path": "~/acivment"
+    },
+    {
+      "name": "Theflatkey",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "theflatkey",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/advancements/theflatkey.json"
+        ]
+      },
+      "path": "~/acivment"
+    },
+    {
+      "name": "TheNetherkey",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_netherkey",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/advancements/the_netherkey.json"
+        ]
+      },
+      "path": "~/acivment"
+    },
+    {
+      "name": "Theendkey",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "theendkey",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/advancements/theendkey.json"
+        ]
+      },
+      "path": "~/acivment"
+    },
+    {
+      "name": "Thepoweressence",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thepoweressence",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/advancements/thepoweressence.json"
+        ]
+      },
+      "path": "~/acivment"
+    },
+    {
+      "name": "Thechosenone",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thechosenone",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/advancements/thechosenone.json"
+        ]
+      },
+      "path": "~/acivment"
+    },
+    {
+      "name": "TheOverworldessence",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_overworldessence",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/advancements/the_overworldessence.json"
+        ]
+      },
+      "path": "~/acivment"
+    },
+    {
+      "name": "TheNetheressence",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_netheressence",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/advancements/the_netheressence.json"
+        ]
+      },
+      "path": "~/acivment"
+    },
+    {
+      "name": "TheFlatessence",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_flatessence",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/advancements/the_flatessence.json"
+        ]
+      },
+      "path": "~/acivment"
+    },
+    {
+      "name": "TheEndessence",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_endessence",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/advancements/the_endessence.json"
+        ]
+      },
+      "path": "~/acivment"
+    },
+    {
+      "name": "Thebeginofconfort",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thebeginofconfort",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/advancements/thebeginofconfort.json"
+        ]
+      },
+      "path": "~/acivment"
+    },
+    {
+      "name": "Thetacticlatemplate",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thetacticlatemplate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/advancements/thetacticlatemplate.json"
+        ]
+      },
+      "path": "~/acivment"
+    },
+    {
+      "name": "Thetacticalsuit",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thetacticalsuit",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/advancements/thetacticalsuit.json"
+        ]
+      },
+      "path": "~/acivment"
+    },
+    {
+      "name": "Thebeginofconfortprocedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "thebeginofconfortprocedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/ThebeginofconfortprocedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/acivment/procedure advancment"
+    },
+    {
+      "name": "Tacticalknife",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tacticalknife",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/tacticalknife.json",
+          "src/main/java/net/mcreator/utility/item/TacticalknifeItem.java"
+        ]
+      },
+      "path": "~/quality of life/Tactical_knife"
+    },
+    {
+      "name": "Tacticalknifeprojectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tacticalknifeprojectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/entity/TacticalknifeprojectileEntity.java"
+        ]
+      },
+      "path": "~/quality of life/Tactical_knife"
+    },
+    {
+      "name": "Ironknife",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ironknife",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/ironknife.json",
+          "src/main/java/net/mcreator/utility/item/IronknifeItem.java"
+        ]
+      },
+      "path": "~/quality of life/Tactical_knife"
+    },
+    {
+      "name": "Tacticalknifecrafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tacticalknifecrafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipes/tactical_knife_recipes.json"
+        ]
+      },
+      "path": "~/quality of life/Tactical_knife"
+    },
+    {
+      "name": "Ironkniferecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ironkniferecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipes/iron_knife_recipe.json"
+        ]
+      },
+      "path": "~/quality of life/Tactical_knife"
+    },
+    {
+      "name": "Knifeblade",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knifeblade",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/item/KnifebladeItem.java",
+          "src/main/resources/assets/utility/models/item/knifeblade.json"
+        ]
+      },
+      "path": "~/quality of life/Tactical_knife"
+    },
+    {
+      "name": "Knifebladerecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knifebladerecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipes/knife_blade_recipe.json"
+        ]
+      },
+      "path": "~/quality of life/Tactical_knife"
+    },
+    {
+      "name": "Medikit",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "medikit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/medikit.json",
+          "src/main/java/net/mcreator/utility/item/MedikitItem.java"
+        ]
+      },
+      "path": "~/quality of life/Med_thing"
+    },
+    {
+      "name": "Bandages",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bandages",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/item/BandagesItem.java",
+          "src/main/resources/assets/utility/models/item/bandages.json"
+        ]
+      },
+      "path": "~/quality of life/Med_thing"
+    },
+    {
+      "name": "Medikitrecip",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "medikitrecip",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipes/medikit_recip.json"
+        ]
+      },
+      "path": "~/quality of life/Med_thing"
+    },
+    {
+      "name": "Bandagesrecpie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bandagesrecpie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipes/bandage_srecpie.json"
+        ]
+      },
+      "path": "~/quality of life/Med_thing"
+    },
+    {
+      "name": "MedikitQuandoUnentitaUsaLoggetto",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "medikit_quando_unentita_usa_loggetto",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/MedikitQuandoUnentitaUsaLoggettoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/quality of life/Med_thing"
+    },
+    {
+      "name": "BandagesQuandoUnentitaUsaLoggetto",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bandages_quando_unentita_usa_loggetto",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/BandagesQuandoUnentitaUsaLoggettoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/quality of life/Med_thing"
+    },
+    {
+      "name": "TheTacticalknife",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_tacticalknife",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/advancements/the_tacticalknife.json"
+        ]
+      },
+      "path": "~/acivment"
+    },
+    {
+      "name": "Explosivesuit",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosivesuit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/explosivesuit_chestplate.json",
+          "src/main/java/net/mcreator/utility/item/ExplosivesuitItem.java"
+        ]
+      },
+      "path": "~/quality of life/armor/explosive_suit"
+    },
+    {
+      "name": "Explosivesuitattivazione",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosivesuitattivazione",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/network/ExplosivesuitattivazioneMessage.java"
+        ]
+      },
+      "path": "~/quality of life/armor/explosive_suit"
+    },
+    {
+      "name": "ExplosivesuitattivazioneQuandoIlTastoVienePremuto",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosivesuitattivazione_quando_il_tasto_viene_premuto",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/ExplosivesuitattivazioneQuandoIlTastoVienePremutoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/quality of life/armor/explosive_suit"
+    },
+    {
+      "name": "HowPlayerDied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "how_player_died",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/HowPlayerDiedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/quality of life/armor/explosive_suit"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "last_key",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "overword key"
+    },
+    {
+      "name": "ultima_y_flat",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "ultima_x_flat",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ultima_z_flat",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ultima_y_overword",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "60.0"
+    },
+    {
+      "name": "ultima_x_overword",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ultima_z_overword",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ultima_y_nether",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "58.0"
+    },
+    {
+      "name": "ultima_x_nether",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ultima_z_nether",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ultima_y_end",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "59.0"
+    },
+    {
+      "name": "ultima_x_end",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "39.0"
+    },
+    {
+      "name": "ultima_z_end",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "15.0"
+    },
+    {
+      "name": "switch_dimension",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"false\""
+    },
+    {
+      "name": "last_time",
+      "type": "string",
+      "scope": "world",
+      "value": "\"\""
+    },
+    {
+      "name": "chiave_appena_usata",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "modalita_explosive_chessplate",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "esplodi alla morte"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:mod:slot_3_essenction_distilizer": [
+      "Items.DRAGON_BREATH",
+      "Blocks.BLACKSTONE",
+      "Items.GLOW_BERRIES"
+    ],
+    "ITEMS:mod:slot_2_essenction_distilizer": [
+      "Blocks.SHULKER_BOX",
+      "Blocks.SOUL_SAND",
+      "Items.ECHO_SHARD"
+    ],
+    "ENCHANTMENTS:mod:custom_enchantemnt": [
+      "CUSTOM:Lavaessence",
+      "CUSTOM:Wateressence",
+      "CUSTOM:Creeperessence",
+      "CUSTOM:Iceessence",
+      "CUSTOM:Ashessece",
+      "CUSTOM:Stormessece",
+      "CUSTOM:Windessece",
+      "CUSTOM:Sporetouch",
+      "CUSTOM:Furyessece"
+    ],
+    "ITEMS:mod:slot_0_essenction_distilizer": [
+      "Blocks.ANCIENT_DEBRIS",
+      "Items.ENDER_PEARL",
+      "Items.PRISMARINE_SHARD"
+    ],
+    "ITEMS:mod:slot_1_essenction_distilizer": [
+      "Items.CHORUS_FRUIT",
+      "Blocks.MAGMA",
+      "Blocks.SAND#1"
+    ],
+    "ITEMS:mod:slot_4_essenction_distilizer": [
+      "Blocks.END_STONE",
+      "Blocks.BASALT",
+      "Items.POWDER_SNOW_BUCKET"
+    ],
+    "ITEMS:mod:slot_5_essenction_distilizer": [
+      "Items.END_CRYSTAL",
+      "Items.NETHERBRICK",
+      "Blocks.BAMBOO"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.utility.medikit.description_0": "A medikit to cure all your wounds again and again... only for you",
+      "enchantment.utility.lavaessence": "Lava essence",
+      "enchantment.utility.stormessece": "Storm essece",
+      "advancements.the_netheressence.descr": "The power of rivers of lava — lava, and more lava.",
+      "advancements.the_limbokeyshard.descr": "The most important part of your journey",
+      "item.utility.tactical_template": "Tactical Template",
+      "advancements.thelimbo.descr": "This is the limbo, wow bea... look there is some netherite",
+      "enchantment.utility.windessece": "Wind essece",
+      "advancements.thechosenone.title": "The chosen one",
+      "item.utility.explosivesuit_chestplate": "Explosive chestplate",
+      "item.utility.nehteressence.description_0": "A blazing, arcane core pulsing with infernal energy — essential for forging the Nether Key.",
+      "item.utility.limbokey.description_0": "When you grip it, you feel the weight of a thousand whispers that do not belong to this world. Use it only if you have the courage to face the eternal void…",
+      "advancements.theflatkey.title": "The flat key",
+      "enchantment.utility.furyessece": "Fury essece ",
+      "item.utility.flatessence": "Flat essence",
+      "advancements.the_netherkey.title": "The Nether key",
+      "effect.utility.tattical_suit_cooldown_effect": "Tattical Suit Cooldown Effect",
+      "enchantment.utility.ashessece": "Ash essece",
+      "item.utility.medikit": "Medikit",
+      "item.utility.overwordkey": "Overword key",
+      "advancements.thelimbokey.descr": "This is the LIMBO!!, Why i have to enter it?",
+      "advancements.the_tacticalknife.title": "The Tactical knife",
+      "effect.utility.tatticalsuitactiveeffect": "Tattical suit power",
+      "item.utility.tacticalknife.description_0": "A throwable knife – use right-click to throw it.",
+      "block.utility.essenctiondistilizer": "Essenction distilizer",
+      "item.utility.nightelmet_leggings.description_0": "the perfect leggins for how want a easy life - use H to active it",
+      "item.utility.liminaly_key": "Liminali Key",
+      "key.utility.attivadisattivanighthelmet": "enable/disabilite armor power",
+      "advancements.thepoweressence.title": "The power essence",
+      "advancements.thebeginofconfort.descr": "The reason why you downloaded this mod.",
+      "advancements.the_overworldkey.title": "The Overworld key",
+      "advancements.the_overworldessence.title": "The Overworld essence",
+      "item.utility.netherkey.description_0": "The key for the hell, the key for fire and lava, the key for a forgot world called the Nether",
+      "item.utility.overwordkey.description_0": "The key to return back home after a long day",
+      "item.utility.endessece": "End essece",
+      "advancements.the_flatessence.title": "The Flat essence",
+      "advancements.liminalkeyadvancment.title": "The begin of a long journey",
+      "item.utility.nightelmet_chestplate.description_0": "The perfect chestplate for how want a easy life - use H to active it",
+      "item.utility.ironknife": "Iron knife",
+      "item.utility.bandages": "Bandages",
+      "item.utility.nightelmet_boots": "Tactical Boots",
+      "block.utility.dungeongeneratorblock": "Dungeon generator block",
+      "advancements.the_tacticalknife.descr": "Yeah! a boomerang.... Oh no it\u0027s a knife",
+      "advancements.thepoweressence.descr": "I can fell the power in my hand!!",
+      "item.utility.tactical_template.description_0": "A precision-forged schematic infused with advanced strategy — essential for crafting the Tactical Suit.",
+      "advancements.theflatkey.descr": "The key for a infinite world of infinite possibilities",
+      "advancements.thelimbokey.title": "The Limbo key",
+      "item.utility.knifeblade": "Knife blade",
+      "advancements.the_flatessence.descr": "The power of the earth, the grass, and a completely flat world.",
+      "item.utility.tacticalknife": "Tactical knife",
+      "item.utility.knifeblade.description_0": "The sharpest blade in the world",
+      "item.utility.flatkey": "Flat key",
+      "item.utility.nehteressence": "Nehter essence",
+      "advancements.the_limbokeyshard.title": "The Limbo key shard",
+      "advancements.theendkey.title": "The End key",
+      "item.utility.creativenighthelmet_helmet.description_0": "- use H to active it",
+      "enchantment.utility.wateressence": "Water essence",
+      "effect.utility.gravity": "Gravity",
+      "item.utility.endkey": "end key",
+      "item.utility.nightelmet_helmet.description_0": "The perfect helmet for how want a easy life - use H to active it",
+      "advancements.thelimbo.title": "The Limbo",
+      "item.utility.netherkey": "nether key",
+      "item.utility.endessece.description_0": "A glowing relic of spatial energy, humming with the pull of the void — vital to unlock the path to the End.",
+      "item.utility.endkey.description_0": "A endless word called the End.... what? it is called end but is endless?",
+      "advancements.thechosenone.descr": "One Key to rule them all, One Key to find them, One Key to bring them all and in the darkness bind them.",
+      "item.utility.flatkey.description_0": "This is the key for a world of infinit posibilites.... and a lot of grass!!",
+      "item.utility.nightelmet_helmet": "Tactical Helmet",
+      "key.utility.explosivesuitattivazione": "Explosive chessplate activation",
+      "item.utility.liminaly_key.description_0": "!!WORKING PROGRESS!! For now it dosen\u0027t do anything",
+      "biome.utility.void_biom": "Void Biom",
+      "advancements.the_netherkey.descr": "What a hell, the key for the hell?",
+      "item.utility.ironknife.description_0": "A simple knife",
+      "block.utility.essenctiondistilizer.description_0": "This is the Essenction distilizer it is able to channel the power from the other dimension and creat a power essence",
+      "item.utility.limbo_key_part_1": "Limbo key shard",
+      "advancements.thetacticalsuit.title": "The tactical suit",
+      "item.utility.power_essence.description_0": "You can fell the power, You can fell the power!, You can fell the power!!, You can fell the power!!!,",
+      "advancements.theemptykey.descr": "The shell for this big power",
+      "advancements.theendkey.descr": "This is the key for the endless world called the End",
+      "biome.utility.flat_biom": "Flat_biom",
+      "item.utility.nightelmet_chestplate": "Tactical Chestplate",
+      "enchantment.utility.iceessence": "Ice essence",
+      "advancements.thetacticlatemplate.title": "The tactical template",
+      "item.utility.flatessence.description_0": "A fragmented core of raw geometry and stability — crucial for shaping the path to the Flatlands Dimension.",
+      "advancements.the_endessence.title": "The End essence",
+      "item.utility.bandages.description_0": "A bandage to help you in difficulty momet",
+      "advancements.liminalkeyadvancment.descr": "The key for a corruped world, for the despair ad the begin of your journey",
+      "advancements.the_overworldessence.descr": "The power of a comfortable bed and a warm home.",
+      "item.utility.creativenighthelmet_helmet": "Creative night helmet",
+      "advancements.the_overworldkey.descr": "The key for come back home after a long journey",
+      "item.utility.nightelmet_leggings": "Tactical Leggings",
+      "advancements.thebeginofconfort.title": "The begin of confort",
+      "item.utility.limbokey": "Limbo key",
+      "enchantment.utility.sporetouch": "Spore essence",
+      "item.utility.overworldessence.description_0": "The power in YOUR hand, but from a familliar place",
+      "item_group.utility.utility": "Utility",
+      "advancements.the_endessence.descr": "The power of a lost world called the End... That easy?",
+      "advancements.thetacticalsuit.descr": "I have the power to... ah... but it has a cooldown.",
+      "item.utility.nightelmet_boots.description_0": "The perfect boots for how want a easy life - use H to active it",
+      "item.utility.overworldessence": "Overworld essence",
+      "advancements.thetacticlatemplate.descr": "I hate crafting it, but I know it’ll be useful the whole time... right?",
+      "item.utility.limbo_key_part_1.description_0": "A shard of a key, a shard to create the access to a distant dimension",
+      "advancements.the_netheressence.title": "The Nether essence",
+      "item.utility.power_essence": "Power Essence",
+      "item.utility.emptykey.description_0": "this is only the shell, it is only a empty key, it dosen\u0027t do anyting? Or.....",
+      "item.utility.emptykey": "Empty key",
+      "advancements.theemptykey.title": "The empty key"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
+      "src/main/java/net/mcreator/utility/UtilityMod.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModTabs.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/utility/init/UtilityModKeyMappings.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModMobEffects.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",
+      "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModEnchantments.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModBlocks.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModBlockEntities.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModItems.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModEntityRenderers.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModEntities.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "key",
+        "children": [
+          {
+            "name": "item",
+            "children": []
+          },
+          {
+            "name": "procedure funzionamento chiavi",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "dimension",
+        "children": [
+          {
+            "name": "flat",
+            "children": []
+          },
+          {
+            "name": "limbo",
+            "children": [
+              {
+                "name": "essenction distilizer",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "liminal",
+            "children": [
+              {
+                "name": "procedure",
+                "children": []
+              },
+              {
+                "name": "dungeon generator",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "enchantment",
+        "children": [
+          {
+            "name": "Power_essence",
+            "children": []
+          },
+          {
+            "name": "Power_essence_enchant",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Potion",
+        "children": [
+          {
+            "name": "New_effect",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "acivment",
+        "children": [
+          {
+            "name": "procedure advancment",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "New mob",
+        "children": []
+      },
+      {
+        "name": "quality of life",
+        "children": [
+          {
+            "name": "Tactical_knife",
+            "children": []
+          },
+          {
+            "name": "Med_thing",
+            "children": []
+          },
+          {
+            "name": "armor",
+            "children": [
+              {
+                "name": "Tactical_Suit",
+                "children": [
+                  {
+                    "name": "effect",
+                    "children": []
+                  },
+                  {
+                    "name": "crafting",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "creative night helmet",
+                "children": []
+              },
+              {
+                "name": "explosive_suit",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "utility",
+    "modName": "utility",
+    "version": "0.0.6",
+    "author": "Caos group, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "GNU General Public License version 3 (GPLv3)",
+    "serverSideOnly": false,
+    "modPicture": "chatgpt_image_8_mag_2025_17_10_55_1",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.utility"
+  },
+  "mcreatorVersion": 202500228610
+}

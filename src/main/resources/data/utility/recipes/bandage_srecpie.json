@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bab",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:map"
+    },
+    "b": {
+      "item": "minecraft:slime_ball"
+    }
+  },
+  "result": {
+    "item": "utility:bandages",
+    "count": 1
+  }
+}
