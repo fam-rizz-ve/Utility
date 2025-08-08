@@ -3,8 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "minecraft:barrier",
+    "texture": "chatgpt_image_8_ago_2025_10_57_30_custom",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Iron knife",
