@@ -11,12 +11,21 @@
     },
     "igniteFire": false,
     "disableGravity": false,
-    "power": 1.0,
+    "power": 0.5,
     "damage": 6.0,
     "knockback": 5,
     "entityModel": "Default",
-    "customModelTexture": "",
+    "customModelTexture": "chatgpt_image_6_ago_2025_15_57_35_custom.png",
     "modelWidth": 0.5,
-    "modelHeight": 0.5
+    "modelHeight": 0.5,
+    "onHitsBlock": {
+      "name": "TacticalknifeprojectileQuandoIlProiettileColpisceIlBlocco"
+    },
+    "onHitsPlayer": {
+      "name": "TacticalknifeprojectileQuandoIlProiettileColpisceIlBlocco"
+    },
+    "onHitsEntity": {
+      "name": "TacticalknifeprojectileQuandoIlProiettileColpisceIlBlocco"
+    }
   }
 }

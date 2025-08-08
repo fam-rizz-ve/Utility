@@ -39,13 +39,19 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onEntitySwing": {
+      "name": "TacticalknifeQuandoUnentitaUsaLoggetto"
+    },
     "enableRanged": true,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
     "projectile": {
       "value": "CUSTOM:Tacticalknifeprojectile"
     },
-    "projectileDisableAmmoCheck": false,
+    "projectileDisableAmmoCheck": true,
+    "onRangedItemUsed": {
+      "name": "TacticalknifeQuandoLoggettoADistanzaSparaUnProiettile"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,
@@ -54,7 +60,7 @@
     },
     "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "spear",
+    "animation": "bow",
     "isMusicDisc": false,
     "musicDiscMusic": {
       "value": ""

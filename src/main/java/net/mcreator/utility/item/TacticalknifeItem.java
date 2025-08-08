@@ -4,7 +4,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -19,6 +18,8 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.utility.procedures.TacticalknifeQuandoUnentitaUsaLoggettoProcedure;
+import net.mcreator.utility.procedures.TacticalknifeQuandoLoggettoADistanzaSparaUnProiettileProcedure;
 import net.mcreator.utility.entity.TacticalknifeprojectileEntity;
 
 import java.util.List;
@@ -33,7 +34,7 @@ public class TacticalknifeItem extends Item {
 
 	@Override
 	public UseAnim getUseAnimation(ItemStack itemstack) {
-		return UseAnim.SPEAR;
+		return UseAnim.BOW;
 	}
 
 	@Override
@@ -91,6 +92,13 @@ public class TacticalknifeItem extends Item {
 	}
 
 	@Override
+	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
+		boolean retval = super.onEntitySwing(itemstack, entity);
+		TacticalknifeQuandoUnentitaUsaLoggettoProcedure.execute(entity);
+		return retval;
+	}
+
+	@Override
 	public void releaseUsing(ItemStack itemstack, Level world, LivingEntity entity, int time) {
 		if (!world.isClientSide() && entity instanceof ServerPlayer player) {
 			ItemStack stack = findAmmo(player);
@@ -113,21 +121,12 @@ public class TacticalknifeItem extends Item {
 							player.getInventory().removeItem(stack);
 					}
 				}
+				TacticalknifeQuandoLoggettoADistanzaSparaUnProiettileProcedure.execute(entity);
 			}
 		}
 	}
 
 	private ItemStack findAmmo(Player player) {
-		ItemStack stack = ProjectileWeaponItem.getHeldProjectile(player, e -> e.getItem() == TacticalknifeprojectileEntity.PROJECTILE_ITEM.getItem());
-		if (stack == ItemStack.EMPTY) {
-			for (int i = 0; i < player.getInventory().items.size(); i++) {
-				ItemStack teststack = player.getInventory().items.get(i);
-				if (teststack != null && teststack.getItem() == TacticalknifeprojectileEntity.PROJECTILE_ITEM.getItem()) {
-					stack = teststack;
-					break;
-				}
-			}
-		}
-		return stack;
+		return new ItemStack(TacticalknifeprojectileEntity.PROJECTILE_ITEM.getItem());
 	}
 }

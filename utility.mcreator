@@ -1468,6 +1468,75 @@
         ]
       },
       "path": "~/quality of life/armor/explosive_suit"
+    },
+    {
+      "name": "TacticalknifeQuandoLoggettoADistanzaSparaUnProiettile",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tacticalknife_quando_loggetto_a_distanza_spara_un_proiettile",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/TacticalknifeQuandoLoggettoADistanzaSparaUnProiettileProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Tactical_knife"
+    },
+    {
+      "name": "TacticalknifeprojectileQuandoIlProiettileColpisceIlBlocco",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tacticalknifeprojectile_quando_il_proiettile_colpisce_il_blocco",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/TacticalknifeprojectileQuandoIlProiettileColpisceIlBloccoProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Tactical_knife"
+    },
+    {
+      "name": "TacticalknifeQuandoUnentitaUsaLoggetto",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tacticalknife_quando_unentita_usa_loggetto",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/TacticalknifeQuandoUnentitaUsaLoggettoProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Tactical_knife"
     }
   ],
   "variable_elements": [

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "minecraft:item/barrier"
+    "layer0": "utility:item/chatgpt_image_8_ago_2025_10_57_43_custom"
   }
 }
