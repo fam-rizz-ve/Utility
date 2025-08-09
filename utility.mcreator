@@ -866,11 +866,11 @@
       "registry_name": "dungeongeneratorblock",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/dungeongeneratorblock.json",
-          "src/main/java/net/mcreator/utility/block/DungeongeneratorblockBlock.java",
-          "src/main/resources/assets/utility/blockstates/dungeongeneratorblock.json",
           "src/main/resources/data/utility/loot_tables/blocks/dungeongeneratorblock.json",
-          "src/main/resources/assets/utility/models/block/dungeongeneratorblock.json"
+          "src/main/resources/assets/utility/blockstates/dungeongeneratorblock.json",
+          "src/main/resources/assets/utility/models/block/dungeongeneratorblock.json",
+          "src/main/java/net/mcreator/utility/block/DungeongeneratorblockBlock.java",
+          "src/main/resources/assets/utility/models/item/dungeongeneratorblock.json"
         ]
       },
       "path": "~/dimension/liminal/dungeon generator"
@@ -1537,6 +1537,50 @@
         ]
       },
       "path": "~/quality of life/Tactical_knife"
+    },
+    {
+      "name": "Controllasevuoto",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "controllasevuoto",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "altezza",
+            "type": "number"
+          },
+          {
+            "name": "larghezza",
+            "type": "number"
+          },
+          {
+            "name": "profondita",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/ControllasevuotoProcedure.java"
+        ]
+      },
+      "path": "~/dimension/liminal/dungeon generator"
     }
   ],
   "variable_elements": [
