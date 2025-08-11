@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "chatgpt_image_9_mag_2025_16_43_50_1",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "end key",

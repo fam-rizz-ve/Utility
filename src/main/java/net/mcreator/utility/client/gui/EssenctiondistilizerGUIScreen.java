@@ -36,7 +36,7 @@ public class EssenctiondistilizerGUIScreen extends AbstractContainerScreen<Essen
 		menuStateUpdateActive = false;
 	}
 
-	private static final ResourceLocation texture = ResourceLocation.tryParse("utility:textures/screens/essenctiondistilizer_gui.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("utility:textures/screens/essenctiondistilizer_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -51,7 +51,7 @@ public class EssenctiondistilizerGUIScreen extends AbstractContainerScreen<Essen
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		guiGraphics.blit(ResourceLocation.tryParse("utility:textures/screens/screenshot_2025-06-14_120956.png"), this.leftPos + 109, this.topPos + 35, 0, 0, 25, 15, 25, 15);
+		guiGraphics.blit(ResourceLocation.parse("utility:textures/screens/screenshot_2025-06-14_120956.png"), this.leftPos + 109, this.topPos + 35, 0, 0, 25, 15, 25, 15);
 		RenderSystem.disableBlend();
 	}
 

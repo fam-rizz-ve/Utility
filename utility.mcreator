@@ -1537,6 +1537,50 @@
         ]
       },
       "path": "~/quality of life/Tactical_knife"
+    },
+    {
+      "name": "Controllasevuoto",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "controllasevuoto",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "altezza",
+            "type": "number"
+          },
+          {
+            "name": "larghezza",
+            "type": "number"
+          },
+          {
+            "name": "profondita",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/ControllasevuotoProcedure.java"
+        ]
+      },
+      "path": "~/dimension/liminal/dungeon generator"
     }
   ],
   "variable_elements": [
@@ -1800,7 +1844,6 @@
   },
   "metadata": {
     "files": [
-      "src/main/resources/mixins.utility.json",
       "src/main/resources/META-INF/mods.toml",
       "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
       "src/main/java/net/mcreator/utility/UtilityMod.java",
@@ -1812,7 +1855,6 @@
       "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",
       "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModEnchantments.java",
-      "src/main/java/net/mcreator/utility/init/UtilityModBrewingRecipes.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlocks.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlockEntities.java",
       "src/main/java/net/mcreator/utility/init/UtilityModItems.java",
@@ -1824,14 +1866,10 @@
     "name": "~",
     "children": [
       {
-        "name": "key",
+        "name": "acivment",
         "children": [
           {
-            "name": "item",
-            "children": []
-          },
-          {
-            "name": "procedure funzionamento chiavi",
+            "name": "procedure advancment",
             "children": []
           }
         ]
@@ -1839,10 +1877,6 @@
       {
         "name": "dimension",
         "children": [
-          {
-            "name": "flat",
-            "children": []
-          },
           {
             "name": "limbo",
             "children": [
@@ -1853,15 +1887,71 @@
             ]
           },
           {
+            "name": "flat",
+            "children": []
+          },
+          {
             "name": "liminal",
             "children": [
               {
-                "name": "procedure",
+                "name": "dungeon generator",
                 "children": []
               },
               {
-                "name": "dungeon generator",
+                "name": "procedure",
                 "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "key",
+        "children": [
+          {
+            "name": "procedure funzionamento chiavi",
+            "children": []
+          },
+          {
+            "name": "item",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "quality of life",
+        "children": [
+          {
+            "name": "Med_thing",
+            "children": []
+          },
+          {
+            "name": "Tactical_knife",
+            "children": []
+          },
+          {
+            "name": "armor",
+            "children": [
+              {
+                "name": "creative night helmet",
+                "children": []
+              },
+              {
+                "name": "explosive_suit",
+                "children": []
+              },
+              {
+                "name": "Tactical_Suit",
+                "children": [
+                  {
+                    "name": "crafting",
+                    "children": []
+                  },
+                  {
+                    "name": "effect",
+                    "children": []
+                  }
+                ]
               }
             ]
           }
@@ -1871,11 +1961,11 @@
         "name": "enchantment",
         "children": [
           {
-            "name": "Power_essence",
+            "name": "Power_essence_enchant",
             "children": []
           },
           {
-            "name": "Power_essence_enchant",
+            "name": "Power_essence",
             "children": []
           }
         ]
@@ -1890,56 +1980,8 @@
         ]
       },
       {
-        "name": "acivment",
-        "children": [
-          {
-            "name": "procedure advancment",
-            "children": []
-          }
-        ]
-      },
-      {
         "name": "New mob",
         "children": []
-      },
-      {
-        "name": "quality of life",
-        "children": [
-          {
-            "name": "Tactical_knife",
-            "children": []
-          },
-          {
-            "name": "Med_thing",
-            "children": []
-          },
-          {
-            "name": "armor",
-            "children": [
-              {
-                "name": "Tactical_Suit",
-                "children": [
-                  {
-                    "name": "effect",
-                    "children": []
-                  },
-                  {
-                    "name": "crafting",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "creative night helmet",
-                "children": []
-              },
-              {
-                "name": "explosive_suit",
-                "children": []
-              }
-            ]
-          }
-        ]
       }
     ]
   },
@@ -1955,9 +1997,7 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [
-      "jei"
-    ],
+    "mcreatorDependencies": [],
     "currentGenerator": "forge-1.20.1",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.utility"

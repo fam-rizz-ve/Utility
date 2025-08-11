@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "chatgpt_image_8_mag_2025_18_06_13_1",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Flat key",

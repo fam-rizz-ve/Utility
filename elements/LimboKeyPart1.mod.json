@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "shard_key",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Limbo key shard",

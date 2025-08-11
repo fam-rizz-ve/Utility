@@ -99,7 +99,7 @@ public class EssenctiondistilizerGUIMenu extends AbstractContainerMenu implement
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(ResourceLocation.tryParse("utility:slot_0_essenction_distilizer")));
+				return stack.is(ItemTags.create(ResourceLocation.parse("utility:slot_0_essenction_distilizer")));
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 88, 35) {
@@ -109,7 +109,7 @@ public class EssenctiondistilizerGUIMenu extends AbstractContainerMenu implement
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(ResourceLocation.tryParse("utility:slot_1_essenction_distilizer")));
+				return stack.is(ItemTags.create(ResourceLocation.parse("utility:slot_1_essenction_distilizer")));
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 70, 62) {
@@ -119,7 +119,7 @@ public class EssenctiondistilizerGUIMenu extends AbstractContainerMenu implement
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(ResourceLocation.tryParse("utility:slot_2_essenction_distilizer")));
+				return stack.is(ItemTags.create(ResourceLocation.parse("utility:slot_2_essenction_distilizer")));
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 34, 62) {
@@ -129,7 +129,7 @@ public class EssenctiondistilizerGUIMenu extends AbstractContainerMenu implement
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(ResourceLocation.tryParse("utility:slot_3_essenction_distilizer")));
+				return stack.is(ItemTags.create(ResourceLocation.parse("utility:slot_3_essenction_distilizer")));
 			}
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 16, 35) {
@@ -139,7 +139,7 @@ public class EssenctiondistilizerGUIMenu extends AbstractContainerMenu implement
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(ResourceLocation.tryParse("utility:slot_4_essenction_distilizer")));
+				return stack.is(ItemTags.create(ResourceLocation.parse("utility:slot_4_essenction_distilizer")));
 			}
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 34, 8) {
@@ -149,7 +149,7 @@ public class EssenctiondistilizerGUIMenu extends AbstractContainerMenu implement
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(ResourceLocation.tryParse("utility:slot_5_essenction_distilizer")));
+				return stack.is(ItemTags.create(ResourceLocation.parse("utility:slot_5_essenction_distilizer")));
 			}
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 52, 34) {
