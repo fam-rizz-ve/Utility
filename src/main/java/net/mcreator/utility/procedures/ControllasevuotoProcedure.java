@@ -5,11 +5,14 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class ControllasevuotoProcedure {
-	public static boolean execute(LevelAccessor world, double x, double y, double z, double altezza, double larghezza, double profondita) {
+	public static boolean execute(LevelAccessor world, double x, double y, double z, double altezza, double larghezza, double profondita, String modalita_altezza) {
+		if (modalita_altezza == null)
+			return false;
 		boolean found = false;
 		double forward = 0;
 		double vertical = 0;
@@ -20,7 +23,14 @@ public class ControllasevuotoProcedure {
 		found = false;
 		forward = 0;
 		for (int index0 = 0; index0 < (int) profondita; index0++) {
-			vertical = Math.ceil(altezza / (-2));
+			if ((modalita_altezza).equals("centrata")) {
+				vertical = Math.ceil(altezza / (-2));
+			} else if ((modalita_altezza).equals("normal")) {
+				vertical = -1;
+			} else {
+				if (!world.isClientSide() && world.getServer() != null)
+					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("dimenticato di mettere la modalit\u00E0 altezza"), false);
+			}
 			for (int index1 = 0; index1 < (int) altezza; index1++) {
 				lateral = Math.ceil(larghezza / (-2));
 				for (int index2 = 0; index2 < (int) larghezza; index2++) {
