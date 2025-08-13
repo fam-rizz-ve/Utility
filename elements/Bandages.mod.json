@@ -15,11 +15,11 @@
         "value": "CUSTOM:Utility"
       }
     ],
-    "stackSize": 64,
+    "stackSize": 32,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 2,
+    "damageCount": 0,
     "recipeRemainder": {
       "value": ""
     },
