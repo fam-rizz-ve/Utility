@@ -89,6 +89,7 @@ public class UtilityModVariables {
 			clone.chiave_appena_usata = original.chiave_appena_usata;
 			if (!event.isWasDeath()) {
 				clone.modalita_explosive_chessplate = original.modalita_explosive_chessplate;
+				clone.ultima_gamemode = original.ultima_gamemode;
 			}
 		}
 
@@ -273,6 +274,7 @@ public class UtilityModVariables {
 		public String switch_dimension = "\"false\"";
 		public String chiave_appena_usata = "\"\"";
 		public String modalita_explosive_chessplate = "esplodi alla morte";
+		public String ultima_gamemode = "\"\"";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -297,6 +299,7 @@ public class UtilityModVariables {
 			nbt.putString("switch_dimension", switch_dimension);
 			nbt.putString("chiave_appena_usata", chiave_appena_usata);
 			nbt.putString("modalita_explosive_chessplate", modalita_explosive_chessplate);
+			nbt.putString("ultima_gamemode", ultima_gamemode);
 			return nbt;
 		}
 
@@ -318,6 +321,7 @@ public class UtilityModVariables {
 			switch_dimension = nbt.getString("switch_dimension");
 			chiave_appena_usata = nbt.getString("chiave_appena_usata");
 			modalita_explosive_chessplate = nbt.getString("modalita_explosive_chessplate");
+			ultima_gamemode = nbt.getString("ultima_gamemode");
 		}
 	}
 
@@ -358,6 +362,7 @@ public class UtilityModVariables {
 					variables.switch_dimension = message.data.switch_dimension;
 					variables.chiave_appena_usata = message.data.chiave_appena_usata;
 					variables.modalita_explosive_chessplate = message.data.modalita_explosive_chessplate;
+					variables.ultima_gamemode = message.data.ultima_gamemode;
 				}
 			});
 			context.setPacketHandled(true);

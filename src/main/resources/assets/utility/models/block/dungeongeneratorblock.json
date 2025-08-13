@@ -1,8 +1,13 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "utility:block/g",
-    "particle": "utility:block/g"
+    "down": "utility:block/enchanting_table_bottom",
+    "up": "utility:block/dungeon_generator",
+    "north": "utility:block/flat_portal",
+    "east": "utility:block/dungeon_generator",
+    "south": "utility:block/dungeon_generator",
+    "west": "utility:block/dungeon_generator",
+    "particle": "utility:block/enchanting_table_bottom"
   },
   "render_type": "translucent"
 }

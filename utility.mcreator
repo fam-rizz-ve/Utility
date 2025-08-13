@@ -204,8 +204,30 @@
         "files": [
           "src/main/java/net/mcreator/utility/procedures/HowPlayerEnterInADimensionProcedure.java"
         ],
-        "dependencies": []
-      }
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/key/procedure funzionamento chiavi"
     },
     {
       "name": "AttivadisattivanighthelmetQuandoIlTastoVienePremuto",
@@ -614,8 +636,8 @@
       "registry_name": "nehteressence",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/nehteressence.json",
-          "src/main/java/net/mcreator/utility/item/NehteressenceItem.java"
+          "src/main/java/net/mcreator/utility/item/NehteressenceItem.java",
+          "src/main/resources/assets/utility/models/item/nehteressence.json"
         ]
       },
       "path": "~/enchantment/Power_essence"
@@ -628,8 +650,8 @@
       "registry_name": "endessece",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/endessece.json",
-          "src/main/java/net/mcreator/utility/item/EndesseceItem.java"
+          "src/main/java/net/mcreator/utility/item/EndesseceItem.java",
+          "src/main/resources/assets/utility/models/item/endessece.json"
         ]
       },
       "path": "~/enchantment/Power_essence"
@@ -708,8 +730,8 @@
       "registry_name": "tactical_template",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/TacticalTemplateItem.java",
-          "src/main/resources/assets/utility/models/item/tactical_template.json"
+          "src/main/resources/assets/utility/models/item/tactical_template.json",
+          "src/main/java/net/mcreator/utility/item/TacticalTemplateItem.java"
         ]
       },
       "path": "~/quality of life/armor/Tactical_Suit"
@@ -914,8 +936,8 @@
       "registry_name": "creativenighthelmet",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/creativenighthelmet_helmet.json",
-          "src/main/java/net/mcreator/utility/item/CreativenighthelmetItem.java"
+          "src/main/java/net/mcreator/utility/item/CreativenighthelmetItem.java",
+          "src/main/resources/assets/utility/models/item/creativenighthelmet_helmet.json"
         ]
       },
       "path": "~/quality of life/armor/creative night helmet"
@@ -1335,6 +1357,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ]
       },
@@ -1585,6 +1611,64 @@
         ]
       },
       "path": "~/dimension/liminal/dungeon generator"
+    },
+    {
+      "name": "LiminalyKeyQuandoSiFaClicConIlPulsanteDestroDelMouse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liminaly_key_quando_si_fa_clic_con_il_pulsante_destro_del_mouse",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/LiminalyKeyQuandoSiFaClicConIlPulsanteDestroDelMouseProcedure.java"
+        ]
+      },
+      "path": "~/key/item"
+    },
+    {
+      "name": "Cambiamodalita",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cambiamodalita",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/CambiamodalitaProcedure.java"
+        ]
+      },
+      "path": "~/key/procedure funzionamento chiavi"
+    },
+    {
+      "name": "Determinamodalita",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "determinamodalita",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/DeterminamodalitaProcedure.java"
+        ]
+      },
+      "path": "~/key/procedure funzionamento chiavi"
     }
   ],
   "variable_elements": [
@@ -1689,6 +1773,12 @@
       "type": "string",
       "scope": "player_lifetime",
       "value": "esplodi alla morte"
+    },
+    {
+      "name": "ultima_gamemode",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "\"\""
     }
   ],
   "sound_elements": [],
@@ -1993,7 +2083,7 @@
   "workspaceSettings": {
     "modid": "utility",
     "modName": "utility",
-    "version": "0.0.6",
+    "version": "0.0.6.1",
     "author": "Caos group, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "GNU General Public License version 3 (GPLv3)",
