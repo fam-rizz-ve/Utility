@@ -13,7 +13,7 @@ import java.util.List;
 
 public class MedikitItem extends Item {
 	public MedikitItem() {
-		super(new Item.Properties().durability(3).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat().build()));
+		super(new Item.Properties().stacksTo(16).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat().build()));
 	}
 
 	@Override

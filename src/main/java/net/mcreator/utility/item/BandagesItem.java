@@ -13,7 +13,7 @@ import java.util.List;
 
 public class BandagesItem extends Item {
 	public BandagesItem() {
-		super(new Item.Properties().durability(2).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat().build()));
+		super(new Item.Properties().stacksTo(32).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat().build()));
 	}
 
 	@Override

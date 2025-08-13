@@ -1289,8 +1289,8 @@
       "registry_name": "bandages",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/bandages.json",
-          "src/main/java/net/mcreator/utility/item/BandagesItem.java"
+          "src/main/java/net/mcreator/utility/item/BandagesItem.java",
+          "src/main/resources/assets/utility/models/item/bandages.json"
         ]
       },
       "path": "~/quality of life/Med_thing"
@@ -1335,6 +1335,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ]
       },
@@ -1354,6 +1358,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ]
       },
@@ -1848,17 +1856,17 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
-      "src/main/resources/META-INF/mods.toml",
-      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/utility/UtilityMod.java",
+      "src/main/resources/META-INF/mods.toml",
       "src/main/java/net/mcreator/utility/init/UtilityModTabs.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/resources/mixins.utility.json",
+      "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
       "src/main/java/net/mcreator/utility/init/UtilityModKeyMappings.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMobEffects.java",
       "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",
-      "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
+      "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModEnchantments.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlocks.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlockEntities.java",
