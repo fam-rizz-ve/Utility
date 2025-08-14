@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "tactical_templeta",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Tactical Template",

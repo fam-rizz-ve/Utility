@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "flat_essence",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Flat essence",

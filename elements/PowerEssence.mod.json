@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "power_essence",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Power Essence",

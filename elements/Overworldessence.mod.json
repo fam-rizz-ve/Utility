@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "overworld_essence",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Overworld essence",

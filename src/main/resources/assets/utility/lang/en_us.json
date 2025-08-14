@@ -104,5 +104,9 @@
   "item.utility.power_essence": "Power Essence",
   "item.utility.emptykey.description_0": "this is only the shell, it is only a empty key, it dosen\u0027t do anyting? Or.....",
   "item.utility.emptykey": "Empty key",
-  "advancements.theemptykey.title": "The empty key"
+  "advancements.theemptykey.title": "The empty key",
+  "advancements.medikitadvancement.descr": "Now you can cure yourself now, incredible!",
+  "advancements.medikitadvancement.title": "The Bandeg",
+  "advancements.medi_kit_advancment_2.descr": "This is why you have download this mod, yaa!",
+  "advancements.medi_kit_advancment_2.title": "The Medikit"
 }

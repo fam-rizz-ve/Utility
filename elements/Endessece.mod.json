@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "end_essecne",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "End essece",

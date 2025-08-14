@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "nether_essence",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Nehter essence",
