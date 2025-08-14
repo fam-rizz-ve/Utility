@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:diorite",
+    "minecraft:mossy_stone_brick_slab",
+    "minecraft:stone_brick_stairs",
+    "minecraft:stone_brick_slab",
+    "minecraft:cracked_stone_bricks",
+    "minecraft:mossy_stone_bricks",
+    "minecraft:stone_bricks",
+    "minecraft:mossy_stone_brick_stairs"
+  ]
+}

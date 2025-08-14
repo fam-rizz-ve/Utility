@@ -1633,7 +1633,7 @@
           "src/main/java/net/mcreator/utility/procedures/LiminalyKeyQuandoSiFaClicConIlPulsanteDestroDelMouseProcedure.java"
         ]
       },
-      "path": "~/key/item"
+      "path": "~/key/procedure funzionamento chiavi"
     },
     {
       "name": "Cambiamodalita",
@@ -1827,6 +1827,16 @@
       "Items.END_CRYSTAL",
       "Items.NETHERBRICK",
       "Blocks.BAMBOO"
+    ],
+    "BLOCKS:minecraft:materiali_corridoio_liminal": [
+      "Blocks.STONE_BRICK_STAIRS",
+      "Blocks.STONEBRICK#0",
+      "Blocks.MOSSY_STONE_BRICK_STAIRS",
+      "Blocks.MOSSY_STONE_BRICK_SLAB",
+      "Blocks.STONE_SLAB#5",
+      "Blocks.STONEBRICK#1",
+      "Blocks.STONE#3",
+      "Blocks.STONEBRICK#2"
     ]
   },
   "tab_element_order": {},
@@ -1942,17 +1952,17 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/utility/UtilityMod.java",
-      "src/main/resources/META-INF/mods.toml",
-      "src/main/java/net/mcreator/utility/init/UtilityModTabs.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/resources/mixins.utility.json",
       "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/utility/UtilityMod.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModTabs.java",
+      "src/main/resources/mixins.utility.json",
       "src/main/java/net/mcreator/utility/init/UtilityModKeyMappings.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMobEffects.java",
       "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",
-      "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
       "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
       "src/main/java/net/mcreator/utility/init/UtilityModEnchantments.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlocks.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlockEntities.java",
