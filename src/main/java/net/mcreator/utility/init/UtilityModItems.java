@@ -64,6 +64,7 @@ public class UtilityModItems {
 	public static final RegistryObject<Item> MEDIKIT = REGISTRY.register("medikit", () -> new MedikitItem());
 	public static final RegistryObject<Item> BANDAGES = REGISTRY.register("bandages", () -> new BandagesItem());
 	public static final RegistryObject<Item> EXPLOSIVESUIT_CHESTPLATE = REGISTRY.register("explosivesuit_chestplate", () -> new ExplosivesuitItem.Chestplate());
+	public static final RegistryObject<Item> FADED_CONCRETE = block(UtilityModBlocks.FADED_CONCRETE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -1699,6 +1699,23 @@
         ]
       },
       "path": "~/acivment"
+    },
+    {
+      "name": "FadedConcrete",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "faded_concrete",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/block/faded_concrete.json",
+          "src/main/resources/data/utility/loot_tables/blocks/faded_concrete.json",
+          "src/main/resources/assets/utility/models/item/faded_concrete.json",
+          "src/main/resources/assets/utility/blockstates/faded_concrete.json",
+          "src/main/java/net/mcreator/utility/block/FadedConcreteBlock.java"
+        ]
+      },
+      "path": "~/dimension/liminal/Block_Fluid"
     }
   ],
   "variable_elements": [
@@ -1863,6 +1880,12 @@
       "Blocks.STONEBRICK#1",
       "Blocks.STONE#3",
       "Blocks.STONEBRICK#2"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:FadedConcrete"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:FadedConcrete"
     ]
   },
   "tab_element_order": {},
@@ -1977,7 +2000,8 @@
       "advancements.medikitadvancement.descr": "Now you can cure yourself now, incredible!",
       "advancements.medikitadvancement.title": "The Bandeg",
       "advancements.medi_kit_advancment_2.descr": "This is why you have download this mod, yaa!",
-      "advancements.medi_kit_advancment_2.title": "The Medikit"
+      "advancements.medi_kit_advancment_2.title": "The Medikit",
+      "block.utility.faded_concrete": "Faded Concrete"
     }
   },
   "metadata": {
@@ -2038,6 +2062,10 @@
               },
               {
                 "name": "procedure",
+                "children": []
+              },
+              {
+                "name": "Block_Fluid",
                 "children": []
               }
             ]
