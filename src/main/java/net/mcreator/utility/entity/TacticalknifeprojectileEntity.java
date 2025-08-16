@@ -6,13 +6,10 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.phys.EntityHitResult;
-import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
 import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.util.RandomSource;
@@ -21,7 +18,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
-import net.mcreator.utility.procedures.TacticalknifeprojectileQuandoIlProiettileColpisceIlBloccoProcedure;
 import net.mcreator.utility.init.UtilityModItems;
 import net.mcreator.utility.init.UtilityModEntities;
 
@@ -65,24 +61,6 @@ public class TacticalknifeprojectileEntity extends AbstractArrow implements Item
 	protected void doPostHurtEffects(LivingEntity entity) {
 		super.doPostHurtEffects(entity);
 		entity.setArrowCount(entity.getArrowCount() - 1);
-	}
-
-	@Override
-	public void playerTouch(Player entity) {
-		super.playerTouch(entity);
-		TacticalknifeprojectileQuandoIlProiettileColpisceIlBloccoProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
-	}
-
-	@Override
-	public void onHitEntity(EntityHitResult entityHitResult) {
-		super.onHitEntity(entityHitResult);
-		TacticalknifeprojectileQuandoIlProiettileColpisceIlBloccoProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
-	}
-
-	@Override
-	public void onHitBlock(BlockHitResult blockHitResult) {
-		super.onHitBlock(blockHitResult);
-		TacticalknifeprojectileQuandoIlProiettileColpisceIlBloccoProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
 	}
 
 	@Override

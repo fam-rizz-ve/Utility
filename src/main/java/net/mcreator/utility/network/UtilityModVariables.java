@@ -154,6 +154,7 @@ public class UtilityModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "utility_mapvars";
+		public boolean liminal_generato = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -162,10 +163,12 @@ public class UtilityModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
+			liminal_generato = nbt.getBoolean("liminal_generato");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
+			nbt.putBoolean("liminal_generato", liminal_generato);
 			return nbt;
 		}
 

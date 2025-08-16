@@ -102,11 +102,15 @@ public class HowPlayerEnterInADimensionProcedure {
 				}
 			}
 			if (((entity.getCapability(UtilityModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new UtilityModVariables.PlayerVariables())).chiave_appena_usata).equals("liminal key")) {
-				if (world instanceof ServerLevel _serverworld) {
-					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("utility", "inizio_liminal"));
-					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(0, 0, 0), new BlockPos(0, 0, 0), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+				if (!UtilityModVariables.MapVariables.get(world).liminal_generato) {
+					if (world instanceof ServerLevel _serverworld) {
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("utility", "inizio_liminal"));
+						if (template != null) {
+							template.placeInWorld(_serverworld, new BlockPos(0, 0, 0), new BlockPos(0, 0, 0), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+						}
 					}
+					UtilityModVariables.MapVariables.get(world).liminal_generato = true;
+					UtilityModVariables.MapVariables.get(world).syncData(world);
 				}
 				{
 					Entity _ent = entity;

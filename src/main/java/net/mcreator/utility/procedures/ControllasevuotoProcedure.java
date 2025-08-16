@@ -10,7 +10,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class ControllasevuotoProcedure {
-	public static boolean execute(LevelAccessor world, double x, double y, double z, double altezza, double larghezza, double profondita, String modalita_altezza) {
+	public static boolean execute(LevelAccessor world, double x, double y, double z, double altezza, double larghezza, double profondita, double quanto_non_centrata, String modalita_altezza) {
 		if (modalita_altezza == null)
 			return false;
 		boolean found = false;
@@ -27,6 +27,8 @@ public class ControllasevuotoProcedure {
 				vertical = Math.ceil(altezza / (-2));
 			} else if ((modalita_altezza).equals("normal")) {
 				vertical = -1;
+			} else if ((modalita_altezza).equals("non centrata")) {
+				vertical = quanto_non_centrata * (-1);
 			} else {
 				if (!world.isClientSide() && world.getServer() != null)
 					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("dimenticato di mettere la modalit\u00E0 altezza"), false);

@@ -878,11 +878,11 @@
       "registry_name": "dungeongeneratorblock",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/dungeongeneratorblock.json",
+          "src/main/resources/data/utility/loot_tables/blocks/dungeongeneratorblock.json",
+          "src/main/resources/assets/utility/blockstates/dungeongeneratorblock.json",
           "src/main/resources/assets/utility/models/block/dungeongeneratorblock.json",
           "src/main/java/net/mcreator/utility/block/DungeongeneratorblockBlock.java",
-          "src/main/resources/data/utility/loot_tables/blocks/dungeongeneratorblock.json",
-          "src/main/resources/assets/utility/blockstates/dungeongeneratorblock.json"
+          "src/main/resources/assets/utility/models/item/dungeongeneratorblock.json"
         ]
       },
       "path": "~/dimension/liminal/dungeon generator"
@@ -1193,8 +1193,8 @@
       "registry_name": "tacticalknife",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/tacticalknife.json",
-          "src/main/java/net/mcreator/utility/item/TacticalknifeItem.java"
+          "src/main/java/net/mcreator/utility/item/TacticalknifeItem.java",
+          "src/main/resources/assets/utility/models/item/tacticalknife.json"
         ]
       },
       "path": "~/quality of life/Tactical_knife"
@@ -1579,6 +1579,10 @@
             "type": "number"
           },
           {
+            "name": "quanto_non_centrata",
+            "type": "number"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -1838,6 +1842,12 @@
       "type": "string",
       "scope": "player_lifetime",
       "value": "\"\""
+    },
+    {
+      "name": "liminal_generato",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
     }
   ],
   "sound_elements": [],
