@@ -17,6 +17,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.utility.init.UtilityModTabs;
 import net.mcreator.utility.init.UtilityModMobEffects;
 import net.mcreator.utility.init.UtilityModMenus;
 import net.mcreator.utility.init.UtilityModItems;

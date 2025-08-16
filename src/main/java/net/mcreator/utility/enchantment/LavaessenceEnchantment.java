@@ -12,7 +12,7 @@ import net.minecraft.resources.ResourceLocation;
 import java.util.List;
 
 public class LavaessenceEnchantment extends Enchantment {
-	private static final EnchantmentCategory ENCHANTMENT_CATEGORY = EnchantmentCategory.create("utility_lavaessence", item -> Ingredient.of(ItemTags.create(ResourceLocation.tryParse("forge:sword"))).test(new ItemStack(item)));
+	private static final EnchantmentCategory ENCHANTMENT_CATEGORY = EnchantmentCategory.create("utility_lavaessence", item -> Ingredient.of(ItemTags.create(ResourceLocation.parse("forge:sword"))).test(new ItemStack(item)));
 
 	public LavaessenceEnchantment() {
 		super(Enchantment.Rarity.UNCOMMON, ENCHANTMENT_CATEGORY, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});

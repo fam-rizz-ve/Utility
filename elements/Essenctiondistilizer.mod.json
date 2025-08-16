@@ -50,11 +50,7 @@
     "maxStackSize": 64,
     "rarity": "COMMON",
     "immuneToFire": false,
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:UtilityMagic"
-      }
-    ],
+    "creativeTabs": [],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
@@ -146,11 +142,7 @@
     "fluidRestrictions": [],
     "generateFeature": false,
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "TAG:stone_ore_replaceables"
-      }
-    ],
+    "blocksToReplace": [],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,

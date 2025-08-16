@@ -12,7 +12,7 @@ import net.minecraft.resources.ResourceLocation;
 import java.util.List;
 
 public class AshesseceEnchantment extends Enchantment {
-	private static final EnchantmentCategory ENCHANTMENT_CATEGORY = EnchantmentCategory.create("utility_ashessece", item -> Ingredient.of(ItemTags.create(ResourceLocation.tryParse("minecraft:enchantable/sword"))).test(new ItemStack(item)));
+	private static final EnchantmentCategory ENCHANTMENT_CATEGORY = EnchantmentCategory.create("utility_ashessece", item -> Ingredient.of(ItemTags.create(ResourceLocation.parse("minecraft:enchantable/sword"))).test(new ItemStack(item)));
 
 	public AshesseceEnchantment() {
 		super(Enchantment.Rarity.COMMON, ENCHANTMENT_CATEGORY, new EquipmentSlot[]{EquipmentSlot.MAINHAND});

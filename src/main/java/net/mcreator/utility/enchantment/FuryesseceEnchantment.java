@@ -12,7 +12,7 @@ import net.minecraft.resources.ResourceLocation;
 import java.util.List;
 
 public class FuryesseceEnchantment extends Enchantment {
-	private static final EnchantmentCategory ENCHANTMENT_CATEGORY = EnchantmentCategory.create("utility_furyessece", item -> Ingredient.of(ItemTags.create(ResourceLocation.tryParse("minecraft:enchantable/sword"))).test(new ItemStack(item)));
+	private static final EnchantmentCategory ENCHANTMENT_CATEGORY = EnchantmentCategory.create("utility_furyessece", item -> Ingredient.of(ItemTags.create(ResourceLocation.parse("minecraft:enchantable/sword"))).test(new ItemStack(item)));
 
 	public FuryesseceEnchantment() {
 		super(Enchantment.Rarity.VERY_RARE, ENCHANTMENT_CATEGORY, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
