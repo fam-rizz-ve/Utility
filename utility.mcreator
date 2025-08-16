@@ -8,11 +8,11 @@
       "registry_name": "nightelmet",
       "metadata": {
         "files": [
+          "src/main/resources/assets/utility/models/item/nightelmet_leggings.json",
           "src/main/java/net/mcreator/utility/item/NightelmetItem.java",
-          "src/main/resources/assets/utility/models/item/nightelmet_helmet.json",
-          "src/main/resources/assets/utility/models/item/nightelmet_chestplate.json",
           "src/main/resources/assets/utility/models/item/nightelmet_boots.json",
-          "src/main/resources/assets/utility/models/item/nightelmet_leggings.json"
+          "src/main/resources/assets/utility/models/item/nightelmet_helmet.json",
+          "src/main/resources/assets/utility/models/item/nightelmet_chestplate.json"
         ]
       },
       "path": "~/quality of life/armor/Tactical_Suit"
@@ -36,17 +36,6 @@
         ]
       },
       "path": "~/dimension/flat"
-    },
-    {
-      "name": "Utility",
-      "type": "tab",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "utility",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/creative tabs"
     },
     {
       "name": "Flatkey",
@@ -1719,11 +1708,22 @@
       "path": "~/dimension/liminal/Block_Fluid"
     },
     {
-      "name": "Utilityblocks",
+      "name": "Utilityconfort",
       "type": "tab",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "utilityblocks",
+      "registry_name": "utilityconfort",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/creative tabs"
+    },
+    {
+      "name": "UtilityMagic",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "utility_magic",
       "metadata": {
         "files": []
       },
@@ -1997,7 +1997,6 @@
       "item.utility.limbokey": "Limbo key",
       "enchantment.utility.sporetouch": "Spore essence",
       "item.utility.overworldessence.description_0": "The power in YOUR hand, but from a familliar place",
-      "item_group.utility.utility": "Utility",
       "advancements.the_endessence.descr": "The power of a lost world called the End... That easy?",
       "advancements.thetacticalsuit.descr": "I have the power to... ah... but it has a cooldown.",
       "item.utility.nightelmet_boots.description_0": "The perfect boots for how want a easy life - use H to active it",
@@ -2014,14 +2013,14 @@
       "advancements.medi_kit_advancment_2.descr": "This is why you have download this mod, yaa!",
       "advancements.medi_kit_advancment_2.title": "The Medikit",
       "block.utility.faded_concrete": "Faded Concrete",
-      "item_group.utility.utilityblocks": "Utility blocks"
+      "item_group.utility.utilityconfort": "Utility: confort",
+      "item_group.utility.utility_magic": "Utility: Magic"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/utility/UtilityMod.java",
       "src/main/resources/META-INF/mods.toml",
-      "src/main/java/net/mcreator/utility/init/UtilityModTabs.java",
       "src/main/resources/pack.mcmeta",
       "src/main/resources/mixins.utility.json",
       "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",

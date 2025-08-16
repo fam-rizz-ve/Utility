@@ -2,9 +2,9 @@
   "_fv": 79,
   "_type": "tab",
   "definition": {
-    "name": "Utility blocks",
+    "name": "Utility: Magic",
     "icon": {
-      "value": "Blocks.BARRIER"
+      "value": "CUSTOM:Endkey"
     },
     "showSearch": false
   }

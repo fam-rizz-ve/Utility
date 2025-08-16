@@ -32,10 +32,12 @@ public class MedikitQuandoUnentitaUsaLoggettoProcedure {
 	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 2));
-		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(UtilityModItems.MEDIKIT.get(), 120);
-		itemstack.setDamageValue(1);
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == UtilityModItems.MEDIKIT.get()) {
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 2));
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(UtilityModItems.MEDIKIT.get(), 240);
+			itemstack.setDamageValue(1);
+		}
 	}
 }
