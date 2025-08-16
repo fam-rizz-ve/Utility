@@ -2,9 +2,9 @@
   "_fv": 79,
   "_type": "tab",
   "definition": {
-    "name": "Utility: confort",
+    "name": "Utility: magic",
     "icon": {
-      "value": "CUSTOM:Nightelmet.helmet"
+      "value": "CUSTOM:Endkey"
     },
     "showSearch": false
   }

@@ -106,8 +106,8 @@
       "registry_name": "endkey",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/EndkeyItem.java",
-          "src/main/resources/assets/utility/models/item/endkey.json"
+          "src/main/resources/assets/utility/models/item/endkey.json",
+          "src/main/java/net/mcreator/utility/item/EndkeyItem.java"
         ]
       },
       "path": "~/key/item"
@@ -1715,7 +1715,19 @@
       "registry_name": "utility",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/creative tab"
+    },
+    {
+      "name": "Utilitymagic",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "utilitymagic",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/creative tab"
     }
   ],
   "variable_elements": [
@@ -2001,7 +2013,8 @@
       "advancements.medi_kit_advancment_2.descr": "This is why you have download this mod, yaa!",
       "advancements.medi_kit_advancment_2.title": "The Medikit",
       "block.utility.faded_concrete": "Faded Concrete",
-      "item_group.utility.utility": "Utility"
+      "item_group.utility.utility": "Utility: confort",
+      "item_group.utility.utilitymagic": "Utility: magic"
     }
   },
   "metadata": {
@@ -2148,6 +2161,10 @@
       },
       {
         "name": "New mob",
+        "children": []
+      },
+      {
+        "name": "creative tab",
         "children": []
       }
     ]

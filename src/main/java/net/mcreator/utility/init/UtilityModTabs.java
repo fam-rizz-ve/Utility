@@ -24,7 +24,6 @@ public class UtilityModTabs {
 				tabData.accept(UtilityModItems.FLATKEY.get());
 				tabData.accept(UtilityModItems.OVERWORDKEY.get());
 				tabData.accept(UtilityModItems.NETHERKEY.get());
-				tabData.accept(UtilityModItems.ENDKEY.get());
 				tabData.accept(UtilityModItems.LIMBOKEY.get());
 				tabData.accept(UtilityModItems.POWER_ESSENCE.get());
 				tabData.accept(UtilityModItems.LIMBO_KEY_PART_1.get());
@@ -43,4 +42,8 @@ public class UtilityModTabs {
 				tabData.accept(UtilityModItems.BANDAGES.get());
 				tabData.accept(UtilityModItems.EXPLOSIVESUIT_CHESTPLATE.get());
 			}).build());
+	public static final RegistryObject<CreativeModeTab> UTILITYMAGIC = REGISTRY.register("utilitymagic",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.utility.utilitymagic")).icon(() -> new ItemStack(UtilityModItems.ENDKEY.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(UtilityModItems.ENDKEY.get());
+			}).withTabsBefore(UTILITY.getId()).build());
 }

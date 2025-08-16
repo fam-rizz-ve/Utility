@@ -109,5 +109,6 @@
   "advancements.medi_kit_advancment_2.descr": "This is why you have download this mod, yaa!",
   "advancements.medi_kit_advancment_2.title": "The Medikit",
   "block.utility.faded_concrete": "Faded Concrete",
-  "item_group.utility.utility": "Utility"
+  "item_group.utility.utility": "Utility: confort",
+  "item_group.utility.utilitymagic": "Utility: magic"
 }
