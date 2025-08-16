@@ -48,11 +48,7 @@
     "maxStackSize": 64,
     "rarity": "RARE",
     "immuneToFire": false,
-    "creativeTabs": [
-      {
-        "value": "BUILDING_BLOCKS"
-      }
-    ],
+    "creativeTabs": [],
     "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""

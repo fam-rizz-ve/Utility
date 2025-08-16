@@ -5,19 +5,14 @@ package net.mcreator.utility.init;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.utility.UtilityMod;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class UtilityModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, UtilityMod.MODID);
 	public static final RegistryObject<CreativeModeTab> UTILITY = REGISTRY.register("utility",
@@ -49,11 +44,4 @@ public class UtilityModTabs {
 				tabData.accept(UtilityModItems.BANDAGES.get());
 				tabData.accept(UtilityModItems.EXPLOSIVESUIT_CHESTPLATE.get());
 			}).build());
-
-	@SubscribeEvent
-	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-			tabData.accept(UtilityModBlocks.FADED_CONCRETE.get().asItem());
-		}
-	}
 }
