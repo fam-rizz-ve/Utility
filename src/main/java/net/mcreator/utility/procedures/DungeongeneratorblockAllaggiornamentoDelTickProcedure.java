@@ -28,7 +28,7 @@ public class DungeongeneratorblockAllaggiornamentoDelTickProcedure {
 		boolean struttura_piazzata = false;
 		struttura_piazzata = false;
 		for (int index0 = 0; index0 < 10; index0++) {
-			numero_casuale_quale_tipo_di_stanza = Mth.nextInt(RandomSource.create(), 1, 5);
+			numero_casuale_quale_tipo_di_stanza = Mth.nextInt(RandomSource.create(), 6, 6);
 			if (ControllasevuotoProcedure.execute(world, x, y, z, 5, 5, 8, "normal") && numero_casuale_quale_tipo_di_stanza == 1) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {
@@ -389,7 +389,79 @@ public class DungeongeneratorblockAllaggiornamentoDelTickProcedure {
 				}
 				struttura_piazzata = true;
 				break;
-			} else if (ControllasevuotoProcedure.execute(world, x, y, z, 5, 7, 7, "normal") && numero_casuale_quale_tipo_di_stanza == 6) {
+			} else if (ControllasevuotoProcedure.execute(world, x, y, z, 1, 1, 1, "centrata") && numero_casuale_quale_tipo_di_stanza == 6) {
+				if ((new Object() {
+					public Direction getDirection(BlockPos pos) {
+						BlockState _bs = world.getBlockState(pos);
+						Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
+						if (property != null && _bs.getValue(property) instanceof Direction _dir)
+							return _dir;
+						else if (_bs.hasProperty(BlockStateProperties.AXIS))
+							return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
+						else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
+							return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
+						return Direction.NORTH;
+					}
+				}.getDirection(BlockPos.containing(x, y, z))) == Direction.NORTH) {
+					if (world instanceof ServerLevel _serverworld) {
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("utility", "liminal_scale_1"));
+						if (template != null) {
+							template.placeInWorld(_serverworld, BlockPos.containing(x - 2, y - 3, z - 8), BlockPos.containing(x - 2, y - 3, z - 8),
+									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+						}
+					}
+				} else if ((new Object() {
+					public Direction getDirection(BlockPos pos) {
+						BlockState _bs = world.getBlockState(pos);
+						Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
+						if (property != null && _bs.getValue(property) instanceof Direction _dir)
+							return _dir;
+						else if (_bs.hasProperty(BlockStateProperties.AXIS))
+							return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
+						else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
+							return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
+						return Direction.NORTH;
+					}
+				}.getDirection(BlockPos.containing(x, y, z))) == Direction.SOUTH) {
+					if (world instanceof ServerLevel _serverworld) {
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("utility", "liminal_scale_1"));
+						if (template != null) {
+							template.placeInWorld(_serverworld, BlockPos.containing(x + 2, y - 3, z + 8), BlockPos.containing(x + 2, y - 3, z + 8),
+									new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_180).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+						}
+					}
+				} else if ((new Object() {
+					public Direction getDirection(BlockPos pos) {
+						BlockState _bs = world.getBlockState(pos);
+						Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
+						if (property != null && _bs.getValue(property) instanceof Direction _dir)
+							return _dir;
+						else if (_bs.hasProperty(BlockStateProperties.AXIS))
+							return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
+						else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
+							return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
+						return Direction.NORTH;
+					}
+				}.getDirection(BlockPos.containing(x, y, z))) == Direction.EAST) {
+					if (world instanceof ServerLevel _serverworld) {
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("utility", "liminal_scale_1"));
+						if (template != null) {
+							template.placeInWorld(_serverworld, BlockPos.containing(x + 8, y - 3, z + 2), BlockPos.containing(x + 8, y - 3, z + 2),
+									new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+						}
+					}
+				} else {
+					if (world instanceof ServerLevel _serverworld) {
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("utility", "liminal_scale_1"));
+						if (template != null) {
+							template.placeInWorld(_serverworld, BlockPos.containing(x - 8, y - 3, z - 2), BlockPos.containing(x - 8, y - 3, z - 2),
+									new StructurePlaceSettings().setRotation(Rotation.COUNTERCLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+						}
+					}
+				}
+				struttura_piazzata = true;
+				break;
+			} else if (ControllasevuotoProcedure.execute(world, x, y, z, 5, 7, 7, "normal") && numero_casuale_quale_tipo_di_stanza == 7) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {
 						BlockState _bs = world.getBlockState(pos);
