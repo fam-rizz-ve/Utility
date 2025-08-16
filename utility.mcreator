@@ -4,15 +4,15 @@
       "name": "Nightelmet",
       "type": "armor",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "nightelmet",
       "metadata": {
         "files": [
+          "src/main/resources/assets/utility/models/item/nightelmet_leggings.json",
           "src/main/java/net/mcreator/utility/item/NightelmetItem.java",
-          "src/main/resources/assets/utility/models/item/nightelmet_helmet.json",
-          "src/main/resources/assets/utility/models/item/nightelmet_chestplate.json",
           "src/main/resources/assets/utility/models/item/nightelmet_boots.json",
-          "src/main/resources/assets/utility/models/item/nightelmet_leggings.json"
+          "src/main/resources/assets/utility/models/item/nightelmet_helmet.json",
+          "src/main/resources/assets/utility/models/item/nightelmet_chestplate.json"
         ]
       },
       "path": "~/quality of life/armor/Tactical_Suit"
@@ -2012,14 +2012,15 @@
       "advancements.medikitadvancement.title": "The Bandeg",
       "advancements.medi_kit_advancment_2.descr": "This is why you have download this mod, yaa!",
       "advancements.medi_kit_advancment_2.title": "The Medikit",
-      "block.utility.faded_concrete": "Faded Concrete"
+      "block.utility.faded_concrete": "Faded Concrete",
+      "item_group.utility.utilityconfort": "Utility: confort",
+      "item_group.utility.utility_magic": "Utility: Magic"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/utility/UtilityMod.java",
       "src/main/resources/META-INF/mods.toml",
-      "src/main/java/net/mcreator/utility/init/UtilityModTabs.java",
       "src/main/resources/pack.mcmeta",
       "src/main/resources/mixins.utility.json",
       "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
