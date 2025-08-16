@@ -10,7 +10,11 @@
     "textureLeggings": "chatgpt_image_20_giu_2025_22_04_35_1",
     "enableBoots": true,
     "textureBoots": "chatgpt_image_20_giu_2025_22_06_29_1",
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Utilityconfort"
+      }
+    ],
     "armorTextureFile": "explosive_suit",
     "helmetName": "Tactical Helmet",
     "bodyName": "Tactical Chestplate",
