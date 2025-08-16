@@ -4,15 +4,15 @@
       "name": "Nightelmet",
       "type": "armor",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "nightelmet",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/utility/item/NightelmetItem.java",
-          "src/main/resources/assets/utility/models/item/nightelmet_leggings.json",
-          "src/main/resources/assets/utility/models/item/nightelmet_boots.json",
           "src/main/resources/assets/utility/models/item/nightelmet_helmet.json",
-          "src/main/resources/assets/utility/models/item/nightelmet_chestplate.json"
+          "src/main/resources/assets/utility/models/item/nightelmet_chestplate.json",
+          "src/main/resources/assets/utility/models/item/nightelmet_boots.json",
+          "src/main/resources/assets/utility/models/item/nightelmet_leggings.json"
         ]
       },
       "path": "~/quality of life/armor/Tactical_Suit"
@@ -59,8 +59,8 @@
       "registry_name": "overwordkey",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/OverwordkeyItem.java",
-          "src/main/resources/assets/utility/models/item/overwordkey.json"
+          "src/main/resources/assets/utility/models/item/overwordkey.json",
+          "src/main/java/net/mcreator/utility/item/OverwordkeyItem.java"
         ]
       },
       "path": "~/key/item"
@@ -92,8 +92,8 @@
       "registry_name": "netherkey",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/NetherkeyItem.java",
-          "src/main/resources/assets/utility/models/item/netherkey.json"
+          "src/main/resources/assets/utility/models/item/netherkey.json",
+          "src/main/java/net/mcreator/utility/item/NetherkeyItem.java"
         ]
       },
       "path": "~/key/item"
@@ -106,8 +106,8 @@
       "registry_name": "endkey",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/endkey.json",
-          "src/main/java/net/mcreator/utility/item/EndkeyItem.java"
+          "src/main/java/net/mcreator/utility/item/EndkeyItem.java",
+          "src/main/resources/assets/utility/models/item/endkey.json"
         ]
       },
       "path": "~/key/item"
@@ -120,9 +120,9 @@
       "registry_name": "flat_biom",
       "metadata": {
         "files": [
-          "src/main/resources/data/utility/worldgen/configured_feature/flat_biom_tree.json",
+          "src/main/resources/data/utility/worldgen/placed_feature/flat_biom_tree.json",
           "src/main/resources/data/utility/worldgen/biome/flat_biom.json",
-          "src/main/resources/data/utility/worldgen/placed_feature/flat_biom_tree.json"
+          "src/main/resources/data/utility/worldgen/configured_feature/flat_biom_tree.json"
         ]
       },
       "path": "~/dimension/flat"
@@ -330,7 +330,7 @@
       "name": "Lavaessence",
       "type": "enchantment",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "lavaessence",
       "metadata": {
         "files": [
@@ -382,7 +382,7 @@
       "name": "Wateressence",
       "type": "enchantment",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "wateressence",
       "metadata": {
         "files": [
@@ -399,12 +399,12 @@
       "registry_name": "essenctiondistilizer",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/block/entity/EssenctiondistilizerBlockEntity.java",
-          "src/main/resources/assets/utility/models/block/essenctiondistilizer.json",
           "src/main/resources/data/utility/loot_tables/blocks/essenctiondistilizer.json",
+          "src/main/java/net/mcreator/utility/block/entity/EssenctiondistilizerBlockEntity.java",
           "src/main/resources/assets/utility/models/item/essenctiondistilizer.json",
           "src/main/java/net/mcreator/utility/block/EssenctiondistilizerBlock.java",
-          "src/main/resources/assets/utility/blockstates/essenctiondistilizer.json"
+          "src/main/resources/assets/utility/blockstates/essenctiondistilizer.json",
+          "src/main/resources/assets/utility/models/block/essenctiondistilizer.json"
         ]
       },
       "path": "~/dimension/limbo/essenction distilizer"
@@ -458,8 +458,8 @@
       "registry_name": "liminaly_key",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/LiminalyKeyItem.java",
-          "src/main/resources/assets/utility/models/item/liminaly_key.json"
+          "src/main/resources/assets/utility/models/item/liminaly_key.json",
+          "src/main/java/net/mcreator/utility/item/LiminalyKeyItem.java"
         ]
       },
       "path": "~/key/item"
@@ -468,7 +468,7 @@
       "name": "Iceessence",
       "type": "enchantment",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "iceessence",
       "metadata": {
         "files": [
@@ -481,7 +481,7 @@
       "name": "Ashessece",
       "type": "enchantment",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "ashessece",
       "metadata": {
         "files": [
@@ -494,7 +494,7 @@
       "name": "Stormessece",
       "type": "enchantment",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "stormessece",
       "metadata": {
         "files": [
@@ -520,7 +520,7 @@
       "name": "Sporetouch",
       "type": "enchantment",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "sporetouch",
       "metadata": {
         "files": [
@@ -533,7 +533,7 @@
       "name": "Furyessece",
       "type": "enchantment",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "furyessece",
       "metadata": {
         "files": [
@@ -720,8 +720,8 @@
       "registry_name": "tactical_template",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/tactical_template.json",
-          "src/main/java/net/mcreator/utility/item/TacticalTemplateItem.java"
+          "src/main/java/net/mcreator/utility/item/TacticalTemplateItem.java",
+          "src/main/resources/assets/utility/models/item/tactical_template.json"
         ]
       },
       "path": "~/quality of life/armor/Tactical_Suit"
@@ -878,11 +878,11 @@
       "registry_name": "dungeongeneratorblock",
       "metadata": {
         "files": [
-          "src/main/resources/data/utility/loot_tables/blocks/dungeongeneratorblock.json",
-          "src/main/resources/assets/utility/blockstates/dungeongeneratorblock.json",
+          "src/main/resources/assets/utility/models/item/dungeongeneratorblock.json",
           "src/main/resources/assets/utility/models/block/dungeongeneratorblock.json",
           "src/main/java/net/mcreator/utility/block/DungeongeneratorblockBlock.java",
-          "src/main/resources/assets/utility/models/item/dungeongeneratorblock.json"
+          "src/main/resources/data/utility/loot_tables/blocks/dungeongeneratorblock.json",
+          "src/main/resources/assets/utility/blockstates/dungeongeneratorblock.json"
         ]
       },
       "path": "~/dimension/liminal/dungeon generator"
@@ -926,8 +926,8 @@
       "registry_name": "creativenighthelmet",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/CreativenighthelmetItem.java",
-          "src/main/resources/assets/utility/models/item/creativenighthelmet_helmet.json"
+          "src/main/resources/assets/utility/models/item/creativenighthelmet_helmet.json",
+          "src/main/java/net/mcreator/utility/item/CreativenighthelmetItem.java"
         ]
       },
       "path": "~/quality of life/armor/creative night helmet"
@@ -1170,7 +1170,7 @@
       "name": "Thebeginofconfortprocedure",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "thebeginofconfortprocedure",
       "metadata": {
         "files": [
@@ -1193,8 +1193,8 @@
       "registry_name": "tacticalknife",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/TacticalknifeItem.java",
-          "src/main/resources/assets/utility/models/item/tacticalknife.json"
+          "src/main/resources/assets/utility/models/item/tacticalknife.json",
+          "src/main/java/net/mcreator/utility/item/TacticalknifeItem.java"
         ]
       },
       "path": "~/quality of life/Tactical_knife"
@@ -1220,8 +1220,8 @@
       "registry_name": "ironknife",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/ironknife.json",
-          "src/main/java/net/mcreator/utility/item/IronknifeItem.java"
+          "src/main/java/net/mcreator/utility/item/IronknifeItem.java",
+          "src/main/resources/assets/utility/models/item/ironknife.json"
         ]
       },
       "path": "~/quality of life/Tactical_knife"
@@ -1260,8 +1260,8 @@
       "registry_name": "knifeblade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/knifeblade.json",
-          "src/main/java/net/mcreator/utility/item/KnifebladeItem.java"
+          "src/main/java/net/mcreator/utility/item/KnifebladeItem.java",
+          "src/main/resources/assets/utility/models/item/knifeblade.json"
         ]
       },
       "path": "~/quality of life/Tactical_knife"
@@ -1301,8 +1301,8 @@
       "registry_name": "bandages",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/bandages.json",
-          "src/main/java/net/mcreator/utility/item/BandagesItem.java"
+          "src/main/java/net/mcreator/utility/item/BandagesItem.java",
+          "src/main/resources/assets/utility/models/item/bandages.json"
         ]
       },
       "path": "~/quality of life/Med_thing"
@@ -1400,8 +1400,8 @@
       "registry_name": "explosivesuit",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/explosivesuit_chestplate.json",
-          "src/main/java/net/mcreator/utility/item/ExplosivesuitItem.java"
+          "src/main/java/net/mcreator/utility/item/ExplosivesuitItem.java",
+          "src/main/resources/assets/utility/models/item/explosivesuit_chestplate.json"
         ]
       },
       "path": "~/quality of life/armor/explosive_suit"
@@ -1698,11 +1698,11 @@
       "registry_name": "faded_concrete",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/block/FadedConcreteBlock.java",
+          "src/main/resources/assets/utility/models/block/faded_concrete.json",
           "src/main/resources/data/utility/loot_tables/blocks/faded_concrete.json",
-          "src/main/resources/assets/utility/blockstates/faded_concrete.json",
           "src/main/resources/assets/utility/models/item/faded_concrete.json",
-          "src/main/resources/assets/utility/models/block/faded_concrete.json"
+          "src/main/resources/assets/utility/blockstates/faded_concrete.json",
+          "src/main/java/net/mcreator/utility/block/FadedConcreteBlock.java"
         ]
       },
       "path": "~/dimension/liminal/Block_Fluid"
@@ -2006,17 +2006,17 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
-      "src/main/resources/META-INF/mods.toml",
-      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/utility/UtilityMod.java",
+      "src/main/resources/META-INF/mods.toml",
       "src/main/java/net/mcreator/utility/init/UtilityModTabs.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/resources/mixins.utility.json",
+      "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
       "src/main/java/net/mcreator/utility/init/UtilityModKeyMappings.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMobEffects.java",
       "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",
-      "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
+      "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModEnchantments.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlocks.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlockEntities.java",
