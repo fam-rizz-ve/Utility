@@ -8,11 +8,11 @@
       "registry_name": "nightelmet",
       "metadata": {
         "files": [
+          "src/main/resources/assets/utility/models/item/nightelmet_leggings.json",
           "src/main/java/net/mcreator/utility/item/NightelmetItem.java",
-          "src/main/resources/assets/utility/models/item/nightelmet_helmet.json",
-          "src/main/resources/assets/utility/models/item/nightelmet_chestplate.json",
           "src/main/resources/assets/utility/models/item/nightelmet_boots.json",
-          "src/main/resources/assets/utility/models/item/nightelmet_leggings.json"
+          "src/main/resources/assets/utility/models/item/nightelmet_helmet.json",
+          "src/main/resources/assets/utility/models/item/nightelmet_chestplate.json"
         ]
       },
       "path": "~/quality of life/armor/Tactical_Suit"
@@ -106,8 +106,8 @@
       "registry_name": "endkey",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/endkey.json",
-          "src/main/java/net/mcreator/utility/item/EndkeyItem.java"
+          "src/main/java/net/mcreator/utility/item/EndkeyItem.java",
+          "src/main/resources/assets/utility/models/item/endkey.json"
         ]
       },
       "path": "~/key/item"
@@ -1205,8 +1205,8 @@
       "registry_name": "tacticalknife",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/TacticalknifeItem.java",
-          "src/main/resources/assets/utility/models/item/tacticalknife.json"
+          "src/main/resources/assets/utility/models/item/tacticalknife.json",
+          "src/main/java/net/mcreator/utility/item/TacticalknifeItem.java"
         ]
       },
       "path": "~/quality of life/Tactical_knife"
@@ -2049,17 +2049,17 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
-      "src/main/resources/META-INF/mods.toml",
-      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/utility/UtilityMod.java",
+      "src/main/resources/META-INF/mods.toml",
       "src/main/java/net/mcreator/utility/init/UtilityModTabs.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/resources/mixins.utility.json",
+      "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
       "src/main/java/net/mcreator/utility/init/UtilityModKeyMappings.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMobEffects.java",
       "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",
-      "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
+      "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModEnchantments.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlocks.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlockEntities.java",
