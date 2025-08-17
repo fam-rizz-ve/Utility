@@ -12,7 +12,7 @@
     "rarity": "RARE",
     "creativeTabs": [
       {
-        "value": "CUSTOM:Utility"
+        "value": "CUSTOM:Utilitymagic"
       }
     ],
     "stackSize": 1,
@@ -30,9 +30,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": [
-        "!!WORKING PROGRESS!! For now it dosen't do anything"
-      ]
+      "fixedValue": []
     },
     "glowCondition": {
       "fixedValue": false
