@@ -899,6 +899,14 @@
         ],
         "dependencies": [
           {
+            "name": "quanto_non_centrata_altezza",
+            "type": "number"
+          },
+          {
+            "name": "quanto_non_centrata_larghezza",
+            "type": "number"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -909,6 +917,10 @@
           {
             "name": "z",
             "type": "number"
+          },
+          {
+            "name": "modalita_laterale",
+            "type": "string"
           },
           {
             "name": "world",
@@ -1579,7 +1591,11 @@
             "type": "number"
           },
           {
-            "name": "quanto_non_centrata",
+            "name": "quanto_non_centrata_altezza",
+            "type": "number"
+          },
+          {
+            "name": "quanto_non_centrata_larghezza",
             "type": "number"
           },
           {
@@ -1596,6 +1612,10 @@
           },
           {
             "name": "modalita_altezza",
+            "type": "string"
+          },
+          {
+            "name": "modalita_laterale",
             "type": "string"
           },
           {

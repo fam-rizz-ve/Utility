@@ -78,7 +78,7 @@ public class DungeongeneratorblockBlock extends Block {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		DungeongeneratorblockAllaggiornamentoDelTickProcedure.execute(world, x, y, z);
+		DungeongeneratorblockAllaggiornamentoDelTickProcedure.execute(world, x, y, z, quanto_non_centrata_altezza, quanto_non_centrata_larghezza, modalita_laterale);
 		world.scheduleTick(pos, this, 20);
 	}
 }

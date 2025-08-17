@@ -29,7 +29,7 @@ public class DungeongeneratorblockAllaggiornamentoDelTickProcedure {
 		struttura_piazzata = false;
 		for (int index0 = 0; index0 < 10; index0++) {
 			numero_casuale_quale_tipo_di_stanza = Mth.nextInt(RandomSource.create(), 10, 10);
-			if (ControllasevuotoProcedure.execute(world, x, y, z, 5, 5, 8, 0, "normal") && numero_casuale_quale_tipo_di_stanza == 1) {
+			if (ControllasevuotoProcedure.execute(world, x, y, z, 5, 5, 8, 0, 0, "normal", "centrata") && numero_casuale_quale_tipo_di_stanza == 1) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {
 						BlockState _bs = world.getBlockState(pos);
@@ -101,7 +101,7 @@ public class DungeongeneratorblockAllaggiornamentoDelTickProcedure {
 				}
 				struttura_piazzata = true;
 				break;
-			} else if (ControllasevuotoProcedure.execute(world, x, y, z, 5, 9, 9, 0, "normal") && numero_casuale_quale_tipo_di_stanza == 2) {
+			} else if (ControllasevuotoProcedure.execute(world, x, y, z, 5, 9, 9, 0, 0, "normal", "centrata") && numero_casuale_quale_tipo_di_stanza == 2) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {
 						BlockState _bs = world.getBlockState(pos);
@@ -173,7 +173,7 @@ public class DungeongeneratorblockAllaggiornamentoDelTickProcedure {
 				}
 				struttura_piazzata = true;
 				break;
-			} else if (ControllasevuotoProcedure.execute(world, x, y, z, 5, 9, 9, 0, "normal") && numero_casuale_quale_tipo_di_stanza == 3) {
+			} else if (ControllasevuotoProcedure.execute(world, x, y, z, 5, 9, 9, 0, 0, "normal", "centarta") && numero_casuale_quale_tipo_di_stanza == 3) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {
 						BlockState _bs = world.getBlockState(pos);
@@ -245,7 +245,7 @@ public class DungeongeneratorblockAllaggiornamentoDelTickProcedure {
 				}
 				struttura_piazzata = true;
 				break;
-			} else if (ControllasevuotoProcedure.execute(world, x, y, z, 5, 9, 5, 0, "normal") && numero_casuale_quale_tipo_di_stanza == 4) {
+			} else if (ControllasevuotoProcedure.execute(world, x, y, z, 5, 9, 5, 0, 0, "normal", "centrata") && numero_casuale_quale_tipo_di_stanza == 4) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {
 						BlockState _bs = world.getBlockState(pos);
@@ -317,7 +317,7 @@ public class DungeongeneratorblockAllaggiornamentoDelTickProcedure {
 				}
 				struttura_piazzata = true;
 				break;
-			} else if (ControllasevuotoProcedure.execute(world, x, y, z, 5, 7, 7, 0, "normal") && numero_casuale_quale_tipo_di_stanza == 5) {
+			} else if (ControllasevuotoProcedure.execute(world, x, y, z, 5, 7, 7, 0, 0, "normal", "centrata") && numero_casuale_quale_tipo_di_stanza == 5) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {
 						BlockState _bs = world.getBlockState(pos);
@@ -389,7 +389,7 @@ public class DungeongeneratorblockAllaggiornamentoDelTickProcedure {
 				}
 				struttura_piazzata = true;
 				break;
-			} else if (ControllasevuotoProcedure.execute(world, x, y, z, 12, 5, 9, 3, "non centrata") && numero_casuale_quale_tipo_di_stanza == 6) {
+			} else if (ControllasevuotoProcedure.execute(world, x, y, z, 12, 5, 9, 3, 0, "non centrata", "centrata") && numero_casuale_quale_tipo_di_stanza == 6) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {
 						BlockState _bs = world.getBlockState(pos);
@@ -461,7 +461,7 @@ public class DungeongeneratorblockAllaggiornamentoDelTickProcedure {
 				}
 				struttura_piazzata = true;
 				break;
-			} else if (ControllasevuotoProcedure.execute(world, x, y, z, 12, 5, 9, 8, "non centrata") && numero_casuale_quale_tipo_di_stanza == 7) {
+			} else if (ControllasevuotoProcedure.execute(world, x, y, z, 12, 5, 9, 8, 0, "non centrata", "centrata") && numero_casuale_quale_tipo_di_stanza == 7) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {
 						BlockState _bs = world.getBlockState(pos);
@@ -533,7 +533,7 @@ public class DungeongeneratorblockAllaggiornamentoDelTickProcedure {
 				}
 				struttura_piazzata = true;
 				break;
-			} else if (ControllasevuotoProcedure.execute(world, x, y, z, 16, 7, 7, 4, "non centrata") && numero_casuale_quale_tipo_di_stanza == 8) {
+			} else if (ControllasevuotoProcedure.execute(world, x, y, z, 16, 7, 7, 4, 0, "non centrata", "centrata") && numero_casuale_quale_tipo_di_stanza == 8) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {
 						BlockState _bs = world.getBlockState(pos);
@@ -605,7 +605,7 @@ public class DungeongeneratorblockAllaggiornamentoDelTickProcedure {
 				}
 				struttura_piazzata = true;
 				break;
-			} else if (ControllasevuotoProcedure.execute(world, x, y, z, 7, 9, 9, 0, "normal") && numero_casuale_quale_tipo_di_stanza == 9) {
+			} else if (ControllasevuotoProcedure.execute(world, x, y, z, 7, 9, 9, 0, 0, "normal", "centrata") && numero_casuale_quale_tipo_di_stanza == 9) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {
 						BlockState _bs = world.getBlockState(pos);
@@ -677,7 +677,7 @@ public class DungeongeneratorblockAllaggiornamentoDelTickProcedure {
 				}
 				struttura_piazzata = true;
 				break;
-			} else if (ControllasevuotoProcedure.execute(world, x, y, z, 1, 1, 1, 0, "normal") && numero_casuale_quale_tipo_di_stanza == 10) {
+			} else if (ControllasevuotoProcedure.execute(world, x, y, z, 1, 1, 1, 0, 0, "normal", "centrata") && numero_casuale_quale_tipo_di_stanza == 10) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {
 						BlockState _bs = world.getBlockState(pos);
