@@ -21,18 +21,6 @@ public class UtilityModTabs {
 				tabData.accept(UtilityModItems.NIGHTELMET_CHESTPLATE.get());
 				tabData.accept(UtilityModItems.NIGHTELMET_LEGGINGS.get());
 				tabData.accept(UtilityModItems.NIGHTELMET_BOOTS.get());
-				tabData.accept(UtilityModItems.FLATKEY.get());
-				tabData.accept(UtilityModItems.OVERWORDKEY.get());
-				tabData.accept(UtilityModItems.NETHERKEY.get());
-				tabData.accept(UtilityModItems.LIMBOKEY.get());
-				tabData.accept(UtilityModItems.POWER_ESSENCE.get());
-				tabData.accept(UtilityModItems.LIMBO_KEY_PART_1.get());
-				tabData.accept(UtilityModItems.LIMINALY_KEY.get());
-				tabData.accept(UtilityModItems.EMPTYKEY.get());
-				tabData.accept(UtilityModItems.OVERWORLDESSENCE.get());
-				tabData.accept(UtilityModItems.NEHTERESSENCE.get());
-				tabData.accept(UtilityModItems.ENDESSECE.get());
-				tabData.accept(UtilityModItems.FLATESSENCE.get());
 				tabData.accept(UtilityModItems.TACTICAL_TEMPLATE.get());
 				tabData.accept(UtilityModItems.CREATIVENIGHTHELMET_HELMET.get());
 				tabData.accept(UtilityModItems.TACTICALKNIFE.get());
@@ -44,6 +32,19 @@ public class UtilityModTabs {
 			}).build());
 	public static final RegistryObject<CreativeModeTab> UTILITYMAGIC = REGISTRY.register("utilitymagic",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.utility.utilitymagic")).icon(() -> new ItemStack(UtilityModItems.ENDKEY.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(UtilityModItems.FLATKEY.get());
+				tabData.accept(UtilityModItems.OVERWORDKEY.get());
+				tabData.accept(UtilityModItems.NETHERKEY.get());
 				tabData.accept(UtilityModItems.ENDKEY.get());
+				tabData.accept(UtilityModItems.LIMBOKEY.get());
+				tabData.accept(UtilityModItems.POWER_ESSENCE.get());
+				tabData.accept(UtilityModBlocks.ESSENCTIONDISTILIZER.get().asItem());
+				tabData.accept(UtilityModItems.LIMBO_KEY_PART_1.get());
+				tabData.accept(UtilityModItems.LIMINALY_KEY.get());
+				tabData.accept(UtilityModItems.EMPTYKEY.get());
+				tabData.accept(UtilityModItems.OVERWORLDESSENCE.get());
+				tabData.accept(UtilityModItems.NEHTERESSENCE.get());
+				tabData.accept(UtilityModItems.ENDESSECE.get());
+				tabData.accept(UtilityModItems.FLATESSENCE.get());
 			}).withTabsBefore(UTILITY.getId()).build());
 }

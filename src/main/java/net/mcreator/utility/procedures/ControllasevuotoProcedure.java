@@ -36,12 +36,12 @@ public class ControllasevuotoProcedure {
 			}
 			for (int index1 = 0; index1 < (int) altezza; index1++) {
 				if ((modalita_laterale).equals("centrata")) {
-					vertical = Math.ceil(larghezza / (-2));
-				} else if ((modalita_altezza).equals("non centrata")) {
-					vertical = quanto_non_centrata_larghezza;
+					lateral = Math.ceil(larghezza / (-2));
+				} else if ((modalita_laterale).equals("non centrata")) {
+					lateral = quanto_non_centrata_larghezza;
 				} else {
 					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("dimenticato di mettere la modalit\u00E0 altezza"), false);
+						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("dimenticato di mettere la modalit\u00E0 laterale"), false);
 				}
 				for (int index2 = 0; index2 < (int) larghezza; index2++) {
 					if ((new Object() {
