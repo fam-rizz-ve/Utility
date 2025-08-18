@@ -1740,6 +1740,42 @@
         "files": []
       },
       "path": "~/creative tab"
+    },
+    {
+      "name": "DungeonGeneratorPart2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dungeon_generator_part_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "numero_casuale_tipo_stanza",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/DungeonGeneratorPart2Procedure.java"
+        ]
+      },
+      "path": "~/dimension/liminal/dungeon generator"
     }
   ],
   "variable_elements": [

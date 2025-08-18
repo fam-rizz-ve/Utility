@@ -131,10 +131,6 @@ public class HowPlayerEnterInADimensionProcedure {
 				}
 				if (entity instanceof ServerPlayer _player)
 					_player.setGameMode(GameType.ADVENTURE);
-				if (entity instanceof Player _player) {
-					_player.getAbilities().invulnerable = true;
-					_player.onUpdateAbilities();
-				}
 				{
 					Entity _ent = entity;
 					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
@@ -204,12 +200,24 @@ public class HowPlayerEnterInADimensionProcedure {
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
+				if (entity instanceof Player _player) {
+					_player.getAbilities().mayBuild = true;
+					_player.onUpdateAbilities();
+				}
+				if (entity instanceof Player _player) {
+					_player.getAbilities().invulnerable = false;
+					_player.onUpdateAbilities();
+				}
 				CambiamodalitaProcedure.execute(entity);
 			} else if (((entity.getCapability(UtilityModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new UtilityModVariables.PlayerVariables())).last_key).equals("liminal key")) {
 				if (entity instanceof Player _player) {
 					ItemStack _setstack = new ItemStack(UtilityModItems.LIMINALY_KEY.get()).copy();
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				}
+				if (entity instanceof Player _player) {
+					_player.getAbilities().mayBuild = true;
+					_player.onUpdateAbilities();
 				}
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(MobEffects.SATURATION);
