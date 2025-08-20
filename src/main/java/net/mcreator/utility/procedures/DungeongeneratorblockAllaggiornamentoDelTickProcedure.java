@@ -28,7 +28,7 @@ public class DungeongeneratorblockAllaggiornamentoDelTickProcedure {
 		boolean struttura_piazzata = false;
 		struttura_piazzata = false;
 		for (int index0 = 0; index0 < 10; index0++) {
-			numero_casuale_quale_tipo_di_stanza = Mth.nextInt(RandomSource.create(), 15, 15);
+			numero_casuale_quale_tipo_di_stanza = Mth.nextInt(RandomSource.create(), 1, 17);
 			if (numero_casuale_quale_tipo_di_stanza == 1) {
 				if (ControllasevuotoProcedure.execute(world, x, y, z, 5, 5, 8, 0, 0, "normal", "centrata")) {
 					if ((new Object() {
