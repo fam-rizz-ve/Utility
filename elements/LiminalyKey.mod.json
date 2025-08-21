@@ -30,7 +30,9 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "░▒▓D̡͢͡O N͟͜͞’͘͝T̨ ̵̷O͠͡P̶͘͏Ę̀N̶ T̷̡H͝E͘͞ ͞͡D͘͜O͠͡O͜R̡▓▒░"
+      ]
     },
     "glowCondition": {
       "fixedValue": false
