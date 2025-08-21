@@ -18,7 +18,7 @@ public class DungeonGeneratorPart2Procedure {
 		boolean struttura_piazzata = false;
 		double numero_casuale_quale_tipo_di_stanza = 0;
 		numero_casuale_quale_tipo_di_stanza = numero_casuale_tipo_stanza;
-		if (numero_casuale_quale_tipo_di_stanza == 11) {
+		if (numero_casuale_quale_tipo_di_stanza < 835) {
 			if (ControllasevuotoProcedure.execute(world, x, y, z, 9, 15, 15, 0, 0, "normal", "centrata")) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {
@@ -91,7 +91,7 @@ public class DungeonGeneratorPart2Procedure {
 				}
 				struttura_piazzata = true;
 			}
-		} else if (numero_casuale_quale_tipo_di_stanza == 12) {
+		} else if (numero_casuale_quale_tipo_di_stanza < 845) {
 			if (ControllasevuotoProcedure.execute(world, x, y, z, 5, 13, 11, 0, 0, "normal", "centrata")) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {
@@ -164,7 +164,7 @@ public class DungeonGeneratorPart2Procedure {
 				}
 				struttura_piazzata = true;
 			}
-		} else if (numero_casuale_quale_tipo_di_stanza == 13) {
+		} else if (numero_casuale_quale_tipo_di_stanza < 905) {
 			if (ControllasevuotoProcedure.execute(world, x, y, z, 7, 15, 14, 0, 0, "normal", "centrata")) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {
@@ -237,7 +237,7 @@ public class DungeonGeneratorPart2Procedure {
 				}
 				struttura_piazzata = true;
 			}
-		} else if (numero_casuale_quale_tipo_di_stanza == 14) {
+		} else if (numero_casuale_quale_tipo_di_stanza < 965) {
 			if (ControllasevuotoProcedure.execute(world, x, y, z, 5, 13, 13, 0, 0, "normal", "centrata")) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {
@@ -310,7 +310,7 @@ public class DungeonGeneratorPart2Procedure {
 				}
 				struttura_piazzata = true;
 			}
-		} else if (numero_casuale_quale_tipo_di_stanza == 15) {
+		} else if (numero_casuale_quale_tipo_di_stanza < 980) {
 			if (ControllasevuotoProcedure.execute(world, x, y, z, 6, 11, 10, 0, 0, "normal", "centrata")) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {
@@ -384,7 +384,7 @@ public class DungeonGeneratorPart2Procedure {
 				struttura_piazzata = true;
 			}
 		} else {
-			if (numero_casuale_quale_tipo_di_stanza == 16) {
+			if (numero_casuale_quale_tipo_di_stanza < 990) {
 				if (ControllasevuotoProcedure.execute(world, x, y, z, 5, 13, 24, 0, 0, "normal", "centrata")) {
 					if ((new Object() {
 						public Direction getDirection(BlockPos pos) {
@@ -457,7 +457,7 @@ public class DungeonGeneratorPart2Procedure {
 					}
 					struttura_piazzata = true;
 				}
-			} else if (numero_casuale_quale_tipo_di_stanza == 17) {
+			} else if (numero_casuale_quale_tipo_di_stanza <= 1000) {
 				if (ControllasevuotoProcedure.execute(world, x, y, z, 6, 9, 10, 0, 0, "normal", "centrata")) {
 					if ((new Object() {
 						public Direction getDirection(BlockPos pos) {
