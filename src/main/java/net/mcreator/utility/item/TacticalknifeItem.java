@@ -19,7 +19,6 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.utility.procedures.TacticalknifeQuandoUnentitaUsaLoggettoProcedure;
-import net.mcreator.utility.procedures.TacticalknifeQuandoLoggettoADistanzaSparaUnProiettileProcedure;
 import net.mcreator.utility.entity.TacticalknifeprojectileEntity;
 
 import java.util.List;
@@ -82,6 +81,7 @@ public class TacticalknifeItem extends Item {
 			ar = InteractionResultHolder.success(entity.getItemInHand(hand));
 			entity.startUsingItem(hand);
 		}
+		TacticalknifeQuandoUnentitaUsaLoggettoProcedure.execute(entity);
 		return ar;
 	}
 
@@ -89,13 +89,6 @@ public class TacticalknifeItem extends Item {
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		itemstack.hurtAndBreak(1, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
 		return true;
-	}
-
-	@Override
-	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
-		boolean retval = super.onEntitySwing(itemstack, entity);
-		TacticalknifeQuandoUnentitaUsaLoggettoProcedure.execute(entity);
-		return retval;
 	}
 
 	@Override
@@ -121,7 +114,6 @@ public class TacticalknifeItem extends Item {
 							player.getInventory().removeItem(stack);
 					}
 				}
-				TacticalknifeQuandoLoggettoADistanzaSparaUnProiettileProcedure.execute(entity);
 			}
 		}
 	}

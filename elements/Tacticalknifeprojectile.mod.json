@@ -17,6 +17,9 @@
     "entityModel": "Default",
     "customModelTexture": "chatgpt_image_6_ago_2025_15_57_35_custom.png",
     "modelWidth": 0.5,
-    "modelHeight": 0.5
+    "modelHeight": 0.5,
+    "onHitsBlock": {
+      "name": "TacticalknifeprojectileQuandoIlProiettileColpisceIlBlocco"
+    }
   }
 }

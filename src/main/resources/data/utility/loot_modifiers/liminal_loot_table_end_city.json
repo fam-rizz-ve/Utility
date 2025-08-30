@@ -1,0 +1,10 @@
+{
+  "type": "utility:utility_loot_modifier",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/end_city_treasure"
+    }
+  ],
+  "lootTable": "utility:chests/liminal_key"
+}

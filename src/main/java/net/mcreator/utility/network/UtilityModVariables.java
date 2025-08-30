@@ -90,6 +90,8 @@ public class UtilityModVariables {
 			if (!event.isWasDeath()) {
 				clone.modalita_explosive_chessplate = original.modalita_explosive_chessplate;
 				clone.ultima_gamemode = original.ultima_gamemode;
+				clone.medikit_cooldown = original.medikit_cooldown;
+				clone.bende_cooldown = original.bende_cooldown;
 			}
 		}
 
@@ -278,6 +280,8 @@ public class UtilityModVariables {
 		public String chiave_appena_usata = "\"\"";
 		public String modalita_explosive_chessplate = "esplodi alla morte";
 		public String ultima_gamemode = "\"\"";
+		public boolean medikit_cooldown = false;
+		public boolean bende_cooldown = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -303,6 +307,8 @@ public class UtilityModVariables {
 			nbt.putString("chiave_appena_usata", chiave_appena_usata);
 			nbt.putString("modalita_explosive_chessplate", modalita_explosive_chessplate);
 			nbt.putString("ultima_gamemode", ultima_gamemode);
+			nbt.putBoolean("medikit_cooldown", medikit_cooldown);
+			nbt.putBoolean("bende_cooldown", bende_cooldown);
 			return nbt;
 		}
 
@@ -325,6 +331,8 @@ public class UtilityModVariables {
 			chiave_appena_usata = nbt.getString("chiave_appena_usata");
 			modalita_explosive_chessplate = nbt.getString("modalita_explosive_chessplate");
 			ultima_gamemode = nbt.getString("ultima_gamemode");
+			medikit_cooldown = nbt.getBoolean("medikit_cooldown");
+			bende_cooldown = nbt.getBoolean("bende_cooldown");
 		}
 	}
 
@@ -366,6 +374,8 @@ public class UtilityModVariables {
 					variables.chiave_appena_usata = message.data.chiave_appena_usata;
 					variables.modalita_explosive_chessplate = message.data.modalita_explosive_chessplate;
 					variables.ultima_gamemode = message.data.ultima_gamemode;
+					variables.medikit_cooldown = message.data.medikit_cooldown;
+					variables.bende_cooldown = message.data.bende_cooldown;
 				}
 			});
 			context.setPacketHandled(true);

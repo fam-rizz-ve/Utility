@@ -39,7 +39,7 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onEntitySwing": {
+    "onRightClickedInAir": {
       "name": "TacticalknifeQuandoUnentitaUsaLoggetto"
     },
     "enableRanged": true,
@@ -49,9 +49,6 @@
       "value": "CUSTOM:Tacticalknifeprojectile"
     },
     "projectileDisableAmmoCheck": true,
-    "onRangedItemUsed": {
-      "name": "TacticalknifeQuandoLoggettoADistanzaSparaUnProiettile"
-    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

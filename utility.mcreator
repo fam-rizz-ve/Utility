@@ -1193,8 +1193,8 @@
       "registry_name": "tacticalknife",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/tacticalknife.json",
-          "src/main/java/net/mcreator/utility/item/TacticalknifeItem.java"
+          "src/main/java/net/mcreator/utility/item/TacticalknifeItem.java",
+          "src/main/resources/assets/utility/models/item/tacticalknife.json"
         ]
       },
       "path": "~/quality of life/Tactical_knife"
@@ -1301,8 +1301,8 @@
       "registry_name": "bandages",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/BandagesItem.java",
-          "src/main/resources/assets/utility/models/item/bandages.json"
+          "src/main/resources/assets/utility/models/item/bandages.json",
+          "src/main/java/net/mcreator/utility/item/BandagesItem.java"
         ]
       },
       "path": "~/quality of life/Med_thing"
@@ -1351,6 +1351,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1374,6 +1378,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1488,25 +1496,6 @@
         ]
       },
       "path": "~/quality of life/armor/explosive_suit"
-    },
-    {
-      "name": "TacticalknifeQuandoLoggettoADistanzaSparaUnProiettile",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tacticalknife_quando_loggetto_a_distanza_spara_un_proiettile",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/utility/procedures/TacticalknifeQuandoLoggettoADistanzaSparaUnProiettileProcedure.java"
-        ]
-      },
-      "path": "~/quality of life/Tactical_knife"
     },
     {
       "name": "TacticalknifeprojectileQuandoIlProiettileColpisceIlBlocco",
@@ -1776,6 +1765,84 @@
         ]
       },
       "path": "~/dimension/liminal/dungeon generator"
+    },
+    {
+      "name": "Liminalkeyloottable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liminalkeyloottable",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/loot_tables/chests/liminal_key.json"
+        ]
+      },
+      "path": "~/key/loot modificher"
+    },
+    {
+      "name": "LiminalLootModificherRelitti1",
+      "type": "lootmodifier",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liminal_loot_modificher_relitti_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/loot_modifiers/liminal_loot_modificher_relitti_1.json"
+        ]
+      },
+      "path": "~/key/loot modificher"
+    },
+    {
+      "name": "LiminalLootModificherPiramide",
+      "type": "lootmodifier",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liminal_loot_modificher_piramide",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/loot_modifiers/liminal_loot_modificher_piramide.json"
+        ]
+      },
+      "path": "~/key/loot modificher"
+    },
+    {
+      "name": "LiminalLootModificherTemplioGiungla",
+      "type": "lootmodifier",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liminal_loot_modificher_templio_giungla",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/loot_modifiers/liminal_loot_modificher_templio_giungla.json"
+        ]
+      },
+      "path": "~/key/loot modificher"
+    },
+    {
+      "name": "LiminalLootTableEndCity",
+      "type": "lootmodifier",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liminal_loot_table_end_city",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/loot_modifiers/liminal_loot_table_end_city.json"
+        ]
+      },
+      "path": "~/key/loot modificher"
+    },
+    {
+      "name": "LiminalLootTableNetherForthess",
+      "type": "lootmodifier",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liminal_loot_table_nether_forthess",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/loot_modifiers/liminal_loot_table_nether_forthess.json"
+        ]
+      },
+      "path": "~/key/loot modificher"
     }
   ],
   "variable_elements": [
@@ -1891,6 +1958,18 @@
       "name": "liminal_generato",
       "type": "logic",
       "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "medikit_cooldown",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "bende_cooldown",
+      "type": "logic",
+      "scope": "player_lifetime",
       "value": "false"
     }
   ],
@@ -2085,6 +2164,8 @@
       "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
       "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModEnchantments.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModLootModifier.java",
+      "src/main/resources/data/forge/loot_modifiers/global_loot_modifiers.json",
       "src/main/java/net/mcreator/utility/init/UtilityModBlocks.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlockEntities.java",
       "src/main/java/net/mcreator/utility/init/UtilityModItems.java",
@@ -2148,6 +2229,10 @@
           },
           {
             "name": "item",
+            "children": []
+          },
+          {
+            "name": "loot modificher",
             "children": []
           }
         ]
@@ -2226,7 +2311,7 @@
   "workspaceSettings": {
     "modid": "utility",
     "modName": "utility",
-    "version": "0.0.6.1",
+    "version": "0.0.7",
     "author": "Caos group, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "GNU General Public License version 3 (GPLv3)",
