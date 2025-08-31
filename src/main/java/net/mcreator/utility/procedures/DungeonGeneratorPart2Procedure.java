@@ -237,7 +237,7 @@ public class DungeonGeneratorPart2Procedure {
 				}
 				struttura_piazzata = true;
 			}
-		} else if (numero_casuale_quale_tipo_di_stanza < 965) {
+		} else if (numero_casuale_quale_tipo_di_stanza < 950) {
 			if (ControllasevuotoProcedure.execute(world, x, y, z, 5, 13, 13, 0, 0, "normal", "centrata")) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {

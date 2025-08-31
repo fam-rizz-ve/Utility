@@ -18,6 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.utility.init.UtilityModTabs;
+import net.mcreator.utility.init.UtilityModSounds;
 import net.mcreator.utility.init.UtilityModMobEffects;
 import net.mcreator.utility.init.UtilityModMenus;
 import net.mcreator.utility.init.UtilityModItems;
@@ -45,7 +46,7 @@ public class UtilityMod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = context.getModEventBus();
-
+		UtilityModSounds.REGISTRY.register(bus);
 		UtilityModBlocks.REGISTRY.register(bus);
 		UtilityModBlockEntities.REGISTRY.register(bus);
 		UtilityModItems.REGISTRY.register(bus);

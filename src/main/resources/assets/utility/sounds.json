@@ -1,0 +1,11 @@
+{
+  "bombo_timer": {
+    "subtitle": "subtitles.bombo_timer",
+    "sounds": [
+      {
+        "name": "utility:bunplitoemhu",
+        "stream": false
+      }
+    ]
+  }
+}

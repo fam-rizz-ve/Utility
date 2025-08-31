@@ -32,6 +32,7 @@ import net.mcreator.utility.item.EndkeyItem;
 import net.mcreator.utility.item.EndesseceItem;
 import net.mcreator.utility.item.EmptykeyItem;
 import net.mcreator.utility.item.CreativenighthelmetItem;
+import net.mcreator.utility.item.BlastCellItem;
 import net.mcreator.utility.item.BandagesItem;
 import net.mcreator.utility.UtilityMod;
 
@@ -65,6 +66,7 @@ public class UtilityModItems {
 	public static final RegistryObject<Item> BANDAGES = REGISTRY.register("bandages", () -> new BandagesItem());
 	public static final RegistryObject<Item> EXPLOSIVESUIT_CHESTPLATE = REGISTRY.register("explosivesuit_chestplate", () -> new ExplosivesuitItem.Chestplate());
 	public static final RegistryObject<Item> FADED_CONCRETE = block(UtilityModBlocks.FADED_CONCRETE);
+	public static final RegistryObject<Item> BLAST_CELL = REGISTRY.register("blast_cell", () -> new BlastCellItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

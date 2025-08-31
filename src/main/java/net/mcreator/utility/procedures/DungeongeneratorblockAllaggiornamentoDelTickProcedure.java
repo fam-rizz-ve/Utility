@@ -401,7 +401,7 @@ public class DungeongeneratorblockAllaggiornamentoDelTickProcedure {
 				}
 			} else {
 				if (numero_casuale_quale_tipo_di_stanza < 720) {
-					if (ControllasevuotoProcedure.execute(world, x, y, z, 12, 5, 9, 3, 0, "non centrata", "centrata") && y < 23) {
+					if (ControllasevuotoProcedure.execute(world, x, y, z, 13, 5, 9, 3, 0, "non centrata", "centrata") && y < 23) {
 						if ((new Object() {
 							public Direction getDirection(BlockPos pos) {
 								BlockState _bs = world.getBlockState(pos);
@@ -416,9 +416,9 @@ public class DungeongeneratorblockAllaggiornamentoDelTickProcedure {
 							}
 						}.getDirection(BlockPos.containing(x, y, z))) == Direction.NORTH) {
 							if (world instanceof ServerLevel _serverworld) {
-								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("utility", "liminal_scala"));
+								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("utility", "liminal_scala_1"));
 								if (template != null) {
-									template.placeInWorld(_serverworld, BlockPos.containing(x - 2, y - 3, z - 8), BlockPos.containing(x - 2, y - 3, z - 8),
+									template.placeInWorld(_serverworld, BlockPos.containing(x - 2, y - 4, z - 8), BlockPos.containing(x - 2, y - 4, z - 8),
 											new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 								}
 							}
@@ -436,9 +436,9 @@ public class DungeongeneratorblockAllaggiornamentoDelTickProcedure {
 							}
 						}.getDirection(BlockPos.containing(x, y, z))) == Direction.SOUTH) {
 							if (world instanceof ServerLevel _serverworld) {
-								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("utility", "liminal_scala"));
+								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("utility", "liminal_scala_1"));
 								if (template != null) {
-									template.placeInWorld(_serverworld, BlockPos.containing(x + 2, y - 3, z + 8), BlockPos.containing(x + 2, y - 3, z + 8),
+									template.placeInWorld(_serverworld, BlockPos.containing(x + 2, y - 4, z + 8), BlockPos.containing(x + 2, y - 4, z + 8),
 											new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_180).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 								}
 							}
@@ -456,17 +456,17 @@ public class DungeongeneratorblockAllaggiornamentoDelTickProcedure {
 							}
 						}.getDirection(BlockPos.containing(x, y, z))) == Direction.EAST) {
 							if (world instanceof ServerLevel _serverworld) {
-								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("utility", "liminal_scala"));
+								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("utility", "liminal_scala_1"));
 								if (template != null) {
-									template.placeInWorld(_serverworld, BlockPos.containing(x + 8, y - 3, z - 2), BlockPos.containing(x + 8, y - 3, z - 2),
+									template.placeInWorld(_serverworld, BlockPos.containing(x + 8, y - 4, z - 2), BlockPos.containing(x + 8, y - 4, z - 2),
 											new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 								}
 							}
 						} else {
 							if (world instanceof ServerLevel _serverworld) {
-								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("utility", "liminal_scala"));
+								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("utility", "liminal_scala_1"));
 								if (template != null) {
-									template.placeInWorld(_serverworld, BlockPos.containing(x - 8, y - 3, z + 2), BlockPos.containing(x - 8, y - 3, z + 2),
+									template.placeInWorld(_serverworld, BlockPos.containing(x - 8, y - 4, z + 2), BlockPos.containing(x - 8, y - 4, z + 2),
 											new StructurePlaceSettings().setRotation(Rotation.COUNTERCLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 								}
 							}
@@ -490,9 +490,9 @@ public class DungeongeneratorblockAllaggiornamentoDelTickProcedure {
 							}
 						}.getDirection(BlockPos.containing(x, y, z))) == Direction.NORTH) {
 							if (world instanceof ServerLevel _serverworld) {
-								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("utility", "liminal_scala"));
+								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("utility", "liminal_scala_1"));
 								if (template != null) {
-									template.placeInWorld(_serverworld, BlockPos.containing(x + 2, y - 8, z - 0), BlockPos.containing(x + 2, y - 8, z - 0),
+									template.placeInWorld(_serverworld, BlockPos.containing(x + 2, y - 9, z - 0), BlockPos.containing(x + 2, y - 9, z - 0),
 											new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_180).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 								}
 							}
@@ -510,9 +510,9 @@ public class DungeongeneratorblockAllaggiornamentoDelTickProcedure {
 							}
 						}.getDirection(BlockPos.containing(x, y, z))) == Direction.SOUTH) {
 							if (world instanceof ServerLevel _serverworld) {
-								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("utility", "liminal_scala"));
+								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("utility", "liminal_scala_1"));
 								if (template != null) {
-									template.placeInWorld(_serverworld, BlockPos.containing(x - 2, y - 8, z + 0), BlockPos.containing(x - 2, y - 8, z + 0),
+									template.placeInWorld(_serverworld, BlockPos.containing(x - 2, y - 9, z + 0), BlockPos.containing(x - 2, y - 9, z + 0),
 											new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 								}
 							}
@@ -530,17 +530,17 @@ public class DungeongeneratorblockAllaggiornamentoDelTickProcedure {
 							}
 						}.getDirection(BlockPos.containing(x, y, z))) == Direction.EAST) {
 							if (world instanceof ServerLevel _serverworld) {
-								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("utility", "liminal_scala"));
+								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("utility", "liminal_scala_1"));
 								if (template != null) {
-									template.placeInWorld(_serverworld, BlockPos.containing(x + 0, y - 8, z + 2), BlockPos.containing(x + 0, y - 8, z + 2),
+									template.placeInWorld(_serverworld, BlockPos.containing(x + 0, y - 9, z + 2), BlockPos.containing(x + 0, y - 9, z + 2),
 											new StructurePlaceSettings().setRotation(Rotation.COUNTERCLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 								}
 							}
 						} else {
 							if (world instanceof ServerLevel _serverworld) {
-								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("utility", "liminal_scala"));
+								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("utility", "liminal_scala_1"));
 								if (template != null) {
-									template.placeInWorld(_serverworld, BlockPos.containing(x + 0, y - 8, z - 2), BlockPos.containing(x + 0, y - 8, z - 2),
+									template.placeInWorld(_serverworld, BlockPos.containing(x + 0, y - 9, z - 2), BlockPos.containing(x + 0, y - 9, z - 2),
 											new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 								}
 							}

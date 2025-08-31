@@ -110,5 +110,7 @@
   "advancements.medi_kit_advancment_2.title": "The Medikit",
   "block.utility.faded_concrete": "Faded Concrete",
   "item_group.utility.utility": "Utility: confort",
-  "item_group.utility.utilitymagic": "Utility: magic"
+  "item_group.utility.utilitymagic": "Utility: magic",
+  "item.utility.blast_cell": "Blast Cell",
+  "subtitles.bombo_timer": "bomb timer"
 }
