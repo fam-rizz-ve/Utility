@@ -1852,8 +1852,8 @@
       "registry_name": "blast_cell",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/blast_cell.json",
-          "src/main/java/net/mcreator/utility/item/BlastCellItem.java"
+          "src/main/java/net/mcreator/utility/item/BlastCellItem.java",
+          "src/main/resources/assets/utility/models/item/blast_cell.json"
         ]
       },
       "path": "~/quality of life/armor/explosive_suit"
@@ -2203,27 +2203,27 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
-      "src/main/resources/META-INF/mods.toml",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/utility/UtilityMod.java",
-      "src/main/resources/assets/utility/sounds.json",
-      "src/main/java/net/mcreator/utility/init/UtilityModTabs.java",
-      "src/main/resources/mixins.utility.json",
       "src/main/java/net/mcreator/utility/init/UtilityModSounds.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModTabs.java",
+      "src/main/java/net/mcreator/utility/UtilityMod.java",
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/resources/assets/utility/sounds.json",
+      "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
+      "src/main/resources/mixins.utility.json",
       "src/main/java/net/mcreator/utility/init/UtilityModKeyMappings.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMobEffects.java",
       "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",
-      "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
+      "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModEnchantments.java",
       "src/main/java/net/mcreator/utility/init/UtilityModLootModifier.java",
       "src/main/resources/data/forge/loot_modifiers/global_loot_modifiers.json",
       "src/main/java/net/mcreator/utility/init/UtilityModBlocks.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlockEntities.java",
       "src/main/java/net/mcreator/utility/init/UtilityModItems.java",
-      "src/main/java/net/mcreator/utility/init/UtilityModEntities.java",
-      "src/main/java/net/mcreator/utility/init/UtilityModEntityRenderers.java"
+      "src/main/java/net/mcreator/utility/init/UtilityModEntityRenderers.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModEntities.java"
     ]
   },
   "foldersRoot": {

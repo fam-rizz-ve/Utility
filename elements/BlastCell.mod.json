@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "minecraft:barrier",
+    "texture": "fazzoletto_di_dinamite_pixelato",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
