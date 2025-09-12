@@ -15,4 +15,5 @@ import net.mcreator.utility.UtilityMod;
 public class UtilityModSounds {
 	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, UtilityMod.MODID);
 	public static final RegistryObject<SoundEvent> BOMBO_TIMER = REGISTRY.register("bombo_timer", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("utility", "bombo_timer")));
+	public static final RegistryObject<SoundEvent> MAGICAL_KEY = REGISTRY.register("magical_key", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("utility", "magical_key")));
 }

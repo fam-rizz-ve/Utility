@@ -4,12 +4,12 @@
       "name": "Nightelmet",
       "type": "armor",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "nightelmet",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/nightelmet_leggings.json",
           "src/main/java/net/mcreator/utility/item/NightelmetItem.java",
+          "src/main/resources/assets/utility/models/item/nightelmet_leggings.json",
           "src/main/resources/assets/utility/models/item/nightelmet_boots.json",
           "src/main/resources/assets/utility/models/item/nightelmet_helmet.json",
           "src/main/resources/assets/utility/models/item/nightelmet_chestplate.json"
@@ -59,8 +59,8 @@
       "registry_name": "overwordkey",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/overwordkey.json",
-          "src/main/java/net/mcreator/utility/item/OverwordkeyItem.java"
+          "src/main/java/net/mcreator/utility/item/OverwordkeyItem.java",
+          "src/main/resources/assets/utility/models/item/overwordkey.json"
         ]
       },
       "path": "~/key/item"
@@ -1783,7 +1783,7 @@
       "name": "LiminalLootModificherRelitti1",
       "type": "lootmodifier",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "liminal_loot_modificher_relitti_1",
       "metadata": {
         "files": [
@@ -2021,6 +2021,14 @@
       ],
       "category": "neutral",
       "subtitle": "bomb timer"
+    },
+    {
+      "name": "magical_key",
+      "files": [
+        "transform-103819"
+      ],
+      "category": "neutral",
+      "subtitle": "use_magical_key"
     }
   ],
   "tag_elements": {
@@ -2198,7 +2206,8 @@
       "item_group.utility.utility": "Utility: confort",
       "item_group.utility.utilitymagic": "Utility: magic",
       "item.utility.blast_cell": "Blast Cell",
-      "subtitles.bombo_timer": "bomb timer"
+      "subtitles.bombo_timer": "bomb timer",
+      "subtitles.magical_key": "use_magical_key"
     }
   },
   "metadata": {

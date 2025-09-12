@@ -7,5 +7,14 @@
         "stream": false
       }
     ]
+  },
+  "magical_key": {
+    "subtitle": "subtitles.magical_key",
+    "sounds": [
+      {
+        "name": "utility:transform-103819",
+        "stream": false
+      }
+    ]
   }
 }

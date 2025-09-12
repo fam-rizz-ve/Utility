@@ -112,5 +112,6 @@
   "item_group.utility.utility": "Utility: confort",
   "item_group.utility.utilitymagic": "Utility: magic",
   "item.utility.blast_cell": "Blast Cell",
-  "subtitles.bombo_timer": "bomb timer"
+  "subtitles.bombo_timer": "bomb timer",
+  "subtitles.magical_key": "use_magical_key"
 }

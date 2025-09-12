@@ -76,7 +76,7 @@ public abstract class NightelmetItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "utility:textures/models/armor/explosive_suit_layer_1.png";
+			return "utility:textures/models/armor/tattical_suit_layer_1.png";
 		}
 	}
 
@@ -93,7 +93,7 @@ public abstract class NightelmetItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "utility:textures/models/armor/explosive_suit_layer_1.png";
+			return "utility:textures/models/armor/tattical_suit_layer_1.png";
 		}
 	}
 
@@ -110,7 +110,7 @@ public abstract class NightelmetItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "utility:textures/models/armor/explosive_suit_layer_2.png";
+			return "utility:textures/models/armor/tattical_suit_layer_2.png";
 		}
 	}
 
@@ -127,7 +127,7 @@ public abstract class NightelmetItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "utility:textures/models/armor/explosive_suit_layer_1.png";
+			return "utility:textures/models/armor/tattical_suit_layer_1.png";
 		}
 	}
 }
