@@ -16,5 +16,14 @@
         "stream": false
       }
     ]
+  },
+  "night_vision": {
+    "subtitle": "subtitles.night_vision",
+    "sounds": [
+      {
+        "name": "utility:il-mio-video",
+        "stream": false
+      }
+    ]
   }
 }

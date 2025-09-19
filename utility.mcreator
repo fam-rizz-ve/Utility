@@ -233,6 +233,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1852,8 +1868,8 @@
       "registry_name": "blast_cell",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/BlastCellItem.java",
-          "src/main/resources/assets/utility/models/item/blast_cell.json"
+          "src/main/resources/assets/utility/models/item/blast_cell.json",
+          "src/main/java/net/mcreator/utility/item/BlastCellItem.java"
         ]
       },
       "path": "~/quality of life/armor/explosive_suit"
@@ -2029,6 +2045,14 @@
       ],
       "category": "neutral",
       "subtitle": "use_magical_key"
+    },
+    {
+      "name": "night_vision",
+      "files": [
+        "il-mio-video"
+      ],
+      "category": "neutral",
+      "subtitle": "activate_night_vision_helmet"
     }
   ],
   "tag_elements": {
@@ -2207,7 +2231,8 @@
       "item_group.utility.utilitymagic": "Utility: magic",
       "item.utility.blast_cell": "Blast Cell",
       "subtitles.bombo_timer": "bomb timer",
-      "subtitles.magical_key": "use_magical_key"
+      "subtitles.magical_key": "use_magical_key",
+      "subtitles.night_vision": "activate_night_vision_helmet"
     }
   },
   "metadata": {

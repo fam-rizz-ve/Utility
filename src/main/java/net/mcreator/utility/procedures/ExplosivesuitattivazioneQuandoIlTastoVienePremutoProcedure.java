@@ -29,7 +29,7 @@ public class ExplosivesuitattivazioneQuandoIlTastoVienePremutoProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(ResourceLocation.parse("utility:bombo_timer")), SoundSource.NEUTRAL, 1, 1, false);
 				}
 			}
-			UtilityMod.queueServerWork(40, () -> {
+			UtilityMod.queueServerWork(30, () -> {
 				if (world instanceof Level _level && !_level.isClientSide())
 					_level.explode(null, x, y, z, 10, Level.ExplosionInteraction.TNT);
 			});

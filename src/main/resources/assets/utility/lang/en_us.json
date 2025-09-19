@@ -113,5 +113,6 @@
   "item_group.utility.utilitymagic": "Utility: magic",
   "item.utility.blast_cell": "Blast Cell",
   "subtitles.bombo_timer": "bomb timer",
-  "subtitles.magical_key": "use_magical_key"
+  "subtitles.magical_key": "use_magical_key",
+  "subtitles.night_vision": "activate_night_vision_helmet"
 }

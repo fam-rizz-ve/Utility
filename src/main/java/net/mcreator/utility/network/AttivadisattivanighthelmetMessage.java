@@ -51,7 +51,7 @@ public class AttivadisattivanighthelmetMessage {
 			return;
 		if (type == 0) {
 
-			AttivadisattivanighthelmetQuandoIlTastoVienePremutoProcedure.execute(entity);
+			AttivadisattivanighthelmetQuandoIlTastoVienePremutoProcedure.execute(world, x, y, z, entity);
 		}
 	}
 
