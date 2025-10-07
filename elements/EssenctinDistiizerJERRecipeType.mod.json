@@ -1,0 +1,82 @@
+{
+  "_fv": 79,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "essenctiondistilizer_gui.png",
+    "width": 300,
+    "height": 130,
+    "icon": {
+      "value": "CUSTOM:Essenctiondistilizer"
+    },
+    "craftingtables": [
+      {
+        "value": "CUSTOM:Essenctiondistilizer"
+      }
+    ],
+    "enableCraftingtable": true,
+    "title": "Essenction distilizer",
+    "clickableArea": true,
+    "caX": 0,
+    "caY": 0,
+    "caWidth": 0,
+    "caHeight": 0,
+    "slotList": [
+      {
+        "type": "ITEM_INPUT",
+        "name": "slot0",
+        "x": 4,
+        "y": 4,
+        "optional": false
+      },
+      {
+        "type": "ITEM_INPUT",
+        "name": "slot1",
+        "x": 6,
+        "y": 6,
+        "optional": false
+      },
+      {
+        "type": "ITEM_INPUT",
+        "name": "slot2",
+        "x": 0,
+        "y": 0,
+        "optional": false
+      },
+      {
+        "type": "ITEM_INPUT",
+        "name": "slot3",
+        "x": 0,
+        "y": 0,
+        "optional": false
+      },
+      {
+        "type": "ITEM_INPUT",
+        "name": "slot4",
+        "x": 0,
+        "y": 0,
+        "optional": false
+      },
+      {
+        "type": "ITEM_INPUT",
+        "name": "slot5",
+        "x": 0,
+        "y": 0,
+        "optional": false
+      },
+      {
+        "type": "ITEM_INPUT",
+        "name": "slot6",
+        "x": 0,
+        "y": 0,
+        "optional": false
+      },
+      {
+        "type": "OUTPUT",
+        "name": "8",
+        "x": 0,
+        "y": 0,
+        "optional": true
+      }
+    ]
+  }
+}

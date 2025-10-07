@@ -73,7 +73,7 @@ public abstract class CreativenighthelmetItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "utility:textures/models/armor/creative_night_helmet_layer_1.png";
+			return "utility:textures/models/armor/a_creative_night_helmet_layer_1.png";
 		}
 	}
 }

@@ -139,7 +139,7 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 177,
-          "y": 70,
+          "y": 71,
           "locked": false
         }
       },
@@ -148,7 +148,7 @@
         "data": {
           "image": "screenshot_2025-06-14_120956.png",
           "use1Xscale": false,
-          "x": 235,
+          "x": 237,
           "y": 72,
           "locked": false
         }

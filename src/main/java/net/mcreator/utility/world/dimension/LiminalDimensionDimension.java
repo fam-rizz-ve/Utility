@@ -1,4 +1,3 @@
-
 package net.mcreator.utility.world.dimension;
 
 import net.minecraftforge.fml.common.Mod;
@@ -29,7 +28,7 @@ public class LiminalDimensionDimension {
 					return false;
 				}
 			};
-			event.register(new ResourceLocation("utility:liminal_dimension"), customEffect);
+			event.register(ResourceLocation.parse("utility:liminal_dimension"), customEffect);
 		}
 	}
 }

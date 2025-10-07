@@ -152,7 +152,7 @@ public class EssenctiondistilizerGUIMenu extends AbstractContainerMenu implement
 				return stack.is(ItemTags.create(ResourceLocation.parse("utility:slot_5_essenction_distilizer")));
 			}
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 52, 34) {
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 52, 35) {
 			private final int slot = 6;
 			private int x = EssenctiondistilizerGUIMenu.this.x;
 			private int y = EssenctiondistilizerGUIMenu.this.y;

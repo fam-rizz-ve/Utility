@@ -1,0 +1,76 @@
+{
+  "_fv": 79,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "essenctin_distiizer_jer_recipe_type",
+    "output": {
+      "value": "CUSTOM:Endkey"
+    },
+    "outputAmount": 1,
+    "inputs": [
+      {
+        "type": "ITEM_INPUT",
+        "name": "slot0",
+        "itemInput": {
+          "value": "Items.ENDER_PEARL"
+        },
+        "itemAmount": 1,
+        "fluidAmount": 1
+      },
+      {
+        "type": "ITEM_INPUT",
+        "name": "slot1",
+        "itemInput": {
+          "value": "Items.CHORUS_FRUIT"
+        },
+        "itemAmount": 1,
+        "fluidAmount": 1
+      },
+      {
+        "type": "ITEM_INPUT",
+        "name": "slot2",
+        "itemInput": {
+          "value": "Blocks.SHULKER_BOX"
+        },
+        "itemAmount": 1,
+        "fluidAmount": 1
+      },
+      {
+        "type": "ITEM_INPUT",
+        "name": "slot3",
+        "itemInput": {
+          "value": "Items.DRAGON_BREATH"
+        },
+        "itemAmount": 1,
+        "fluidAmount": 1
+      },
+      {
+        "type": "ITEM_INPUT",
+        "name": "slot4",
+        "itemInput": {
+          "value": "Blocks.END_STONE"
+        },
+        "itemAmount": 1,
+        "fluidAmount": 1
+      },
+      {
+        "type": "ITEM_INPUT",
+        "name": "slot5",
+        "itemInput": {
+          "value": "Items.END_CRYSTAL"
+        },
+        "itemAmount": 1,
+        "fluidAmount": 1
+      },
+      {
+        "type": "ITEM_INPUT",
+        "name": "slot6",
+        "itemInput": {
+          "value": "CUSTOM:PowerEssence"
+        },
+        "itemAmount": 1,
+        "fluidAmount": 1
+      }
+    ]
+  }
+}

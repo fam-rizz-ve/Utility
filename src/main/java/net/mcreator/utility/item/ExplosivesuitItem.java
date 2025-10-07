@@ -62,7 +62,7 @@ public abstract class ExplosivesuitItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "utility:textures/models/armor/tattical_suit_layer_1.png";
+			return "utility:textures/models/armor/an_explosive_suit_layer_1.png";
 		}
 	}
 }
