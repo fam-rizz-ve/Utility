@@ -115,5 +115,7 @@
   "subtitles.bombo_timer": "bomb timer",
   "subtitles.magical_key": "use_magical_key",
   "subtitles.night_vision": "activate_night_vision_helmet",
-  "subtitles.sottofondo_liminal": ""
+  "subtitles.sottofondo_liminal": "",
+  "item.utility.wearableglass": "Wearable glass",
+  "item.utility.wearableglass.description_0": "You want to wear a block now you can with some power"
 }

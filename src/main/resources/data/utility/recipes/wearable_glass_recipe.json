@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "b b",
+    "cbc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:amethyst_cluster"
+    },
+    "b": {
+      "item": "minecraft:glass"
+    },
+    "c": {
+      "item": "minecraft:quartz"
+    }
+  },
+  "result": {
+    "item": "utility:wearableglass",
+    "count": 1
+  }
+}
