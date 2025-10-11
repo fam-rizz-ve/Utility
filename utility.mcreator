@@ -92,8 +92,8 @@
       "registry_name": "netherkey",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/netherkey.json",
-          "src/main/java/net/mcreator/utility/item/NetherkeyItem.java"
+          "src/main/java/net/mcreator/utility/item/NetherkeyItem.java",
+          "src/main/resources/assets/utility/models/item/netherkey.json"
         ]
       },
       "path": "~/key/item"
@@ -106,8 +106,8 @@
       "registry_name": "endkey",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/EndkeyItem.java",
-          "src/main/resources/assets/utility/models/item/endkey.json"
+          "src/main/resources/assets/utility/models/item/endkey.json",
+          "src/main/java/net/mcreator/utility/item/EndkeyItem.java"
         ]
       },
       "path": "~/key/item"
@@ -120,9 +120,9 @@
       "registry_name": "flat_biom",
       "metadata": {
         "files": [
-          "src/main/resources/data/utility/worldgen/placed_feature/flat_biom_tree.json",
+          "src/main/resources/data/utility/worldgen/configured_feature/flat_biom_tree.json",
           "src/main/resources/data/utility/worldgen/biome/flat_biom.json",
-          "src/main/resources/data/utility/worldgen/configured_feature/flat_biom_tree.json"
+          "src/main/resources/data/utility/worldgen/placed_feature/flat_biom_tree.json"
         ]
       },
       "path": "~/dimension/flat"
@@ -415,12 +415,12 @@
       "registry_name": "essenctiondistilizer",
       "metadata": {
         "files": [
-          "src/main/resources/data/utility/loot_tables/blocks/essenctiondistilizer.json",
           "src/main/java/net/mcreator/utility/block/entity/EssenctiondistilizerBlockEntity.java",
+          "src/main/resources/assets/utility/models/block/essenctiondistilizer.json",
+          "src/main/resources/data/utility/loot_tables/blocks/essenctiondistilizer.json",
           "src/main/resources/assets/utility/models/item/essenctiondistilizer.json",
           "src/main/java/net/mcreator/utility/block/EssenctiondistilizerBlock.java",
-          "src/main/resources/assets/utility/blockstates/essenctiondistilizer.json",
-          "src/main/resources/assets/utility/models/block/essenctiondistilizer.json"
+          "src/main/resources/assets/utility/blockstates/essenctiondistilizer.json"
         ]
       },
       "path": "~/dimension/limbo/essenction distilizer"
@@ -474,8 +474,8 @@
       "registry_name": "liminaly_key",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/liminaly_key.json",
-          "src/main/java/net/mcreator/utility/item/LiminalyKeyItem.java"
+          "src/main/java/net/mcreator/utility/item/LiminalyKeyItem.java",
+          "src/main/resources/assets/utility/models/item/liminaly_key.json"
         ]
       },
       "path": "~/key/item"
@@ -736,8 +736,8 @@
       "registry_name": "tactical_template",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/TacticalTemplateItem.java",
-          "src/main/resources/assets/utility/models/item/tactical_template.json"
+          "src/main/resources/assets/utility/models/item/tactical_template.json",
+          "src/main/java/net/mcreator/utility/item/TacticalTemplateItem.java"
         ]
       },
       "path": "~/quality of life/armor/Tactical_Suit"
@@ -942,8 +942,8 @@
       "registry_name": "creativenighthelmet",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/creativenighthelmet_helmet.json",
-          "src/main/java/net/mcreator/utility/item/CreativenighthelmetItem.java"
+          "src/main/java/net/mcreator/utility/item/CreativenighthelmetItem.java",
+          "src/main/resources/assets/utility/models/item/creativenighthelmet_helmet.json"
         ]
       },
       "path": "~/quality of life/armor/creative night helmet"
@@ -1236,8 +1236,8 @@
       "registry_name": "ironknife",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/IronknifeItem.java",
-          "src/main/resources/assets/utility/models/item/ironknife.json"
+          "src/main/resources/assets/utility/models/item/ironknife.json",
+          "src/main/java/net/mcreator/utility/item/IronknifeItem.java"
         ]
       },
       "path": "~/quality of life/Tactical_knife"
@@ -1276,8 +1276,8 @@
       "registry_name": "knifeblade",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/KnifebladeItem.java",
-          "src/main/resources/assets/utility/models/item/knifeblade.json"
+          "src/main/resources/assets/utility/models/item/knifeblade.json",
+          "src/main/java/net/mcreator/utility/item/KnifebladeItem.java"
         ]
       },
       "path": "~/quality of life/Tactical_knife"
@@ -1715,11 +1715,11 @@
       "registry_name": "faded_concrete",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/block/faded_concrete.json",
+          "src/main/java/net/mcreator/utility/block/FadedConcreteBlock.java",
           "src/main/resources/data/utility/loot_tables/blocks/faded_concrete.json",
-          "src/main/resources/assets/utility/models/item/faded_concrete.json",
           "src/main/resources/assets/utility/blockstates/faded_concrete.json",
-          "src/main/java/net/mcreator/utility/block/FadedConcreteBlock.java"
+          "src/main/resources/assets/utility/models/item/faded_concrete.json",
+          "src/main/resources/assets/utility/models/block/faded_concrete.json"
         ]
       },
       "path": "~/dimension/liminal/Block_Fluid"
@@ -2237,22 +2237,23 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/utility/UtilityMod.java",
-      "src/main/resources/META-INF/mods.toml",
-      "src/main/java/net/mcreator/utility/init/UtilityModTabs.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/resources/mixins.utility.json",
-      "src/main/resources/assets/utility/sounds.json",
-      "src/main/java/net/mcreator/utility/init/UtilityModSounds.java",
       "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/utility/UtilityMod.java",
+      "src/main/resources/assets/utility/sounds.json",
+      "src/main/java/net/mcreator/utility/init/UtilityModTabs.java",
+      "src/main/resources/mixins.utility.json",
+      "src/main/java/net/mcreator/utility/init/UtilityModSounds.java",
       "src/main/java/net/mcreator/utility/init/UtilityModKeyMappings.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMobEffects.java",
       "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",
-      "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
       "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
       "src/main/java/net/mcreator/utility/init/UtilityModEnchantments.java",
       "src/main/java/net/mcreator/utility/init/UtilityModLootModifier.java",
       "src/main/resources/data/forge/loot_modifiers/global_loot_modifiers.json",
+      "src/main/java/net/mcreator/utility/init/UtilityModBrewingRecipes.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlocks.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlockEntities.java",
       "src/main/java/net/mcreator/utility/init/UtilityModItems.java",
@@ -2403,7 +2404,9 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "jei"
+    ],
     "currentGenerator": "forge-1.20.1",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.utility"
