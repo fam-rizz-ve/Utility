@@ -879,8 +879,8 @@
       "registry_name": "liminal_dimension",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/world/dimension/LiminalDimensionDimension.java",
           "src/main/resources/data/utility/dimension/liminal_dimension.json",
+          "src/main/java/net/mcreator/utility/world/dimension/LiminalDimensionDimension.java",
           "src/main/resources/data/utility/dimension_type/liminal_dimension.json"
         ]
       },
@@ -1783,6 +1783,46 @@
       "path": "~/dimension/liminal/dungeon generator"
     },
     {
+      "name": "BlastCell",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blast_cell",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/blast_cell.json",
+          "src/main/java/net/mcreator/utility/item/BlastCellItem.java"
+        ]
+      },
+      "path": "~/quality of life/armor/explosive_suit"
+    },
+    {
+      "name": "ExplosiveSuitResipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosive_suit_resipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipes/explosive_suit_resipe.json"
+        ]
+      },
+      "path": "~/quality of life/armor/explosive_suit"
+    },
+    {
+      "name": "BlastCellResipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blast_cell_resipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipes/blast_cell_resipe.json"
+        ]
+      },
+      "path": "~/quality of life/armor/explosive_suit"
+    },
+    {
       "name": "Liminalkeyloottable",
       "type": "loottable",
       "compiles": true,
@@ -1799,7 +1839,7 @@
       "name": "LiminalLootModificherRelitti1",
       "type": "lootmodifier",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "liminal_loot_modificher_relitti_1",
       "metadata": {
         "files": [
@@ -1861,44 +1901,69 @@
       "path": "~/key/loot modificher"
     },
     {
-      "name": "BlastCell",
+      "name": "Wearableglass",
       "type": "item",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "blast_cell",
+      "registry_name": "wearableglass",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/blast_cell.json",
-          "src/main/java/net/mcreator/utility/item/BlastCellItem.java"
+          "src/main/java/net/mcreator/utility/item/WearableglassItem.java",
+          "src/main/resources/assets/utility/models/item/wearableglass.json"
         ]
       },
-      "path": "~/quality of life/armor/explosive_suit"
+      "path": "~/quality of life/Wearable glass"
     },
     {
-      "name": "ExplosiveSuitResipe",
+      "name": "Wearableglasseffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wearableglasseffect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/WearableglasseffectProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wearable glass"
+    },
+    {
+      "name": "Wearableglassrecipe",
       "type": "recipe",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "explosive_suit_resipe",
+      "registry_name": "wearableglassrecipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/utility/recipes/explosive_suit_resipe.json"
+          "src/main/resources/data/utility/recipes/wearable_glass_recipe.json"
         ]
       },
-      "path": "~/quality of life/armor/explosive_suit"
+      "path": "~/quality of life/Wearable glass"
     },
     {
-      "name": "BlastCellResipe",
-      "type": "recipe",
+      "name": "Wearableglasstrigger",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "blast_cell_resipe",
+      "registry_name": "wearableglasstrigger",
       "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "files": [
-          "src/main/resources/data/utility/recipes/blast_cell_resipe.json"
+          "src/main/java/net/mcreator/utility/procedures/WearableglasstriggerProcedure.java"
         ]
       },
-      "path": "~/quality of life/armor/explosive_suit"
+      "path": "~/quality of life/Wearable glass"
     }
   ],
   "variable_elements": [
@@ -2112,7 +2177,8 @@
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
       "~CUSTOM:FadedConcrete"
-    ]
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": []
   },
   "tab_element_order": {},
   "language_map": {
@@ -2232,7 +2298,10 @@
       "item.utility.blast_cell": "Blast Cell",
       "subtitles.bombo_timer": "bomb timer",
       "subtitles.magical_key": "use_magical_key",
-      "subtitles.night_vision": "activate_night_vision_helmet"
+      "subtitles.night_vision": "activate_night_vision_helmet",
+      "subtitles.sottofondo_liminal": "",
+      "item.utility.wearableglass": "Wearable glass",
+      "item.utility.wearableglass.description_0": "You want to wear a block now you can with some power"
     }
   },
   "metadata": {
@@ -2251,6 +2320,9 @@
       "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
       "src/main/java/net/mcreator/utility/init/UtilityModEnchantments.java",
+      "src/main/resources/data/utility/tags/items/jei_empty_tag.json",
+      "src/main/java/net/mcreator/utility/util/SizedIngredient.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModRecipeTypes.java",
       "src/main/java/net/mcreator/utility/init/UtilityModLootModifier.java",
       "src/main/resources/data/forge/loot_modifiers/global_loot_modifiers.json",
       "src/main/java/net/mcreator/utility/init/UtilityModBrewingRecipes.java",
@@ -2312,11 +2384,11 @@
             "children": []
           },
           {
-            "name": "item",
+            "name": "loot modificher",
             "children": []
           },
           {
-            "name": "loot modificher",
+            "name": "item",
             "children": []
           }
         ]
@@ -2324,6 +2396,10 @@
       {
         "name": "quality of life",
         "children": [
+          {
+            "name": "Wearable glass",
+            "children": []
+          },
           {
             "name": "Med_thing",
             "children": []
