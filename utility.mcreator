@@ -1964,6 +1964,33 @@
         ]
       },
       "path": "~/quality of life/Wearable glass"
+    },
+    {
+      "name": "EssenctionDistillizerJEIRecipeType",
+      "type": "jeirecipetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "essenction_distillizer_jei_recipe_type",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/jei_recipes/EssenctionDistillizerJEIRecipeTypeRecipe.java",
+          "src/main/java/net/mcreator/utility/jei_recipes/EssenctionDistillizerJEIRecipeTypeRecipeCategory.java"
+        ]
+      },
+      "path": "~/dimension/limbo/essenction distilizer"
+    },
+    {
+      "name": "OverwordKeyJEIRecipe",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overword_key_jei_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipes/overword_key_jei_recipe.json"
+        ]
+      },
+      "path": "~/key/JEI recipe"
     }
   ],
   "variable_elements": [
@@ -2320,6 +2347,10 @@
       "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
       "src/main/java/net/mcreator/utility/init/UtilityModEnchantments.java",
+      "src/main/resources/data/utility/tags/items/jei_empty_tag.json",
+      "src/main/java/net/mcreator/utility/init/UtilityModJeiPlugin.java",
+      "src/main/java/net/mcreator/utility/util/SizedIngredient.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModRecipeTypes.java",
       "src/main/java/net/mcreator/utility/init/UtilityModLootModifier.java",
       "src/main/resources/data/forge/loot_modifiers/global_loot_modifiers.json",
       "src/main/java/net/mcreator/utility/init/UtilityModBrewingRecipes.java",
@@ -2386,6 +2417,10 @@
           },
           {
             "name": "item",
+            "children": []
+          },
+          {
+            "name": "JEI recipe",
             "children": []
           }
         ]
