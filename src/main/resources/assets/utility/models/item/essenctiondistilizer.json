@@ -1,22 +1,7 @@
 {
-  "parent": "utility:block/essenctiondistilizer",
-  "display": {
-    "thirdperson": {
-      "rotation": [
-        10,
-        -45,
-        170
-      ],
-      "translation": [
-        0,
-        1.5,
-        -2.75
-      ],
-      "scale": [
-        0.375,
-        0.375,
-        0.375
-      ]
-    }
-  }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "utility:item/essenction_distilizer_icona"
+  },
+  "render_type": "translucent"
 }

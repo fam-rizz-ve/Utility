@@ -79,7 +79,7 @@ public class EssenctiondistilizerGUIOgniTickMentreQuestaGUIEApertaProcedure {
 				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 				if (_ent != null) {
 					final int _slotid = 7;
-					final ItemStack _setstack = new ItemStack(UtilityModItems.ENDKEY.get()).copy();
+					final ItemStack _setstack = new ItemStack(UtilityModItems.ENDESSECE.get()).copy();
 					_setstack.setCount(new Object() {
 						public int getAmount(int sltid) {
 							if (entity instanceof Player player && player.containerMenu instanceof UtilityModMenus.MenuAccessor _menu) {
@@ -154,7 +154,7 @@ public class EssenctiondistilizerGUIOgniTickMentreQuestaGUIEApertaProcedure {
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof UtilityModMenus.MenuAccessor _menu) {
-				ItemStack _setstack = new ItemStack(UtilityModItems.NETHERKEY.get()).copy();
+				ItemStack _setstack = new ItemStack(UtilityModItems.NEHTERESSENCE.get()).copy();
 				_setstack.setCount(new Object() {
 					public int getAmount(int sltid) {
 						if (entity instanceof Player player && player.containerMenu instanceof UtilityModMenus.MenuAccessor _menu) {
@@ -227,7 +227,7 @@ public class EssenctiondistilizerGUIOgniTickMentreQuestaGUIEApertaProcedure {
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof UtilityModMenus.MenuAccessor _menu) {
-				ItemStack _setstack = new ItemStack(UtilityModItems.OVERWORDKEY.get()).copy();
+				ItemStack _setstack = new ItemStack(UtilityModItems.OVERWORLDESSENCE.get()).copy();
 				_setstack.setCount(new Object() {
 					public int getAmount(int sltid) {
 						if (entity instanceof Player player && player.containerMenu instanceof UtilityModMenus.MenuAccessor _menu) {

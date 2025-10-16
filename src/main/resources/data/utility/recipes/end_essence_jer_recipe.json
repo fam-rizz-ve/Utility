@@ -2,27 +2,27 @@
   "type": "utility:essenction_distillizer_jei_recipe_type",
   "category": "misc",
   "slot0": {
-    "item": "minecraft:prismarine_shard",
+    "item": "minecraft:ender_pearl",
     "count": 1
   },
   "slot1": {
-    "item": "minecraft:red_sand",
+    "item": "minecraft:chorus_fruit",
     "count": 1
   },
   "slot2": {
-    "item": "minecraft:echo_shard",
+    "item": "minecraft:shulker_box",
     "count": 1
   },
   "slot3": {
-    "item": "minecraft:glow_berries",
+    "item": "minecraft:dragon_breath",
     "count": 1
   },
   "slot4": {
-    "item": "minecraft:powder_snow_bucket",
+    "item": "minecraft:end_stone",
     "count": 1
   },
   "slot5": {
-    "item": "minecraft:bamboo",
+    "item": "minecraft:end_crystal",
     "count": 1
   },
   "slot6": {
@@ -30,7 +30,7 @@
     "count": 1
   },
   "output": {
-    "item": "utility:overworldessence",
+    "item": "utility:endessece",
     "count": 1
   }
 }

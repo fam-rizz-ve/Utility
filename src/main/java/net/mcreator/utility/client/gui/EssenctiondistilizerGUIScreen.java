@@ -51,7 +51,7 @@ public class EssenctiondistilizerGUIScreen extends AbstractContainerScreen<Essen
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		guiGraphics.blit(ResourceLocation.parse("utility:textures/screens/screenshot_2025-06-14_120956.png"), this.leftPos + 109, this.topPos + 35, 0, 0, 25, 15, 25, 15);
+		guiGraphics.blit(ResourceLocation.parse("utility:textures/screens/screenshot_2025-06-14_120956.png"), this.leftPos + 110, this.topPos + 35, 0, 0, 25, 15, 25, 15);
 		RenderSystem.disableBlend();
 	}
 

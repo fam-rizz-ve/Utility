@@ -4,7 +4,7 @@
   "definition": {
     "category": "essenction_distillizer_jei_recipe_type",
     "output": {
-      "value": "CUSTOM:Overworldessence"
+      "value": "CUSTOM:Endessece"
     },
     "outputAmount": 1,
     "inputs": [
@@ -12,7 +12,7 @@
         "type": "ITEM_INPUT",
         "name": "slot0",
         "itemInput": {
-          "value": "Items.PRISMARINE_SHARD"
+          "value": "Items.ENDER_PEARL"
         },
         "itemAmount": 1,
         "fluidAmount": 1
@@ -21,7 +21,7 @@
         "type": "ITEM_INPUT",
         "name": "slot1",
         "itemInput": {
-          "value": "Blocks.SAND#1"
+          "value": "Items.CHORUS_FRUIT"
         },
         "itemAmount": 1,
         "fluidAmount": 1
@@ -30,7 +30,7 @@
         "type": "ITEM_INPUT",
         "name": "slot2",
         "itemInput": {
-          "value": "Items.ECHO_SHARD"
+          "value": "Blocks.SHULKER_BOX"
         },
         "itemAmount": 1,
         "fluidAmount": 1
@@ -39,7 +39,7 @@
         "type": "ITEM_INPUT",
         "name": "slot3",
         "itemInput": {
-          "value": "Items.GLOW_BERRIES"
+          "value": "Items.DRAGON_BREATH"
         },
         "itemAmount": 1,
         "fluidAmount": 1
@@ -48,7 +48,7 @@
         "type": "ITEM_INPUT",
         "name": "slot4",
         "itemInput": {
-          "value": "Items.POWDER_SNOW_BUCKET"
+          "value": "Blocks.END_STONE"
         },
         "itemAmount": 1,
         "fluidAmount": 1
@@ -57,7 +57,7 @@
         "type": "ITEM_INPUT",
         "name": "slot5",
         "itemInput": {
-          "value": "Blocks.BAMBOO"
+          "value": "Items.END_CRYSTAL"
         },
         "itemAmount": 1,
         "fluidAmount": 1

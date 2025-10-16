@@ -2,9 +2,9 @@
   "_fv": 79,
   "_type": "jeirecipetype",
   "definition": {
-    "textureSelector": "sfondojeiessenctiondistillizer.png",
-    "width": 170,
-    "height": 2128,
+    "textureSelector": "essenctiondistillizerjei.png",
+    "width": 176,
+    "height": 83,
     "icon": {
       "value": "CUSTOM:Essenctiondistilizer"
     },
@@ -16,66 +16,66 @@
     "enableCraftingtable": true,
     "title": "Essenction Distillizer",
     "caGui": "EssenctiondistilizerGUI",
-    "clickableArea": true,
-    "caX": 1,
-    "caY": 1,
-    "caWidth": 100,
-    "caHeight": 100,
+    "clickableArea": false,
+    "caX": 0,
+    "caY": 0,
+    "caWidth": 200,
+    "caHeight": 200,
     "slotList": [
       {
         "type": "ITEM_INPUT",
         "name": "slot0",
-        "x": 100,
-        "y": 100,
+        "x": 70,
+        "y": 8,
         "optional": false
       },
       {
         "type": "ITEM_INPUT",
         "name": "slot1",
-        "x": 0,
-        "y": 0,
+        "x": 88,
+        "y": 35,
         "optional": false
       },
       {
         "type": "ITEM_INPUT",
         "name": "slot2",
-        "x": 0,
-        "y": 0,
+        "x": 70,
+        "y": 62,
         "optional": false
       },
       {
         "type": "ITEM_INPUT",
         "name": "slot3",
-        "x": 0,
-        "y": 0,
+        "x": 34,
+        "y": 62,
         "optional": false
       },
       {
         "type": "ITEM_INPUT",
         "name": "slot4",
-        "x": 0,
-        "y": 0,
+        "x": 16,
+        "y": 35,
         "optional": false
       },
       {
         "type": "ITEM_INPUT",
         "name": "slot5",
-        "x": 0,
-        "y": 0,
+        "x": 34,
+        "y": 8,
         "optional": false
       },
       {
         "type": "ITEM_INPUT",
         "name": "slot6",
-        "x": 0,
-        "y": 0,
+        "x": 52,
+        "y": 35,
         "optional": false
       },
       {
         "type": "OUTPUT",
         "name": "",
-        "x": 0,
-        "y": 0,
+        "x": 142,
+        "y": 35,
         "optional": false
       }
     ]

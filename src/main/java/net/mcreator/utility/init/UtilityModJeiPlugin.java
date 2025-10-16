@@ -7,7 +7,6 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.utility.jei_recipes.EssenctionDistillizerJEIRecipeTypeRecipeCategory;
 import net.mcreator.utility.jei_recipes.EssenctionDistillizerJEIRecipeTypeRecipe;
-import net.mcreator.utility.client.gui.EssenctiondistilizerGUIScreen;
 
 import mezz.jei.api.registration.IRecipeRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
@@ -48,6 +47,5 @@ public class UtilityModJeiPlugin implements IModPlugin {
 
 	@Override
 	public void registerGuiHandlers(IGuiHandlerRegistration registration) {
-		registration.addRecipeClickArea(EssenctiondistilizerGUIScreen.class, 1, 1, 100, 100, EssenctionDistillizerJEIRecipeType_Type);
 	}
 }

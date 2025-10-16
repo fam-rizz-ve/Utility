@@ -117,5 +117,7 @@
   "subtitles.night_vision": "activate_night_vision_helmet",
   "subtitles.sottofondo_liminal": "",
   "item.utility.wearableglass": "Wearable glass",
-  "item.utility.wearableglass.description_0": "You want to wear a block now you can with some power"
+  "item.utility.wearableglass.description_0": "You want to wear a block now you can with some power",
+  "jei.utility.limbo_key_part_1_jei": "Retrieveable from chests in the Liminal dimension, this object whispers tales of corridors without end",
+  "jei.utility.essenction_distillizer_jei_information": "This Essence Distiller is discovered on the solitary island floating in Limbo — a silent expanse suspended in the void between realms. It channels ethereal energies that drift through the emptiness."
 }

@@ -15,7 +15,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "animations": [],
-    "itemTexture": "",
+    "itemTexture": "essenction_distilizer_icona",
     "particleTexture": "",
     "blockSetType": "OAK",
     "tintType": "No tint",

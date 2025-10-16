@@ -450,7 +450,7 @@
           "src/main/resources/data/utility/recipes/limbo_keyrecipes.json"
         ]
       },
-      "path": "~/key/item"
+      "path": "~/key/recipe"
     },
     {
       "name": "EssenctiondistilizerGUI",
@@ -618,7 +618,7 @@
           "src/main/resources/data/utility/recipes/empitkey.json"
         ]
       },
-      "path": "~/key/item"
+      "path": "~/key/recipe"
     },
     {
       "name": "Overworldessence",
@@ -687,7 +687,7 @@
           "src/main/resources/data/utility/recipes/flat_key_recipes.json"
         ]
       },
-      "path": "~/key/item"
+      "path": "~/key/recipe"
     },
     {
       "name": "Overworldkeyrecipes",
@@ -700,7 +700,7 @@
           "src/main/resources/data/utility/recipes/overworld_key_recipes.json"
         ]
       },
-      "path": "~/key/item"
+      "path": "~/key/recipe"
     },
     {
       "name": "Netherkeyrecipes",
@@ -713,7 +713,7 @@
           "src/main/resources/data/utility/recipes/nether_key_recipes.json"
         ]
       },
-      "path": "~/key/item"
+      "path": "~/key/recipe"
     },
     {
       "name": "Endkeyrecipes",
@@ -726,7 +726,7 @@
           "src/main/resources/data/utility/recipes/end_key_recipes.json"
         ]
       },
-      "path": "~/key/item"
+      "path": "~/key/recipe"
     },
     {
       "name": "TacticalTemplate",
@@ -1990,7 +1990,55 @@
           "src/main/resources/data/utility/recipes/overword_key_jei_recipe.json"
         ]
       },
-      "path": "~/key/JEI recipe"
+      "path": "~/key/JEI"
+    },
+    {
+      "name": "NetherKeyJERRepice",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_key_jer_repice",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipes/nether_key_jer_repice.json"
+        ]
+      },
+      "path": "~/key/JEI"
+    },
+    {
+      "name": "EndEssenceJERRecipe",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_essence_jer_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipes/end_essence_jer_recipe.json"
+        ]
+      },
+      "path": "~/key/JEI"
+    },
+    {
+      "name": "LimboKeyPart1JEI",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "limbo_key_part_1_jei",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/key/JEI"
+    },
+    {
+      "name": "EssenctionDistillizerJEIInformation",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "essenction_distillizer_jei_information",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/dimension/limbo/essenction distilizer"
     }
   ],
   "variable_elements": [
@@ -2328,7 +2376,9 @@
       "subtitles.night_vision": "activate_night_vision_helmet",
       "subtitles.sottofondo_liminal": "",
       "item.utility.wearableglass": "Wearable glass",
-      "item.utility.wearableglass.description_0": "You want to wear a block now you can with some power"
+      "item.utility.wearableglass.description_0": "You want to wear a block now you can with some power",
+      "jei.utility.limbo_key_part_1_jei": "Retrieveable from chests in the Liminal dimension, this object whispers tales of corridors without end",
+      "jei.utility.essenction_distillizer_jei_information": "This Essence Distiller is discovered on the solitary island floating in Limbo — a silent expanse suspended in the void between realms. It channels ethereal energies that drift through the emptiness."
     }
   },
   "metadata": {
@@ -2347,6 +2397,7 @@
       "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
       "src/main/java/net/mcreator/utility/init/UtilityModEnchantments.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModJeiInformation.java",
       "src/main/resources/data/utility/tags/items/jei_empty_tag.json",
       "src/main/java/net/mcreator/utility/init/UtilityModJeiPlugin.java",
       "src/main/java/net/mcreator/utility/util/SizedIngredient.java",
@@ -2420,7 +2471,11 @@
             "children": []
           },
           {
-            "name": "JEI recipe",
+            "name": "JEI",
+            "children": []
+          },
+          {
+            "name": "recipe",
             "children": []
           }
         ]

@@ -21,12 +21,12 @@ import java.util.Arrays;
 
 public class EssenctionDistillizerJEIRecipeTypeRecipeCategory implements IRecipeCategory<EssenctionDistillizerJEIRecipeTypeRecipe> {
 	public final static ResourceLocation UID = ResourceLocation.parse("utility:essenction_distillizer_jei_recipe_type");
-	public final static ResourceLocation TEXTURE = ResourceLocation.parse("utility:textures/screens/sfondojeiessenctiondistillizer.png");
+	public final static ResourceLocation TEXTURE = ResourceLocation.parse("utility:textures/screens/essenctiondistillizerjei.png");
 	private final IDrawable background;
 	private final IDrawable icon;
 
 	public EssenctionDistillizerJEIRecipeTypeRecipeCategory(IGuiHelper helper) {
-		this.background = helper.createDrawable(TEXTURE, 0, 0, 170, 2128);
+		this.background = helper.createDrawable(TEXTURE, 0, 0, 176, 83);
 		this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(UtilityModBlocks.ESSENCTIONDISTILIZER.get().asItem()));
 	}
 
@@ -67,13 +67,13 @@ public class EssenctionDistillizerJEIRecipeTypeRecipeCategory implements IRecipe
 
 	@Override
 	public void setRecipe(IRecipeLayoutBuilder builder, EssenctionDistillizerJEIRecipeTypeRecipe recipe, IFocusGroup focuses) {
-		builder.addSlot(RecipeIngredientRole.INPUT, 100, 100).addIngredients(VanillaTypes.ITEM_STACK, Arrays.asList(recipe.slot0ItemInput().getItems()));
-		builder.addSlot(RecipeIngredientRole.INPUT, 0, 0).addIngredients(VanillaTypes.ITEM_STACK, Arrays.asList(recipe.slot1ItemInput().getItems()));
-		builder.addSlot(RecipeIngredientRole.INPUT, 0, 0).addIngredients(VanillaTypes.ITEM_STACK, Arrays.asList(recipe.slot2ItemInput().getItems()));
-		builder.addSlot(RecipeIngredientRole.INPUT, 0, 0).addIngredients(VanillaTypes.ITEM_STACK, Arrays.asList(recipe.slot3ItemInput().getItems()));
-		builder.addSlot(RecipeIngredientRole.INPUT, 0, 0).addIngredients(VanillaTypes.ITEM_STACK, Arrays.asList(recipe.slot4ItemInput().getItems()));
-		builder.addSlot(RecipeIngredientRole.INPUT, 0, 0).addIngredients(VanillaTypes.ITEM_STACK, Arrays.asList(recipe.slot5ItemInput().getItems()));
-		builder.addSlot(RecipeIngredientRole.INPUT, 0, 0).addIngredients(VanillaTypes.ITEM_STACK, Arrays.asList(recipe.slot6ItemInput().getItems()));
-		builder.addSlot(RecipeIngredientRole.OUTPUT, 0, 0).addItemStack(recipe.getResult(0));
+		builder.addSlot(RecipeIngredientRole.INPUT, 70, 8).addIngredients(VanillaTypes.ITEM_STACK, Arrays.asList(recipe.slot0ItemInput().getItems()));
+		builder.addSlot(RecipeIngredientRole.INPUT, 88, 35).addIngredients(VanillaTypes.ITEM_STACK, Arrays.asList(recipe.slot1ItemInput().getItems()));
+		builder.addSlot(RecipeIngredientRole.INPUT, 70, 62).addIngredients(VanillaTypes.ITEM_STACK, Arrays.asList(recipe.slot2ItemInput().getItems()));
+		builder.addSlot(RecipeIngredientRole.INPUT, 34, 62).addIngredients(VanillaTypes.ITEM_STACK, Arrays.asList(recipe.slot3ItemInput().getItems()));
+		builder.addSlot(RecipeIngredientRole.INPUT, 16, 35).addIngredients(VanillaTypes.ITEM_STACK, Arrays.asList(recipe.slot4ItemInput().getItems()));
+		builder.addSlot(RecipeIngredientRole.INPUT, 34, 8).addIngredients(VanillaTypes.ITEM_STACK, Arrays.asList(recipe.slot5ItemInput().getItems()));
+		builder.addSlot(RecipeIngredientRole.INPUT, 52, 35).addIngredients(VanillaTypes.ITEM_STACK, Arrays.asList(recipe.slot6ItemInput().getItems()));
+		builder.addSlot(RecipeIngredientRole.OUTPUT, 142, 35).addItemStack(recipe.getResult(0));
 	}
 }
