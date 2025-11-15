@@ -5,7 +5,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.GuiGraphics;
 
-import net.mcreator.utility.init.UtilityModJeiPlugin;
 import net.mcreator.utility.init.UtilityModBlocks;
 
 import mezz.jei.api.recipe.category.IRecipeCategory;
@@ -16,8 +15,6 @@ import mezz.jei.api.gui.ingredient.IRecipeSlotsView;
 import mezz.jei.api.gui.drawable.IDrawable;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.constants.VanillaTypes;
-
-import java.util.Arrays;
 
 public class EssenctionDistillizerJEIRecipeTypeRecipeCategory implements IRecipeCategory<EssenctionDistillizerJEIRecipeTypeRecipe> {
 	public final static ResourceLocation UID = ResourceLocation.parse("utility:essenction_distillizer_jei_recipe_type");
@@ -67,13 +64,13 @@ public class EssenctionDistillizerJEIRecipeTypeRecipeCategory implements IRecipe
 
 	@Override
 	public void setRecipe(IRecipeLayoutBuilder builder, EssenctionDistillizerJEIRecipeTypeRecipe recipe, IFocusGroup focuses) {
-		builder.addSlot(RecipeIngredientRole.INPUT, 70, 8).addIngredients(VanillaTypes.ITEM_STACK, Arrays.asList(recipe.slot0ItemInput().getItems()));
-		builder.addSlot(RecipeIngredientRole.INPUT, 88, 35).addIngredients(VanillaTypes.ITEM_STACK, Arrays.asList(recipe.slot1ItemInput().getItems()));
-		builder.addSlot(RecipeIngredientRole.INPUT, 70, 62).addIngredients(VanillaTypes.ITEM_STACK, Arrays.asList(recipe.slot2ItemInput().getItems()));
-		builder.addSlot(RecipeIngredientRole.INPUT, 34, 62).addIngredients(VanillaTypes.ITEM_STACK, Arrays.asList(recipe.slot3ItemInput().getItems()));
-		builder.addSlot(RecipeIngredientRole.INPUT, 16, 35).addIngredients(VanillaTypes.ITEM_STACK, Arrays.asList(recipe.slot4ItemInput().getItems()));
-		builder.addSlot(RecipeIngredientRole.INPUT, 34, 8).addIngredients(VanillaTypes.ITEM_STACK, Arrays.asList(recipe.slot5ItemInput().getItems()));
-		builder.addSlot(RecipeIngredientRole.INPUT, 52, 35).addIngredients(VanillaTypes.ITEM_STACK, Arrays.asList(recipe.slot6ItemInput().getItems()));
+		builder.addSlot(RecipeIngredientRole.OUTPUT, 70, 8).addItemStack(recipe.getResult(0));
+		builder.addSlot(RecipeIngredientRole.OUTPUT, 88, 35).addItemStack(recipe.getResult(0));
+		builder.addSlot(RecipeIngredientRole.OUTPUT, 70, 62).addItemStack(recipe.getResult(0));
+		builder.addSlot(RecipeIngredientRole.OUTPUT, 34, 62).addItemStack(recipe.getResult(0));
+		builder.addSlot(RecipeIngredientRole.OUTPUT, 16, 35).addItemStack(recipe.getResult(0));
+		builder.addSlot(RecipeIngredientRole.OUTPUT, 34, 8).addItemStack(recipe.getResult(0));
+		builder.addSlot(RecipeIngredientRole.OUTPUT, 52, 35).addItemStack(recipe.getResult(0));
 		builder.addSlot(RecipeIngredientRole.OUTPUT, 142, 35).addItemStack(recipe.getResult(0));
 	}
 }

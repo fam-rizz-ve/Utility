@@ -14,69 +14,57 @@
       }
     ],
     "enableCraftingtable": true,
+    "enableIntList": false,
+    "enableStringList": false,
     "title": "Essenction Distillizer",
-    "caGui": "EssenctiondistilizerGUI",
-    "clickableArea": false,
-    "caX": 0,
-    "caY": 0,
-    "caWidth": 200,
-    "caHeight": 200,
     "slotList": [
       {
-        "type": "ITEM_INPUT",
-        "name": "slot0",
+        "type": "INPUT",
         "x": 70,
         "y": 8,
-        "optional": false
+        "slotid": 0
       },
       {
-        "type": "ITEM_INPUT",
-        "name": "slot1",
+        "type": "INPUT",
         "x": 88,
         "y": 35,
-        "optional": false
+        "slotid": 0
       },
       {
-        "type": "ITEM_INPUT",
-        "name": "slot2",
+        "type": "INPUT",
         "x": 70,
         "y": 62,
-        "optional": false
+        "slotid": 0
       },
       {
-        "type": "ITEM_INPUT",
-        "name": "slot3",
+        "type": "INPUT",
         "x": 34,
         "y": 62,
-        "optional": false
+        "slotid": 0
       },
       {
-        "type": "ITEM_INPUT",
-        "name": "slot4",
+        "type": "INPUT",
         "x": 16,
         "y": 35,
-        "optional": false
+        "slotid": 0
       },
       {
-        "type": "ITEM_INPUT",
-        "name": "slot5",
+        "type": "INPUT",
         "x": 34,
         "y": 8,
-        "optional": false
+        "slotid": 0
       },
       {
-        "type": "ITEM_INPUT",
-        "name": "slot6",
+        "type": "INPUT",
         "x": 52,
         "y": 35,
-        "optional": false
+        "slotid": 0
       },
       {
         "type": "OUTPUT",
-        "name": "",
         "x": 142,
         "y": 35,
-        "optional": false
+        "slotid": 0
       }
     ]
   }
