@@ -29,7 +29,6 @@ public class UtilityModTabs {
 				tabData.accept(UtilityModItems.MEDIKIT.get());
 				tabData.accept(UtilityModItems.BANDAGES.get());
 				tabData.accept(UtilityModItems.EXPLOSIVESUIT_CHESTPLATE.get());
-				tabData.accept(UtilityModItems.WEARABLEGLASS.get());
 			}).build());
 	public static final RegistryObject<CreativeModeTab> UTILITYMAGIC = REGISTRY.register("utilitymagic",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.utility.utilitymagic")).icon(() -> new ItemStack(UtilityModItems.ENDKEY.get())).displayItems((parameters, tabData) -> {

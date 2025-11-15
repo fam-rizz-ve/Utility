@@ -11,7 +11,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
-import net.mcreator.utility.item.WearableglassItem;
 import net.mcreator.utility.item.TacticalknifeItem;
 import net.mcreator.utility.item.TacticalTemplateItem;
 import net.mcreator.utility.item.PowerEssenceItem;
@@ -68,7 +67,6 @@ public class UtilityModItems {
 	public static final RegistryObject<Item> EXPLOSIVESUIT_CHESTPLATE = REGISTRY.register("explosivesuit_chestplate", () -> new ExplosivesuitItem.Chestplate());
 	public static final RegistryObject<Item> FADED_CONCRETE = block(UtilityModBlocks.FADED_CONCRETE);
 	public static final RegistryObject<Item> BLAST_CELL = REGISTRY.register("blast_cell", () -> new BlastCellItem());
-	public static final RegistryObject<Item> WEARABLEGLASS = REGISTRY.register("wearableglass", () -> new WearableglassItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -17,10 +17,10 @@ import net.mcreator.utility.UtilityMod;
 
 public class UtilityModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, UtilityMod.MODID);
-	public static final RegistryObject<Block> FLATDIMENTION_PORTAL = REGISTRY.register("flatdimention_portal", () -> new FlatdimentionPortalBlock());
-	public static final RegistryObject<Block> ESSENCTIONDISTILIZER = REGISTRY.register("essenctiondistilizer", () -> new EssenctiondistilizerBlock());
-	public static final RegistryObject<Block> DUNGEONGENERATORBLOCK = REGISTRY.register("dungeongeneratorblock", () -> new DungeongeneratorblockBlock());
-	public static final RegistryObject<Block> FADED_CONCRETE = REGISTRY.register("faded_concrete", () -> new FadedConcreteBlock());
+	public static final RegistryObject<Block> FLATDIMENTION_PORTAL = REGISTRY.register("flatdimention_portal", FlatdimentionPortalBlock::new);
+	public static final RegistryObject<Block> ESSENCTIONDISTILIZER = REGISTRY.register("essenctiondistilizer", EssenctiondistilizerBlock::new);
+	public static final RegistryObject<Block> DUNGEONGENERATORBLOCK = REGISTRY.register("dungeongeneratorblock", DungeongeneratorblockBlock::new);
+	public static final RegistryObject<Block> FADED_CONCRETE = REGISTRY.register("faded_concrete", FadedConcreteBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

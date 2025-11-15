@@ -1901,74 +1901,9 @@
       "path": "~/key/loot modificher"
     },
     {
-      "name": "Wearableglass",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wearableglass",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/utility/item/WearableglassItem.java",
-          "src/main/resources/assets/utility/models/item/wearableglass.json"
-        ]
-      },
-      "path": "~/quality of life/Wearable glass"
-    },
-    {
-      "name": "Wearableglasseffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wearableglasseffect",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/utility/procedures/WearableglasseffectProcedure.java"
-        ]
-      },
-      "path": "~/quality of life/Wearable glass"
-    },
-    {
-      "name": "Wearableglassrecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wearableglassrecipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/utility/recipes/wearable_glass_recipe.json"
-        ]
-      },
-      "path": "~/quality of life/Wearable glass"
-    },
-    {
-      "name": "Wearableglasstrigger",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wearableglasstrigger",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/utility/procedures/WearableglasstriggerProcedure.java"
-        ]
-      },
-      "path": "~/quality of life/Wearable glass"
-    },
-    {
       "name": "EssenctionDistillizerJEIRecipeType",
       "type": "jeirecipetype",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "essenction_distillizer_jei_recipe_type",
       "metadata": {
@@ -2375,33 +2310,30 @@
       "subtitles.magical_key": "use_magical_key",
       "subtitles.night_vision": "activate_night_vision_helmet",
       "subtitles.sottofondo_liminal": "",
-      "item.utility.wearableglass": "Wearable glass",
-      "item.utility.wearableglass.description_0": "You want to wear a block now you can with some power",
       "jei.utility.limbo_key_part_1_jei": "Retrieveable from chests in the Liminal dimension, this object whispers tales of corridors without end",
       "jei.utility.essenction_distillizer_jei_information": "This Essence Distiller is discovered on the solitary island floating in Limbo — a silent expanse suspended in the void between realms. It channels ethereal energies that drift through the emptiness."
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
-      "src/main/resources/META-INF/mods.toml",
-      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/utility/UtilityMod.java",
-      "src/main/resources/assets/utility/sounds.json",
+      "src/main/resources/META-INF/mods.toml",
       "src/main/java/net/mcreator/utility/init/UtilityModTabs.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/resources/mixins.utility.json",
+      "src/main/resources/assets/utility/sounds.json",
       "src/main/java/net/mcreator/utility/init/UtilityModSounds.java",
+      "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
       "src/main/java/net/mcreator/utility/init/UtilityModKeyMappings.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMobEffects.java",
       "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",
-      "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
+      "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModEnchantments.java",
       "src/main/java/net/mcreator/utility/init/UtilityModJeiInformation.java",
       "src/main/resources/data/utility/tags/items/jei_empty_tag.json",
-      "src/main/java/net/mcreator/utility/init/UtilityModJeiPlugin.java",
-      "src/main/java/net/mcreator/utility/util/SizedIngredient.java",
       "src/main/java/net/mcreator/utility/init/UtilityModRecipeTypes.java",
+      "src/main/java/net/mcreator/utility/util/SizedIngredient.java",
       "src/main/java/net/mcreator/utility/init/UtilityModLootModifier.java",
       "src/main/resources/data/forge/loot_modifiers/global_loot_modifiers.json",
       "src/main/java/net/mcreator/utility/init/UtilityModBrewingRecipes.java",
@@ -2483,10 +2415,6 @@
       {
         "name": "quality of life",
         "children": [
-          {
-            "name": "Wearable glass",
-            "children": []
-          },
           {
             "name": "Med_thing",
             "children": []
