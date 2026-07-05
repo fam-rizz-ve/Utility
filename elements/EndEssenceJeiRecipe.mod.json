@@ -1,0 +1,42 @@
+{
+  "_fv": 85,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "essenction_distillizer_jei_recipe_type",
+    "ingredients": [
+      {
+        "value": "Items.ENDER_PEARL"
+      },
+      {
+        "value": "Items.CHORUS_FRUIT"
+      },
+      {
+        "value": "Blocks.SHULKER_BOX"
+      },
+      {
+        "value": "Items.DRAGON_BREATH"
+      },
+      {
+        "value": "Blocks.END_STONE"
+      },
+      {
+        "value": "Items.END_CRYSTAL"
+      },
+      {
+        "value": "CUSTOM:PowerEssence"
+      }
+    ],
+    "integers": [],
+    "strings": [],
+    "recipetype": "EssenctionDistillizerJEIRecipeType",
+    "results": [
+      {
+        "value": "CUSTOM:Endessece"
+      }
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

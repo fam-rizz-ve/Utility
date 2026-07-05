@@ -1,0 +1,10 @@
+{
+  "entries": [
+    "utility:liminal_loot_modificher_relitti_1",
+    "utility:liminal_loot_modificher_piramide",
+    "utility:liminal_loot_modificher_templio_giungla",
+    "utility:liminal_loot_table_end_city",
+    "utility:liminal_loot_table_nether_forthess"
+  ],
+  "replace": false
+}

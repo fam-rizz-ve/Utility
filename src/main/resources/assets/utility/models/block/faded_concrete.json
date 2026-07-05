@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "utility:block/chatgpt_image_15_ago_2025_08_14_00",
+    "up": "utility:block/chatgpt_image_15_ago_2025_08_14_00",
+    "north": "utility:block/chatgpt_image_15_ago_2025_08_14_00",
+    "east": "utility:block/chatgpt_image_15_ago_2025_08_14_00",
+    "south": "utility:block/chatgpt_image_15_ago_2025_08_14_00",
+    "west": "utility:block/chatgpt_image_15_ago_2025_08_14_00",
+    "particle": "utility:block/chatgpt_image_15_ago_2025_08_14_00"
+  },
+  "render_type": "solid"
+}

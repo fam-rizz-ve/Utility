@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:powder_snow_bucket",
+    "minecraft:end_stone",
+    "minecraft:basalt"
+  ]
+}

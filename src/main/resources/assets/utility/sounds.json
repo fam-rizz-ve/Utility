@@ -1,0 +1,29 @@
+{
+  "bombo_timer": {
+    "subtitle": "subtitles.bombo_timer",
+    "sounds": [
+      {
+        "name": "utility:bunplitoemhu",
+        "stream": false
+      }
+    ]
+  },
+  "magical_key": {
+    "subtitle": "subtitles.magical_key",
+    "sounds": [
+      {
+        "name": "utility:transform-103819",
+        "stream": false
+      }
+    ]
+  },
+  "night_vision": {
+    "subtitle": "subtitles.night_vision",
+    "sounds": [
+      {
+        "name": "utility:il-mio-video",
+        "stream": false
+      }
+    ]
+  }
+}

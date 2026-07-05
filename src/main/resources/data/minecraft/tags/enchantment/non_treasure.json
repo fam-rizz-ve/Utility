@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "utility:stormessece",
+    "utility:furyessece",
+    "utility:lavaessence",
+    "utility:windessece",
+    "utility:sporetouch",
+    "utility:ashessece",
+    "utility:iceessence",
+    "utility:wateressence"
+  ]
+}

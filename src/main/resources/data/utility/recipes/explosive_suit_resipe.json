@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a a",
+    "aba",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "utility:blast_cell"
+    },
+    "b": {
+      "item": "minecraft:leather_chestplate"
+    }
+  },
+  "result": {
+    "item": "utility:explosivesuit_chestplate",
+    "count": 1
+  }
+}

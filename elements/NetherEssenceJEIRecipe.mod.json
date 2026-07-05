@@ -1,0 +1,42 @@
+{
+  "_fv": 85,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "essenction_distillizer_jei_recipe_type",
+    "ingredients": [
+      {
+        "value": "Blocks.ANCIENT_DEBRIS"
+      },
+      {
+        "value": "Blocks.MAGMA"
+      },
+      {
+        "value": "Blocks.SOUL_SAND"
+      },
+      {
+        "value": "Blocks.BLACKSTONE"
+      },
+      {
+        "value": "Blocks.BASALT"
+      },
+      {
+        "value": "Items.NETHERBRICK"
+      },
+      {
+        "value": "CUSTOM:PowerEssence"
+      }
+    ],
+    "integers": [],
+    "strings": [],
+    "recipetype": "EssenctionDistillizerJEIRecipeType",
+    "results": [
+      {
+        "value": "CUSTOM:Nehteressence"
+      }
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "utility:nightelmet"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "utility:nightelmet"
+      }
+    ]
+  }
+}

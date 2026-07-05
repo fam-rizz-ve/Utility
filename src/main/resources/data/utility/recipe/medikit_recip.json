@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "dad"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:red_wool"
+    },
+    "b": {
+      "tag": "c:flowers/tall"
+    },
+    "c": {
+      "item": "minecraft:map"
+    },
+    "d": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "id": "utility:medikit",
+    "count": 1
+  }
+}

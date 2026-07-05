@@ -1,0 +1,42 @@
+{
+  "_fv": 85,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "essenction_distillizer_jei_recipe_type",
+    "ingredients": [
+      {
+        "value": "Items.PRISMARINE_SHARD"
+      },
+      {
+        "value": "Blocks.SAND#1"
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": "Items.GLOW_BERRIES"
+      },
+      {
+        "value": "Items.POWDER_SNOW_BUCKET"
+      },
+      {
+        "value": "Blocks.BAMBOO"
+      },
+      {
+        "value": "CUSTOM:PowerEssence"
+      }
+    ],
+    "integers": [],
+    "strings": [],
+    "recipetype": "EssenctionDistillizerJEIRecipeType",
+    "results": [
+      {
+        "value": "CUSTOM:Overworldessence"
+      }
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

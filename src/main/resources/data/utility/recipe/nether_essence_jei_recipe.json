@@ -1,0 +1,32 @@
+{
+  "type": "utility:essenction_distillizer_jei_recipe_type",
+  "ingredients": [
+    {
+      "item": "minecraft:ancient_debris"
+    },
+    {
+      "item": "minecraft:magma_block"
+    },
+    {
+      "item": "minecraft:soul_sand"
+    },
+    {
+      "item": "minecraft:blackstone"
+    },
+    {
+      "item": "minecraft:basalt"
+    },
+    {
+      "item": "minecraft:nether_brick"
+    },
+    {
+      "item": "utility:power_essence"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "utility:nehteressence",
+      "count": 1
+    }
+  ]
+}

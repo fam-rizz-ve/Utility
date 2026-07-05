@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "utility:block/dungeongeneratorblock"
+    },
+    "facing=east": {
+      "model": "utility:block/dungeongeneratorblock",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "utility:block/dungeongeneratorblock",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "utility:block/dungeongeneratorblock",
+      "y": 270
+    }
+  }
+}

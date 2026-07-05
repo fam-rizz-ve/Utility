@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "utility:ironknife",
+    "utility:tacticalknife",
+    "utility:medikit"
+  ]
+}

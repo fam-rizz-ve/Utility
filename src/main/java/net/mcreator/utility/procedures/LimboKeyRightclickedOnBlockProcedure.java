@@ -1,0 +1,93 @@
+package net.mcreator.utility.procedures;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket;
+import net.minecraft.network.protocol.game.ClientboundPlayerAbilitiesPacket;
+import net.minecraft.network.protocol.game.ClientboundLevelEventPacket;
+import net.minecraft.network.protocol.game.ClientboundGameEventPacket;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.BlockPos;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.AdvancementHolder;
+
+import net.mcreator.utility.network.UtilityModVariables;
+
+public class LimboKeyRightclickedOnBlockProcedure {
+	public static void execute(Entity entity) {
+		if (entity == null)
+			return;
+		if ((entity.getData(UtilityModVariables.PLAYER_VARIABLES).last_key).equals("flate key")) {
+			{
+				UtilityModVariables.PlayerVariables _vars = entity.getData(UtilityModVariables.PLAYER_VARIABLES);
+				_vars.ultima_x_flat = entity.getX();
+				_vars.ultima_y_flat = entity.getY();
+				_vars.ultima_z_flat = entity.getZ();
+				_vars.markSyncDirty();
+			}
+		} else if ((entity.getData(UtilityModVariables.PLAYER_VARIABLES).last_key).equals("overword key")) {
+			{
+				UtilityModVariables.PlayerVariables _vars = entity.getData(UtilityModVariables.PLAYER_VARIABLES);
+				_vars.ultima_x_overword = entity.getX();
+				_vars.ultima_y_overword = entity.getY();
+				_vars.ultima_z_overword = entity.getZ();
+				_vars.markSyncDirty();
+			}
+		} else if ((entity.getData(UtilityModVariables.PLAYER_VARIABLES).last_key).equals("nether key")) {
+			{
+				UtilityModVariables.PlayerVariables _vars = entity.getData(UtilityModVariables.PLAYER_VARIABLES);
+				_vars.ultima_x_nether = entity.getX();
+				_vars.ultima_y_nether = entity.getY();
+				_vars.ultima_z_nether = entity.getZ();
+				_vars.markSyncDirty();
+			}
+		} else if ((entity.getData(UtilityModVariables.PLAYER_VARIABLES).last_key).equals("end key")) {
+			{
+				UtilityModVariables.PlayerVariables _vars = entity.getData(UtilityModVariables.PLAYER_VARIABLES);
+				_vars.ultima_x_end = entity.getX();
+				_vars.ultima_y_end = entity.getY();
+				_vars.ultima_z_end = entity.getZ();
+				_vars.markSyncDirty();
+			}
+		}
+		if (entity instanceof ServerPlayer _player) {
+			AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("utility:thelimbo"));
+			if (_adv != null) {
+				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+				if (!_ap.isDone()) {
+					for (String criteria : _ap.getRemainingCriteria())
+						_player.getAdvancements().award(_adv, criteria);
+				}
+			}
+		}
+		{
+			UtilityModVariables.PlayerVariables _vars = entity.getData(UtilityModVariables.PLAYER_VARIABLES);
+			_vars.chiave_appena_usata = "limbo key";
+			_vars.markSyncDirty();
+		}
+		if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
+			ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("utility:limbo_dimension"));
+			if (_player.level().dimension() == destinationType)
+				return;
+			ServerLevel nextLevel = _player.server.getLevel(destinationType);
+			if (nextLevel != null) {
+				_player.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.WIN_GAME, 0));
+				_player.teleportTo(nextLevel, _player.getX(), _player.getY(), _player.getZ(), _player.getYRot(), _player.getXRot());
+				_player.connection.send(new ClientboundPlayerAbilitiesPacket(_player.getAbilities()));
+				for (MobEffectInstance _effectinstance : _player.getActiveEffects())
+					_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), _effectinstance, false));
+				_player.connection.send(new ClientboundLevelEventPacket(1032, BlockPos.ZERO, 0, false));
+			}
+		}
+		{
+			UtilityModVariables.PlayerVariables _vars = entity.getData(UtilityModVariables.PLAYER_VARIABLES);
+			_vars.switch_dimension = "true";
+			_vars.markSyncDirty();
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 85,
+  "_type": "tab",
+  "definition": {
+    "name": "Utility: confort",
+    "icon": {
+      "value": "CUSTOM:Nightelmet.helmet"
+    },
+    "showSearch": false
+  }
+}

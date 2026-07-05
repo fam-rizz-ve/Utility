@@ -1,0 +1,32 @@
+{
+  "type": "utility:essenction_distillizer_jei_recipe_type",
+  "ingredients": [
+    {
+      "item": "minecraft:prismarine_shard"
+    },
+    {
+      "item": "minecraft:red_sand"
+    },
+    {
+      "item": "minecraft:echo_shard"
+    },
+    {
+      "item": "minecraft:glow_berries"
+    },
+    {
+      "item": "minecraft:powder_snow_bucket"
+    },
+    {
+      "item": "minecraft:bamboo"
+    },
+    {
+      "item": "utility:power_essence"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "utility:overworldessence",
+      "count": 1
+    }
+  ]
+}

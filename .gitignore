@@ -1,19 +1,10 @@
-# Gradle build system ignores
+# Cartelle temporanee e di build di MCreator/Gradle
 .gradle/
 build/
-
-# Other IDE related folders
-.idea/
-.eclipse/
-.settings/
-.classpath
-.project
-
-# MCreator workspace
+run/
 .mcreator/
 
-# Minecraft client/server files
-run/
-
-# MacOS system files
-.DS_STORE
+# File di sistema o di configurazione locale
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,49 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.AMETHYST_CLUSTER"
+      },
+      {
+        "value": "Blocks.GLASS"
+      },
+      {
+        "value": "Blocks.AMETHYST_CLUSTER"
+      },
+      {
+        "value": "Blocks.GLASS"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.GLASS"
+      },
+      {
+        "value": "Items.QUARTZ"
+      },
+      {
+        "value": "Blocks.GLASS"
+      },
+      {
+        "value": "Items.QUARTZ"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Wearableglass"
+    },
+    "name": "wearable_glass_recipe",
+    "namespace": "mod"
+  }
+}

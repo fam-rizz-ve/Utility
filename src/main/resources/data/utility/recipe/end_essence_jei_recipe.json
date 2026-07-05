@@ -1,0 +1,32 @@
+{
+  "type": "utility:essenction_distillizer_jei_recipe_type",
+  "ingredients": [
+    {
+      "item": "minecraft:ender_pearl"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    },
+    {
+      "item": "minecraft:shulker_box"
+    },
+    {
+      "item": "minecraft:dragon_breath"
+    },
+    {
+      "item": "minecraft:end_stone"
+    },
+    {
+      "item": "minecraft:end_crystal"
+    },
+    {
+      "item": "utility:power_essence"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "utility:endessece",
+      "count": 1
+    }
+  ]
+}
