@@ -2,7 +2,6 @@
 .gradle/
 build/
 run/
-.mcreator/
 
 # File di sistema o di configurazione locale
 *.log

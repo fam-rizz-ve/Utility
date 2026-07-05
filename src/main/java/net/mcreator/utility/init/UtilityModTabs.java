@@ -34,7 +34,6 @@ public class UtilityModTabs {
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> UTILITY = REGISTRY.register("utility",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.utility.utility")).icon(() -> new ItemStack(UtilityModItems.NIGHTELMET_HELMET.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(UtilityModItems.WEARABLEGLASS.get());
 				tabData.accept(UtilityModItems.MEDIKIT.get());
 				tabData.accept(UtilityModItems.BANDAGES.get());
 				tabData.accept(UtilityModItems.TACTICALKNIFE.get());

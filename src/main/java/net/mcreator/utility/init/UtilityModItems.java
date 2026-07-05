@@ -25,7 +25,6 @@ public class UtilityModItems {
 	public static final DeferredItem<Item> LIMBO_KEY_PART_1;
 	public static final DeferredItem<Item> LIMINALY_KEY;
 	public static final DeferredItem<Item> EMPTYKEY;
-	public static final DeferredItem<Item> WEARABLEGLASS;
 	public static final DeferredItem<Item> MEDIKIT;
 	public static final DeferredItem<Item> BANDAGES;
 	public static final DeferredItem<Item> TACTICALKNIFE;
@@ -56,7 +55,6 @@ public class UtilityModItems {
 		LIMBO_KEY_PART_1 = REGISTRY.register("limbo_key_part_1", LimboKeyPart1Item::new);
 		LIMINALY_KEY = REGISTRY.register("liminaly_key", LiminalyKeyItem::new);
 		EMPTYKEY = REGISTRY.register("emptykey", EmptykeyItem::new);
-		WEARABLEGLASS = REGISTRY.register("wearableglass", WearableglassItem::new);
 		MEDIKIT = REGISTRY.register("medikit", MedikitItem::new);
 		BANDAGES = REGISTRY.register("bandages", BandagesItem::new);
 		TACTICALKNIFE = REGISTRY.register("tacticalknife", TacticalknifeItem::new);
