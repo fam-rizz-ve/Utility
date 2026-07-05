@@ -2,6 +2,7 @@
 .gradle/
 build/
 run/
+.mcreator/userSettings
 
 # File di sistema o di configurazione locale
 *.log
