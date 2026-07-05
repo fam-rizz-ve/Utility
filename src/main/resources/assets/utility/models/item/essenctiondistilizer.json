@@ -1,7 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "utility:item/essenction_distilizer_icona"
-  },
-  "render_type": "translucent"
-}
