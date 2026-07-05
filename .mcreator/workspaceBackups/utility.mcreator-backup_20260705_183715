@@ -58,8 +58,8 @@
       "registry_name": "netherkey",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/netherkey.json",
-          "src/main/java/net/mcreator/utility/item/NetherkeyItem.java"
+          "src/main/java/net/mcreator/utility/item/NetherkeyItem.java",
+          "src/main/resources/assets/utility/models/item/netherkey.json"
         ]
       },
       "path": "~/key/item"
@@ -72,8 +72,8 @@
       "registry_name": "endkey",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/EndkeyItem.java",
-          "src/main/resources/assets/utility/models/item/endkey.json"
+          "src/main/resources/assets/utility/models/item/endkey.json",
+          "src/main/java/net/mcreator/utility/item/EndkeyItem.java"
         ]
       },
       "path": "~/key/item"
@@ -100,8 +100,8 @@
       "registry_name": "limbo_key_part_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/limbo_key_part_1.json",
-          "src/main/java/net/mcreator/utility/item/LimboKeyPart1Item.java"
+          "src/main/java/net/mcreator/utility/item/LimboKeyPart1Item.java",
+          "src/main/resources/assets/utility/models/item/limbo_key_part_1.json"
         ]
       },
       "path": "~/key/item"
@@ -114,8 +114,8 @@
       "registry_name": "liminaly_key",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/liminaly_key.json",
-          "src/main/java/net/mcreator/utility/item/LiminalyKeyItem.java"
+          "src/main/java/net/mcreator/utility/item/LiminalyKeyItem.java",
+          "src/main/resources/assets/utility/models/item/liminaly_key.json"
         ]
       },
       "path": "~/key/item"
@@ -128,8 +128,8 @@
       "registry_name": "emptykey",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/EmptykeyItem.java",
-          "src/main/resources/assets/utility/models/item/emptykey.json"
+          "src/main/resources/assets/utility/models/item/emptykey.json",
+          "src/main/java/net/mcreator/utility/item/EmptykeyItem.java"
         ]
       },
       "path": "~/key/item"
@@ -486,8 +486,8 @@
       "registry_name": "medikit",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/medikit.json",
-          "src/main/java/net/mcreator/utility/item/MedikitItem.java"
+          "src/main/java/net/mcreator/utility/item/MedikitItem.java",
+          "src/main/resources/assets/utility/models/item/medikit.json"
         ]
       },
       "path": "~/quality of life/med_things"
@@ -621,8 +621,8 @@
       "registry_name": "ironknife",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/ironknife.json",
-          "src/main/java/net/mcreator/utility/item/IronknifeItem.java"
+          "src/main/java/net/mcreator/utility/item/IronknifeItem.java",
+          "src/main/resources/assets/utility/models/item/ironknife.json"
         ]
       },
       "path": "~/quality of life/tattical knife"
@@ -661,8 +661,8 @@
       "registry_name": "knifeblade",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/KnifebladeItem.java",
-          "src/main/resources/assets/utility/models/item/knifeblade.json"
+          "src/main/resources/assets/utility/models/item/knifeblade.json",
+          "src/main/java/net/mcreator/utility/item/KnifebladeItem.java"
         ]
       },
       "path": "~/quality of life/tattical knife"
@@ -786,8 +786,8 @@
       "registry_name": "creativenighthelmet",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/creativenighthelmet_helmet.json",
-          "src/main/java/net/mcreator/utility/item/CreativenighthelmetItem.java"
+          "src/main/java/net/mcreator/utility/item/CreativenighthelmetItem.java",
+          "src/main/resources/assets/utility/models/item/creativenighthelmet_helmet.json"
         ]
       },
       "path": "~/quality of life/armor/creative night helmet"
@@ -822,7 +822,7 @@
     {
       "name": "ExplosivesuitattivazioneQuandoIlTastoVienePremuto",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "explosivesuitattivazione_quando_il_tasto_viene_premuto",
       "metadata": {
@@ -897,8 +897,8 @@
       "registry_name": "blast_cell",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/BlastCellItem.java",
-          "src/main/resources/assets/utility/models/item/blast_cell.json"
+          "src/main/resources/assets/utility/models/item/blast_cell.json",
+          "src/main/java/net/mcreator/utility/item/BlastCellItem.java"
         ]
       },
       "path": "~/quality of life/armor/explosive suit"
@@ -937,11 +937,11 @@
       "registry_name": "nightelmet",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/nightelmet_leggings.json",
           "src/main/resources/assets/utility/models/item/nightelmet_boots.json",
-          "src/main/resources/assets/utility/models/item/nightelmet_chestplate.json",
           "src/main/java/net/mcreator/utility/item/NightelmetItem.java",
-          "src/main/resources/assets/utility/models/item/nightelmet_helmet.json"
+          "src/main/resources/assets/utility/models/item/nightelmet_helmet.json",
+          "src/main/resources/assets/utility/models/item/nightelmet_leggings.json",
+          "src/main/resources/assets/utility/models/item/nightelmet_chestplate.json"
         ]
       },
       "path": "~/quality of life/armor/tattical armor"
@@ -954,8 +954,8 @@
       "registry_name": "tactical_template",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/tactical_template.json",
-          "src/main/java/net/mcreator/utility/item/TacticalTemplateItem.java"
+          "src/main/java/net/mcreator/utility/item/TacticalTemplateItem.java",
+          "src/main/resources/assets/utility/models/item/tactical_template.json"
         ]
       },
       "path": "~/quality of life/armor/tattical armor"
@@ -1559,8 +1559,8 @@
       "registry_name": "overworldessence",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/overworldessence.json",
-          "src/main/java/net/mcreator/utility/item/OverworldessenceItem.java"
+          "src/main/java/net/mcreator/utility/item/OverworldessenceItem.java",
+          "src/main/resources/assets/utility/models/item/overworldessence.json"
         ]
       },
       "path": "~/enchantements/power essence"
@@ -1601,8 +1601,8 @@
       "registry_name": "flatessence",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/FlatessenceItem.java",
-          "src/main/resources/assets/utility/models/item/flatessence.json"
+          "src/main/resources/assets/utility/models/item/flatessence.json",
+          "src/main/java/net/mcreator/utility/item/FlatessenceItem.java"
         ]
       },
       "path": "~/enchantements/power essence"
@@ -1615,12 +1615,12 @@
       "registry_name": "essenctiondistilizer",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/blockstates/essenctiondistilizer.json",
+          "src/main/resources/data/utility/loot_table/blocks/essenctiondistilizer.json",
           "src/main/resources/assets/utility/models/item/essenctiondistilizer.json",
           "src/main/java/net/mcreator/utility/block/EssenctiondistilizerBlock.java",
           "src/main/java/net/mcreator/utility/block/entity/EssenctiondistilizerBlockEntity.java",
-          "src/main/resources/data/utility/loot_table/blocks/essenctiondistilizer.json",
-          "src/main/resources/assets/utility/models/block/essenctiondistilizer.json"
+          "src/main/resources/assets/utility/models/block/essenctiondistilizer.json",
+          "src/main/resources/assets/utility/blockstates/essenctiondistilizer.json"
         ]
       },
       "path": "~/dimension/limbo/essention distillizer"
@@ -1668,8 +1668,8 @@
       "registry_name": "essenction_distillizer_jei_recipe_type",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/jei_recipes/EssenctionDistillizerJEIRecipeTypeRecipeCategory.java",
-          "src/main/java/net/mcreator/utility/jei_recipes/EssenctionDistillizerJEIRecipeTypeRecipe.java"
+          "src/main/java/net/mcreator/utility/jei_recipes/EssenctionDistillizerJEIRecipeTypeRecipe.java",
+          "src/main/java/net/mcreator/utility/jei_recipes/EssenctionDistillizerJEIRecipeTypeRecipeCategory.java"
         ]
       },
       "path": "~/dimension/limbo/essention distillizer"
@@ -1709,10 +1709,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/utility/models/item/dungeongeneratorblock.json",
-          "src/main/resources/data/utility/loot_table/blocks/dungeongeneratorblock.json",
+          "src/main/java/net/mcreator/utility/block/DungeongeneratorblockBlock.java",
           "src/main/resources/assets/utility/models/block/dungeongeneratorblock.json",
-          "src/main/resources/assets/utility/blockstates/dungeongeneratorblock.json",
-          "src/main/java/net/mcreator/utility/block/DungeongeneratorblockBlock.java"
+          "src/main/resources/data/utility/loot_table/blocks/dungeongeneratorblock.json",
+          "src/main/resources/assets/utility/blockstates/dungeongeneratorblock.json"
         ]
       },
       "path": "~/dimension/liminal/dungeon generator"
@@ -1852,11 +1852,11 @@
       "registry_name": "faded_concrete",
       "metadata": {
         "files": [
-          "src/main/resources/data/utility/loot_table/blocks/faded_concrete.json",
           "src/main/resources/assets/utility/models/item/faded_concrete.json",
           "src/main/resources/assets/utility/models/block/faded_concrete.json",
-          "src/main/resources/assets/utility/blockstates/faded_concrete.json",
-          "src/main/java/net/mcreator/utility/block/FadedConcreteBlock.java"
+          "src/main/java/net/mcreator/utility/block/FadedConcreteBlock.java",
+          "src/main/resources/data/utility/loot_table/blocks/faded_concrete.json",
+          "src/main/resources/assets/utility/blockstates/faded_concrete.json"
         ]
       },
       "path": "~/dimension/liminal/blocchi"
@@ -1898,8 +1898,8 @@
       "registry_name": "flatbiom",
       "metadata": {
         "files": [
-          "src/main/resources/data/utility/worldgen/placed_feature/flatbiom_tree.json",
           "src/main/resources/data/utility/worldgen/biome/flatbiom.json",
+          "src/main/resources/data/utility/worldgen/placed_feature/flatbiom_tree.json",
           "src/main/resources/data/utility/worldgen/configured_feature/flatbiom_tree.json"
         ]
       },
@@ -1913,8 +1913,8 @@
       "registry_name": "essenctiondistilizer_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/world/inventory/EssenctiondistilizerGUIMenu.java",
-          "src/main/java/net/mcreator/utility/client/gui/EssenctiondistilizerGUIScreen.java"
+          "src/main/java/net/mcreator/utility/client/gui/EssenctiondistilizerGUIScreen.java",
+          "src/main/java/net/mcreator/utility/world/inventory/EssenctiondistilizerGUIMenu.java"
         ]
       },
       "path": "~/dimension/limbo/essention distillizer"
@@ -1987,6 +1987,19 @@
         ]
       },
       "path": "~/misc/Chat message"
+    },
+    {
+      "name": "Configurationmodfile",
+      "type": "config",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "configurationmodfile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/configuration/ConfigurationmodfileConfiguration.java"
+        ]
+      },
+      "path": "~/misc/Configuration file"
     }
   ],
   "variable_elements": [
@@ -2331,11 +2344,14 @@
       "block.utility.dungeongeneratorblock": "Dungeon generator block",
       "block.utility.faded_concrete": "Faded Concrete",
       "biome.utility.flatbiom": "Flat_biom",
-      "jei.utility.frammento_liminal_key_jei_info": "Retrieveable from chests in the Liminal dimension, this object whispers tales of corridors without end"
+      "jei.utility.frammento_liminal_key_jei_info": "Retrieveable from chests in the Liminal dimension, this object whispers tales of corridors without end",
+      "utility.configuration.explosive_suit": "Explosive_suit",
+      "utility.configuration.explosive_suit_cooldown": "Explosive_suit_cooldown"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/utility/init/UtilityModConfigs.java",
       "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
       "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",

@@ -111,5 +111,7 @@
   "block.utility.dungeongeneratorblock": "Dungeon generator block",
   "block.utility.faded_concrete": "Faded Concrete",
   "biome.utility.flatbiom": "Flat_biom",
-  "jei.utility.frammento_liminal_key_jei_info": "Retrieveable from chests in the Liminal dimension, this object whispers tales of corridors without end"
+  "jei.utility.frammento_liminal_key_jei_info": "Retrieveable from chests in the Liminal dimension, this object whispers tales of corridors without end",
+  "utility.configuration.explosive_suit": "Explosive_suit",
+  "utility.configuration.explosive_suit_cooldown": "Explosive_suit_cooldown"
 }

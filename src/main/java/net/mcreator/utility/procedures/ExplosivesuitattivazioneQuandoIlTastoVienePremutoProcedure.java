@@ -3,6 +3,7 @@ package net.mcreator.utility.procedures;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
@@ -13,6 +14,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.utility.network.UtilityModVariables;
 import net.mcreator.utility.init.UtilityModItems;
+import net.mcreator.utility.configuration.ConfigurationmodfileConfiguration;
 import net.mcreator.utility.UtilityMod;
 
 public class ExplosivesuitattivazioneQuandoIlTastoVienePremutoProcedure {
@@ -28,10 +30,12 @@ public class ExplosivesuitattivazioneQuandoIlTastoVienePremutoProcedure {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("utility:bombo_timer")), SoundSource.NEUTRAL, 1, 1, false);
 				}
 			}
-			UtilityMod.queueServerWork(30, () -> {
+			UtilityMod.queueServerWork(20, () -> {
 				if (world instanceof Level _level && !_level.isClientSide())
 					_level.explode(null, x, y, z, 10, Level.ExplosionInteraction.TNT);
 			});
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(UtilityModItems.EXPLOSIVESUIT_CHESTPLATE.get(), (int) (double) ConfigurationmodfileConfiguration.EXPLOSIVE_SUITE_COOLDOWN_TIME.get());
 		}
 	}
 }
