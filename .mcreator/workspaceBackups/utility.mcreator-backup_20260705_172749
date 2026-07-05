@@ -30,8 +30,8 @@
       "registry_name": "flatkey",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/FlatkeyItem.java",
-          "src/main/resources/assets/utility/models/item/flatkey.json"
+          "src/main/resources/assets/utility/models/item/flatkey.json",
+          "src/main/java/net/mcreator/utility/item/FlatkeyItem.java"
         ]
       },
       "path": "~/key/item"
@@ -100,8 +100,8 @@
       "registry_name": "limbo_key_part_1",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/LimboKeyPart1Item.java",
-          "src/main/resources/assets/utility/models/item/limbo_key_part_1.json"
+          "src/main/resources/assets/utility/models/item/limbo_key_part_1.json",
+          "src/main/java/net/mcreator/utility/item/LimboKeyPart1Item.java"
         ]
       },
       "path": "~/key/item"
@@ -479,71 +479,6 @@
       "path": "~/key/crafting"
     },
     {
-      "name": "Wearableglass",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wearableglass",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/utility/item/WearableglassItem.java",
-          "src/main/resources/assets/utility/models/item/wearableglass.json"
-        ]
-      },
-      "path": "~/quality of life/weareable glass"
-    },
-    {
-      "name": "Wearableglasseffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wearableglasseffect",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/utility/procedures/WearableglasseffectProcedure.java"
-        ]
-      },
-      "path": "~/quality of life/weareable glass"
-    },
-    {
-      "name": "Wearableglassrecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wearableglassrecipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/utility/recipe/wearable_glass_recipe.json"
-        ]
-      },
-      "path": "~/quality of life/weareable glass"
-    },
-    {
-      "name": "Wearableglasstrigger",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wearableglasstrigger",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/utility/procedures/WearableglasstriggerProcedure.java"
-        ]
-      },
-      "path": "~/quality of life/weareable glass"
-    },
-    {
       "name": "Medikit",
       "type": "item",
       "compiles": true,
@@ -565,8 +500,8 @@
       "registry_name": "bandages",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/BandagesItem.java",
-          "src/main/resources/assets/utility/models/item/bandages.json"
+          "src/main/resources/assets/utility/models/item/bandages.json",
+          "src/main/java/net/mcreator/utility/item/BandagesItem.java"
         ]
       },
       "path": "~/quality of life/med_things"
@@ -686,8 +621,8 @@
       "registry_name": "ironknife",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/IronknifeItem.java",
-          "src/main/resources/assets/utility/models/item/ironknife.json"
+          "src/main/resources/assets/utility/models/item/ironknife.json",
+          "src/main/java/net/mcreator/utility/item/IronknifeItem.java"
         ]
       },
       "path": "~/quality of life/tattical knife"
@@ -865,8 +800,8 @@
       "registry_name": "explosivesuit",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/explosivesuit_chestplate.json",
-          "src/main/java/net/mcreator/utility/item/ExplosivesuitItem.java"
+          "src/main/java/net/mcreator/utility/item/ExplosivesuitItem.java",
+          "src/main/resources/assets/utility/models/item/explosivesuit_chestplate.json"
         ]
       },
       "path": "~/quality of life/armor/explosive suit"
@@ -962,8 +897,8 @@
       "registry_name": "blast_cell",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/blast_cell.json",
-          "src/main/java/net/mcreator/utility/item/BlastCellItem.java"
+          "src/main/java/net/mcreator/utility/item/BlastCellItem.java",
+          "src/main/resources/assets/utility/models/item/blast_cell.json"
         ]
       },
       "path": "~/quality of life/armor/explosive suit"
@@ -1003,8 +938,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/utility/models/item/nightelmet_leggings.json",
-          "src/main/resources/assets/utility/models/item/nightelmet_chestplate.json",
           "src/main/resources/assets/utility/models/item/nightelmet_boots.json",
+          "src/main/resources/assets/utility/models/item/nightelmet_chestplate.json",
           "src/main/java/net/mcreator/utility/item/NightelmetItem.java",
           "src/main/resources/assets/utility/models/item/nightelmet_helmet.json"
         ]
@@ -1597,8 +1532,8 @@
       "registry_name": "power_essence",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/PowerEssenceItem.java",
-          "src/main/resources/assets/utility/models/item/power_essence.json"
+          "src/main/resources/assets/utility/models/item/power_essence.json",
+          "src/main/java/net/mcreator/utility/item/PowerEssenceItem.java"
         ]
       },
       "path": "~/enchantements/power essence"
@@ -1624,8 +1559,8 @@
       "registry_name": "overworldessence",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/OverworldessenceItem.java",
-          "src/main/resources/assets/utility/models/item/overworldessence.json"
+          "src/main/resources/assets/utility/models/item/overworldessence.json",
+          "src/main/java/net/mcreator/utility/item/OverworldessenceItem.java"
         ]
       },
       "path": "~/enchantements/power essence"
@@ -1638,8 +1573,8 @@
       "registry_name": "nehteressence",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/NehteressenceItem.java",
-          "src/main/resources/assets/utility/models/item/nehteressence.json"
+          "src/main/resources/assets/utility/models/item/nehteressence.json",
+          "src/main/java/net/mcreator/utility/item/NehteressenceItem.java"
         ]
       },
       "path": "~/enchantements/power essence"
@@ -1666,8 +1601,8 @@
       "registry_name": "flatessence",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/flatessence.json",
-          "src/main/java/net/mcreator/utility/item/FlatessenceItem.java"
+          "src/main/java/net/mcreator/utility/item/FlatessenceItem.java",
+          "src/main/resources/assets/utility/models/item/flatessence.json"
         ]
       },
       "path": "~/enchantements/power essence"
@@ -1680,12 +1615,12 @@
       "registry_name": "essenctiondistilizer",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/block/entity/EssenctiondistilizerBlockEntity.java",
-          "src/main/resources/assets/utility/models/item/essenctiondistilizer.json",
           "src/main/resources/assets/utility/blockstates/essenctiondistilizer.json",
+          "src/main/resources/assets/utility/models/item/essenctiondistilizer.json",
           "src/main/java/net/mcreator/utility/block/EssenctiondistilizerBlock.java",
-          "src/main/resources/assets/utility/models/block/essenctiondistilizer.json",
-          "src/main/resources/data/utility/loot_table/blocks/essenctiondistilizer.json"
+          "src/main/java/net/mcreator/utility/block/entity/EssenctiondistilizerBlockEntity.java",
+          "src/main/resources/data/utility/loot_table/blocks/essenctiondistilizer.json",
+          "src/main/resources/assets/utility/models/block/essenctiondistilizer.json"
         ]
       },
       "path": "~/dimension/limbo/essention distillizer"
@@ -1773,11 +1708,11 @@
       "registry_name": "dungeongeneratorblock",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/blockstates/dungeongeneratorblock.json",
-          "src/main/java/net/mcreator/utility/block/DungeongeneratorblockBlock.java",
-          "src/main/resources/data/utility/loot_table/blocks/dungeongeneratorblock.json",
           "src/main/resources/assets/utility/models/item/dungeongeneratorblock.json",
-          "src/main/resources/assets/utility/models/block/dungeongeneratorblock.json"
+          "src/main/resources/data/utility/loot_table/blocks/dungeongeneratorblock.json",
+          "src/main/resources/assets/utility/models/block/dungeongeneratorblock.json",
+          "src/main/resources/assets/utility/blockstates/dungeongeneratorblock.json",
+          "src/main/java/net/mcreator/utility/block/DungeongeneratorblockBlock.java"
         ]
       },
       "path": "~/dimension/liminal/dungeon generator"
@@ -1917,11 +1852,11 @@
       "registry_name": "faded_concrete",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/block/faded_concrete.json",
-          "src/main/resources/assets/utility/models/item/faded_concrete.json",
-          "src/main/java/net/mcreator/utility/block/FadedConcreteBlock.java",
           "src/main/resources/data/utility/loot_table/blocks/faded_concrete.json",
-          "src/main/resources/assets/utility/blockstates/faded_concrete.json"
+          "src/main/resources/assets/utility/models/item/faded_concrete.json",
+          "src/main/resources/assets/utility/models/block/faded_concrete.json",
+          "src/main/resources/assets/utility/blockstates/faded_concrete.json",
+          "src/main/java/net/mcreator/utility/block/FadedConcreteBlock.java"
         ]
       },
       "path": "~/dimension/liminal/blocchi"
@@ -1963,9 +1898,9 @@
       "registry_name": "flatbiom",
       "metadata": {
         "files": [
-          "src/main/resources/data/utility/worldgen/configured_feature/flatbiom_tree.json",
+          "src/main/resources/data/utility/worldgen/placed_feature/flatbiom_tree.json",
           "src/main/resources/data/utility/worldgen/biome/flatbiom.json",
-          "src/main/resources/data/utility/worldgen/placed_feature/flatbiom_tree.json"
+          "src/main/resources/data/utility/worldgen/configured_feature/flatbiom_tree.json"
         ]
       },
       "path": "~/dimension/flat"
@@ -1981,7 +1916,8 @@
           "src/main/java/net/mcreator/utility/world/inventory/EssenctiondistilizerGUIMenu.java",
           "src/main/java/net/mcreator/utility/client/gui/EssenctiondistilizerGUIScreen.java"
         ]
-      }
+      },
+      "path": "~/dimension/liminal"
     },
     {
       "name": "FrammentoLiminalKeyJEIInfo",
@@ -2254,16 +2190,12 @@
       "Items.NETHERBRICK",
       "Blocks.BAMBOO"
     ],
-    "BLOCKS:minecraft:dirt": [],
-    "BLOCKS:minecraft:sand": [],
-    "BLOCKS:minecraft:logs": [],
     "BLOCKS:minecraft:dragon_immune": [
       "CUSTOM:Essenctiondistilizer"
     ],
     "BLOCKS:minecraft:wither_immune": [
       "CUSTOM:Essenctiondistilizer"
-    ],
-    "BIOMES:minecraft:is_overworld": []
+    ]
   },
   "tab_element_order": {},
   "language_map": {
@@ -2286,8 +2218,6 @@
       "item.utility.limbo_key_part_1.description_0": "A shard of a key, a shard to create the access to a distant dimension",
       "item_group.utility.utility": "Utility: confort",
       "item_group.utility.utilitymagic": "Utility: magic",
-      "item.utility.wearableglass": "Wearable glass",
-      "item.utility.wearableglass.description_0": "You want to wear a block now you can with some power",
       "item.utility.medikit.description_0": "A medikit to cure all your wounds again and again... only for you",
       "item.utility.medikit": "Medikit",
       "item.utility.bandages": "Bandages",
@@ -2387,32 +2317,32 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/utility/init/UtilityModKeyMappings.java",
-      "src/main/java/net/mcreator/utility/init/UtilityModMobEffects.java",
+      "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
       "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",
-      "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModJeiInformation.java",
       "src/main/resources/data/utility/tags/item/jei_empty_tag.json",
-      "src/main/java/net/mcreator/utility/init/UtilityModRecipeTypes.java",
       "src/main/java/net/mcreator/utility/init/UtilityModJeiPlugin.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModRecipeTypes.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModKeyMappings.java",
       "src/main/resources/data/neoforge/loot_modifiers/global_loot_modifiers.json",
+      "src/main/java/net/mcreator/utility/init/UtilityModMobEffects.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBrewingRecipes.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlocks.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlockEntities.java",
       "src/main/java/net/mcreator/utility/init/UtilityModItems.java",
       "src/main/java/net/mcreator/utility/init/UtilityModEntities.java",
       "src/main/java/net/mcreator/utility/init/UtilityModEntityRenderers.java",
-      "src/main/java/net/mcreator/utility/client/RenderUtils.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/utility/init/UtilityModTabs.java",
       "src/main/java/net/mcreator/utility/client/ClientHelper.java",
-      "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
+      "src/main/resources/assets/utility/sounds.json",
       "src/main/java/net/mcreator/utility/UtilityMod.java",
       "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/utility/init/UtilityModSounds.java",
-      "src/main/resources/assets/utility/sounds.json",
-      "src/main/resources/META-INF/accesstransformer.cfg"
+      "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/utility/init/UtilityModTabs.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/utility/client/RenderUtils.java"
     ]
   },
   "foldersRoot": {
@@ -2450,10 +2380,6 @@
       {
         "name": "quality of life",
         "children": [
-          {
-            "name": "weareable glass",
-            "children": []
-          },
           {
             "name": "med_things",
             "children": []

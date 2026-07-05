@@ -1916,7 +1916,8 @@
           "src/main/java/net/mcreator/utility/world/inventory/EssenctiondistilizerGUIMenu.java",
           "src/main/java/net/mcreator/utility/client/gui/EssenctiondistilizerGUIScreen.java"
         ]
-      }
+      },
+      "path": "~/dimension/limbo/essention distillizer"
     },
     {
       "name": "FrammentoLiminalKeyJEIInfo",
@@ -1967,6 +1968,25 @@
         ]
       },
       "path": "~/key/JEI"
+    },
+    {
+      "name": "ModChatMessage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mod_chat_message",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/ModChatMessageProcedure.java"
+        ]
+      },
+      "path": "~/misc/Chat message"
     }
   ],
   "variable_elements": [
@@ -2459,6 +2479,19 @@
           },
           {
             "name": "flat",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "misc",
+        "children": [
+          {
+            "name": "Configuration file",
+            "children": []
+          },
+          {
+            "name": "Chat message",
             "children": []
           }
         ]
