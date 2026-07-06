@@ -46,6 +46,7 @@ public class UtilityModItems {
 	public static final DeferredItem<Item> ESSENCTIONDISTILIZER;
 	public static final DeferredItem<Item> DUNGEONGENERATORBLOCK;
 	public static final DeferredItem<Item> FADED_CONCRETE;
+	public static final DeferredItem<Item> CREATIVEDESPWANWAND;
 	static {
 		FLATKEY = REGISTRY.register("flatkey", FlatkeyItem::new);
 		OVERWORDKEY = REGISTRY.register("overwordkey", OverwordkeyItem::new);
@@ -76,6 +77,7 @@ public class UtilityModItems {
 		ESSENCTIONDISTILIZER = block(UtilityModBlocks.ESSENCTIONDISTILIZER, new Item.Properties().rarity(Rarity.EPIC));
 		DUNGEONGENERATORBLOCK = block(UtilityModBlocks.DUNGEONGENERATORBLOCK);
 		FADED_CONCRETE = block(UtilityModBlocks.FADED_CONCRETE, new Item.Properties().rarity(Rarity.RARE));
+		CREATIVEDESPWANWAND = REGISTRY.register("creativedespwanwand", CreativedespwanwandItem::new);
 	}
 
 	// Start of user code block custom items

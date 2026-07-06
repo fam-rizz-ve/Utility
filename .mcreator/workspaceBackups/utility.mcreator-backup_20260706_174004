@@ -2000,6 +2000,20 @@
         ]
       },
       "path": "~/misc/Configuration file"
+    },
+    {
+      "name": "CreativedespwanwandLivingEntityIsHitWithItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creativedespwanwand_living_entity_is_hit_with_item",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/CreativedespwanwandLivingEntityIsHitWithItemProcedure.java"
+        ]
+      },
+      "path": "~/quality of life"
     }
   ],
   "variable_elements": [
@@ -2459,6 +2473,10 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Wands",
+            "children": []
           }
         ]
       },

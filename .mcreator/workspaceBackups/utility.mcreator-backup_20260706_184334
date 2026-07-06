@@ -2000,6 +2000,39 @@
         ]
       },
       "path": "~/misc/Configuration file"
+    },
+    {
+      "name": "CreativedespwanwandRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creativedespwanwand_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/CreativedespwanwandRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands"
+    },
+    {
+      "name": "Creativedespwanwand",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creativedespwanwand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/creativedespwanwand.json",
+          "src/main/java/net/mcreator/utility/item/CreativedespwanwandItem.java"
+        ]
+      },
+      "path": "~/quality of life/Wands"
     }
   ],
   "variable_elements": [
@@ -2357,7 +2390,8 @@
       "utility.configuration.med__stuff": "Med_Stuff",
       "utility.configuration.bendages_cooldown": "Bendages_cooldown",
       "utility.configuration.bendage": "Bendage",
-      "utility.configuration.bendages_healing_power": "Bendages_healing_power"
+      "utility.configuration.bendages_healing_power": "Bendages_healing_power",
+      "item.utility.creativedespwanwand": "creative despawn wand"
     }
   },
   "metadata": {
@@ -2459,6 +2493,10 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Wands",
+            "children": []
           }
         ]
       },

@@ -124,5 +124,6 @@
   "utility.configuration.med__stuff": "Med_Stuff",
   "utility.configuration.bendages_cooldown": "Bendages_cooldown",
   "utility.configuration.bendage": "Bendage",
-  "utility.configuration.bendages_healing_power": "Bendages_healing_power"
+  "utility.configuration.bendages_healing_power": "Bendages_healing_power",
+  "item.utility.creativedespwanwand": "creative despawn wand"
 }
