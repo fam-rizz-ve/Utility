@@ -19,7 +19,7 @@ public class UtilityModConfigs {
 		public static void register(FMLConstructModEvent event) {
 			event.enqueueWork(() -> {
 				ModContainer container = ModList.get().getModContainerById("utility").get();
-				container.registerConfig(ModConfig.Type.COMMON, ConfigurationmodfileConfiguration.SPEC, "ModConfig.toml");
+				container.registerConfig(ModConfig.Type.COMMON, ConfigurationmodfileConfiguration.SPEC, "Utility The magic of confort_Config.toml");
 			});
 		}
 	}

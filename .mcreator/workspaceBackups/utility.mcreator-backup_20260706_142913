@@ -822,7 +822,7 @@
     {
       "name": "ExplosivesuitattivazioneQuandoIlTastoVienePremuto",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "explosivesuitattivazione_quando_il_tasto_viene_premuto",
       "metadata": {
@@ -1994,6 +1994,11 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "configurationmodfile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/configuration/ConfigurationmodfileConfiguration.java"
+        ]
+      },
       "path": "~/misc/Configuration file"
     }
   ],
@@ -2123,12 +2128,6 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
-    },
-    {
-      "name": "Explosive_suit_cooldown",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
     }
   ],
   "sound_elements": [
@@ -2235,7 +2234,7 @@
     "en_us": {
       "item.utility.emptykey.description_0": "this is only the shell, it is only a empty key, it dosen\u0027t do anyting? Or.....",
       "item.utility.emptykey": "Empty key",
-      "item.utility.liminaly_key": "Liminali Key",
+      "item.utility.liminaly_key": "Liminal Key",
       "item.utility.liminaly_key.description_0": "░▒▓D̡͢͡O N͟͜͞’͘͝T̨ ̵̷O͠͡P̶͘͏Ę̀N̶ T̷̡H͝E͘͞ ͞͡D͘͜O͠͡O͜R̡▓▒░",
       "item.utility.flatkey": "Flat key",
       "item.utility.flatkey.description_0": "This is the key for a world of infinit posibilites.... and a lot of grass!!",
@@ -2345,7 +2344,15 @@
       "block.utility.dungeongeneratorblock": "Dungeon generator block",
       "block.utility.faded_concrete": "Faded Concrete",
       "biome.utility.flatbiom": "Flat_biom",
-      "jei.utility.frammento_liminal_key_jei_info": "Retrieveable from chests in the Liminal dimension, this object whispers tales of corridors without end"
+      "jei.utility.frammento_liminal_key_jei_info": "Retrieveable from chests in the Liminal dimension, this object whispers tales of corridors without end",
+      "utility.configuration.explosive_suit": "Explosive_suit",
+      "utility.configuration.explosive_suit_cooldown": "Explosive_suit_cooldown",
+      "utility.configuration.explosive_suit_power": "Explosive_suit_power",
+      "utility.configuration.medikit_cooldown": "Medikit_cooldown",
+      "utility.configuration.medikit": "Medikit",
+      "utility.configuration.medikit_healing_power": "Medikit_healing_power",
+      "utility.configuration.tactical_suit_effect_cooldown": "Tactical_suit_effect_cooldown",
+      "utility.configuration.tactical_suit": "Tactical_suit"
     }
   },
   "metadata": {

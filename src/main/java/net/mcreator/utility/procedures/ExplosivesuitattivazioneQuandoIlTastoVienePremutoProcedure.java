@@ -23,19 +23,21 @@ public class ExplosivesuitattivazioneQuandoIlTastoVienePremutoProcedure {
 			return;
 		if ((entity.getData(UtilityModVariables.PLAYER_VARIABLES).modalita_explosive_chessplate).equals("esplodi a comando")
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == UtilityModItems.EXPLOSIVESUIT_CHESTPLATE.get()) {
-			if (world instanceof Level _level) {
-				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("utility:bombo_timer")), SoundSource.NEUTRAL, 1, 1);
-				} else {
-					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("utility:bombo_timer")), SoundSource.NEUTRAL, 1, 1, false);
+			if (0 == 0 + (entity instanceof Player _plrCldRem2 ? _plrCldRem2.getCooldowns().getCooldownPercent(UtilityModItems.EXPLOSIVESUIT_CHESTPLATE.get(), 0f) * 100 : 0)) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("utility:bombo_timer")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("utility:bombo_timer")), SoundSource.NEUTRAL, 1, 1, false);
+					}
 				}
+				UtilityMod.queueServerWork(20, () -> {
+					if (world instanceof Level _level && !_level.isClientSide())
+						_level.explode(null, x, y, z, (float) (double) ConfigurationmodfileConfiguration.EXPLOSIVE_SUITE_EXPLOSIVE_POWER.get(), Level.ExplosionInteraction.TNT);
+				});
+				if (entity instanceof Player _player)
+					_player.getCooldowns().addCooldown(UtilityModItems.EXPLOSIVESUIT_CHESTPLATE.get(), (int) (double) ConfigurationmodfileConfiguration.EXPLOSIVE_SUITE_COOLDOWN_TIME.get());
 			}
-			UtilityMod.queueServerWork(20, () -> {
-				if (world instanceof Level _level && !_level.isClientSide())
-					_level.explode(null, x, y, z, 10, Level.ExplosionInteraction.TNT);
-			});
-			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(UtilityModItems.EXPLOSIVESUIT_CHESTPLATE.get(), (int) (double) ConfigurationmodfileConfiguration.EXPLOSIVE_SUITE_COOLDOWN_TIME.get());
 		}
 	}
 }

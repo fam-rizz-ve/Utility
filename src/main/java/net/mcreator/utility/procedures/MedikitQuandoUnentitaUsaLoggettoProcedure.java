@@ -11,6 +11,7 @@ import net.minecraft.server.level.ServerLevel;
 
 import net.mcreator.utility.network.UtilityModVariables;
 import net.mcreator.utility.init.UtilityModItems;
+import net.mcreator.utility.configuration.ConfigurationmodfileConfiguration;
 import net.mcreator.utility.UtilityMod;
 
 public class MedikitQuandoUnentitaUsaLoggettoProcedure {
@@ -24,14 +25,14 @@ public class MedikitQuandoUnentitaUsaLoggettoProcedure {
 				_vars.markSyncDirty();
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 2));
+				_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, (int) (double) ConfigurationmodfileConfiguration.MEDIKIT_HEALING_STRENGTH.get()));
 			if (world instanceof ServerLevel _level) {
 				itemstack.hurtAndBreak(1, _level, null, _stkprov -> {
 				});
 			}
 			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(UtilityModItems.MEDIKIT.get(), 240);
-			UtilityMod.queueServerWork(240, () -> {
+				_player.getCooldowns().addCooldown(UtilityModItems.MEDIKIT.get(), (int) (double) ConfigurationmodfileConfiguration.MEDIKIT_COOLDOWN_TIME.get());
+			UtilityMod.queueServerWork((int) (double) ConfigurationmodfileConfiguration.MEDIKIT_COOLDOWN_TIME.get(), () -> {
 				{
 					UtilityModVariables.PlayerVariables _vars = entity.getData(UtilityModVariables.PLAYER_VARIABLES);
 					_vars.medikit_cooldown = false;

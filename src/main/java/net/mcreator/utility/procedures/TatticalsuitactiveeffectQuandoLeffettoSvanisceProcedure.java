@@ -6,6 +6,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 
 import net.mcreator.utility.init.UtilityModMobEffects;
+import net.mcreator.utility.configuration.ConfigurationmodfileConfiguration;
 
 public class TatticalsuitactiveeffectQuandoLeffettoSvanisceProcedure {
 	public static void execute(Entity entity) {
@@ -20,6 +21,6 @@ public class TatticalsuitactiveeffectQuandoLeffettoSvanisceProcedure {
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeEffect(MobEffects.MOVEMENT_SPEED);
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(UtilityModMobEffects.TATTICAL_SUIT_COOLDOWN_EFFECT, 12000, 0, false, false));
+			_entity.addEffect(new MobEffectInstance(UtilityModMobEffects.TATTICAL_SUIT_COOLDOWN_EFFECT, (int) (double) ConfigurationmodfileConfiguration.TACTICAL_SUIT_EFFECT_COOLDOWN_TIME.get(), 0, false, false));
 	}
 }

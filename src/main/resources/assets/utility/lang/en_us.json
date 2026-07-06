@@ -1,7 +1,7 @@
 {
   "item.utility.emptykey.description_0": "this is only the shell, it is only a empty key, it dosen\u0027t do anyting? Or.....",
   "item.utility.emptykey": "Empty key",
-  "item.utility.liminaly_key": "Liminali Key",
+  "item.utility.liminaly_key": "Liminal Key",
   "item.utility.liminaly_key.description_0": "░▒▓D̡͢͡O N͟͜͞’͘͝T̨ ̵̷O͠͡P̶͘͏Ę̀N̶ T̷̡H͝E͘͞ ͞͡D͘͜O͠͡O͜R̡▓▒░",
   "item.utility.flatkey": "Flat key",
   "item.utility.flatkey.description_0": "This is the key for a world of infinit posibilites.... and a lot of grass!!",
@@ -113,5 +113,16 @@
   "biome.utility.flatbiom": "Flat_biom",
   "jei.utility.frammento_liminal_key_jei_info": "Retrieveable from chests in the Liminal dimension, this object whispers tales of corridors without end",
   "utility.configuration.explosive_suit": "Explosive_suit",
-  "utility.configuration.explosive_suit_cooldown": "Explosive_suit_cooldown"
+  "utility.configuration.explosive_suit_cooldown": "Explosive_suit_cooldown",
+  "utility.configuration.explosive_suit_power": "Explosive_suit_power",
+  "utility.configuration.medikit_cooldown": "Medikit_cooldown",
+  "utility.configuration.medikit": "Medikit",
+  "utility.configuration.medikit_healing_power": "Medikit_healing_power",
+  "utility.configuration.tactical_suit_effect_cooldown": "Tactical_suit_effect_cooldown",
+  "utility.configuration.tactical_suit": "Tactical_suit",
+  "utility.configuration.tactical_suit_effect_duration": "Tactical_suit_effect_duration",
+  "utility.configuration.med__stuff": "Med_Stuff",
+  "utility.configuration.bendages_cooldown": "Bendages_cooldown",
+  "utility.configuration.bendage": "Bendage",
+  "utility.configuration.bendages_healing_power": "Bendages_healing_power"
 }

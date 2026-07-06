@@ -18,6 +18,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.utility.network.UtilityModVariables;
 import net.mcreator.utility.init.UtilityModMobEffects;
 import net.mcreator.utility.init.UtilityModItems;
+import net.mcreator.utility.configuration.ConfigurationmodfileConfiguration;
 
 public class AttivadisattivanighthelmetQuandoIlTastoVienePremutoProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -29,14 +30,14 @@ public class AttivadisattivanighthelmetQuandoIlTastoVienePremutoProcedure {
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == UtilityModItems.NIGHTELMET_BOOTS.get()
 				&& !(entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(UtilityModMobEffects.TATTICAL_SUIT_COOLDOWN_EFFECT) && entity instanceof LivingEntity _livEnt9 && _livEnt9.hasEffect(UtilityModMobEffects.TATTICALSUITACTIVEEFFECT))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(UtilityModMobEffects.TATTICALSUITACTIVEEFFECT, 3000, 0));
+				_entity.addEffect(new MobEffectInstance(UtilityModMobEffects.TATTICALSUITACTIVEEFFECT, (int) (double) ConfigurationmodfileConfiguration.TACTICAL_SUIT_EFFECT_DURATION_TIME.get(), 0));
 		}
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == UtilityModItems.CREATIVENIGHTHELMET_HELMET.get() && entity instanceof LivingEntity _livEnt13
-				&& _livEnt13.hasEffect(MobEffects.NIGHT_VISION)) {
+		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == UtilityModItems.CREATIVENIGHTHELMET_HELMET.get() && entity instanceof LivingEntity _livEnt14
+				&& _livEnt14.hasEffect(MobEffects.NIGHT_VISION)) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(MobEffects.NIGHT_VISION);
 		} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == UtilityModItems.CREATIVENIGHTHELMET_HELMET.get()
-				&& !(entity instanceof LivingEntity _livEnt17 && _livEnt17.hasEffect(MobEffects.NIGHT_VISION))) {
+				&& !(entity instanceof LivingEntity _livEnt18 && _livEnt18.hasEffect(MobEffects.NIGHT_VISION))) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("utility:night_vision")), SoundSource.NEUTRAL, 1, 1);

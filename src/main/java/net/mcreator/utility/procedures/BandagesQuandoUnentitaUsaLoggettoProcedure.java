@@ -10,6 +10,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 
 import net.mcreator.utility.network.UtilityModVariables;
 import net.mcreator.utility.init.UtilityModItems;
+import net.mcreator.utility.configuration.ConfigurationmodfileConfiguration;
 import net.mcreator.utility.UtilityMod;
 
 public class BandagesQuandoUnentitaUsaLoggettoProcedure {
@@ -23,11 +24,11 @@ public class BandagesQuandoUnentitaUsaLoggettoProcedure {
 				_vars.markSyncDirty();
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 1));
+				_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, (int) (double) ConfigurationmodfileConfiguration.BENDAGES_HEALING_STRENGTH.get()));
 			itemstack.shrink(1);
 			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(UtilityModItems.BANDAGES.get(), 120);
-			UtilityMod.queueServerWork(120, () -> {
+				_player.getCooldowns().addCooldown(UtilityModItems.BANDAGES.get(), (int) (double) ConfigurationmodfileConfiguration.BENDAGES_COOLDOWN_TIME.get());
+			UtilityMod.queueServerWork((int) (double) ConfigurationmodfileConfiguration.BENDAGES_COOLDOWN_TIME.get(), () -> {
 				{
 					UtilityModVariables.PlayerVariables _vars = entity.getData(UtilityModVariables.PLAYER_VARIABLES);
 					_vars.bende_cooldown = false;
