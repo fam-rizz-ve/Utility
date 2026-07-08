@@ -2033,6 +2033,93 @@
         ]
       },
       "path": "~/quality of life/Wands"
+    },
+    {
+      "name": "Inventoryeditingopencomand",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "inventoryeditingopencomand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/command/InventoryeditingopencomandCommand.java"
+        ]
+      },
+      "path": "~/quality of life/Inventory_editing_comand"
+    },
+    {
+      "name": "InventoryeditorGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "inventoryeditor_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/world/inventory/InventoryeditorGUIMenu.java",
+          "src/main/java/net/mcreator/utility/client/gui/InventoryeditorGUIScreen.java"
+        ]
+      },
+      "path": "~/quality of life/Inventory_editing_comand"
+    },
+    {
+      "name": "InventoryEdtior",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "inventory_edtior",
+      "metadata": {
+        "type": "logic",
+        "files": []
+      },
+      "path": "~/quality of life/Inventory_editing_comand"
+    },
+    {
+      "name": "Inventoryeditingresetcomand",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "inventoryeditingresetcomand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/command/InventoryeditingresetcomandCommand.java"
+        ]
+      },
+      "path": "~/quality of life/Inventory_editing_comand"
+    },
+    {
+      "name": "InventoryEditorOpenComandProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "inventory_editor_open_comand_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/InventoryEditorOpenComandProcedureProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Inventory_editing_comand"
     }
   ],
   "variable_elements": [
@@ -2391,7 +2478,21 @@
       "utility.configuration.bendages_cooldown": "Bendages_cooldown",
       "utility.configuration.bendage": "Bendage",
       "utility.configuration.bendages_healing_power": "Bendages_healing_power",
-      "item.utility.creativedespwanwand": "creative despawn wand"
+      "item.utility.creativedespwanwand": "creative despawn wand",
+      "gamerule.inventoryEdtior.description": "Allows the player to use the Inveditor comand",
+      "gamerule.inventoryEdtior": "InventoryEditor",
+      "gui.utility.inventoryeditor_gui.Maxhearts": "Max hearts",
+      "gui.utility.inventoryeditor_gui.MaxHunger": "Max hunger",
+      "gui.utility.inventoryeditor_gui.MaxArmor": "Max armor",
+      "gui.utility.inventoryeditor_gui.button_empty3": "+",
+      "gui.utility.inventoryeditor_gui.button_empty2": "-",
+      "gui.utility.inventoryeditor_gui.button_empty5": "+",
+      "gui.utility.inventoryeditor_gui.button_empty4": "-",
+      "gui.utility.inventoryeditor_gui.label_max_armor": "Max armor",
+      "gui.utility.inventoryeditor_gui.button_empty1": "+",
+      "gui.utility.inventoryeditor_gui.label_max_hunger": "Max hunger",
+      "gui.utility.inventoryeditor_gui.button_empty": "-",
+      "gui.utility.inventoryeditor_gui.label_max_health": "Max health"
     }
   },
   "metadata": {
@@ -2400,6 +2501,7 @@
       "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
       "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModGameRules.java",
       "src/main/java/net/mcreator/utility/init/UtilityModJeiInformation.java",
       "src/main/resources/data/utility/tags/item/jei_empty_tag.json",
       "src/main/java/net/mcreator/utility/init/UtilityModJeiPlugin.java",
@@ -2499,7 +2601,7 @@
             "children": []
           },
           {
-            "name": "Portable_function_blocks",
+            "name": "Inventory_editing_comand",
             "children": []
           }
         ]
