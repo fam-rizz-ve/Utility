@@ -2056,6 +2056,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/utility/world/inventory/InventoryeditorGUIMenu.java",
+          "src/main/java/net/mcreator/utility/network/InventoryeditorGUIButtonMessage.java",
           "src/main/java/net/mcreator/utility/client/gui/InventoryeditorGUIScreen.java"
         ]
       },
@@ -2122,18 +2123,118 @@
       "path": "~/quality of life/Inventory_editing_comand"
     },
     {
-      "name": "InventoryeditorGUIThisGUIIsOpened",
+      "name": "WhenButtonIsClicked1procedureInventoryEditorGUI",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "inventoryeditor_gui_this_gui_is_opened",
+      "registry_name": "when_button_is_clicked_1procedure_inventory_editor_gui",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
         "files": [
-          "src/main/java/net/mcreator/utility/procedures/InventoryeditorGUIThisGUIIsOpenedProcedure.java"
+          "src/main/java/net/mcreator/utility/procedures/WhenButtonIsClicked1procedureInventoryEditorGUIProcedure.java"
         ]
       },
-      "path": "~/quality of life/Inventory_editing_comand"
+      "path": "~/quality of life/Inventory_editing_comand/Button_GUI"
+    },
+    {
+      "name": "WhenButtonIsClicked2procedureInventoryEditorGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "when_button_is_clicked_2procedure_inventory_editor_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/WhenButtonIsClicked2procedureInventoryEditorGUIProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Inventory_editing_comand/Button_GUI"
+    },
+    {
+      "name": "WhenButtonIsClicked3procedureInventoryEditorGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "when_button_is_clicked_3procedure_inventory_editor_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/WhenButtonIsClicked3procedureInventoryEditorGUIProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Inventory_editing_comand/Button_GUI"
+    },
+    {
+      "name": "WhenButtonIsClicked4procedureInventoryEditorGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "when_button_is_clicked_4procedure_inventory_editor_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/WhenButtonIsClicked4procedureInventoryEditorGUIProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Inventory_editing_comand/Button_GUI"
+    },
+    {
+      "name": "WhenButtonIsClicked5procedureInventoryEditorGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "when_button_is_clicked_5procedure_inventory_editor_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/WhenButtonIsClicked5procedureInventoryEditorGUIProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Inventory_editing_comand/Button_GUI"
+    },
+    {
+      "name": "WhenButtonIsClicked6procedureInventoryEditorGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "when_button_is_clicked_6procedure_inventory_editor_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/WhenButtonIsClicked6procedureInventoryEditorGUIProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Inventory_editing_comand/Button_GUI"
     }
   ],
   "variable_elements": [
@@ -2262,6 +2363,24 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "Max_Health_Hearts",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Max_Armor",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Max_Hunger",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -2496,17 +2615,18 @@
       "gamerule.inventoryEdtior.description": "Allows the player to use the Inveditor comand",
       "gamerule.inventoryEdtior": "InventoryEditor",
       "gui.utility.inventoryeditor_gui.Maxhearts": "Max hearts",
-      "gui.utility.inventoryeditor_gui.MaxHunger": "Max hunger",
-      "gui.utility.inventoryeditor_gui.MaxArmor": "Max armor",
+      "gui.utility.inventoryeditor_gui.MaxHunger": "Max Hunger",
+      "gui.utility.inventoryeditor_gui.MaxArmor": "Max Armor",
       "gui.utility.inventoryeditor_gui.button_empty3": "+",
       "gui.utility.inventoryeditor_gui.button_empty2": "-",
-      "gui.utility.inventoryeditor_gui.button_empty5": "+",
-      "gui.utility.inventoryeditor_gui.button_empty4": "-",
-      "gui.utility.inventoryeditor_gui.label_max_armor": "Max armor",
+      "gui.utility.inventoryeditor_gui.button_empty5": "-",
+      "gui.utility.inventoryeditor_gui.button_empty4": "+",
+      "gui.utility.inventoryeditor_gui.label_max_armor": "Max Armor",
       "gui.utility.inventoryeditor_gui.button_empty1": "+",
       "gui.utility.inventoryeditor_gui.label_max_hunger": "Max hunger",
       "gui.utility.inventoryeditor_gui.button_empty": "-",
-      "gui.utility.inventoryeditor_gui.label_max_health": "Max health"
+      "gui.utility.inventoryeditor_gui.label_max_health": "Max health",
+      "gui.utility.inventoryeditor_gui.Maxhealth": "Max Health"
     }
   },
   "metadata": {
@@ -2616,7 +2736,12 @@
           },
           {
             "name": "Inventory_editing_comand",
-            "children": []
+            "children": [
+              {
+                "name": "Button_GUI",
+                "children": []
+              }
+            ]
           }
         ]
       },

@@ -2033,58 +2033,6 @@
         ]
       },
       "path": "~/quality of life/Wands"
-    },
-    {
-      "name": "Inventoryeditingopencomand",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inventoryeditingopencomand",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/utility/command/InventoryeditingopencomandCommand.java"
-        ]
-      },
-      "path": "~/quality of life/Inventory_editing_comand"
-    },
-    {
-      "name": "InventoryeditorGUI",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inventoryeditor_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/utility/world/inventory/InventoryeditorGUIMenu.java",
-          "src/main/java/net/mcreator/utility/client/gui/InventoryeditorGUIScreen.java"
-        ]
-      },
-      "path": "~/quality of life/Inventory_editing_comand"
-    },
-    {
-      "name": "InventoryEdtior",
-      "type": "gamerule",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inventory_edtior",
-      "metadata": {
-        "type": "logic",
-        "files": []
-      },
-      "path": "~/quality of life/Inventory_editing_comand"
-    },
-    {
-      "name": "Inventoryeditingresetcomand",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inventoryeditingresetcomand",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/utility/command/InventoryeditingresetcomandCommand.java"
-        ]
-      },
-      "path": "~/quality of life/Inventory_editing_comand"
     }
   ],
   "variable_elements": [
@@ -2213,6 +2161,24 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "Max_Health_Hearts",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Max_Armor",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Max_Hunger",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -2444,8 +2410,10 @@
       "utility.configuration.bendage": "Bendage",
       "utility.configuration.bendages_healing_power": "Bendages_healing_power",
       "item.utility.creativedespwanwand": "creative despawn wand",
-      "gamerule.inventoryEdtior.description": "Allows the player to use the Inveditor comand",
-      "gamerule.inventoryEdtior": "InventoryEditor"
+      "gui.utility.inventoryeditor_gui.Maxhearts": "Max hearts",
+      "gui.utility.inventoryeditor_gui.MaxHunger": "Max Hunger",
+      "gui.utility.inventoryeditor_gui.MaxArmor": "Max Armor",
+      "gui.utility.inventoryeditor_gui.Maxhealth": "Max Health"
     }
   },
   "metadata": {
@@ -2454,7 +2422,6 @@
       "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
       "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",
-      "src/main/java/net/mcreator/utility/init/UtilityModGameRules.java",
       "src/main/java/net/mcreator/utility/init/UtilityModJeiInformation.java",
       "src/main/resources/data/utility/tags/item/jei_empty_tag.json",
       "src/main/java/net/mcreator/utility/init/UtilityModJeiPlugin.java",

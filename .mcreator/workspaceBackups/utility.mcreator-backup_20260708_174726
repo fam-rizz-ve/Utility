@@ -2480,7 +2480,20 @@
       "utility.configuration.bendages_healing_power": "Bendages_healing_power",
       "item.utility.creativedespwanwand": "creative despawn wand",
       "gamerule.inventoryEdtior.description": "Allows the player to use the Inveditor comand",
-      "gamerule.inventoryEdtior": "InventoryEditor"
+      "gamerule.inventoryEdtior": "InventoryEditor",
+      "gui.utility.inventoryeditor_gui.Maxhearts": "Max hearts",
+      "gui.utility.inventoryeditor_gui.MaxHunger": "Max Hunger",
+      "gui.utility.inventoryeditor_gui.MaxArmor": "Max Armor",
+      "gui.utility.inventoryeditor_gui.button_empty3": "+",
+      "gui.utility.inventoryeditor_gui.button_empty2": "-",
+      "gui.utility.inventoryeditor_gui.button_empty5": "+",
+      "gui.utility.inventoryeditor_gui.button_empty4": "-",
+      "gui.utility.inventoryeditor_gui.label_max_armor": "Max armor",
+      "gui.utility.inventoryeditor_gui.button_empty1": "+",
+      "gui.utility.inventoryeditor_gui.label_max_hunger": "Max hunger",
+      "gui.utility.inventoryeditor_gui.button_empty": "-",
+      "gui.utility.inventoryeditor_gui.label_max_health": "Max health",
+      "gui.utility.inventoryeditor_gui.Maxhealth": "Max Health"
     }
   },
   "metadata": {
