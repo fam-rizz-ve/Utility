@@ -2174,24 +2174,6 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
-    },
-    {
-      "name": "Max_Health_Hearts",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
-      "name": "Max_Armor",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
-      "name": "Max_Hunger",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
     }
   ],
   "sound_elements": [
