@@ -188,9 +188,6 @@ public class UtilityModVariables {
 		public static final String DATA_NAME = "utility_mapvars";
 		boolean _syncDirty = false;
 		public boolean liminal_generato = false;
-		public double Max_Health_Hearts = 0;
-		public double Max_Armor = 0;
-		public double Max_Hunger = 0;
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			MapVariables data = new MapVariables();
@@ -200,17 +197,11 @@ public class UtilityModVariables {
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			liminal_generato = nbt.getBoolean("liminal_generato");
-			Max_Health_Hearts = nbt.getDouble("Max_Health_Hearts");
-			Max_Armor = nbt.getDouble("Max_Armor");
-			Max_Hunger = nbt.getDouble("Max_Hunger");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			nbt.putBoolean("liminal_generato", liminal_generato);
-			nbt.putDouble("Max_Health_Hearts", Max_Health_Hearts);
-			nbt.putDouble("Max_Armor", Max_Armor);
-			nbt.putDouble("Max_Hunger", Max_Hunger);
 			return nbt;
 		}
 
