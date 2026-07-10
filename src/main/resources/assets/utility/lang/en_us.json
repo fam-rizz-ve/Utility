@@ -125,5 +125,6 @@
   "utility.configuration.bendages_cooldown": "Bendages_cooldown",
   "utility.configuration.bendage": "Bendage",
   "utility.configuration.bendages_healing_power": "Bendages_healing_power",
-  "item.utility.creativedespwanwand": "creative despawn wand"
+  "item.utility.creativedespwanwand": "creative despawn wand",
+  "item.utility.creative_night_vision_goggles_item": "Creative Night Vision Goggles Item"
 }

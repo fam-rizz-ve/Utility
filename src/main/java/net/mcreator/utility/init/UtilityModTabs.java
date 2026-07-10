@@ -47,5 +47,6 @@ public class UtilityModTabs {
 				tabData.accept(UtilityModItems.NIGHTELMET_BOOTS.get());
 				tabData.accept(UtilityModItems.TACTICAL_TEMPLATE.get());
 				tabData.accept(UtilityModItems.CREATIVEDESPWANWAND.get());
+				tabData.accept(UtilityModItems.CREATIVE_NIGHT_VISION_GOGGLES_ITEM.get());
 			}).withTabsBefore(UTILITYMAGIC.getId()).build());
 }

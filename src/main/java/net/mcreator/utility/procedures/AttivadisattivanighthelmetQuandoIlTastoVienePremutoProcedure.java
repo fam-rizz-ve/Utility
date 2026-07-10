@@ -32,12 +32,12 @@ public class AttivadisattivanighthelmetQuandoIlTastoVienePremutoProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(UtilityModMobEffects.TATTICALSUITACTIVEEFFECT, (int) (double) ConfigurationmodfileConfiguration.TACTICAL_SUIT_EFFECT_DURATION_TIME.get(), 0));
 		}
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == UtilityModItems.CREATIVENIGHTHELMET_HELMET.get() && entity instanceof LivingEntity _livEnt14
-				&& _livEnt14.hasEffect(MobEffects.NIGHT_VISION)) {
+		if (((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == UtilityModItems.CREATIVENIGHTHELMET_HELMET.get()
+				|| entity.getData(UtilityModVariables.PLAYER_VARIABLES).CreativeNightVisionGoglesIsEquped) && entity instanceof LivingEntity _livEnt14 && _livEnt14.hasEffect(MobEffects.NIGHT_VISION)) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(MobEffects.NIGHT_VISION);
-		} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == UtilityModItems.CREATIVENIGHTHELMET_HELMET.get()
-				&& !(entity instanceof LivingEntity _livEnt18 && _livEnt18.hasEffect(MobEffects.NIGHT_VISION))) {
+		} else if (((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == UtilityModItems.CREATIVENIGHTHELMET_HELMET.get()
+				|| entity.getData(UtilityModVariables.PLAYER_VARIABLES).CreativeNightVisionGoglesIsEquped) && !(entity instanceof LivingEntity _livEnt18 && _livEnt18.hasEffect(MobEffects.NIGHT_VISION))) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("utility:night_vision")), SoundSource.NEUTRAL, 1, 1);

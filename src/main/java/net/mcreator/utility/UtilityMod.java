@@ -48,6 +48,9 @@ public class UtilityMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		if (ModList.get().isLoaded("curios")) {
+			modEventBus.addListener(UtilityModCuriosCompat::registerCapabilities);
+		}
 		UtilityModSounds.REGISTRY.register(modEventBus);
 		UtilityModBlocks.REGISTRY.register(modEventBus);
 		UtilityModBlockEntities.REGISTRY.register(modEventBus);

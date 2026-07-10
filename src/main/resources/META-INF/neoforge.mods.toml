@@ -31,7 +31,19 @@ authors="MCreator"
     ordering="AFTER"
     side="BOTH"
 
+[[dependencies.utility]]
+    modId="curios"
+    type="required"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
+[[dependencies.utility]]
+    modId="curios_api"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 [[dependencies.utility]]
     modId="jei"
     type="optional"

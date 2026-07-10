@@ -106,6 +106,7 @@ public class UtilityModVariables {
 			clone.ultima_gamemode = original.ultima_gamemode;
 			clone.medikit_cooldown = original.medikit_cooldown;
 			clone.bende_cooldown = original.bende_cooldown;
+			clone.CreativeNightVisionGoglesIsEquped = original.CreativeNightVisionGoglesIsEquped;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -282,6 +283,7 @@ public class UtilityModVariables {
 		public String ultima_gamemode = "\"\"";
 		public boolean medikit_cooldown = false;
 		public boolean bende_cooldown = false;
+		public boolean CreativeNightVisionGoglesIsEquped = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -305,6 +307,7 @@ public class UtilityModVariables {
 			nbt.putString("ultima_gamemode", ultima_gamemode);
 			nbt.putBoolean("medikit_cooldown", medikit_cooldown);
 			nbt.putBoolean("bende_cooldown", bende_cooldown);
+			nbt.putBoolean("CreativeNightVisionGoglesIsEquped", CreativeNightVisionGoglesIsEquped);
 			return nbt;
 		}
 
@@ -329,6 +332,7 @@ public class UtilityModVariables {
 			ultima_gamemode = nbt.getString("ultima_gamemode");
 			medikit_cooldown = nbt.getBoolean("medikit_cooldown");
 			bende_cooldown = nbt.getBoolean("bende_cooldown");
+			CreativeNightVisionGoglesIsEquped = nbt.getBoolean("CreativeNightVisionGoglesIsEquped");
 		}
 
 		public void markSyncDirty() {
