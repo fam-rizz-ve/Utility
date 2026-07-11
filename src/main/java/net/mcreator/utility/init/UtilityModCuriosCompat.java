@@ -8,8 +8,8 @@ import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 
 import net.minecraft.world.item.ItemStack;
 
-import net.mcreator.utility.procedures.CReativeNightVisionGogglesBaubleIsUnequippedProcedure;
-import net.mcreator.utility.procedures.CReativeNightVisionGogglesBaubleIsEquippedProcedure;
+import net.mcreator.utility.procedures.CreativeNighVisionGogglesBaubleBaubleIsUnequippedProcedure;
+import net.mcreator.utility.procedures.CreativeNighVisionGogglesBaubleBaubleIsEquippedProcedure;
 
 public class UtilityModCuriosCompat {
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
@@ -21,13 +21,13 @@ public class UtilityModCuriosCompat {
 
 			@Override
 			public void onEquip(SlotContext slotContext, ItemStack prevStack) {
-				CReativeNightVisionGogglesBaubleIsEquippedProcedure.execute(slotContext.entity());
+				CreativeNighVisionGogglesBaubleBaubleIsEquippedProcedure.execute(slotContext.entity());
 			}
 
 			@Override
 			public void onUnequip(SlotContext slotContext, ItemStack newStack) {
-				CReativeNightVisionGogglesBaubleIsUnequippedProcedure.execute(slotContext.entity());
+				CreativeNighVisionGogglesBaubleBaubleIsUnequippedProcedure.execute(slotContext.entity());
 			}
-		}, UtilityModItems.CREATIVE_NIGHT_VISION_GOGGLES_ITEM.get());
+		}, UtilityModItems.CREATIVE_NIGHT_VISION_GOGGLES.get());
 	}
 }

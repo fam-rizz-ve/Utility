@@ -2033,6 +2033,85 @@
         ]
       },
       "path": "~/quality of life/Wands"
+    },
+    {
+      "name": "Magicdamage",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magicdamage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/damage_type/magicdamage.json"
+        ]
+      },
+      "path": "~/misc/Damages types"
+    },
+    {
+      "name": "Vampire",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampire",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/enchantment/vampire.json"
+        ]
+      },
+      "path": "~/enchantements/power essence enchant"
+    },
+    {
+      "name": "CreativeNightVisionGoggles",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_night_vision_goggles",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/creative_night_vision_goggles.json",
+          "src/main/java/net/mcreator/utility/item/CreativeNightVisionGogglesItem.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/CreativeNightVisionGoggles"
+    },
+    {
+      "name": "CreativeNighVisionGogglesBaubleBaubleIsEquipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_nigh_vision_goggles_bauble_bauble_is_equipped",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/CreativeNighVisionGogglesBaubleBaubleIsEquippedProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/CreativeNightVisionGoggles"
+    },
+    {
+      "name": "CreativeNighVisionGogglesBaubleBaubleIsUnequipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_nigh_vision_goggles_bauble_bauble_is_unequipped",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/CreativeNighVisionGogglesBaubleBaubleIsUnequippedProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/CreativeNightVisionGoggles"
+    },
+    {
+      "name": "CreativeNighVisionGogglesBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_nigh_vision_goggles_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/quality of life/armor/Curoius/CreativeNightVisionGoggles"
     }
   ],
   "variable_elements": [
@@ -2163,22 +2242,10 @@
       "value": "false"
     },
     {
-      "name": "Max_Health_Hearts",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
-      "name": "Max_Armor",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
-      "name": "Max_Hunger",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
+      "name": "CreativeNightVisionGoglesIsEquped",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -2228,6 +2295,7 @@
       "~CUSTOM:Nightelmet.boots"
     ],
     "ENCHANTMENTS:minecraft:non_treasure": [
+      "~CUSTOM:Vampire",
       "~CUSTOM:Furyessece",
       "~CUSTOM:Sporetouch",
       "~CUSTOM:Windessece",
@@ -2278,6 +2346,12 @@
     ],
     "BLOCKS:minecraft:wither_immune": [
       "CUSTOM:Essenctiondistilizer"
+    ],
+    "ENCHANTMENTS:minecraft:tradeable": [
+      "~CUSTOM:Vampire"
+    ],
+    "ENCHANTMENTS:minecraft:on_random_loot": [
+      "~CUSTOM:Vampire"
     ]
   },
   "tab_element_order": {},
@@ -2413,13 +2487,22 @@
       "gui.utility.inventoryeditor_gui.Maxhearts": "Max hearts",
       "gui.utility.inventoryeditor_gui.MaxHunger": "Max Hunger",
       "gui.utility.inventoryeditor_gui.MaxArmor": "Max Armor",
-      "gui.utility.inventoryeditor_gui.Maxhealth": "Max Health"
+      "gui.utility.inventoryeditor_gui.Maxhealth": "Max Health",
+      "death.attack.magicdamage": "%1$s died from a magical attack",
+      "death.attack.magicdamage.player": "%1$s died whilst trying to escape %2$s",
+      "death.attack.magicdamage.item": "%1$s was killed by %2$s using %3$s",
+      "enchantment.utility.vampire": "Vampire",
+      "item.utility.creative_night_vision_goggles": "Creative Night Vision Goggles"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/utility/init/UtilityModKeyMappings.java",
       "src/main/java/net/mcreator/utility/init/UtilityModConfigs.java",
+      "src/main/resources/data/utility/curios/slots/head.json",
+      "src/main/java/net/mcreator/utility/init/UtilityModCuriosCompat.java",
+      "src/main/resources/data/utility/curios/entities/slots.json",
+      "src/main/resources/data/curios/tags/item/head.json",
       "src/main/java/net/mcreator/utility/init/UtilityModMobEffects.java",
       "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",
@@ -2513,35 +2596,21 @@
                     "children": []
                   }
                 ]
+              },
+              {
+                "name": "Curoius",
+                "children": [
+                  {
+                    "name": "CreativeNightVisionGoggles",
+                    "children": []
+                  }
+                ]
               }
             ]
           },
           {
             "name": "Wands",
             "children": []
-          },
-          {
-<<<<<<<< HEAD:.mcreator/workspaceBackups/utility.mcreator-backup_20260708_154845
-            "name": "Portable_function_blocks",
-            "children": []
-          },
-          {
-            "name": "Curios",
-            "children": [
-              {
-                "name": "Goggles",
-                "children": [
-                  {
-                    "name": "night vision Goggles",
-                    "children": []
-                  }
-                ]
-              }
-            ]
-========
-            "name": "Inventory_editing_comand",
-            "children": []
->>>>>>>> 07390a1dc042bc1ff68796875d4c1a3b27c3bf98:.mcreator/workspaceBackups/utility.mcreator-backup_20260708_181727
           }
         ]
       },
@@ -2603,6 +2672,10 @@
           {
             "name": "Chat message",
             "children": []
+          },
+          {
+            "name": "Damages types",
+            "children": []
           }
         ]
       }
@@ -2616,9 +2689,7 @@
     "websiteURL": "https://mcreator.net",
     "license": "GNU General Public License version 3 (GPLv3)",
     "serverSideOnly": false,
-    "requiredMods": [
-      "curios"
-    ],
+    "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
