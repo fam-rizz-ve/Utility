@@ -49,5 +49,6 @@ public class UtilityModTabs {
 				tabData.accept(UtilityModItems.CREATIVEDESPWANWAND.get());
 				tabData.accept(UtilityModItems.CREATIVE_NIGHT_VISION_GOGGLES.get());
 				tabData.accept(UtilityModItems.SURVIVAL_NIGHT_VISION_GOGGLES_ITEM.get());
+				tabData.accept(UtilityModItems.LENTI_SURVIVAL_NIGHT_VISION_GOGGLES.get());
 			}).withTabsBefore(UTILITYMAGIC.getId()).build());
 }

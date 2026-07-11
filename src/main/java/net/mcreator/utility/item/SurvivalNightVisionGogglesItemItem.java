@@ -1,10 +1,16 @@
 package net.mcreator.utility.item;
 
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
 public class SurvivalNightVisionGogglesItemItem extends Item {
 	public SurvivalNightVisionGogglesItemItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC));
+		super(new Item.Properties().durability(1000).rarity(Rarity.EPIC));
+	}
+
+	@Override
+	public boolean isPiglinCurrency(ItemStack stack) {
+		return true;
 	}
 }
