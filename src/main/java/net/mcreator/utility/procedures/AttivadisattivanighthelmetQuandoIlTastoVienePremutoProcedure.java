@@ -48,6 +48,20 @@ public class AttivadisattivanighthelmetQuandoIlTastoVienePremutoProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, -1, 0, false, false));
 		}
+		if (entity.getData(UtilityModVariables.PLAYER_VARIABLES).SurvivalNightVisionGogglesEquiped && entity instanceof LivingEntity _livEnt21 && _livEnt21.hasEffect(MobEffects.NIGHT_VISION)) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.removeEffect(MobEffects.NIGHT_VISION);
+		} else if (entity.getData(UtilityModVariables.PLAYER_VARIABLES).SurvivalNightVisionGogglesEquiped && !(entity instanceof LivingEntity _livEnt23 && _livEnt23.hasEffect(MobEffects.NIGHT_VISION))) {
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("utility:night_vision")), SoundSource.NEUTRAL, 1, 1);
+				} else {
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("utility:night_vision")), SoundSource.NEUTRAL, 1, 1, false);
+				}
+			}
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, -1, 0, false, false));
+		}
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == UtilityModItems.EXPLOSIVESUIT_CHESTPLATE.get()
 				&& (entity.getData(UtilityModVariables.PLAYER_VARIABLES).modalita_explosive_chessplate).equals("esplodi alla morte")) {
 			if (entity instanceof Player _player && !_player.level().isClientSide())

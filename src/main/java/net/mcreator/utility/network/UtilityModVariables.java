@@ -107,6 +107,7 @@ public class UtilityModVariables {
 			clone.medikit_cooldown = original.medikit_cooldown;
 			clone.bende_cooldown = original.bende_cooldown;
 			clone.CreativeNightVisionGoglesIsEquped = original.CreativeNightVisionGoglesIsEquped;
+			clone.SurvivalNightVisionGogglesEquiped = original.SurvivalNightVisionGogglesEquiped;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -284,6 +285,7 @@ public class UtilityModVariables {
 		public boolean medikit_cooldown = false;
 		public boolean bende_cooldown = false;
 		public boolean CreativeNightVisionGoglesIsEquped = false;
+		public boolean SurvivalNightVisionGogglesEquiped = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -308,6 +310,7 @@ public class UtilityModVariables {
 			nbt.putBoolean("medikit_cooldown", medikit_cooldown);
 			nbt.putBoolean("bende_cooldown", bende_cooldown);
 			nbt.putBoolean("CreativeNightVisionGoglesIsEquped", CreativeNightVisionGoglesIsEquped);
+			nbt.putBoolean("SurvivalNightVisionGogglesEquiped", SurvivalNightVisionGogglesEquiped);
 			return nbt;
 		}
 
@@ -333,6 +336,7 @@ public class UtilityModVariables {
 			medikit_cooldown = nbt.getBoolean("medikit_cooldown");
 			bende_cooldown = nbt.getBoolean("bende_cooldown");
 			CreativeNightVisionGoglesIsEquped = nbt.getBoolean("CreativeNightVisionGoglesIsEquped");
+			SurvivalNightVisionGogglesEquiped = nbt.getBoolean("SurvivalNightVisionGogglesEquiped");
 		}
 
 		public void markSyncDirty() {

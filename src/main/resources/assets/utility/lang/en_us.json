@@ -134,5 +134,6 @@
   "death.attack.magicdamage.player": "%1$s died whilst trying to escape %2$s",
   "death.attack.magicdamage.item": "%1$s was killed by %2$s using %3$s",
   "enchantment.utility.vampire": "Vampire",
-  "item.utility.creative_night_vision_goggles": "Creative Night Vision Goggles"
+  "item.utility.creative_night_vision_goggles": "Creative Night Vision Goggles",
+  "item.utility.survival_night_vision_goggles_item": "Survival Night Vision Goggles Item"
 }

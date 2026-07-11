@@ -2122,6 +2122,69 @@
         "files": []
       },
       "path": "~/quality of life/armor/Curoius/CreativeNightVisionGoggles"
+    },
+    {
+      "name": "SurvivalNightVisionGogglesItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_night_vision_goggles_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/item/SurvivalNightVisionGogglesItemItem.java",
+          "src/main/resources/assets/utility/models/item/survival_night_vision_goggles_item.json"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "SurvivalNightVisionGogglesBundleBaubleIsEquipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_night_vision_goggles_bundle_bauble_is_equipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/SurvivalNightVisionGogglesBundleBaubleIsEquippedProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "SurvivalNightVisionGogglesBundleBaubleIsUnequipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_night_vision_goggles_bundle_bauble_is_unequipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/SurvivalNightVisionGogglesBundleBaubleIsUnequippedProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "SurvivalNightVisionGogglesBundle",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_night_vision_goggles_bundle",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
     }
   ],
   "variable_elements": [
@@ -2253,6 +2316,12 @@
     },
     {
       "name": "CreativeNightVisionGoglesIsEquped",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "SurvivalNightVisionGogglesEquiped",
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
@@ -2502,7 +2571,8 @@
       "death.attack.magicdamage.player": "%1$s died whilst trying to escape %2$s",
       "death.attack.magicdamage.item": "%1$s was killed by %2$s using %3$s",
       "enchantment.utility.vampire": "Vampire",
-      "item.utility.creative_night_vision_goggles": "Creative Night Vision Goggles"
+      "item.utility.creative_night_vision_goggles": "Creative Night Vision Goggles",
+      "item.utility.survival_night_vision_goggles_item": "Survival Night Vision Goggles Item"
     }
   },
   "metadata": {
@@ -2612,6 +2682,10 @@
                 "children": [
                   {
                     "name": "CreativeNightVisionGoggles",
+                    "children": []
+                  },
+                  {
+                    "name": "SurvivalNIghtVisionGoggles",
                     "children": []
                   }
                 ]

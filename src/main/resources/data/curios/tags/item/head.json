@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "utility:creative_night_vision_goggles"
+    "utility:creative_night_vision_goggles",
+    "utility:survival_night_vision_goggles_item"
   ]
 }

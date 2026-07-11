@@ -48,6 +48,7 @@ public class UtilityModItems {
 	public static final DeferredItem<Item> FADED_CONCRETE;
 	public static final DeferredItem<Item> CREATIVEDESPWANWAND;
 	public static final DeferredItem<Item> CREATIVE_NIGHT_VISION_GOGGLES;
+	public static final DeferredItem<Item> SURVIVAL_NIGHT_VISION_GOGGLES_ITEM;
 	static {
 		FLATKEY = REGISTRY.register("flatkey", FlatkeyItem::new);
 		OVERWORDKEY = REGISTRY.register("overwordkey", OverwordkeyItem::new);
@@ -80,6 +81,7 @@ public class UtilityModItems {
 		FADED_CONCRETE = block(UtilityModBlocks.FADED_CONCRETE, new Item.Properties().rarity(Rarity.RARE));
 		CREATIVEDESPWANWAND = REGISTRY.register("creativedespwanwand", CreativedespwanwandItem::new);
 		CREATIVE_NIGHT_VISION_GOGGLES = REGISTRY.register("creative_night_vision_goggles", CreativeNightVisionGogglesItem::new);
+		SURVIVAL_NIGHT_VISION_GOGGLES_ITEM = REGISTRY.register("survival_night_vision_goggles_item", SurvivalNightVisionGogglesItemItem::new);
 	}
 
 	// Start of user code block custom items
