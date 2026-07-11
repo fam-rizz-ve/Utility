@@ -2161,6 +2161,24 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "Max_Health_Hearts",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Max_Armor",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Max_Hunger",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -2391,7 +2409,11 @@
       "utility.configuration.bendages_cooldown": "Bendages_cooldown",
       "utility.configuration.bendage": "Bendage",
       "utility.configuration.bendages_healing_power": "Bendages_healing_power",
-      "item.utility.creativedespwanwand": "creative despawn wand"
+      "item.utility.creativedespwanwand": "creative despawn wand",
+      "gui.utility.inventoryeditor_gui.Maxhearts": "Max hearts",
+      "gui.utility.inventoryeditor_gui.MaxHunger": "Max Hunger",
+      "gui.utility.inventoryeditor_gui.MaxArmor": "Max Armor",
+      "gui.utility.inventoryeditor_gui.Maxhealth": "Max Health"
     }
   },
   "metadata": {
@@ -2499,6 +2521,7 @@
             "children": []
           },
           {
+<<<<<<<< HEAD:.mcreator/workspaceBackups/utility.mcreator-backup_20260708_154845
             "name": "Portable_function_blocks",
             "children": []
           },
@@ -2515,6 +2538,10 @@
                 ]
               }
             ]
+========
+            "name": "Inventory_editing_comand",
+            "children": []
+>>>>>>>> 07390a1dc042bc1ff68796875d4c1a3b27c3bf98:.mcreator/workspaceBackups/utility.mcreator-backup_20260708_181727
           }
         ]
       },
