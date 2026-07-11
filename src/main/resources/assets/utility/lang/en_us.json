@@ -127,4 +127,12 @@
   "utility.configuration.bendages_healing_power": "Bendages_healing_power",
   "item.utility.creativedespwanwand": "creative despawn wand",
   "item.utility.creative_night_vision_goggles_item": "Creative Night Vision Goggles Item"
+  "gui.utility.inventoryeditor_gui.Maxhearts": "Max hearts",
+  "gui.utility.inventoryeditor_gui.MaxHunger": "Max Hunger",
+  "gui.utility.inventoryeditor_gui.MaxArmor": "Max Armor",
+  "gui.utility.inventoryeditor_gui.Maxhealth": "Max Health",
+  "death.attack.magicdamage": "%1$s died from a magical attack",
+  "death.attack.magicdamage.player": "%1$s died whilst trying to escape %2$s",
+  "death.attack.magicdamage.item": "%1$s was killed by %2$s using %3$s",
+  "enchantment.utility.vampire": "Vampire"
 }

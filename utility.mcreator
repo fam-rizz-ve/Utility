@@ -2035,7 +2035,6 @@
       "path": "~/quality of life/Wands"
     },
     {
-<<<<<<< HEAD
       "name": "CreativeNightVisionGogglesItem",
       "type": "item",
       "compiles": true,
@@ -2097,7 +2096,6 @@
         "files": []
       },
       "path": "~/quality of life/Curios/Goggles/night vision Goggles"
-=======
       "name": "Magicdamage",
       "type": "damagetype",
       "compiles": true,
@@ -2122,7 +2120,6 @@
         ]
       },
       "path": "~/enchantements/power essence enchant"
->>>>>>> 07390a1dc042bc1ff68796875d4c1a3b27c3bf98
     }
   ],
   "variable_elements": [
@@ -2495,9 +2492,7 @@
       "utility.configuration.bendage": "Bendage",
       "utility.configuration.bendages_healing_power": "Bendages_healing_power",
       "item.utility.creativedespwanwand": "creative despawn wand",
-<<<<<<< HEAD
       "item.utility.creative_night_vision_goggles_item": "Creative Night Vision Goggles Item"
-=======
       "gui.utility.inventoryeditor_gui.Maxhearts": "Max hearts",
       "gui.utility.inventoryeditor_gui.MaxHunger": "Max Hunger",
       "gui.utility.inventoryeditor_gui.MaxArmor": "Max Armor",
@@ -2506,7 +2501,6 @@
       "death.attack.magicdamage.player": "%1$s died whilst trying to escape %2$s",
       "death.attack.magicdamage.item": "%1$s was killed by %2$s using %3$s",
       "enchantment.utility.vampire": "Vampire"
->>>>>>> 07390a1dc042bc1ff68796875d4c1a3b27c3bf98
     }
   },
   "metadata": {
@@ -2616,7 +2610,6 @@
           {
             "name": "Wands",
             "children": []
-<<<<<<< HEAD
           },
           {
             "name": "Portable_function_blocks",
@@ -2635,8 +2628,6 @@
                 ]
               }
             ]
-=======
->>>>>>> 07390a1dc042bc1ff68796875d4c1a3b27c3bf98
           }
         ]
       },
