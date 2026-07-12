@@ -44,9 +44,3 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 apply from: 'mcreator.gradle'
-
-repositories {
-    maven {
-        url = "https://maven.theillusivec4.top/"
-    }
-}
