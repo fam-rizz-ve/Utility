@@ -137,5 +137,7 @@
   "item.utility.creative_night_vision_goggles": "Creative Night Vision Goggles",
   "item.utility.survival_night_vision_goggles_item": "Survival Night Vision Goggles Item",
   "item.utility.lenti_survival_night_vision_goggles": "lenses Night Vision Goggles",
-  "item.utility.lenti_rotte_survival_night_vision_goggles": "Broken Lences Survival Night Vision Goggles"
+  "item.utility.lenti_rotte_survival_night_vision_goggles": "Broken Lences Survival Night Vision Goggles",
+  "item.utility.lenti_rotte_survival_n_ight_vision_goggles_item": "Broken Lences Survival N Ight Vision Goggles Item",
+  "effect.utility.survival_n_ight_vision_goggles_effect": "Survival NIght Vision Goggles Effect"
 }

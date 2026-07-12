@@ -8,6 +8,7 @@ import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 
 import net.minecraft.world.item.ItemStack;
 
+import net.mcreator.utility.procedures.SurvivalNightVisionGogglesBundleWhileBaubleIsEquippedTickProcedure;
 import net.mcreator.utility.procedures.SurvivalNightVisionGogglesBundleBaubleIsUnequippedProcedure;
 import net.mcreator.utility.procedures.SurvivalNightVisionGogglesBundleBaubleIsEquippedProcedure;
 import net.mcreator.utility.procedures.CreativeNighVisionGogglesBaubleBaubleIsUnequippedProcedure;
@@ -35,6 +36,11 @@ public class UtilityModCuriosCompat {
 			@Override
 			public ItemStack getStack() {
 				return stack;
+			}
+
+			@Override
+			public void curioTick(SlotContext slotContext) {
+				SurvivalNightVisionGogglesBundleWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity().level(), slotContext.entity(), stack);
 			}
 
 			@Override

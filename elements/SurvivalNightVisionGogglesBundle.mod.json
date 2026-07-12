@@ -15,6 +15,9 @@
     "hasModel": false,
     "baubleModel": "Default",
     "baubleModelTexture": "",
+    "curioTick": {
+      "name": "SurvivalNightVisionGogglesBundleWhileBaubleIsEquippedTick"
+    },
     "onEquip": {
       "name": "SurvivalNightVisionGogglesBundleBaubleIsEquipped"
     },

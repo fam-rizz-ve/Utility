@@ -2081,11 +2081,230 @@
       "locked_code": false,
       "registry_name": "creative_nigh_vision_goggles_bauble_bauble_is_equipped",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "files": [
           "src/main/java/net/mcreator/utility/procedures/CreativeNighVisionGogglesBaubleBaubleIsEquippedProcedure.java"
         ]
-      }
+      },
+      "path": "~/quality of life/armor/Curoius/CreativeNightVisionGoggles"
+    },
+    {
+      "name": "CreativeNighVisionGogglesBaubleBaubleIsUnequipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_nigh_vision_goggles_bauble_bauble_is_unequipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/CreativeNighVisionGogglesBaubleBaubleIsUnequippedProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/CreativeNightVisionGoggles"
+    },
+    {
+      "name": "CreativeNighVisionGogglesBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_nigh_vision_goggles_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/quality of life/armor/Curoius/CreativeNightVisionGoggles"
+    },
+    {
+      "name": "SurvivalNightVisionGogglesItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_night_vision_goggles_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/item/SurvivalNightVisionGogglesItemItem.java",
+          "src/main/resources/assets/utility/models/item/survival_night_vision_goggles_item.json"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "SurvivalNightVisionGogglesBundleBaubleIsEquipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_night_vision_goggles_bundle_bauble_is_equipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/SurvivalNightVisionGogglesBundleBaubleIsEquippedProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "SurvivalNightVisionGogglesBundleBaubleIsUnequipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_night_vision_goggles_bundle_bauble_is_unequipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/SurvivalNightVisionGogglesBundleBaubleIsUnequippedProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "SurvivalNightVisionGogglesBundle",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_night_vision_goggles_bundle",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "LentiSurvivalNightVisionGoggles",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lenti_survival_night_vision_goggles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/item/LentiSurvivalNightVisionGogglesItem.java",
+          "src/main/resources/assets/utility/models/item/lenti_survival_night_vision_goggles.json"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "LentiRotteSurvivalNightVisionGoggles",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lenti_rotte_survival_night_vision_goggles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/item/LentiRotteSurvivalNightVisionGogglesItem.java",
+          "src/main/resources/assets/utility/models/item/lenti_rotte_survival_night_vision_goggles.json"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/CreativeNightVisionGoggles"
+    },
+    {
+      "name": "LentiRotteSurvivalNIghtVisionGogglesItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lenti_rotte_survival_n_ight_vision_goggles_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/lenti_rotte_survival_n_ight_vision_goggles_item.json",
+          "src/main/java/net/mcreator/utility/item/LentiRotteSurvivalNIghtVisionGogglesItemItem.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "SurvivalNIghtVisionGogglesEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_n_ight_vision_goggles_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/potion/SurvivalNIghtVisionGogglesEffectMobEffect.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "SurvivalNIghtVisionGogglesEffectQuandoLeffettoIniziavieneApplicato",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_n_ight_vision_goggles_effect_quando_leffetto_iniziaviene_applicato",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/SurvivalNIghtVisionGogglesEffectQuandoLeffettoIniziavieneApplicatoProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "SurvivalNIghtVisionGogglesEffectQuandoLeffettoSvanisce",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_n_ight_vision_goggles_effect_quando_leffetto_svanisce",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/SurvivalNIghtVisionGogglesEffectQuandoLeffettoSvanisceProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "SurvivalNightVisionGogglesBundleWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_night_vision_goggles_bundle_while_bauble_is_equipped_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/SurvivalNightVisionGogglesBundleWhileBaubleIsEquippedTickProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
     }
   ],
   "variable_elements": [
@@ -2216,7 +2435,13 @@
       "value": "false"
     },
     {
-      "name": "CreativeNightVisionGooglesIsEquiped",
+      "name": "CreativeNightVisionGoglesIsEquped",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "SurvivalNightVisionGogglesEquiped",
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
@@ -2250,6 +2475,7 @@
   ],
   "tag_elements": {
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:SurvivalNightVisionGogglesItem",
       "~CUSTOM:Ironknife",
       "~CUSTOM:Tacticalknife",
       "~CUSTOM:Medikit"
@@ -2326,6 +2552,9 @@
     ],
     "ENCHANTMENTS:minecraft:on_random_loot": [
       "~CUSTOM:Vampire"
+    ],
+    "ITEMS:minecraft:piglin_loved": [
+      "~CUSTOM:SurvivalNightVisionGogglesItem"
     ]
   },
   "tab_element_order": {},
@@ -2466,13 +2695,22 @@
       "death.attack.magicdamage.player": "%1$s died whilst trying to escape %2$s",
       "death.attack.magicdamage.item": "%1$s was killed by %2$s using %3$s",
       "enchantment.utility.vampire": "Vampire",
-      "item.utility.creative_night_vision_goggles": "Creative Night Vision Goggles"
+      "item.utility.creative_night_vision_goggles": "Creative Night Vision Goggles",
+      "item.utility.survival_night_vision_goggles_item": "Survival Night Vision Goggles Item",
+      "item.utility.lenti_survival_night_vision_goggles": "lenses Night Vision Goggles",
+      "item.utility.lenti_rotte_survival_night_vision_goggles": "Broken Lences Survival Night Vision Goggles",
+      "item.utility.lenti_rotte_survival_n_ight_vision_goggles_item": "Broken Lences Survival N Ight Vision Goggles Item",
+      "effect.utility.survival_n_ight_vision_goggles_effect": "Survival NIght Vision Goggles Effect"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/utility/init/UtilityModKeyMappings.java",
       "src/main/java/net/mcreator/utility/init/UtilityModConfigs.java",
+      "src/main/resources/data/utility/curios/slots/head.json",
+      "src/main/java/net/mcreator/utility/init/UtilityModCuriosCompat.java",
+      "src/main/resources/data/utility/curios/entities/slots.json",
+      "src/main/resources/data/curios/tags/item/head.json",
       "src/main/java/net/mcreator/utility/init/UtilityModMobEffects.java",
       "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",
@@ -2572,6 +2810,10 @@
                 "children": [
                   {
                     "name": "CreativeNightVisionGoggles",
+                    "children": []
+                  },
+                  {
+                    "name": "SurvivalNIghtVisionGoggles",
                     "children": []
                   }
                 ]
