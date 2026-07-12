@@ -52,5 +52,6 @@ public class UtilityModTabs {
 				tabData.accept(UtilityModItems.LENTI_SURVIVAL_NIGHT_VISION_GOGGLES.get());
 				tabData.accept(UtilityModItems.LENTI_ROTTE_SURVIVAL_NIGHT_VISION_GOGGLES.get());
 				tabData.accept(UtilityModItems.LENTI_ROTTE_SURVIVAL_N_IGHT_VISION_GOGGLES_ITEM.get());
+				tabData.accept(UtilityModItems.BUILDING_TOOL.get());
 			}).withTabsBefore(UTILITYMAGIC.getId()).build());
 }

@@ -58,8 +58,8 @@
       "registry_name": "netherkey",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/NetherkeyItem.java",
-          "src/main/resources/assets/utility/models/item/netherkey.json"
+          "src/main/resources/assets/utility/models/item/netherkey.json",
+          "src/main/java/net/mcreator/utility/item/NetherkeyItem.java"
         ]
       },
       "path": "~/key/item"
@@ -72,8 +72,8 @@
       "registry_name": "endkey",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/endkey.json",
-          "src/main/java/net/mcreator/utility/item/EndkeyItem.java"
+          "src/main/java/net/mcreator/utility/item/EndkeyItem.java",
+          "src/main/resources/assets/utility/models/item/endkey.json"
         ]
       },
       "path": "~/key/item"
@@ -100,8 +100,8 @@
       "registry_name": "limbo_key_part_1",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/LimboKeyPart1Item.java",
-          "src/main/resources/assets/utility/models/item/limbo_key_part_1.json"
+          "src/main/resources/assets/utility/models/item/limbo_key_part_1.json",
+          "src/main/java/net/mcreator/utility/item/LimboKeyPart1Item.java"
         ]
       },
       "path": "~/key/item"
@@ -114,8 +114,8 @@
       "registry_name": "liminaly_key",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/LiminalyKeyItem.java",
-          "src/main/resources/assets/utility/models/item/liminaly_key.json"
+          "src/main/resources/assets/utility/models/item/liminaly_key.json",
+          "src/main/java/net/mcreator/utility/item/LiminalyKeyItem.java"
         ]
       },
       "path": "~/key/item"
@@ -128,8 +128,8 @@
       "registry_name": "emptykey",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/emptykey.json",
-          "src/main/java/net/mcreator/utility/item/EmptykeyItem.java"
+          "src/main/java/net/mcreator/utility/item/EmptykeyItem.java",
+          "src/main/resources/assets/utility/models/item/emptykey.json"
         ]
       },
       "path": "~/key/item"
@@ -486,8 +486,8 @@
       "registry_name": "medikit",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/MedikitItem.java",
-          "src/main/resources/assets/utility/models/item/medikit.json"
+          "src/main/resources/assets/utility/models/item/medikit.json",
+          "src/main/java/net/mcreator/utility/item/MedikitItem.java"
         ]
       },
       "path": "~/quality of life/med_things"
@@ -621,8 +621,8 @@
       "registry_name": "ironknife",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/IronknifeItem.java",
-          "src/main/resources/assets/utility/models/item/ironknife.json"
+          "src/main/resources/assets/utility/models/item/ironknife.json",
+          "src/main/java/net/mcreator/utility/item/IronknifeItem.java"
         ]
       },
       "path": "~/quality of life/tattical knife"
@@ -661,8 +661,8 @@
       "registry_name": "knifeblade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/knifeblade.json",
-          "src/main/java/net/mcreator/utility/item/KnifebladeItem.java"
+          "src/main/java/net/mcreator/utility/item/KnifebladeItem.java",
+          "src/main/resources/assets/utility/models/item/knifeblade.json"
         ]
       },
       "path": "~/quality of life/tattical knife"
@@ -786,8 +786,8 @@
       "registry_name": "creativenighthelmet",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/CreativenighthelmetItem.java",
-          "src/main/resources/assets/utility/models/item/creativenighthelmet_helmet.json"
+          "src/main/resources/assets/utility/models/item/creativenighthelmet_helmet.json",
+          "src/main/java/net/mcreator/utility/item/CreativenighthelmetItem.java"
         ]
       },
       "path": "~/quality of life/armor/creative night helmet"
@@ -897,8 +897,8 @@
       "registry_name": "blast_cell",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/blast_cell.json",
-          "src/main/java/net/mcreator/utility/item/BlastCellItem.java"
+          "src/main/java/net/mcreator/utility/item/BlastCellItem.java",
+          "src/main/resources/assets/utility/models/item/blast_cell.json"
         ]
       },
       "path": "~/quality of life/armor/explosive suit"
@@ -937,11 +937,11 @@
       "registry_name": "nightelmet",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/nightelmet_boots.json",
-          "src/main/java/net/mcreator/utility/item/NightelmetItem.java",
-          "src/main/resources/assets/utility/models/item/nightelmet_helmet.json",
           "src/main/resources/assets/utility/models/item/nightelmet_leggings.json",
-          "src/main/resources/assets/utility/models/item/nightelmet_chestplate.json"
+          "src/main/resources/assets/utility/models/item/nightelmet_boots.json",
+          "src/main/resources/assets/utility/models/item/nightelmet_chestplate.json",
+          "src/main/java/net/mcreator/utility/item/NightelmetItem.java",
+          "src/main/resources/assets/utility/models/item/nightelmet_helmet.json"
         ]
       },
       "path": "~/quality of life/armor/tattical armor"
@@ -954,8 +954,8 @@
       "registry_name": "tactical_template",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/TacticalTemplateItem.java",
-          "src/main/resources/assets/utility/models/item/tactical_template.json"
+          "src/main/resources/assets/utility/models/item/tactical_template.json",
+          "src/main/java/net/mcreator/utility/item/TacticalTemplateItem.java"
         ]
       },
       "path": "~/quality of life/armor/tattical armor"
@@ -1559,8 +1559,8 @@
       "registry_name": "overworldessence",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/OverworldessenceItem.java",
-          "src/main/resources/assets/utility/models/item/overworldessence.json"
+          "src/main/resources/assets/utility/models/item/overworldessence.json",
+          "src/main/java/net/mcreator/utility/item/OverworldessenceItem.java"
         ]
       },
       "path": "~/enchantements/power essence"
@@ -1601,8 +1601,8 @@
       "registry_name": "flatessence",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/flatessence.json",
-          "src/main/java/net/mcreator/utility/item/FlatessenceItem.java"
+          "src/main/java/net/mcreator/utility/item/FlatessenceItem.java",
+          "src/main/resources/assets/utility/models/item/flatessence.json"
         ]
       },
       "path": "~/enchantements/power essence"
@@ -1615,12 +1615,12 @@
       "registry_name": "essenctiondistilizer",
       "metadata": {
         "files": [
-          "src/main/resources/data/utility/loot_table/blocks/essenctiondistilizer.json",
+          "src/main/resources/assets/utility/blockstates/essenctiondistilizer.json",
           "src/main/resources/assets/utility/models/item/essenctiondistilizer.json",
           "src/main/java/net/mcreator/utility/block/EssenctiondistilizerBlock.java",
           "src/main/java/net/mcreator/utility/block/entity/EssenctiondistilizerBlockEntity.java",
-          "src/main/resources/assets/utility/models/block/essenctiondistilizer.json",
-          "src/main/resources/assets/utility/blockstates/essenctiondistilizer.json"
+          "src/main/resources/data/utility/loot_table/blocks/essenctiondistilizer.json",
+          "src/main/resources/assets/utility/models/block/essenctiondistilizer.json"
         ]
       },
       "path": "~/dimension/limbo/essention distillizer"
@@ -1668,8 +1668,8 @@
       "registry_name": "essenction_distillizer_jei_recipe_type",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/jei_recipes/EssenctionDistillizerJEIRecipeTypeRecipe.java",
-          "src/main/java/net/mcreator/utility/jei_recipes/EssenctionDistillizerJEIRecipeTypeRecipeCategory.java"
+          "src/main/java/net/mcreator/utility/jei_recipes/EssenctionDistillizerJEIRecipeTypeRecipeCategory.java",
+          "src/main/java/net/mcreator/utility/jei_recipes/EssenctionDistillizerJEIRecipeTypeRecipe.java"
         ]
       },
       "path": "~/dimension/limbo/essention distillizer"
@@ -1709,10 +1709,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/utility/models/item/dungeongeneratorblock.json",
-          "src/main/java/net/mcreator/utility/block/DungeongeneratorblockBlock.java",
-          "src/main/resources/assets/utility/models/block/dungeongeneratorblock.json",
           "src/main/resources/data/utility/loot_table/blocks/dungeongeneratorblock.json",
-          "src/main/resources/assets/utility/blockstates/dungeongeneratorblock.json"
+          "src/main/resources/assets/utility/models/block/dungeongeneratorblock.json",
+          "src/main/resources/assets/utility/blockstates/dungeongeneratorblock.json",
+          "src/main/java/net/mcreator/utility/block/DungeongeneratorblockBlock.java"
         ]
       },
       "path": "~/dimension/liminal/dungeon generator"
@@ -1852,11 +1852,11 @@
       "registry_name": "faded_concrete",
       "metadata": {
         "files": [
+          "src/main/resources/data/utility/loot_table/blocks/faded_concrete.json",
           "src/main/resources/assets/utility/models/item/faded_concrete.json",
           "src/main/resources/assets/utility/models/block/faded_concrete.json",
-          "src/main/java/net/mcreator/utility/block/FadedConcreteBlock.java",
-          "src/main/resources/data/utility/loot_table/blocks/faded_concrete.json",
-          "src/main/resources/assets/utility/blockstates/faded_concrete.json"
+          "src/main/resources/assets/utility/blockstates/faded_concrete.json",
+          "src/main/java/net/mcreator/utility/block/FadedConcreteBlock.java"
         ]
       },
       "path": "~/dimension/liminal/blocchi"
@@ -1898,8 +1898,8 @@
       "registry_name": "flatbiom",
       "metadata": {
         "files": [
-          "src/main/resources/data/utility/worldgen/biome/flatbiom.json",
           "src/main/resources/data/utility/worldgen/placed_feature/flatbiom_tree.json",
+          "src/main/resources/data/utility/worldgen/biome/flatbiom.json",
           "src/main/resources/data/utility/worldgen/configured_feature/flatbiom_tree.json"
         ]
       },
@@ -1913,8 +1913,8 @@
       "registry_name": "essenctiondistilizer_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/client/gui/EssenctiondistilizerGUIScreen.java",
-          "src/main/java/net/mcreator/utility/world/inventory/EssenctiondistilizerGUIMenu.java"
+          "src/main/java/net/mcreator/utility/world/inventory/EssenctiondistilizerGUIMenu.java",
+          "src/main/java/net/mcreator/utility/client/gui/EssenctiondistilizerGUIScreen.java"
         ]
       },
       "path": "~/dimension/limbo/essention distillizer"
@@ -2018,7 +2018,7 @@
           "src/main/java/net/mcreator/utility/procedures/CreativedespwanwandRightclickedProcedure.java"
         ]
       },
-      "path": "~/quality of life/Wands"
+      "path": "~/quality of life/Wands/Creative Wand"
     },
     {
       "name": "Creativedespwanwand",
@@ -2032,7 +2032,7 @@
           "src/main/java/net/mcreator/utility/item/CreativedespwanwandItem.java"
         ]
       },
-      "path": "~/quality of life/Wands"
+      "path": "~/quality of life/Wands/Creative Wand"
     },
     {
       "name": "Magicdamage",
@@ -2059,6 +2059,297 @@
         ]
       },
       "path": "~/enchantements/power essence enchant"
+    },
+    {
+      "name": "CreativeNightVisionGoggles",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_night_vision_goggles",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/creative_night_vision_goggles.json",
+          "src/main/java/net/mcreator/utility/item/CreativeNightVisionGogglesItem.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/CreativeNightVisionGoggles"
+    },
+    {
+      "name": "CreativeNighVisionGogglesBaubleBaubleIsEquipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_nigh_vision_goggles_bauble_bauble_is_equipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/CreativeNighVisionGogglesBaubleBaubleIsEquippedProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/CreativeNightVisionGoggles"
+    },
+    {
+      "name": "CreativeNighVisionGogglesBaubleBaubleIsUnequipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_nigh_vision_goggles_bauble_bauble_is_unequipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/CreativeNighVisionGogglesBaubleBaubleIsUnequippedProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/CreativeNightVisionGoggles"
+    },
+    {
+      "name": "CreativeNighVisionGogglesBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_nigh_vision_goggles_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/quality of life/armor/Curoius/CreativeNightVisionGoggles"
+    },
+    {
+      "name": "SurvivalNightVisionGogglesItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_night_vision_goggles_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/item/SurvivalNightVisionGogglesItemItem.java",
+          "src/main/resources/assets/utility/models/item/survival_night_vision_goggles_item.json"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "SurvivalNightVisionGogglesBundleBaubleIsEquipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_night_vision_goggles_bundle_bauble_is_equipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/SurvivalNightVisionGogglesBundleBaubleIsEquippedProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "SurvivalNightVisionGogglesBundleBaubleIsUnequipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_night_vision_goggles_bundle_bauble_is_unequipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/SurvivalNightVisionGogglesBundleBaubleIsUnequippedProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "SurvivalNightVisionGogglesBundle",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_night_vision_goggles_bundle",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "LentiSurvivalNightVisionGoggles",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lenti_survival_night_vision_goggles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/item/LentiSurvivalNightVisionGogglesItem.java",
+          "src/main/resources/assets/utility/models/item/lenti_survival_night_vision_goggles.json"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "LentiRotteSurvivalNightVisionGoggles",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lenti_rotte_survival_night_vision_goggles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/item/LentiRotteSurvivalNightVisionGogglesItem.java",
+          "src/main/resources/assets/utility/models/item/lenti_rotte_survival_night_vision_goggles.json"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/CreativeNightVisionGoggles"
+    },
+    {
+      "name": "LentiRotteSurvivalNIghtVisionGogglesItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lenti_rotte_survival_n_ight_vision_goggles_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/lenti_rotte_survival_n_ight_vision_goggles_item.json",
+          "src/main/java/net/mcreator/utility/item/LentiRotteSurvivalNIghtVisionGogglesItemItem.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "SurvivalNIghtVisionGogglesEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_n_ight_vision_goggles_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/potion/SurvivalNIghtVisionGogglesEffectMobEffect.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "SurvivalNIghtVisionGogglesEffectQuandoLeffettoIniziavieneApplicato",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_n_ight_vision_goggles_effect_quando_leffetto_iniziaviene_applicato",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/SurvivalNIghtVisionGogglesEffectQuandoLeffettoIniziavieneApplicatoProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "SurvivalNIghtVisionGogglesEffectQuandoLeffettoSvanisce",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_n_ight_vision_goggles_effect_quando_leffetto_svanisce",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/SurvivalNIghtVisionGogglesEffectQuandoLeffettoSvanisceProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "SurvivalNightVisionGogglesBundleWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_night_vision_goggles_bundle_while_bauble_is_equipped_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/SurvivalNightVisionGogglesBundleWhileBaubleIsEquippedTickProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "BuildingTool",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "building_tool",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/building_tool.json",
+          "src/main/java/net/mcreator/utility/item/BuildingToolItem.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Construction tool"
+    },
+    {
+      "name": "BuildingToolRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "building_tool_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/BuildingToolRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Construction tool"
     }
   ],
   "variable_elements": [
@@ -2187,6 +2478,18 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "CreativeNightVisionGoglesIsEquped",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "SurvivalNightVisionGogglesEquiped",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -2217,6 +2520,7 @@
   ],
   "tag_elements": {
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:SurvivalNightVisionGogglesItem",
       "~CUSTOM:Ironknife",
       "~CUSTOM:Tacticalknife",
       "~CUSTOM:Medikit"
@@ -2293,6 +2597,9 @@
     ],
     "ENCHANTMENTS:minecraft:on_random_loot": [
       "~CUSTOM:Vampire"
+    ],
+    "ITEMS:minecraft:piglin_loved": [
+      "~CUSTOM:SurvivalNightVisionGogglesItem"
     ]
   },
   "tab_element_order": {},
@@ -2432,12 +2739,23 @@
       "death.attack.magicdamage": "%1$s died from a magical attack",
       "death.attack.magicdamage.player": "%1$s died whilst trying to escape %2$s",
       "death.attack.magicdamage.item": "%1$s was killed by %2$s using %3$s",
-      "enchantment.utility.vampire": "Vampire"
+      "enchantment.utility.vampire": "Vampire",
+      "item.utility.creative_night_vision_goggles": "Creative Night Vision Goggles",
+      "item.utility.survival_night_vision_goggles_item": "Survival Night Vision Goggles Item",
+      "item.utility.lenti_survival_night_vision_goggles": "lenses Night Vision Goggles",
+      "item.utility.lenti_rotte_survival_night_vision_goggles": "Broken Lences Survival Night Vision Goggles",
+      "item.utility.lenti_rotte_survival_n_ight_vision_goggles_item": "Broken Lences Survival N Ight Vision Goggles Item",
+      "effect.utility.survival_n_ight_vision_goggles_effect": "Survival NIght Vision Goggles Effect",
+      "item.utility.building_tool": "Building Tool"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/utility/init/UtilityModConfigs.java",
+      "src/main/resources/data/utility/curios/entities/slots.json",
+      "src/main/resources/data/curios/tags/item/head.json",
+      "src/main/resources/data/utility/curios/slots/head.json",
+      "src/main/java/net/mcreator/utility/init/UtilityModCuriosCompat.java",
       "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
       "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",
@@ -2532,12 +2850,38 @@
                     "children": []
                   }
                 ]
+              },
+              {
+                "name": "Curoius",
+                "children": [
+                  {
+                    "name": "CreativeNightVisionGoggles",
+                    "children": []
+                  },
+                  {
+                    "name": "SurvivalNIghtVisionGoggles",
+                    "children": []
+                  }
+                ]
               }
             ]
           },
           {
             "name": "Wands",
-            "children": []
+            "children": [
+              {
+                "name": "Creative Wand",
+                "children": []
+              },
+              {
+                "name": "Omni Wand",
+                "children": []
+              },
+              {
+                "name": "Construction tool",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -2620,6 +2964,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
+      "curios_api",
       "jei"
     ],
     "currentGenerator": "neoforge-1.21.1",
