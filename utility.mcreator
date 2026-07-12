@@ -2199,6 +2199,20 @@
         ]
       },
       "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "LentiRotteSurvivalNightVisionGoggles",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lenti_rotte_survival_night_vision_goggles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/item/LentiRotteSurvivalNightVisionGogglesItem.java",
+          "src/main/resources/assets/utility/models/item/lenti_rotte_survival_night_vision_goggles.json"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/CreativeNightVisionGoggles"
     }
   ],
   "variable_elements": [
@@ -2591,7 +2605,8 @@
       "enchantment.utility.vampire": "Vampire",
       "item.utility.creative_night_vision_goggles": "Creative Night Vision Goggles",
       "item.utility.survival_night_vision_goggles_item": "Survival Night Vision Goggles Item",
-      "item.utility.lenti_survival_night_vision_goggles": "lenses Night Vision Goggles"
+      "item.utility.lenti_survival_night_vision_goggles": "lenses Night Vision Goggles",
+      "item.utility.lenti_rotte_survival_night_vision_goggles": "Broken Lences Survival Night Vision Goggles"
     }
   },
   "metadata": {
