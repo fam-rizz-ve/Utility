@@ -2185,6 +2185,34 @@
         "files": []
       },
       "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "LentiSurvivalNightVisionGoggles",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lenti_survival_night_vision_goggles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/item/LentiSurvivalNightVisionGogglesItem.java",
+          "src/main/resources/assets/utility/models/item/lenti_survival_night_vision_goggles.json"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "LentiRotteSurvivalNightVisionGoggles",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lenti_rotte_survival_night_vision_goggles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/item/LentiRotteSurvivalNightVisionGogglesItem.java",
+          "src/main/resources/assets/utility/models/item/lenti_rotte_survival_night_vision_goggles.json"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/CreativeNightVisionGoggles"
     }
   ],
   "variable_elements": [
@@ -2355,6 +2383,7 @@
   ],
   "tag_elements": {
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:SurvivalNightVisionGogglesItem",
       "~CUSTOM:Ironknife",
       "~CUSTOM:Tacticalknife",
       "~CUSTOM:Medikit"
@@ -2431,6 +2460,9 @@
     ],
     "ENCHANTMENTS:minecraft:on_random_loot": [
       "~CUSTOM:Vampire"
+    ],
+    "ITEMS:minecraft:piglin_loved": [
+      "~CUSTOM:SurvivalNightVisionGogglesItem"
     ]
   },
   "tab_element_order": {},
@@ -2572,7 +2604,9 @@
       "death.attack.magicdamage.item": "%1$s was killed by %2$s using %3$s",
       "enchantment.utility.vampire": "Vampire",
       "item.utility.creative_night_vision_goggles": "Creative Night Vision Goggles",
-      "item.utility.survival_night_vision_goggles_item": "Survival Night Vision Goggles Item"
+      "item.utility.survival_night_vision_goggles_item": "Survival Night Vision Goggles Item",
+      "item.utility.lenti_survival_night_vision_goggles": "lenses Night Vision Goggles",
+      "item.utility.lenti_rotte_survival_night_vision_goggles": "Broken Lences Survival Night Vision Goggles"
     }
   },
   "metadata": {
