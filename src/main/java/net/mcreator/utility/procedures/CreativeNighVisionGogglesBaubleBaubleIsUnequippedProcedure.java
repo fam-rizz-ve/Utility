@@ -1,6 +1,8 @@
 package net.mcreator.utility.procedures;
 
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
 
 import net.mcreator.utility.network.UtilityModVariables;
 
@@ -13,5 +15,7 @@ public class CreativeNighVisionGogglesBaubleBaubleIsUnequippedProcedure {
 			_vars.CreativeNightVisionGoglesIsEquped = false;
 			_vars.markSyncDirty();
 		}
+		if (entity instanceof LivingEntity _entity)
+			_entity.removeEffect(MobEffects.NIGHT_VISION);
 	}
 }

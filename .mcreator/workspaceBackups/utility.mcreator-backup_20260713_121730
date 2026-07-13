@@ -2018,7 +2018,7 @@
           "src/main/java/net/mcreator/utility/procedures/CreativedespwanwandRightclickedProcedure.java"
         ]
       },
-      "path": "~/quality of life/Wands"
+      "path": "~/quality of life/Wands/Creative Wand"
     },
     {
       "name": "Creativedespwanwand",
@@ -2032,7 +2032,7 @@
           "src/main/java/net/mcreator/utility/item/CreativedespwanwandItem.java"
         ]
       },
-      "path": "~/quality of life/Wands"
+      "path": "~/quality of life/Wands/Creative Wand"
     },
     {
       "name": "Magicdamage",
@@ -2199,6 +2199,140 @@
         ]
       },
       "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "LentiRotteSurvivalNightVisionGoggles",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lenti_rotte_survival_night_vision_goggles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/item/LentiRotteSurvivalNightVisionGogglesItem.java",
+          "src/main/resources/assets/utility/models/item/lenti_rotte_survival_night_vision_goggles.json"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/CreativeNightVisionGoggles"
+    },
+    {
+      "name": "LentiRotteSurvivalNIghtVisionGogglesItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lenti_rotte_survival_n_ight_vision_goggles_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/lenti_rotte_survival_n_ight_vision_goggles_item.json",
+          "src/main/java/net/mcreator/utility/item/LentiRotteSurvivalNIghtVisionGogglesItemItem.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "SurvivalNIghtVisionGogglesEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_n_ight_vision_goggles_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/potion/SurvivalNIghtVisionGogglesEffectMobEffect.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "SurvivalNIghtVisionGogglesEffectQuandoLeffettoIniziavieneApplicato",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_n_ight_vision_goggles_effect_quando_leffetto_iniziaviene_applicato",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/SurvivalNIghtVisionGogglesEffectQuandoLeffettoIniziavieneApplicatoProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "SurvivalNIghtVisionGogglesEffectQuandoLeffettoSvanisce",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_n_ight_vision_goggles_effect_quando_leffetto_svanisce",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/SurvivalNIghtVisionGogglesEffectQuandoLeffettoSvanisceProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "SurvivalNightVisionGogglesBundleWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_night_vision_goggles_bundle_while_bauble_is_equipped_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/SurvivalNightVisionGogglesBundleWhileBaubleIsEquippedTickProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+    },
+    {
+      "name": "BuildingTool",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "building_tool",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/building_tool.json",
+          "src/main/java/net/mcreator/utility/item/BuildingToolItem.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Construction tool"
+    },
+    {
+      "name": "BuildingToolRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "building_tool_rightclicked",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/BuildingToolRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Construction tool"
     }
   ],
   "variable_elements": [
@@ -2591,7 +2725,11 @@
       "enchantment.utility.vampire": "Vampire",
       "item.utility.creative_night_vision_goggles": "Creative Night Vision Goggles",
       "item.utility.survival_night_vision_goggles_item": "Survival Night Vision Goggles Item",
-      "item.utility.lenti_survival_night_vision_goggles": "lenses Night Vision Goggles"
+      "item.utility.lenti_survival_night_vision_goggles": "lenses Night Vision Goggles",
+      "item.utility.lenti_rotte_survival_night_vision_goggles": "Broken Lences Survival Night Vision Goggles",
+      "item.utility.lenti_rotte_survival_n_ight_vision_goggles_item": "Broken Lences Survival N Ight Vision Goggles Item",
+      "effect.utility.survival_n_ight_vision_goggles_effect": "Survival NIght Vision Goggles Effect",
+      "item.utility.building_tool": "Building Tool"
     }
   },
   "metadata": {
@@ -2713,7 +2851,20 @@
           },
           {
             "name": "Wands",
-            "children": []
+            "children": [
+              {
+                "name": "Creative Wand",
+                "children": []
+              },
+              {
+                "name": "Omni Wand",
+                "children": []
+              },
+              {
+                "name": "Construction tool",
+                "children": []
+              }
+            ]
           }
         ]
       },
