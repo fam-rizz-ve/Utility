@@ -53,5 +53,11 @@ public class UtilityModCuriosCompat {
 				SurvivalNightVisionGogglesBundleBaubleIsUnequippedProcedure.execute(slotContext.entity());
 			}
 		}, UtilityModItems.SURVIVAL_NIGHT_VISION_GOGGLES_ITEM.get());
+		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
+			@Override
+			public ItemStack getStack() {
+				return stack;
+			}
+		}, UtilityModItems.OCCHIALI.get());
 	}
 }

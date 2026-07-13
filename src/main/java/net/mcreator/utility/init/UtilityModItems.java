@@ -50,9 +50,9 @@ public class UtilityModItems {
 	public static final DeferredItem<Item> CREATIVE_NIGHT_VISION_GOGGLES;
 	public static final DeferredItem<Item> SURVIVAL_NIGHT_VISION_GOGGLES_ITEM;
 	public static final DeferredItem<Item> LENTI_SURVIVAL_NIGHT_VISION_GOGGLES;
-	public static final DeferredItem<Item> LENTI_ROTTE_SURVIVAL_NIGHT_VISION_GOGGLES;
-	public static final DeferredItem<Item> LENTI_ROTTE_SURVIVAL_N_IGHT_VISION_GOGGLES_ITEM;
 	public static final DeferredItem<Item> BUILDING_TOOL;
+	public static final DeferredItem<Item> LENTE;
+	public static final DeferredItem<Item> OCCHIALI;
 	static {
 		FLATKEY = REGISTRY.register("flatkey", FlatkeyItem::new);
 		OVERWORDKEY = REGISTRY.register("overwordkey", OverwordkeyItem::new);
@@ -87,9 +87,9 @@ public class UtilityModItems {
 		CREATIVE_NIGHT_VISION_GOGGLES = REGISTRY.register("creative_night_vision_goggles", CreativeNightVisionGogglesItem::new);
 		SURVIVAL_NIGHT_VISION_GOGGLES_ITEM = REGISTRY.register("survival_night_vision_goggles_item", SurvivalNightVisionGogglesItemItem::new);
 		LENTI_SURVIVAL_NIGHT_VISION_GOGGLES = REGISTRY.register("lenti_survival_night_vision_goggles", LentiSurvivalNightVisionGogglesItem::new);
-		LENTI_ROTTE_SURVIVAL_NIGHT_VISION_GOGGLES = REGISTRY.register("lenti_rotte_survival_night_vision_goggles", LentiRotteSurvivalNightVisionGogglesItem::new);
-		LENTI_ROTTE_SURVIVAL_N_IGHT_VISION_GOGGLES_ITEM = REGISTRY.register("lenti_rotte_survival_n_ight_vision_goggles_item", LentiRotteSurvivalNIghtVisionGogglesItemItem::new);
 		BUILDING_TOOL = REGISTRY.register("building_tool", BuildingToolItem::new);
+		LENTE = REGISTRY.register("lente", LenteItem::new);
+		OCCHIALI = REGISTRY.register("occhiali", OcchialiItem::new);
 	}
 
 	// Start of user code block custom items

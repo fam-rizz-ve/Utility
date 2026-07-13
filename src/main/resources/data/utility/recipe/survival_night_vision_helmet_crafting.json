@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "utility:occhiali"
+  },
+  "base": {
+    "item": "utility:tactical_template"
+  },
+  "addition": {
+    "item": "minecraft:phantom_membrane"
+  },
+  "result": {
+    "id": "utility:survival_night_vision_goggles_item"
+  }
+}

@@ -135,10 +135,11 @@
   "death.attack.magicdamage.item": "%1$s was killed by %2$s using %3$s",
   "enchantment.utility.vampire": "Vampire",
   "item.utility.creative_night_vision_goggles": "Creative Night Vision Goggles",
-  "item.utility.survival_night_vision_goggles_item": "Survival Night Vision Goggles Item",
+  "item.utility.survival_night_vision_goggles_item": "Night Vision Goggles",
   "item.utility.lenti_survival_night_vision_goggles": "lenses Night Vision Goggles",
-  "item.utility.lenti_rotte_survival_night_vision_goggles": "Broken Lences Survival Night Vision Goggles",
-  "item.utility.lenti_rotte_survival_n_ight_vision_goggles_item": "Broken Lences Survival N Ight Vision Goggles Item",
   "effect.utility.survival_n_ight_vision_goggles_effect": "Survival NIght Vision Goggles Effect",
-  "item.utility.building_tool": "Building Tool"
+  "item.utility.building_tool": "Building Tool",
+  "item.utility.lente": "Lenses",
+  "item.utility.lenti_survival_night_vision_goggles.description_0": "You can use this lenses for repair your night vision googles",
+  "item.utility.occhiali": "Goggles"
 }

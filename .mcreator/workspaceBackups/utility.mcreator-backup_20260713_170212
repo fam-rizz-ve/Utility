@@ -2410,17 +2410,6 @@
         ]
       },
       "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/crafting"
-    },
-    {
-      "name": "GogglesBundle",
-      "type": "curiosbauble",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "goggles_bundle",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/occhiali"
     }
   ],
   "variable_elements": [

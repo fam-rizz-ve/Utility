@@ -1,0 +1,29 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:TacticalTemplate"
+    },
+    "smithingInputAdditionStack": {
+      "value": "Items.PHANTOM_MEMBRANE"
+    },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:Occhiali"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:SurvivalNightVisionGogglesItem"
+    },
+    "name": "survival_night_vision_helmet_crafting",
+    "namespace": "mod"
+  }
+}

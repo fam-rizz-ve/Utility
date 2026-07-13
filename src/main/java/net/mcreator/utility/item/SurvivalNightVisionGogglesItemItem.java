@@ -6,7 +6,7 @@ import net.minecraft.world.item.Item;
 
 public class SurvivalNightVisionGogglesItemItem extends Item {
 	public SurvivalNightVisionGogglesItemItem() {
-		super(new Item.Properties().durability(1000).rarity(Rarity.EPIC));
+		super(new Item.Properties().durability(2000).rarity(Rarity.EPIC));
 	}
 
 	@Override

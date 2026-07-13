@@ -101,6 +101,7 @@ public class UtilityModVariables {
 		clone.ultima_z_end = original.ultima_z_end;
 		clone.switch_dimension = original.switch_dimension;
 		clone.chiave_appena_usata = original.chiave_appena_usata;
+		clone.SurvivalNightVisionGogglesCanActivate = original.SurvivalNightVisionGogglesCanActivate;
 		if (!event.isWasDeath()) {
 			clone.modalita_explosive_chessplate = original.modalita_explosive_chessplate;
 			clone.ultima_gamemode = original.ultima_gamemode;
@@ -108,6 +109,8 @@ public class UtilityModVariables {
 			clone.bende_cooldown = original.bende_cooldown;
 			clone.CreativeNightVisionGoglesIsEquped = original.CreativeNightVisionGoglesIsEquped;
 			clone.SurvivalNightVisionGogglesEquiped = original.SurvivalNightVisionGogglesEquiped;
+			clone.SUrvivalNIghtVisionGogglesIsActiveBefereUnequip = original.SUrvivalNIghtVisionGogglesIsActiveBefereUnequip;
+			clone.UtilizzateLeLentiDelSurvivalNIghtVisionGoggles = original.UtilizzateLeLentiDelSurvivalNIghtVisionGoggles;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -286,6 +289,9 @@ public class UtilityModVariables {
 		public boolean bende_cooldown = false;
 		public boolean CreativeNightVisionGoglesIsEquped = false;
 		public boolean SurvivalNightVisionGogglesEquiped = false;
+		public boolean SurvivalNightVisionGogglesCanActivate = true;
+		public boolean SUrvivalNIghtVisionGogglesIsActiveBefereUnequip = false;
+		public boolean UtilizzateLeLentiDelSurvivalNIghtVisionGoggles = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -311,6 +317,9 @@ public class UtilityModVariables {
 			nbt.putBoolean("bende_cooldown", bende_cooldown);
 			nbt.putBoolean("CreativeNightVisionGoglesIsEquped", CreativeNightVisionGoglesIsEquped);
 			nbt.putBoolean("SurvivalNightVisionGogglesEquiped", SurvivalNightVisionGogglesEquiped);
+			nbt.putBoolean("SurvivalNightVisionGogglesCanActivate", SurvivalNightVisionGogglesCanActivate);
+			nbt.putBoolean("SUrvivalNIghtVisionGogglesIsActiveBefereUnequip", SUrvivalNIghtVisionGogglesIsActiveBefereUnequip);
+			nbt.putBoolean("UtilizzateLeLentiDelSurvivalNIghtVisionGoggles", UtilizzateLeLentiDelSurvivalNIghtVisionGoggles);
 			return nbt;
 		}
 
@@ -337,6 +346,9 @@ public class UtilityModVariables {
 			bende_cooldown = nbt.getBoolean("bende_cooldown");
 			CreativeNightVisionGoglesIsEquped = nbt.getBoolean("CreativeNightVisionGoglesIsEquped");
 			SurvivalNightVisionGogglesEquiped = nbt.getBoolean("SurvivalNightVisionGogglesEquiped");
+			SurvivalNightVisionGogglesCanActivate = nbt.getBoolean("SurvivalNightVisionGogglesCanActivate");
+			SUrvivalNIghtVisionGogglesIsActiveBefereUnequip = nbt.getBoolean("SUrvivalNIghtVisionGogglesIsActiveBefereUnequip");
+			UtilizzateLeLentiDelSurvivalNIghtVisionGoggles = nbt.getBoolean("UtilizzateLeLentiDelSurvivalNIghtVisionGoggles");
 		}
 
 		public void markSyncDirty() {

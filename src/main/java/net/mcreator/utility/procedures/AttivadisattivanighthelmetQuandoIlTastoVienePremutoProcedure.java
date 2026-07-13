@@ -51,7 +51,8 @@ public class AttivadisattivanighthelmetQuandoIlTastoVienePremutoProcedure {
 		if (entity.getData(UtilityModVariables.PLAYER_VARIABLES).SurvivalNightVisionGogglesEquiped && entity instanceof LivingEntity _livEnt21 && _livEnt21.hasEffect(UtilityModMobEffects.SURVIVAL_N_IGHT_VISION_GOGGLES_EFFECT)) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(UtilityModMobEffects.SURVIVAL_N_IGHT_VISION_GOGGLES_EFFECT);
-		} else if (entity.getData(UtilityModVariables.PLAYER_VARIABLES).SurvivalNightVisionGogglesEquiped && !(entity instanceof LivingEntity _livEnt23 && _livEnt23.hasEffect(UtilityModMobEffects.SURVIVAL_N_IGHT_VISION_GOGGLES_EFFECT))) {
+		} else if (entity.getData(UtilityModVariables.PLAYER_VARIABLES).SurvivalNightVisionGogglesEquiped && !(entity instanceof LivingEntity _livEnt23 && _livEnt23.hasEffect(UtilityModMobEffects.SURVIVAL_N_IGHT_VISION_GOGGLES_EFFECT))
+				&& entity.getData(UtilityModVariables.PLAYER_VARIABLES).SurvivalNightVisionGogglesCanActivate) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("utility:night_vision")), SoundSource.NEUTRAL, 1, 1);

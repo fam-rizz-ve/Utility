@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:lime_dye"
+    },
+    "b": {
+      "item": "utility:lente"
+    }
+  },
+  "result": {
+    "id": "utility:lenti_survival_night_vision_goggles",
+    "count": 1
+  }
+}

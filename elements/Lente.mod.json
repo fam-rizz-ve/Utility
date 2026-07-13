@@ -3,20 +3,20 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "screenshot_20260711_143454",
+    "texture": "lente",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "lenses Night Vision Goggles",
-    "rarity": "UNCOMMON",
+    "name": "Lenses",
+    "rarity": "COMMON",
     "creativeTabs": [
       {
         "value": "CUSTOM:Utility"
       }
     ],
-    "stackSize": 16,
+    "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
@@ -34,9 +34,7 @@
     "damageVsEntity": 4.0,
     "attackSpeed": 1.2,
     "specialInformation": {
-      "fixedValue": [
-        "You can use this lenses for repair your night vision googles"
-      ]
+      "fixedValue": []
     },
     "glowCondition": {
       "fixedValue": false
@@ -46,9 +44,6 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 99,
-    "onRightClickedInAir": {
-      "name": "LentiSurvivalNightVisionGogglesQuandoSiFaClicConIlPulsanteDestroDelMouse"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

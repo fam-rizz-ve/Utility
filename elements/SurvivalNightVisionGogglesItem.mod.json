@@ -9,7 +9,7 @@
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Survival Night Vision Goggles Item",
+    "name": "Night Vision Goggles",
     "rarity": "EPIC",
     "creativeTabs": [
       {
@@ -20,7 +20,7 @@
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 1000,
+    "damageCount": 2000,
     "recipeRemainder": {
       "value": ""
     },

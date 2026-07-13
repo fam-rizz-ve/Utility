@@ -2,7 +2,7 @@
   "_fv": 85,
   "_type": "curiosbauble",
   "definition": {
-    "item": "SurvivalNightVisionGogglesItem",
+    "item": "Occhiali",
     "slotType": "HEAD",
     "slotAmount": 1,
     "addSlot": false,
@@ -15,15 +15,6 @@
     "hasModel": true,
     "baubleModel": "Default",
     "baubleModelTexture": "occhialinightviverision.png",
-    "curioTick": {
-      "name": "SurvivalNightVisionGogglesBundleWhileBaubleIsEquippedTick"
-    },
-    "onEquip": {
-      "name": "SurvivalNightVisionGogglesBundleBaubleIsEquipped"
-    },
-    "onUnequip": {
-      "name": "SurvivalNightVisionGogglesBundleBaubleIsUnequipped"
-    },
     "helmetModelPart": "Empty",
     "bodyModelPart": "Empty",
     "armsModelPartL": "Empty",
