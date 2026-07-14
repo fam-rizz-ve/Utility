@@ -2421,6 +2421,20 @@
         "files": []
       },
       "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/occhiali"
+    },
+    {
+      "name": "OmniWands",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omni_wands",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/omni_wands.json",
+          "src/main/java/net/mcreator/utility/item/OmniWandsItem.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand"
     }
   ],
   "variable_elements": [
@@ -2836,7 +2850,8 @@
       "item.utility.building_tool": "Building Tool",
       "item.utility.lente": "Lenses",
       "item.utility.lenti_survival_night_vision_goggles.description_0": "You can use this lenses for repair your night vision googles",
-      "item.utility.occhiali": "Goggles"
+      "item.utility.occhiali": "Goggles",
+      "item.utility.omni_wands": "Creative Omni Wands"
     }
   },
   "metadata": {
