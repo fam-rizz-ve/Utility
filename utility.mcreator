@@ -2435,6 +2435,55 @@
         ]
       },
       "path": "~/quality of life/Wands/Omni Wand"
+    },
+    {
+      "name": "OmniWandGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omni_wand_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/client/gui/OmniWandGUIScreen.java",
+          "src/main/java/net/mcreator/utility/world/inventory/OmniWandGUIMenu.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand"
+    },
+    {
+      "name": "OmniWandsQuandoSiFaClicConIlPulsanteDestroDelMouse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omni_wands_quando_si_fa_clic_con_il_pulsante_destro_del_mouse",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/OmniWandsQuandoSiFaClicConIlPulsanteDestroDelMouseProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand"
     }
   ],
   "variable_elements": [
@@ -2851,7 +2900,13 @@
       "item.utility.lente": "Lenses",
       "item.utility.lenti_survival_night_vision_goggles.description_0": "You can use this lenses for repair your night vision googles",
       "item.utility.occhiali": "Goggles",
-      "item.utility.omni_wands": "Creative Omni Wands"
+      "item.utility.omni_wands": "Creative Omni Wands",
+      "gui.utility.omni_wand_gui.label_destruction": "Destruction",
+      "gui.utility.omni_wand_gui.label_teleport": "Teleport",
+      "gui.utility.omni_wand_gui.label_build": "Build",
+      "gui.utility.omni_wand_gui.label_wand_mode": "wand mode",
+      "gui.utility.omni_wand_gui.label_select_the_wand_mode": "Select the",
+      "gui.utility.omni_wand_gui.label_destrucion": "Despawn"
     }
   },
   "metadata": {

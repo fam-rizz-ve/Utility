@@ -15,6 +15,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.utility.world.inventory.OmniWandGUIMenu;
 import net.mcreator.utility.world.inventory.EssenctiondistilizerGUIMenu;
 import net.mcreator.utility.network.MenuStateUpdateMessage;
 import net.mcreator.utility.UtilityMod;
@@ -24,6 +25,7 @@ import java.util.Map;
 public class UtilityModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, UtilityMod.MODID);
 	public static final DeferredHolder<MenuType<?>, MenuType<EssenctiondistilizerGUIMenu>> ESSENCTIONDISTILIZER_GUI = REGISTRY.register("essenctiondistilizer_gui", () -> IMenuTypeExtension.create(EssenctiondistilizerGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<OmniWandGUIMenu>> OMNI_WAND_GUI = REGISTRY.register("omni_wand_gui", () -> IMenuTypeExtension.create(OmniWandGUIMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

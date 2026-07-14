@@ -2135,7 +2135,7 @@
           "src/main/resources/assets/utility/models/item/survival_night_vision_goggles_item.json"
         ]
       },
-      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/occhiali night vision"
     },
     {
       "name": "SurvivalNightVisionGogglesBundleBaubleIsEquipped",
@@ -2154,7 +2154,7 @@
           "src/main/java/net/mcreator/utility/procedures/SurvivalNightVisionGogglesBundleBaubleIsEquippedProcedure.java"
         ]
       },
-      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/occhiali night vision"
     },
     {
       "name": "SurvivalNightVisionGogglesBundleBaubleIsUnequipped",
@@ -2173,7 +2173,7 @@
           "src/main/java/net/mcreator/utility/procedures/SurvivalNightVisionGogglesBundleBaubleIsUnequippedProcedure.java"
         ]
       },
-      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/occhiali night vision"
     },
     {
       "name": "SurvivalNightVisionGogglesBundle",
@@ -2184,7 +2184,7 @@
       "metadata": {
         "files": []
       },
-      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/occhiali night vision"
     },
     {
       "name": "LentiSurvivalNightVisionGoggles",
@@ -2198,7 +2198,7 @@
           "src/main/resources/assets/utility/models/item/lenti_survival_night_vision_goggles.json"
         ]
       },
-      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/lenti"
     },
     {
       "name": "SurvivalNIghtVisionGogglesEffect",
@@ -2211,7 +2211,7 @@
           "src/main/java/net/mcreator/utility/potion/SurvivalNIghtVisionGogglesEffectMobEffect.java"
         ]
       },
-      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/effect"
     },
     {
       "name": "SurvivalNIghtVisionGogglesEffectQuandoLeffettoIniziavieneApplicato",
@@ -2230,7 +2230,7 @@
           "src/main/java/net/mcreator/utility/procedures/SurvivalNIghtVisionGogglesEffectQuandoLeffettoIniziavieneApplicatoProcedure.java"
         ]
       },
-      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/effect"
     },
     {
       "name": "SurvivalNIghtVisionGogglesEffectQuandoLeffettoSvanisce",
@@ -2249,7 +2249,7 @@
           "src/main/java/net/mcreator/utility/procedures/SurvivalNIghtVisionGogglesEffectQuandoLeffettoSvanisceProcedure.java"
         ]
       },
-      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/effect"
     },
     {
       "name": "SurvivalNightVisionGogglesBundleWhileBaubleIsEquippedTick",
@@ -2276,7 +2276,7 @@
           "src/main/java/net/mcreator/utility/procedures/SurvivalNightVisionGogglesBundleWhileBaubleIsEquippedTickProcedure.java"
         ]
       },
-      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/occhiali night vision"
     },
     {
       "name": "BuildingTool",
@@ -2327,7 +2327,7 @@
           "src/main/java/net/mcreator/utility/procedures/LentiSurvivalNightVisionGogglesQuandoSiFaClicConIlPulsanteDestroDelMouseProcedure.java"
         ]
       },
-      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/lenti"
     },
     {
       "name": "Lente",
@@ -2341,7 +2341,7 @@
           "src/main/java/net/mcreator/utility/item/LenteItem.java"
         ]
       },
-      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/lenti"
     },
     {
       "name": "LentiCrafting",
@@ -2355,7 +2355,7 @@
           "src/main/resources/data/utility/recipe/lenti_crafting.json"
         ]
       },
-      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/crafting"
     },
     {
       "name": "LentiSurvivalNightVisionHelmetCrafting",
@@ -2369,7 +2369,72 @@
           "src/main/resources/data/utility/recipe/lenti_survival_night_vision_helmet_crafting.json"
         ]
       },
-      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles"
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/crafting"
+    },
+    {
+      "name": "Occhiali",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "occhiali",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/occhiali.json",
+          "src/main/java/net/mcreator/utility/item/OcchialiItem.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/occhiali"
+    },
+    {
+      "name": "GooglesRicetta",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "googles_ricetta",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipe/googles_ricetta.json"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/crafting"
+    },
+    {
+      "name": "SurvivalNightVisionHelmetCrafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_night_vision_helmet_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipe/survival_night_vision_helmet_crafting.json"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/crafting"
+    },
+    {
+      "name": "GogglesBundle",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goggles_bundle",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/occhiali"
+    },
+    {
+      "name": "OmniWands",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omni_wands",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/omni_wands.json",
+          "src/main/java/net/mcreator/utility/item/OmniWandsItem.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand"
     }
   ],
   "variable_elements": [
@@ -2784,7 +2849,9 @@
       "effect.utility.survival_n_ight_vision_goggles_effect": "Survival NIght Vision Goggles Effect",
       "item.utility.building_tool": "Building Tool",
       "item.utility.lente": "Lenses",
-      "item.utility.lenti_survival_night_vision_goggles.description_0": "You can use this lenses for repair your night vision googles"
+      "item.utility.lenti_survival_night_vision_goggles.description_0": "You can use this lenses for repair your night vision googles",
+      "item.utility.occhiali": "Goggles",
+      "item.utility.omni_wands": "Creative Omni Wands"
     }
   },
   "metadata": {
@@ -2898,7 +2965,28 @@
                   },
                   {
                     "name": "SurvivalNIghtVisionGoggles",
-                    "children": []
+                    "children": [
+                      {
+                        "name": "crafting",
+                        "children": []
+                      },
+                      {
+                        "name": "effect",
+                        "children": []
+                      },
+                      {
+                        "name": "lenti",
+                        "children": []
+                      },
+                      {
+                        "name": "occhiali",
+                        "children": []
+                      },
+                      {
+                        "name": "occhiali night vision",
+                        "children": []
+                      }
+                    ]
                   }
                 ]
               }
