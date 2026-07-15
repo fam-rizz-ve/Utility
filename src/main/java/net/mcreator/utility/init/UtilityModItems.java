@@ -6,12 +6,20 @@ package net.mcreator.utility.init;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.item.ItemProperties;
 
+import net.mcreator.utility.procedures.OmniWandsFornitoreDiValoriDiProprietaProcedure;
 import net.mcreator.utility.item.*;
 import net.mcreator.utility.UtilityMod;
 
@@ -102,5 +110,16 @@ public class UtilityModItems {
 
 	private static DeferredItem<Item> block(DeferredHolder<Block, Block> block, Item.Properties properties) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), properties));
+	}
+
+	@EventBusSubscriber(Dist.CLIENT)
+	public static class ItemsClientSideHandler {
+		@SubscribeEvent
+		@OnlyIn(Dist.CLIENT)
+		public static void clientLoad(FMLClientSetupEvent event) {
+			event.enqueueWork(() -> {
+				ItemProperties.register(OMNI_WANDS.get(), ResourceLocation.parse("utility:omni_wands_modalita"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) OmniWandsFornitoreDiValoriDiProprietaProcedure.execute(entity));
+			});
+		}
 	}
 }

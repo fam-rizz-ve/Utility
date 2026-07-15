@@ -2135,7 +2135,7 @@
           "src/main/resources/assets/utility/models/item/survival_night_vision_goggles_item.json"
         ]
       },
-      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/occhiali"
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/occhiali night vision"
     },
     {
       "name": "SurvivalNightVisionGogglesBundleBaubleIsEquipped",
@@ -2154,7 +2154,7 @@
           "src/main/java/net/mcreator/utility/procedures/SurvivalNightVisionGogglesBundleBaubleIsEquippedProcedure.java"
         ]
       },
-      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/Bundle"
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/occhiali night vision"
     },
     {
       "name": "SurvivalNightVisionGogglesBundleBaubleIsUnequipped",
@@ -2173,7 +2173,7 @@
           "src/main/java/net/mcreator/utility/procedures/SurvivalNightVisionGogglesBundleBaubleIsUnequippedProcedure.java"
         ]
       },
-      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/Bundle"
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/occhiali night vision"
     },
     {
       "name": "SurvivalNightVisionGogglesBundle",
@@ -2184,7 +2184,7 @@
       "metadata": {
         "files": []
       },
-      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/Bundle"
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/occhiali night vision"
     },
     {
       "name": "LentiSurvivalNightVisionGoggles",
@@ -2276,7 +2276,7 @@
           "src/main/java/net/mcreator/utility/procedures/SurvivalNightVisionGogglesBundleWhileBaubleIsEquippedTickProcedure.java"
         ]
       },
-      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/Bundle"
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/occhiali night vision"
     },
     {
       "name": "BuildingTool",
@@ -2370,6 +2370,222 @@
         ]
       },
       "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/crafting"
+    },
+    {
+      "name": "Occhiali",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "occhiali",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/occhiali.json",
+          "src/main/java/net/mcreator/utility/item/OcchialiItem.java"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/occhiali"
+    },
+    {
+      "name": "GooglesRicetta",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "googles_ricetta",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipe/googles_ricetta.json"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/crafting"
+    },
+    {
+      "name": "SurvivalNightVisionHelmetCrafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_night_vision_helmet_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/utility/recipe/survival_night_vision_helmet_crafting.json"
+        ]
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/crafting"
+    },
+    {
+      "name": "GogglesBundle",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goggles_bundle",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/occhiali"
+    },
+    {
+      "name": "OmniWands",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omni_wands",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/utility/models/item/omni_wands.json",
+          "src/main/resources/assets/utility/models/item/omni_wands_1.json",
+          "src/main/java/net/mcreator/utility/item/OmniWandsItem.java",
+          "src/main/resources/assets/utility/models/item/omni_wands_2.json",
+          "src/main/resources/assets/utility/models/item/omni_wands_0.json",
+          "src/main/resources/assets/utility/models/item/omni_wands_3.json",
+          "src/main/resources/assets/utility/models/item/omni_wands_4.json"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand"
+    },
+    {
+      "name": "OmniWandGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omni_wand_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/network/OmniWandGUIButtonMessage.java",
+          "src/main/java/net/mcreator/utility/client/gui/OmniWandGUIScreen.java",
+          "src/main/java/net/mcreator/utility/world/inventory/OmniWandGUIMenu.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand"
+    },
+    {
+      "name": "OmniWandsQuandoSiFaClicConIlPulsanteDestroDelMouse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omni_wands_quando_si_fa_clic_con_il_pulsante_destro_del_mouse",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/OmniWandsQuandoSiFaClicConIlPulsanteDestroDelMouseProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand"
+    },
+    {
+      "name": "OmniWandsFornitoreDiValoriDiProprieta",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omni_wands_fornitore_di_valori_di_proprieta",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/OmniWandsFornitoreDiValoriDiProprietaProcedure.java"
+        ],
+        "return_type": "number"
+      },
+      "path": "~/quality of life/Wands/Omni Wand"
+    },
+    {
+      "name": "QuandoPulsanteDespawnOmniWandECliccato",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quando_pulsante_despawn_omni_wand_e_cliccato",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/QuandoPulsanteDespawnOmniWandECliccatoProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand"
+    },
+    {
+      "name": "QuandoPulsanteDisctruzioneOmniWandECliccato",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quando_pulsante_disctruzione_omni_wand_e_cliccato",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/QuandoPulsanteDisctruzioneOmniWandECliccatoProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand"
+    },
+    {
+      "name": "QuandoPulsanteTeleportOmniWandECliccato",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quando_pulsante_teleport_omni_wand_e_cliccato",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/QuandoPulsanteTeleportOmniWandECliccatoProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand"
+    },
+    {
+      "name": "QuandoPulsanteBuildOmniWandECliccato",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quando_pulsante_build_omni_wand_e_cliccato",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/QuandoPulsanteBuildOmniWandECliccatoProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand"
     }
   ],
   "variable_elements": [
@@ -2528,6 +2744,12 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "ModalitaOmniWand",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
     }
   ],
   "sound_elements": [
@@ -2784,7 +3006,15 @@
       "effect.utility.survival_n_ight_vision_goggles_effect": "Survival NIght Vision Goggles Effect",
       "item.utility.building_tool": "Building Tool",
       "item.utility.lente": "Lenses",
-      "item.utility.lenti_survival_night_vision_goggles.description_0": "You can use this lenses for repair your night vision googles"
+      "item.utility.lenti_survival_night_vision_goggles.description_0": "You can use this lenses for repair your night vision googles",
+      "item.utility.occhiali": "Goggles",
+      "item.utility.omni_wands": "Creative Omni Wands",
+      "gui.utility.omni_wand_gui.label_destruction": "Destruction",
+      "gui.utility.omni_wand_gui.label_teleport": "Teleport",
+      "gui.utility.omni_wand_gui.label_build": "Build",
+      "gui.utility.omni_wand_gui.label_wand_mode": "wand mode",
+      "gui.utility.omni_wand_gui.label_select_the_wand_mode": "Select the",
+      "gui.utility.omni_wand_gui.label_destrucion": "Despawn"
     }
   },
   "metadata": {
@@ -2912,11 +3142,11 @@
                         "children": []
                       },
                       {
-                        "name": "Bundle",
+                        "name": "occhiali",
                         "children": []
                       },
                       {
-                        "name": "occhiali",
+                        "name": "occhiali night vision",
                         "children": []
                       }
                     ]

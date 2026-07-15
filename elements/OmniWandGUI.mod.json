@@ -3,8 +3,8 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 0,
-    "height": 0,
+    "width": 400,
+    "height": 200,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": false,
@@ -16,8 +16,11 @@
           "name": "imagebutton_despawn",
           "image": "despawn.png",
           "hoveredImage": "despawnselezionato.png",
-          "x": 103,
-          "y": 91,
+          "onClick": {
+            "name": "QuandoPulsanteDespawnOmniWandECliccato"
+          },
+          "x": 100,
+          "y": 98,
           "locked": false
         }
       },
@@ -43,9 +46,12 @@
         "data": {
           "name": "imagebutton_demolizione",
           "image": "demolizione.png",
-          "hoveredImage": "",
-          "x": 164,
-          "y": 89,
+          "hoveredImage": "descruzioneselzionata.png",
+          "onClick": {
+            "name": "QuandoPulsanteDisctruzioneOmniWandECliccato"
+          },
+          "x": 163,
+          "y": 95,
           "locked": false
         }
       },
@@ -54,7 +60,10 @@
         "data": {
           "name": "imagebutton_teleport",
           "image": "teleport.png",
-          "hoveredImage": "",
+          "hoveredImage": "teleportselezionato.png",
+          "onClick": {
+            "name": "QuandoPulsanteTeleportOmniWandECliccato"
+          },
           "x": 218,
           "y": 89,
           "locked": false
@@ -65,9 +74,12 @@
         "data": {
           "name": "imagebutton_costruire",
           "image": "costruire.png",
-          "hoveredImage": "",
+          "hoveredImage": "costruireselezionato.png",
+          "onClick": {
+            "name": "QuandoPulsanteBuildOmniWandECliccato"
+          },
           "x": 285,
-          "y": 89,
+          "y": 97,
           "locked": false
         }
       },

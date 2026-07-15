@@ -6,8 +6,93 @@
     "texture": "omniwand_base",
     "customModelName": "Normal",
     "guiTexture": "",
-    "customProperties": {},
-    "states": [],
+    "customProperties": {
+      "modalita": {
+        "name": "OmniWandsFornitoreDiValoriDiProprieta"
+      }
+    },
+    "states": [
+      {
+        "renderType": 0,
+        "texture": "omniwand_base",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:modalita",
+              "type": "number"
+            },
+            "value": 0.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "omniwand_despawn",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:modalita",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "omniwand_distruzione",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:modalita",
+              "type": "number"
+            },
+            "value": 2.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "omniwand_teleport",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:modalita",
+              "type": "number"
+            },
+            "value": 3.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "omniwand_build",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:modalita",
+              "type": "number"
+            },
+            "value": 4.0
+          }
+        ]
+      }
+    ],
     "animations": [],
     "name": "Creative Omni Wands",
     "rarity": "EPIC",
@@ -46,6 +131,9 @@
     "inventoryStackSize": 99,
     "onRightClickedInAir": {
       "name": "OmniWandsQuandoSiFaClicConIlPulsanteDestroDelMouse"
+    },
+    "onEntityHitWith": {
+      "name": "OmniWandsQuandoUnentitaViventeEColpitaConLoggetto"
     },
     "enableRanged": false,
     "shootConstantly": false,

@@ -101,16 +101,17 @@ public class UtilityModVariables {
 		clone.ultima_z_end = original.ultima_z_end;
 		clone.switch_dimension = original.switch_dimension;
 		clone.chiave_appena_usata = original.chiave_appena_usata;
+		clone.CreativeNightVisionGoglesIsEquped = original.CreativeNightVisionGoglesIsEquped;
+		clone.SurvivalNightVisionGogglesEquiped = original.SurvivalNightVisionGogglesEquiped;
 		clone.SurvivalNightVisionGogglesCanActivate = original.SurvivalNightVisionGogglesCanActivate;
 		if (!event.isWasDeath()) {
 			clone.modalita_explosive_chessplate = original.modalita_explosive_chessplate;
 			clone.ultima_gamemode = original.ultima_gamemode;
 			clone.medikit_cooldown = original.medikit_cooldown;
 			clone.bende_cooldown = original.bende_cooldown;
-			clone.CreativeNightVisionGoglesIsEquped = original.CreativeNightVisionGoglesIsEquped;
-			clone.SurvivalNightVisionGogglesEquiped = original.SurvivalNightVisionGogglesEquiped;
 			clone.SUrvivalNIghtVisionGogglesIsActiveBefereUnequip = original.SUrvivalNIghtVisionGogglesIsActiveBefereUnequip;
 			clone.UtilizzateLeLentiDelSurvivalNIghtVisionGoggles = original.UtilizzateLeLentiDelSurvivalNIghtVisionGoggles;
+			clone.ModalitaOmniWand = original.ModalitaOmniWand;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -292,6 +293,7 @@ public class UtilityModVariables {
 		public boolean SurvivalNightVisionGogglesCanActivate = true;
 		public boolean SUrvivalNIghtVisionGogglesIsActiveBefereUnequip = false;
 		public boolean UtilizzateLeLentiDelSurvivalNIghtVisionGoggles = false;
+		public double ModalitaOmniWand = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -320,6 +322,7 @@ public class UtilityModVariables {
 			nbt.putBoolean("SurvivalNightVisionGogglesCanActivate", SurvivalNightVisionGogglesCanActivate);
 			nbt.putBoolean("SUrvivalNIghtVisionGogglesIsActiveBefereUnequip", SUrvivalNIghtVisionGogglesIsActiveBefereUnequip);
 			nbt.putBoolean("UtilizzateLeLentiDelSurvivalNIghtVisionGoggles", UtilizzateLeLentiDelSurvivalNIghtVisionGoggles);
+			nbt.putDouble("ModalitaOmniWand", ModalitaOmniWand);
 			return nbt;
 		}
 
@@ -349,6 +352,7 @@ public class UtilityModVariables {
 			SurvivalNightVisionGogglesCanActivate = nbt.getBoolean("SurvivalNightVisionGogglesCanActivate");
 			SUrvivalNIghtVisionGogglesIsActiveBefereUnequip = nbt.getBoolean("SUrvivalNIghtVisionGogglesIsActiveBefereUnequip");
 			UtilizzateLeLentiDelSurvivalNIghtVisionGoggles = nbt.getBoolean("UtilizzateLeLentiDelSurvivalNIghtVisionGoggles");
+			ModalitaOmniWand = nbt.getDouble("ModalitaOmniWand");
 		}
 
 		public void markSyncDirty() {

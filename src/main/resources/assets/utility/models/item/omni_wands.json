@@ -2,5 +2,37 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "utility:item/omniwand_base"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "utility:omni_wands_modalita": 0
+      },
+      "model": "utility:item/omni_wands_0"
+    },
+    {
+      "predicate": {
+        "utility:omni_wands_modalita": 1
+      },
+      "model": "utility:item/omni_wands_1"
+    },
+    {
+      "predicate": {
+        "utility:omni_wands_modalita": 2
+      },
+      "model": "utility:item/omni_wands_2"
+    },
+    {
+      "predicate": {
+        "utility:omni_wands_modalita": 3
+      },
+      "model": "utility:item/omni_wands_3"
+    },
+    {
+      "predicate": {
+        "utility:omni_wands_modalita": 4
+      },
+      "model": "utility:item/omni_wands_4"
+    }
+  ]
 }
