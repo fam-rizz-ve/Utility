@@ -2454,7 +2454,7 @@
           "src/main/java/net/mcreator/utility/world/inventory/OmniWandGUIMenu.java"
         ]
       },
-      "path": "~/quality of life/Wands/Omni Wand/GUI"
+      "path": "~/quality of life/Wands/Omni Wand/GUI modalita"
     },
     {
       "name": "OmniWandsQuandoSiFaClicConIlPulsanteDestroDelMouse",
@@ -2528,7 +2528,7 @@
           "src/main/java/net/mcreator/utility/procedures/QuandoPulsanteDespawnOmniWandECliccatoProcedure.java"
         ]
       },
-      "path": "~/quality of life/Wands/Omni Wand/GUI"
+      "path": "~/quality of life/Wands/Omni Wand/GUI modalita"
     },
     {
       "name": "QuandoPulsanteDisctruzioneOmniWandECliccato",
@@ -2547,7 +2547,7 @@
           "src/main/java/net/mcreator/utility/procedures/QuandoPulsanteDisctruzioneOmniWandECliccatoProcedure.java"
         ]
       },
-      "path": "~/quality of life/Wands/Omni Wand/GUI"
+      "path": "~/quality of life/Wands/Omni Wand/GUI modalita"
     },
     {
       "name": "QuandoPulsanteTeleportOmniWandECliccato",
@@ -2566,7 +2566,7 @@
           "src/main/java/net/mcreator/utility/procedures/QuandoPulsanteTeleportOmniWandECliccatoProcedure.java"
         ]
       },
-      "path": "~/quality of life/Wands/Omni Wand/GUI"
+      "path": "~/quality of life/Wands/Omni Wand/GUI modalita"
     },
     {
       "name": "QuandoPulsanteBuildOmniWandECliccato",
@@ -2585,7 +2585,7 @@
           "src/main/java/net/mcreator/utility/procedures/QuandoPulsanteBuildOmniWandECliccatoProcedure.java"
         ]
       },
-      "path": "~/quality of life/Wands/Omni Wand/GUI"
+      "path": "~/quality of life/Wands/Omni Wand/GUI modalita"
     },
     {
       "name": "OmniWandsQuandoUnentitaViventeEColpitaConLoggetto",
@@ -3212,7 +3212,11 @@
                 "name": "Omni Wand",
                 "children": [
                   {
-                    "name": "GUI",
+                    "name": "GUI modalita",
+                    "children": []
+                  },
+                  {
+                    "name": "GUI tp",
                     "children": []
                   }
                 ]
