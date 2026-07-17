@@ -1395,45 +1395,6 @@
       "path": "~/enchantements/power essence enchant"
     },
     {
-      "name": "Lavaessenceattivation",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lavaessenceattivation",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/utility/procedures/LavaessenceattivationProcedure.java"
-        ]
-      },
-      "path": "~/enchantements/power essence enchant"
-    },
-    {
       "name": "Wateressence",
       "type": "enchantment",
       "compiles": true,
@@ -2920,6 +2881,33 @@
         ]
       },
       "path": "~/quality of life/Wands/Omni Wand/GUI tp"
+    },
+    {
+      "name": "LavaEssenceProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lava_essence_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/LavaEssenceProcedureProcedure.java"
+        ]
+      },
+      "path": "~/enchantements/power essence enchant"
     }
   ],
   "variable_elements": [
@@ -3431,8 +3419,7 @@
       "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/utility/init/UtilityModTabs.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/java/net/mcreator/utility/client/RenderUtils.java"
+      "src/main/resources/META-INF/accesstransformer.cfg"
     ]
   },
   "foldersRoot": {
