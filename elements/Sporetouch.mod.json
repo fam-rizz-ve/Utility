@@ -4,7 +4,7 @@
   "definition": {
     "name": "Spore essence",
     "supportedSlots": "mainhand",
-    "weight": 1,
+    "weight": 2,
     "anvilCost": 25,
     "maxLevel": 1,
     "damageModifier": 0,

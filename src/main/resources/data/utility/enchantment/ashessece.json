@@ -3,7 +3,7 @@
     "translate": "enchantment.utility.ashessece"
   },
   "supported_items": "#minecraft:enchantable/sword",
-  "weight": 7,
+  "weight": 5,
   "max_level": 1,
   "min_cost": {
     "base": 1,

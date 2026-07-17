@@ -2048,19 +2048,6 @@
       "path": "~/misc/Damages types"
     },
     {
-      "name": "Vampire",
-      "type": "enchantment",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vampire",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/utility/enchantment/vampire.json"
-        ]
-      },
-      "path": "~/enchantements/power essence enchant"
-    },
-    {
       "name": "CreativeNightVisionGoggles",
       "type": "item",
       "compiles": true,
@@ -2641,31 +2628,9 @@
       "registry_name": "omni_wand_teleport_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/utility/network/OmniWandTeleportGUIButtonMessage.java",
           "src/main/java/net/mcreator/utility/client/gui/OmniWandTeleportGUIScreen.java",
           "src/main/java/net/mcreator/utility/world/inventory/OmniWandTeleportGUIMenu.java"
-        ]
-      },
-      "path": "~/quality of life/Wands/Omni Wand/GUI tp"
-    },
-    {
-      "name": "OmniWandTeleportGUIQuandoQuestaGUIVieneAperta",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "omni_wand_teleport_gui_quando_questa_gui_viene_aperta",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/utility/procedures/OmniWandTeleportGUIQuandoQuestaGUIVieneApertaProcedure.java"
         ]
       },
       "path": "~/quality of life/Wands/Omni Wand/GUI tp"
@@ -2690,6 +2655,268 @@
         "return_type": "string",
         "files": [
           "src/main/java/net/mcreator/utility/procedures/OttieniNomeDaStringaSeparatiDaVirgoleProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand/GUI tp"
+    },
+    {
+      "name": "OmniWandTeleportGUIQuandoQuestaGUIVieneAperta",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omni_wand_teleport_gui_quando_questa_gui_viene_aperta",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/OmniWandTeleportGUIQuandoQuestaGUIVieneApertaProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand/GUI tp"
+    },
+    {
+      "name": "OmniWandSCrittaPlayer1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omni_wand_s_critta_player_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/OmniWandSCrittaPlayer1Procedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand/GUI tp/pulsanti"
+    },
+    {
+      "name": "OmniWandSCrittaPlayer2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omni_wand_s_critta_player_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/OmniWandSCrittaPlayer2Procedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand/GUI tp/pulsanti"
+    },
+    {
+      "name": "OmniWandPulsanteDestraCambioPlayer1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omni_wand_pulsante_destra_cambio_player_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/OmniWandPulsanteDestraCambioPlayer1Procedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand/GUI tp/pulsanti/pulsanti di cambio player"
+    },
+    {
+      "name": "OmniWandPulsanteSinistraCambioPlayer1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omni_wand_pulsante_sinistra_cambio_player_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/OmniWandPulsanteSinistraCambioPlayer1Procedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand/GUI tp/pulsanti/pulsanti di cambio player"
+    },
+    {
+      "name": "OmniWandPulsanteDestraCambioPlayer2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omni_wand_pulsante_destra_cambio_player_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/OmniWandPulsanteDestraCambioPlayer2Procedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand/GUI tp/pulsanti/pulsanti di cambio player"
+    },
+    {
+      "name": "OmniWandPulsanteSinistraCambioPlayer2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omni_wand_pulsante_sinistra_cambio_player_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/OmniWandPulsanteSinistraCambioPlayer2Procedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand/GUI tp/pulsanti/pulsanti di cambio player"
+    },
+    {
+      "name": "OmniWandPulsanteConfermaTeleport",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omni_wand_pulsante_conferma_teleport",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/OmniWandPulsanteConfermaTeleportProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand/GUI tp/pulsanti"
+    },
+    {
+      "name": "QuandoPlayerEntraNelMondo",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quando_player_entra_nel_mondo",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/QuandoPlayerEntraNelMondoProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand/GUI tp/CounterGIocatori"
+    },
+    {
+      "name": "QuandoGiocatoreEsceDalMondo",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quando_giocatore_esce_dal_mondo",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/QuandoGiocatoreEsceDalMondoProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand/GUI tp/CounterGIocatori"
+    },
+    {
+      "name": "QuandoSiAvviaIlMondo",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quando_si_avvia_il_mondo",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/QuandoSiAvviaIlMondoProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand/GUI tp/CounterGIocatori"
+    },
+    {
+      "name": "Df",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "df",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/DfProcedure.java"
         ]
       },
       "path": "~/quality of life/Wands/Omni Wand/GUI tp"
@@ -2865,12 +3092,6 @@
       "value": "\"\""
     },
     {
-      "name": "indice_corrente",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
-    },
-    {
       "name": "NomeMostratoOmniWand1",
       "type": "string",
       "scope": "player_persistent",
@@ -2881,6 +3102,24 @@
       "type": "string",
       "scope": "player_persistent",
       "value": "\"\""
+    },
+    {
+      "name": "indiceCorrenteOmniWand2",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "indice_correnteOmniWand1",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "numeroDiGIocatori",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -2931,7 +3170,6 @@
       "~CUSTOM:Nightelmet.boots"
     ],
     "ENCHANTMENTS:minecraft:non_treasure": [
-      "~CUSTOM:Vampire",
       "~CUSTOM:Furyessece",
       "~CUSTOM:Sporetouch",
       "~CUSTOM:Windessece",
@@ -2983,14 +3221,16 @@
     "BLOCKS:minecraft:wither_immune": [
       "CUSTOM:Essenctiondistilizer"
     ],
-    "ENCHANTMENTS:minecraft:tradeable": [
-      "~CUSTOM:Vampire"
-    ],
-    "ENCHANTMENTS:minecraft:on_random_loot": [
-      "~CUSTOM:Vampire"
-    ],
     "ITEMS:minecraft:piglin_loved": [
       "~CUSTOM:SurvivalNightVisionGogglesItem"
+    ],
+    "ENCHANTMENTS:minecraft:tradeable": [
+      "~CUSTOM:Wateressence",
+      "~CUSTOM:Lavaessence"
+    ],
+    "ENCHANTMENTS:minecraft:on_random_loot": [
+      "~CUSTOM:Wateressence",
+      "~CUSTOM:Lavaessence"
     ]
   },
   "tab_element_order": {},
@@ -3130,7 +3370,6 @@
       "death.attack.magicdamage": "%1$s died from a magical attack",
       "death.attack.magicdamage.player": "%1$s died whilst trying to escape %2$s",
       "death.attack.magicdamage.item": "%1$s was killed by %2$s using %3$s",
-      "enchantment.utility.vampire": "Vampire",
       "item.utility.creative_night_vision_goggles": "Creative Night Vision Goggles",
       "item.utility.survival_night_vision_goggles_item": "Night Vision Goggles",
       "item.utility.lenti_survival_night_vision_goggles": "lenses Night Vision Goggles",
@@ -3163,37 +3402,37 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/utility/init/UtilityModKeyMappings.java",
       "src/main/java/net/mcreator/utility/init/UtilityModConfigs.java",
-      "src/main/resources/data/utility/curios/slots/head.json",
-      "src/main/java/net/mcreator/utility/init/UtilityModCuriosCompat.java",
       "src/main/resources/data/utility/curios/entities/slots.json",
       "src/main/resources/data/curios/tags/item/head.json",
-      "src/main/java/net/mcreator/utility/init/UtilityModMobEffects.java",
+      "src/main/resources/data/utility/curios/slots/head.json",
+      "src/main/java/net/mcreator/utility/init/UtilityModCuriosCompat.java",
       "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",
       "src/main/java/net/mcreator/utility/init/UtilityModJeiInformation.java",
       "src/main/resources/data/utility/tags/item/jei_empty_tag.json",
       "src/main/java/net/mcreator/utility/init/UtilityModJeiPlugin.java",
       "src/main/java/net/mcreator/utility/init/UtilityModRecipeTypes.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModKeyMappings.java",
       "src/main/resources/data/neoforge/loot_modifiers/global_loot_modifiers.json",
+      "src/main/java/net/mcreator/utility/init/UtilityModMobEffects.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBrewingRecipes.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlocks.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlockEntities.java",
       "src/main/java/net/mcreator/utility/init/UtilityModItems.java",
-      "src/main/java/net/mcreator/utility/init/UtilityModEntityRenderers.java",
       "src/main/java/net/mcreator/utility/init/UtilityModEntities.java",
-      "src/main/java/net/mcreator/utility/UtilityMod.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/utility/init/UtilityModEntityRenderers.java",
       "src/main/java/net/mcreator/utility/client/ClientHelper.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/utility/init/UtilityModSounds.java",
       "src/main/resources/assets/utility/sounds.json",
-      "src/main/java/net/mcreator/utility/client/RenderUtils.java",
+      "src/main/java/net/mcreator/utility/UtilityMod.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/utility/init/UtilityModSounds.java",
       "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
-      "src/main/java/net/mcreator/utility/init/UtilityModTabs.java"
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/utility/init/UtilityModTabs.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/utility/client/RenderUtils.java"
     ]
   },
   "foldersRoot": {
@@ -3315,7 +3554,21 @@
                   },
                   {
                     "name": "GUI tp",
-                    "children": []
+                    "children": [
+                      {
+                        "name": "pulsanti",
+                        "children": [
+                          {
+                            "name": "pulsanti di cambio player",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "CounterGIocatori",
+                        "children": []
+                      }
+                    ]
                   }
                 ]
               },
@@ -3397,12 +3650,14 @@
   "workspaceSettings": {
     "modid": "utility",
     "modName": "Utility",
-    "version": "0.0.9",
+    "version": "0.1.0",
     "author": "MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "GNU General Public License version 3 (GPLv3)",
     "serverSideOnly": false,
-    "requiredMods": [],
+    "requiredMods": [
+      "curios"
+    ],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [

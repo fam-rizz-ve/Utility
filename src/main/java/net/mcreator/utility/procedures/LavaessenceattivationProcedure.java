@@ -8,7 +8,6 @@ import net.neoforged.bus.api.Event;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.EntityType;
@@ -115,13 +114,6 @@ public class LavaessenceattivationProcedure {
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 120, 3, false, false));
 				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 120, 4, false, false));
-			}
-		} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-				.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("utility:vampire")))) >= 1) {
-			if (Mth.nextInt(RandomSource.create(), 1, 3) == 2) {
-				entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("utility:magicdamage")))), (float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) / 2d));
-				if (entity instanceof Player _player)
-					_player.getFoodData().setSaturation(20);
 			}
 		}
 	}

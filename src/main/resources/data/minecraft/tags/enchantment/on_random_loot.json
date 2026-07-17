@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "utility:vampire"
+    "utility:lavaessence",
+    "utility:wateressence"
   ]
 }
