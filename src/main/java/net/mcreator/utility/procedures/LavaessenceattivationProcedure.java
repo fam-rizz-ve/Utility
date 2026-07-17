@@ -14,8 +14,6 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerPlayer;
@@ -24,8 +22,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
-
-import net.mcreator.utility.UtilityMod;
 
 import javax.annotation.Nullable;
 
@@ -53,18 +49,6 @@ public class LavaessenceattivationProcedure {
 		} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
 				.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("utility:wateressence")))) >= 1) {
 			if (Mth.nextInt(RandomSource.create(), 1, 10) == 5) {
-				{
-					final int _repeatCount = 5;
-					final int _repeatDelay = 20;
-					final java.util.function.IntConsumer[] _repeatStep = new java.util.function.IntConsumer[1];
-					_repeatStep[0] = _repeatIndex -> {
-						if (_repeatIndex >= _repeatCount)
-							return;
-						entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.DROWN)), 2);
-						UtilityMod.queueServerWork(_repeatDelay, () -> _repeatStep[0].accept(_repeatIndex + 1));
-					};
-					_repeatStep[0].accept(0);
-				}
 			}
 		} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
 				.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("utility:windessece")))) >= 1) {
@@ -83,9 +67,12 @@ public class LavaessenceattivationProcedure {
 			if (Mth.nextInt(RandomSource.create(), 1, 3) == 2) {
 				{
 					Entity _ent = entity;
-					_ent.teleportTo(x, y, z);
+					double _tx = x;
+					double _ty = y;
+					double _tz = z;
+					_ent.teleportTo(_tx, _ty, _tz);
 					if (_ent instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.connection.teleport(x, y, z, _ent.getYRot(), _ent.getXRot());
+						_serverPlayer.connection.teleport(_tx, _ty, _tz, _ent.getYRot(), _ent.getXRot());
 				}
 				if (world instanceof ServerLevel _level) {
 					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);

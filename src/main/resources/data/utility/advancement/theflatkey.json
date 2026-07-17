@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "theflatkey_0": {
+    "theflatkey_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

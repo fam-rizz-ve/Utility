@@ -24,9 +24,9 @@ import net.mcreator.utility.UtilityMod;
 @EventBusSubscriber
 public class UtilityModMobEffects {
 	public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(Registries.MOB_EFFECT, UtilityMod.MODID);
-	public static final DeferredHolder<MobEffect, MobEffect> TATTICALSUITACTIVEEFFECT = REGISTRY.register("tatticalsuitactiveeffect", () -> new TatticalsuitactiveeffectMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> TATTICAL_SUIT_COOLDOWN_EFFECT = REGISTRY.register("tattical_suit_cooldown_effect", () -> new TatticalSuitCooldownEffectMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> SURVIVAL_N_IGHT_VISION_GOGGLES_EFFECT = REGISTRY.register("survival_n_ight_vision_goggles_effect", () -> new SurvivalNIghtVisionGogglesEffectMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> TATTICALSUITACTIVEEFFECT = REGISTRY.register("tatticalsuitactiveeffect", TatticalsuitactiveeffectMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> TATTICAL_SUIT_COOLDOWN_EFFECT = REGISTRY.register("tattical_suit_cooldown_effect", TatticalSuitCooldownEffectMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> SURVIVAL_N_IGHT_VISION_GOGGLES_EFFECT = REGISTRY.register("survival_n_ight_vision_goggles_effect", SurvivalNIghtVisionGogglesEffectMobEffect::new);
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {

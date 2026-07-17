@@ -30,4 +30,8 @@ public class OmniWandsItem extends Item {
 		OmniWandsQuandoUnentitaViventeEColpitaConLoggettoProcedure.execute(entity, sourceentity);
 		return retval;
 	}
+
+	public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {
+		return slotChanged && !oldStack.equals(newStack);
+	}
 }

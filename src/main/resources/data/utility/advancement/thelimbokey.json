@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "thelimbokey_0": {
+    "thelimbokey_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

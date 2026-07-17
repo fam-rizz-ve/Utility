@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:Lente"
-      }
+      "CUSTOM:Lente"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.DYE#10"
-      },
-      {
-        "value": "Items.DYE#10"
-      },
-      {
-        "value": "Items.DYE#10"
-      },
-      {
-        "value": "Items.DYE#10"
-      },
-      {
-        "value": "CUSTOM:Lente"
-      },
-      {
-        "value": "Items.DYE#10"
-      },
-      {
-        "value": "Items.DYE#10"
-      },
-      {
-        "value": "Items.DYE#10"
-      },
-      {
-        "value": "Items.DYE#10"
-      }
+      "Items.DYE#10",
+      "Items.DYE#10",
+      "Items.DYE#10",
+      "Items.DYE#10",
+      "CUSTOM:Lente",
+      "Items.DYE#10",
+      "Items.DYE#10",
+      "Items.DYE#10",
+      "Items.DYE#10"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:LentiSurvivalNightVisionGoggles"
-    },
+    "recipeReturnStack": "CUSTOM:LentiSurvivalNightVisionGoggles",
     "name": "lenti_survival_night_vision_helmet_crafting",
     "namespace": "mod"
   }

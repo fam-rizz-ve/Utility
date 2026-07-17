@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "theendkey_0": {
+    "theendkey_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

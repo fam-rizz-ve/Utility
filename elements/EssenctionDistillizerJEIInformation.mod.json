@@ -1,11 +1,9 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:Essenctiondistilizer"
-      }
+      "CUSTOM:Essenctiondistilizer"
     ],
     "information": [
       "This Essence Distiller is discovered on the solitary island floating in Limbo — a silent expanse suspended in the void between realms. It channels ethereal energies that drift through the emptiness."

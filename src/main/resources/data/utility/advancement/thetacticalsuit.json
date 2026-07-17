@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "thetacticalsuit_0": {
+    "thetacticalsuit_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -29,7 +29,7 @@
         ]
       }
     },
-    "thetacticalsuit_1": {
+    "thetacticalsuit_3": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -43,7 +43,7 @@
         ]
       }
     },
-    "thetacticalsuit_2": {
+    "thetacticalsuit_5": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -57,7 +57,7 @@
         ]
       }
     },
-    "thetacticalsuit_3": {
+    "thetacticalsuit_7": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

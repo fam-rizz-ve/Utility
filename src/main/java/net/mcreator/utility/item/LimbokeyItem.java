@@ -35,4 +35,8 @@ public class LimbokeyItem extends Item {
 		LimboKeyRightclickedOnBlockProcedure.execute(entity);
 		return ar;
 	}
+
+	public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {
+		return slotChanged && !oldStack.equals(newStack);
+	}
 }

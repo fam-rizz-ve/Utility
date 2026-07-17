@@ -44,4 +44,8 @@ public class IronknifeItem extends Item {
 		itemstack.hurtAndBreak(1, entity, LivingEntity.getSlotForHand(entity.getUsedItemHand()));
 		return true;
 	}
+
+	public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {
+		return slotChanged && !oldStack.equals(newStack);
+	}
 }

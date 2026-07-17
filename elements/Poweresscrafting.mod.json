@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.ENDER_EYE"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.EMERALD"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.EMERALD"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.ENDER_EYE"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "Items.ENDER_EYE",
+      "",
+      "Items.EMERALD",
+      "Items.DIAMOND",
+      "Items.EMERALD",
+      "",
+      "Items.ENDER_EYE",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:PowerEssence"
-    },
+    "recipeReturnStack": "CUSTOM:PowerEssence",
     "name": "power_crafting",
     "namespace": "mod"
   }

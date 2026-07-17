@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.MAP"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.SLIME_BALL"
-      },
-      {
-        "value": "Items.MAP"
-      },
-      {
-        "value": "Items.SLIME_BALL"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.MAP"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "Items.MAP",
+      "",
+      "Items.SLIME_BALL",
+      "Items.MAP",
+      "Items.SLIME_BALL",
+      "",
+      "Items.MAP",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Bandages"
-    },
+    "recipeReturnStack": "CUSTOM:Bandages",
     "name": "bandage_srecpie",
     "namespace": "mod"
   }

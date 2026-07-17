@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "curiosbauble",
   "definition": {
     "item": "CreativeNightVisionGoggles",
@@ -9,18 +9,12 @@
     "enderMask": false,
     "friendlyPigs": false,
     "snowWalk": false,
-    "equipSound": {
-      "value": ""
-    },
+    "equipSound": "",
     "hasModel": false,
     "baubleModel": "Default",
     "baubleModelTexture": "",
-    "onEquip": {
-      "name": "CreativeNighVisionGogglesBaubleBaubleIsEquipped"
-    },
-    "onUnequip": {
-      "name": "CreativeNighVisionGogglesBaubleBaubleIsUnequipped"
-    },
+    "onEquip": "CreativeNighVisionGogglesBaubleBaubleIsEquipped",
+    "onUnequip": "CreativeNighVisionGogglesBaubleBaubleIsUnequipped",
     "helmetModelPart": "Empty",
     "bodyModelPart": "Empty",
     "armsModelPartL": "Empty",

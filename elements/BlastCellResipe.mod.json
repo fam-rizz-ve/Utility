@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.LEATHER"
-      },
-      {
-        "value": "Items.LEATHER"
-      },
-      {
-        "value": "Items.LEATHER"
-      },
-      {
-        "value": "Items.LEATHER"
-      },
-      {
-        "value": "Blocks.TNT"
-      },
-      {
-        "value": "Items.LEATHER"
-      },
-      {
-        "value": "Items.LEATHER"
-      },
-      {
-        "value": "Items.LEATHER"
-      },
-      {
-        "value": "Items.LEATHER"
-      }
+      "Items.LEATHER",
+      "Items.LEATHER",
+      "Items.LEATHER",
+      "Items.LEATHER",
+      "Blocks.TNT",
+      "Items.LEATHER",
+      "Items.LEATHER",
+      "Items.LEATHER",
+      "Items.LEATHER"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:BlastCell"
-    },
+    "recipeReturnStack": "CUSTOM:BlastCell",
     "name": "blast_cell_resipe",
     "namespace": "mod"
   }

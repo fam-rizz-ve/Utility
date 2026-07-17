@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "thepoweressence_0": {
+    "thepoweressence_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

@@ -35,4 +35,8 @@ public class LentiSurvivalNightVisionGogglesItem extends Item {
 		LentiSurvivalNightVisionGogglesQuandoSiFaClicConIlPulsanteDestroDelMouseProcedure.execute(entity, ar.getObject());
 		return ar;
 	}
+
+	public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {
+		return slotChanged && !oldStack.equals(newStack);
+	}
 }

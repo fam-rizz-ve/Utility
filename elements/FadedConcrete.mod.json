@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "block",
   "definition": {
     "texture": "chatgpt_image_15_ago_2025_08_14_00",
@@ -52,9 +52,7 @@
     "immuneToFire": false,
     "creativeTabs": [],
     "destroyTool": "pickaxe",
-    "customDrop": {
-      "value": ""
-    },
+    "customDrop": "",
     "dropAmount": 1,
     "xpAmountMin": 0,
     "xpAmountMax": 0,
@@ -74,9 +72,7 @@
     },
     "colorOnMap": "DEFAULT",
     "noteBlockInstrument": "harp",
-    "creativePickItem": {
-      "value": ""
-    },
+    "creativePickItem": "",
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
     "ignitedByLava": false,
@@ -88,25 +84,13 @@
     "jumpFactor": 0.5,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
+    "soundOnStep": "DEEPSLATE",
     "isCustomSoundType": false,
-    "soundOnStep": {
-      "value": "DEEPSLATE"
-    },
-    "breakSound": {
-      "value": ""
-    },
-    "fallSound": {
-      "value": ""
-    },
-    "hitSound": {
-      "value": ""
-    },
-    "placeSound": {
-      "value": ""
-    },
-    "stepSound": {
-      "value": ""
-    },
+    "breakSound": "",
+    "fallSound": "",
+    "hitSound": "",
+    "placeSound": "",
+    "stepSound": "",
     "luminance": {
       "fixedValue": 0.0
     },
@@ -137,9 +121,7 @@
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
-      {
-        "value": "TAG:stone_ore_replaceables"
-      }
+      "TAG:stone_ore_replaceables"
     ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,

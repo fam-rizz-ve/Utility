@@ -58,8 +58,8 @@
       "registry_name": "netherkey",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/netherkey.json",
-          "src/main/java/net/mcreator/utility/item/NetherkeyItem.java"
+          "src/main/java/net/mcreator/utility/item/NetherkeyItem.java",
+          "src/main/resources/assets/utility/models/item/netherkey.json"
         ]
       },
       "path": "~/key/item"
@@ -72,8 +72,8 @@
       "registry_name": "endkey",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/EndkeyItem.java",
-          "src/main/resources/assets/utility/models/item/endkey.json"
+          "src/main/resources/assets/utility/models/item/endkey.json",
+          "src/main/java/net/mcreator/utility/item/EndkeyItem.java"
         ]
       },
       "path": "~/key/item"
@@ -100,8 +100,8 @@
       "registry_name": "limbo_key_part_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/limbo_key_part_1.json",
-          "src/main/java/net/mcreator/utility/item/LimboKeyPart1Item.java"
+          "src/main/java/net/mcreator/utility/item/LimboKeyPart1Item.java",
+          "src/main/resources/assets/utility/models/item/limbo_key_part_1.json"
         ]
       },
       "path": "~/key/item"
@@ -114,8 +114,8 @@
       "registry_name": "liminaly_key",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/liminaly_key.json",
-          "src/main/java/net/mcreator/utility/item/LiminalyKeyItem.java"
+          "src/main/java/net/mcreator/utility/item/LiminalyKeyItem.java",
+          "src/main/resources/assets/utility/models/item/liminaly_key.json"
         ]
       },
       "path": "~/key/item"
@@ -128,8 +128,8 @@
       "registry_name": "emptykey",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/EmptykeyItem.java",
-          "src/main/resources/assets/utility/models/item/emptykey.json"
+          "src/main/resources/assets/utility/models/item/emptykey.json",
+          "src/main/java/net/mcreator/utility/item/EmptykeyItem.java"
         ]
       },
       "path": "~/key/item"
@@ -486,8 +486,8 @@
       "registry_name": "medikit",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/medikit.json",
-          "src/main/java/net/mcreator/utility/item/MedikitItem.java"
+          "src/main/java/net/mcreator/utility/item/MedikitItem.java",
+          "src/main/resources/assets/utility/models/item/medikit.json"
         ]
       },
       "path": "~/quality of life/med_things"
@@ -621,8 +621,8 @@
       "registry_name": "ironknife",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/ironknife.json",
-          "src/main/java/net/mcreator/utility/item/IronknifeItem.java"
+          "src/main/java/net/mcreator/utility/item/IronknifeItem.java",
+          "src/main/resources/assets/utility/models/item/ironknife.json"
         ]
       },
       "path": "~/quality of life/tattical knife"
@@ -661,8 +661,8 @@
       "registry_name": "knifeblade",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/KnifebladeItem.java",
-          "src/main/resources/assets/utility/models/item/knifeblade.json"
+          "src/main/resources/assets/utility/models/item/knifeblade.json",
+          "src/main/java/net/mcreator/utility/item/KnifebladeItem.java"
         ]
       },
       "path": "~/quality of life/tattical knife"
@@ -786,8 +786,8 @@
       "registry_name": "creativenighthelmet",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/creativenighthelmet_helmet.json",
-          "src/main/java/net/mcreator/utility/item/CreativenighthelmetItem.java"
+          "src/main/java/net/mcreator/utility/item/CreativenighthelmetItem.java",
+          "src/main/resources/assets/utility/models/item/creativenighthelmet_helmet.json"
         ]
       },
       "path": "~/quality of life/armor/creative night helmet"
@@ -897,8 +897,8 @@
       "registry_name": "blast_cell",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/BlastCellItem.java",
-          "src/main/resources/assets/utility/models/item/blast_cell.json"
+          "src/main/resources/assets/utility/models/item/blast_cell.json",
+          "src/main/java/net/mcreator/utility/item/BlastCellItem.java"
         ]
       },
       "path": "~/quality of life/armor/explosive suit"
@@ -937,11 +937,11 @@
       "registry_name": "nightelmet",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/nightelmet_leggings.json",
           "src/main/resources/assets/utility/models/item/nightelmet_boots.json",
-          "src/main/resources/assets/utility/models/item/nightelmet_chestplate.json",
           "src/main/java/net/mcreator/utility/item/NightelmetItem.java",
-          "src/main/resources/assets/utility/models/item/nightelmet_helmet.json"
+          "src/main/resources/assets/utility/models/item/nightelmet_helmet.json",
+          "src/main/resources/assets/utility/models/item/nightelmet_leggings.json",
+          "src/main/resources/assets/utility/models/item/nightelmet_chestplate.json"
         ]
       },
       "path": "~/quality of life/armor/tattical armor"
@@ -954,8 +954,8 @@
       "registry_name": "tactical_template",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/tactical_template.json",
-          "src/main/java/net/mcreator/utility/item/TacticalTemplateItem.java"
+          "src/main/java/net/mcreator/utility/item/TacticalTemplateItem.java",
+          "src/main/resources/assets/utility/models/item/tactical_template.json"
         ]
       },
       "path": "~/quality of life/armor/tattical armor"
@@ -1559,8 +1559,8 @@
       "registry_name": "overworldessence",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/overworldessence.json",
-          "src/main/java/net/mcreator/utility/item/OverworldessenceItem.java"
+          "src/main/java/net/mcreator/utility/item/OverworldessenceItem.java",
+          "src/main/resources/assets/utility/models/item/overworldessence.json"
         ]
       },
       "path": "~/enchantements/power essence"
@@ -1601,8 +1601,8 @@
       "registry_name": "flatessence",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/FlatessenceItem.java",
-          "src/main/resources/assets/utility/models/item/flatessence.json"
+          "src/main/resources/assets/utility/models/item/flatessence.json",
+          "src/main/java/net/mcreator/utility/item/FlatessenceItem.java"
         ]
       },
       "path": "~/enchantements/power essence"
@@ -1615,12 +1615,12 @@
       "registry_name": "essenctiondistilizer",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/blockstates/essenctiondistilizer.json",
+          "src/main/resources/data/utility/loot_table/blocks/essenctiondistilizer.json",
           "src/main/resources/assets/utility/models/item/essenctiondistilizer.json",
           "src/main/java/net/mcreator/utility/block/EssenctiondistilizerBlock.java",
           "src/main/java/net/mcreator/utility/block/entity/EssenctiondistilizerBlockEntity.java",
-          "src/main/resources/data/utility/loot_table/blocks/essenctiondistilizer.json",
-          "src/main/resources/assets/utility/models/block/essenctiondistilizer.json"
+          "src/main/resources/assets/utility/models/block/essenctiondistilizer.json",
+          "src/main/resources/assets/utility/blockstates/essenctiondistilizer.json"
         ]
       },
       "path": "~/dimension/limbo/essention distillizer"
@@ -1668,8 +1668,8 @@
       "registry_name": "essenction_distillizer_jei_recipe_type",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/jei_recipes/EssenctionDistillizerJEIRecipeTypeRecipeCategory.java",
-          "src/main/java/net/mcreator/utility/jei_recipes/EssenctionDistillizerJEIRecipeTypeRecipe.java"
+          "src/main/java/net/mcreator/utility/jei_recipes/EssenctionDistillizerJEIRecipeTypeRecipe.java",
+          "src/main/java/net/mcreator/utility/jei_recipes/EssenctionDistillizerJEIRecipeTypeRecipeCategory.java"
         ]
       },
       "path": "~/dimension/limbo/essention distillizer"
@@ -1709,10 +1709,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/utility/models/item/dungeongeneratorblock.json",
-          "src/main/resources/data/utility/loot_table/blocks/dungeongeneratorblock.json",
+          "src/main/java/net/mcreator/utility/block/DungeongeneratorblockBlock.java",
           "src/main/resources/assets/utility/models/block/dungeongeneratorblock.json",
-          "src/main/resources/assets/utility/blockstates/dungeongeneratorblock.json",
-          "src/main/java/net/mcreator/utility/block/DungeongeneratorblockBlock.java"
+          "src/main/resources/data/utility/loot_table/blocks/dungeongeneratorblock.json",
+          "src/main/resources/assets/utility/blockstates/dungeongeneratorblock.json"
         ]
       },
       "path": "~/dimension/liminal/dungeon generator"
@@ -1852,11 +1852,11 @@
       "registry_name": "faded_concrete",
       "metadata": {
         "files": [
-          "src/main/resources/data/utility/loot_table/blocks/faded_concrete.json",
           "src/main/resources/assets/utility/models/item/faded_concrete.json",
           "src/main/resources/assets/utility/models/block/faded_concrete.json",
-          "src/main/resources/assets/utility/blockstates/faded_concrete.json",
-          "src/main/java/net/mcreator/utility/block/FadedConcreteBlock.java"
+          "src/main/java/net/mcreator/utility/block/FadedConcreteBlock.java",
+          "src/main/resources/data/utility/loot_table/blocks/faded_concrete.json",
+          "src/main/resources/assets/utility/blockstates/faded_concrete.json"
         ]
       },
       "path": "~/dimension/liminal/blocchi"
@@ -1898,8 +1898,8 @@
       "registry_name": "flatbiom",
       "metadata": {
         "files": [
-          "src/main/resources/data/utility/worldgen/placed_feature/flatbiom_tree.json",
           "src/main/resources/data/utility/worldgen/biome/flatbiom.json",
+          "src/main/resources/data/utility/worldgen/placed_feature/flatbiom_tree.json",
           "src/main/resources/data/utility/worldgen/configured_feature/flatbiom_tree.json"
         ]
       },
@@ -1913,8 +1913,8 @@
       "registry_name": "essenctiondistilizer_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/world/inventory/EssenctiondistilizerGUIMenu.java",
-          "src/main/java/net/mcreator/utility/client/gui/EssenctiondistilizerGUIScreen.java"
+          "src/main/java/net/mcreator/utility/client/gui/EssenctiondistilizerGUIScreen.java",
+          "src/main/java/net/mcreator/utility/world/inventory/EssenctiondistilizerGUIMenu.java"
         ]
       },
       "path": "~/dimension/limbo/essention distillizer"
@@ -2055,8 +2055,8 @@
       "registry_name": "creative_night_vision_goggles",
       "metadata": {
         "files": [
-          "src/main/resources/assets/utility/models/item/creative_night_vision_goggles.json",
-          "src/main/java/net/mcreator/utility/item/CreativeNightVisionGogglesItem.java"
+          "src/main/java/net/mcreator/utility/item/CreativeNightVisionGogglesItem.java",
+          "src/main/resources/assets/utility/models/item/creative_night_vision_goggles.json"
         ]
       },
       "path": "~/quality of life/armor/Curoius/CreativeNightVisionGoggles"
@@ -2118,8 +2118,8 @@
       "registry_name": "survival_night_vision_goggles_item",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/item/SurvivalNightVisionGogglesItemItem.java",
-          "src/main/resources/assets/utility/models/item/survival_night_vision_goggles_item.json"
+          "src/main/resources/assets/utility/models/item/survival_night_vision_goggles_item.json",
+          "src/main/java/net/mcreator/utility/item/SurvivalNightVisionGogglesItemItem.java"
         ]
       },
       "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/occhiali night vision"
@@ -2338,8 +2338,8 @@
       "registry_name": "lenti_crafting",
       "metadata": {
         "files": [
-          "src/main/resources/data/utility/advancement/recipes/lenti_crafting.json",
-          "src/main/resources/data/utility/recipe/lenti_crafting.json"
+          "src/main/resources/data/utility/recipe/lenti_crafting.json",
+          "src/main/resources/data/utility/advancement/recipes/lenti_crafting.json"
         ]
       },
       "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/crafting"
@@ -2352,8 +2352,8 @@
       "registry_name": "lenti_survival_night_vision_helmet_crafting",
       "metadata": {
         "files": [
-          "src/main/resources/data/utility/advancement/recipes/lenti_survival_night_vision_helmet_crafting.json",
-          "src/main/resources/data/utility/recipe/lenti_survival_night_vision_helmet_crafting.json"
+          "src/main/resources/data/utility/recipe/lenti_survival_night_vision_helmet_crafting.json",
+          "src/main/resources/data/utility/advancement/recipes/lenti_survival_night_vision_helmet_crafting.json"
         ]
       },
       "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/crafting"
@@ -2418,12 +2418,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/utility/models/item/omni_wands.json",
-          "src/main/resources/assets/utility/models/item/omni_wands_1.json",
-          "src/main/java/net/mcreator/utility/item/OmniWandsItem.java",
-          "src/main/resources/assets/utility/models/item/omni_wands_2.json",
           "src/main/resources/assets/utility/models/item/omni_wands_0.json",
+          "src/main/resources/assets/utility/models/item/omni_wands_1.json",
+          "src/main/resources/assets/utility/models/item/omni_wands_2.json",
+          "src/main/resources/assets/utility/models/item/omni_wands_4.json",
           "src/main/resources/assets/utility/models/item/omni_wands_3.json",
-          "src/main/resources/assets/utility/models/item/omni_wands_4.json"
+          "src/main/java/net/mcreator/utility/item/OmniWandsItem.java"
         ]
       },
       "path": "~/quality of life/Wands/Omni Wand"
@@ -2436,8 +2436,8 @@
       "registry_name": "omni_wand_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/network/OmniWandGUIButtonMessage.java",
           "src/main/java/net/mcreator/utility/client/gui/OmniWandGUIScreen.java",
+          "src/main/java/net/mcreator/utility/network/OmniWandGUIButtonMessage.java",
           "src/main/java/net/mcreator/utility/world/inventory/OmniWandGUIMenu.java"
         ]
       },
@@ -2628,9 +2628,9 @@
       "registry_name": "omni_wand_teleport_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/utility/network/OmniWandTeleportGUIButtonMessage.java",
           "src/main/java/net/mcreator/utility/client/gui/OmniWandTeleportGUIScreen.java",
-          "src/main/java/net/mcreator/utility/world/inventory/OmniWandTeleportGUIMenu.java"
+          "src/main/java/net/mcreator/utility/world/inventory/OmniWandTeleportGUIMenu.java",
+          "src/main/java/net/mcreator/utility/network/OmniWandTeleportGUIButtonMessage.java"
         ]
       },
       "path": "~/quality of life/Wands/Omni Wand/GUI tp"
@@ -3149,42 +3149,6 @@
     }
   ],
   "tag_elements": {
-    "ITEMS:minecraft:enchantable/durability": [
-      "~CUSTOM:SurvivalNightVisionGogglesItem",
-      "~CUSTOM:Ironknife",
-      "~CUSTOM:Tacticalknife",
-      "~CUSTOM:Medikit"
-    ],
-    "ITEMS:minecraft:head_armor": [
-      "~CUSTOM:Nightelmet.helmet",
-      "~CUSTOM:Creativenighthelmet.helmet"
-    ],
-    "ITEMS:minecraft:chest_armor": [
-      "~CUSTOM:Nightelmet.body",
-      "~CUSTOM:Explosivesuit.body"
-    ],
-    "ITEMS:minecraft:leg_armor": [
-      "~CUSTOM:Nightelmet.legs"
-    ],
-    "ITEMS:minecraft:foot_armor": [
-      "~CUSTOM:Nightelmet.boots"
-    ],
-    "ENCHANTMENTS:minecraft:non_treasure": [
-      "~CUSTOM:Furyessece",
-      "~CUSTOM:Sporetouch",
-      "~CUSTOM:Windessece",
-      "~CUSTOM:Stormessece",
-      "~CUSTOM:Ashessece",
-      "~CUSTOM:Iceessence",
-      "~CUSTOM:Wateressence",
-      "~CUSTOM:Lavaessence"
-    ],
-    "BLOCKS:minecraft:mineable/pickaxe": [
-      "~CUSTOM:FadedConcrete"
-    ],
-    "BLOCKS:minecraft:needs_diamond_tool": [
-      "~CUSTOM:FadedConcrete"
-    ],
     "ITEMS:mod:essenction_distillizer_slot_0": [
       "Items.ENDER_PEARL",
       "Blocks.ANCIENT_DEBRIS",
@@ -3221,16 +3185,52 @@
     "BLOCKS:minecraft:wither_immune": [
       "CUSTOM:Essenctiondistilizer"
     ],
-    "ITEMS:minecraft:piglin_loved": [
-      "~CUSTOM:SurvivalNightVisionGogglesItem"
+    "ITEMS:minecraft:enchantable/durability": [
+      "~SurvivalNightVisionGogglesItem@CUSTOM:SurvivalNightVisionGogglesItem",
+      "~Ironknife@CUSTOM:Ironknife",
+      "~Tacticalknife@CUSTOM:Tacticalknife",
+      "~Medikit@CUSTOM:Medikit"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~Nightelmet@CUSTOM:Nightelmet.helmet",
+      "~Creativenighthelmet@CUSTOM:Creativenighthelmet.helmet"
+    ],
+    "ITEMS:minecraft:chest_armor": [
+      "~Nightelmet@CUSTOM:Nightelmet.body",
+      "~Explosivesuit@CUSTOM:Explosivesuit.body"
+    ],
+    "ITEMS:minecraft:leg_armor": [
+      "~Nightelmet@CUSTOM:Nightelmet.legs"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~Nightelmet@CUSTOM:Nightelmet.boots"
     ],
     "ENCHANTMENTS:minecraft:tradeable": [
-      "~CUSTOM:Wateressence",
-      "~CUSTOM:Lavaessence"
+      "~Lavaessence@CUSTOM:Lavaessence",
+      "~Wateressence@CUSTOM:Wateressence"
     ],
     "ENCHANTMENTS:minecraft:on_random_loot": [
-      "~CUSTOM:Wateressence",
-      "~CUSTOM:Lavaessence"
+      "~Lavaessence@CUSTOM:Lavaessence",
+      "~Wateressence@CUSTOM:Wateressence"
+    ],
+    "ENCHANTMENTS:minecraft:non_treasure": [
+      "~Lavaessence@CUSTOM:Lavaessence",
+      "~Furyessece@CUSTOM:Furyessece",
+      "~Sporetouch@CUSTOM:Sporetouch",
+      "~Windessece@CUSTOM:Windessece",
+      "~Stormessece@CUSTOM:Stormessece",
+      "~Ashessece@CUSTOM:Ashessece",
+      "~Iceessence@CUSTOM:Iceessence",
+      "~Wateressence@CUSTOM:Wateressence"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~FadedConcrete@CUSTOM:FadedConcrete"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~FadedConcrete@CUSTOM:FadedConcrete"
+    ],
+    "ITEMS:minecraft:piglin_loved": [
+      "~SurvivalNightVisionGogglesItem@CUSTOM:SurvivalNightVisionGogglesItem"
     ]
   },
   "tab_element_order": {},
@@ -3668,5 +3668,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.utility"
   },
-  "mcreatorVersion": 202600114619
+  "mcreatorVersion": 202600229418
 }

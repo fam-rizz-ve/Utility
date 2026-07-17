@@ -24,4 +24,8 @@ public class CreativedespwanwandItem extends Item {
 		CreativedespwanwandRightclickedProcedure.execute(entity);
 		return retval;
 	}
+
+	public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {
+		return slotChanged && !oldStack.equals(newStack);
+	}
 }

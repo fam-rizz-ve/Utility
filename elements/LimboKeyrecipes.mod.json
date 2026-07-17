@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.CRYING_OBSIDIAN"
-      },
-      {
-        "value": "CUSTOM:LimboKeyPart1"
-      },
-      {
-        "value": "Blocks.CRYING_OBSIDIAN"
-      },
-      {
-        "value": "Blocks.SLIME_BLOCK"
-      },
-      {
-        "value": "CUSTOM:LimboKeyPart1"
-      },
-      {
-        "value": "Blocks.SLIME_BLOCK"
-      },
-      {
-        "value": "Blocks.CRYING_OBSIDIAN"
-      },
-      {
-        "value": "CUSTOM:LimboKeyPart1"
-      },
-      {
-        "value": "Blocks.CRYING_OBSIDIAN"
-      }
+      "Blocks.CRYING_OBSIDIAN",
+      "CUSTOM:LimboKeyPart1",
+      "Blocks.CRYING_OBSIDIAN",
+      "Blocks.SLIME_BLOCK",
+      "CUSTOM:LimboKeyPart1",
+      "Blocks.SLIME_BLOCK",
+      "Blocks.CRYING_OBSIDIAN",
+      "CUSTOM:LimboKeyPart1",
+      "Blocks.CRYING_OBSIDIAN"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Limbokey"
-    },
+    "recipeReturnStack": "CUSTOM:Limbokey",
     "name": "limbo_keyrecipes",
     "namespace": "mod"
   }

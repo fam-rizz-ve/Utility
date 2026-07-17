@@ -24,7 +24,7 @@ public class ControllasevuotoProcedure {
 		double check_x = 0;
 		found = false;
 		forward = 0;
-		for (int index0 = 0; index0 < (int) profondita; index0++) {
+		for (int index1 = 0; index1 < (int) profondita; index1++) {
 			if ((modalita_altezza).equals("centrata")) {
 				vertical = Math.ceil(altezza / (-2));
 			} else if ((modalita_altezza).equals("normal")) {
@@ -36,7 +36,7 @@ public class ControllasevuotoProcedure {
 					_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal("dimenticato di mettere la modalit\u00E0 altezza"), false);
 				}
 			}
-			for (int index1 = 0; index1 < (int) altezza; index1++) {
+			for (int index2 = 0; index2 < (int) altezza; index2++) {
 				if ((modalita_laterale).equals("centrata")) {
 					lateral = Math.ceil(larghezza / (-2));
 				} else if ((modalita_laterale).equals("non centrata")) {
@@ -46,7 +46,7 @@ public class ControllasevuotoProcedure {
 						_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal("dimenticato di mettere la modalit\u00E0 laterale"), false);
 					}
 				}
-				for (int index2 = 0; index2 < (int) larghezza; index2++) {
+				for (int index3 = 0; index3 < (int) larghezza; index3++) {
 					if ((getBlockDirection(world, BlockPos.containing(x, y, z))) == Direction.NORTH) {
 						check_x = x + lateral;
 						check_y = y + vertical;

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.LAPIS_BLOCK"
-      },
-      {
-        "value": "CUSTOM:Overworldessence"
-      },
-      {
-        "value": "Blocks.LAPIS_BLOCK"
-      },
-      {
-        "value": "Blocks.LOG"
-      },
-      {
-        "value": "CUSTOM:Emptykey"
-      },
-      {
-        "value": "Blocks.LOG"
-      },
-      {
-        "value": "Blocks.EMERALD_BLOCK"
-      },
-      {
-        "value": "Blocks.AMETHYST_CLUSTER"
-      },
-      {
-        "value": "Blocks.EMERALD_BLOCK"
-      }
+      "Blocks.LAPIS_BLOCK",
+      "CUSTOM:Overworldessence",
+      "Blocks.LAPIS_BLOCK",
+      "Blocks.LOG",
+      "CUSTOM:Emptykey",
+      "Blocks.LOG",
+      "Blocks.EMERALD_BLOCK",
+      "Blocks.AMETHYST_CLUSTER",
+      "Blocks.EMERALD_BLOCK"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Overwordkey"
-    },
+    "recipeReturnStack": "CUSTOM:Overwordkey",
     "name": "overworld_key_recipes",
     "namespace": "mod"
   }

@@ -27,4 +27,8 @@ public class BuildingToolItem extends Item {
 		BuildingToolRightclickedProcedure.execute();
 		return ar;
 	}
+
+	public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {
+		return slotChanged && !oldStack.equals(newStack);
+	}
 }

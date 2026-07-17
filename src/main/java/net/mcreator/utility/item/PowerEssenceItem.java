@@ -28,4 +28,8 @@ public class PowerEssenceItem extends Item {
 		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.translatable("item.utility.power_essence.description_0"));
 	}
+
+	public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {
+		return slotChanged && !oldStack.equals(newStack);
+	}
 }

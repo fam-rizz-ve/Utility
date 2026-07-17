@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Survival NIght Vision Goggles Effect",
@@ -8,20 +8,14 @@
       "value": -1,
       "falpha": 0.0
     },
-    "onAddedSound": {
-      "value": ""
-    },
+    "onAddedSound": "",
     "isInstant": false,
     "mobEffectCategory": "BENEFICIAL",
     "renderStatusInInventory": false,
     "renderStatusInHUD": false,
     "isCuredbyHoney": false,
     "modifiers": [],
-    "onStarted": {
-      "name": "SurvivalNIghtVisionGogglesEffectQuandoLeffettoIniziavieneApplicato"
-    },
-    "onExpired": {
-      "name": "SurvivalNIghtVisionGogglesEffectQuandoLeffettoSvanisce"
-    }
+    "onStarted": "SurvivalNIghtVisionGogglesEffectQuandoLeffettoIniziavieneApplicato",
+    "onExpired": "SurvivalNIghtVisionGogglesEffectQuandoLeffettoSvanisce"
   }
 }

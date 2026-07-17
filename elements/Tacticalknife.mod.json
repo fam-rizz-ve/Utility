@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -12,18 +12,14 @@
     "name": "Tactical knife",
     "rarity": "RARE",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:Utility"
-      }
+      "CUSTOM:Utility"
     ],
     "stackSize": 1,
     "enchantability": 15,
     "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 400,
-    "recipeRemainder": {
-      "value": ""
-    },
+    "recipeRemainder": "",
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "isPiglinCurrency": false,
@@ -46,29 +42,21 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onRightClickedInAir": {
-      "name": "TacticalknifeQuandoUnentitaUsaLoggetto"
-    },
+    "onRightClickedInAir": "TacticalknifeQuandoUnentitaUsaLoggetto",
     "enableRanged": true,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
-    "projectile": {
-      "value": "CUSTOM:Tacticalknifeprojectile"
-    },
+    "projectile": "CUSTOM:Tacticalknifeprojectile",
     "projectileDisableAmmoCheck": true,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,
-    "eatResultItem": {
-      "value": ""
-    },
+    "eatResultItem": "",
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "bow",
     "isMusicDisc": false,
-    "musicDiscMusic": {
-      "value": ""
-    },
+    "musicDiscMusic": "",
     "musicDiscDescription": "",
     "musicDiscLengthInTicks": 100,
     "musicDiscAnalogOutput": 0,

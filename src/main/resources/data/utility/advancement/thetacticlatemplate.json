@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "thetacticlatemplate_0": {
+    "thetacticlatemplate_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

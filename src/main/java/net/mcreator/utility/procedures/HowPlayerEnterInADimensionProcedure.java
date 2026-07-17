@@ -91,9 +91,12 @@ public class HowPlayerEnterInADimensionProcedure {
 				}
 				{
 					Entity _ent = entity;
-					_ent.teleportTo(75, 12, 48);
+					double _tx = 75;
+					double _ty = 12;
+					double _tz = 48;
+					_ent.teleportTo(_tx, _ty, _tz);
 					if (_ent instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.connection.teleport(75, 12, 48, _ent.getYRot(), _ent.getXRot());
+						_serverPlayer.connection.teleport(_tx, _ty, _tz, _ent.getYRot(), _ent.getXRot());
 				}
 				if (entity instanceof Player _player) {
 					_player.getAbilities().mayBuild = false;
@@ -124,9 +127,12 @@ public class HowPlayerEnterInADimensionProcedure {
 				}
 				{
 					Entity _ent = entity;
-					_ent.teleportTo(9, 2, 9);
+					double _tx = 9;
+					double _ty = 2;
+					double _tz = 9;
+					_ent.teleportTo(_tx, _ty, _tz);
 					if (_ent instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.connection.teleport(9, 2, 9, _ent.getYRot(), _ent.getXRot());
+						_serverPlayer.connection.teleport(_tx, _ty, _tz, _ent.getYRot(), _ent.getXRot());
 				}
 				if (entity instanceof Player _player) {
 					_player.getAbilities().mayBuild = false;

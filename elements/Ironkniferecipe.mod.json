@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Knifeblade"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Knifeblade"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "CUSTOM:Knifeblade",
+      "",
+      "CUSTOM:Knifeblade",
+      "",
+      "Items.STICK",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Ironknife"
-    },
+    "recipeReturnStack": "CUSTOM:Ironknife",
     "name": "iron_knife_recipe",
     "namespace": "mod"
   }

@@ -1,17 +1,13 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipetype",
   "definition": {
     "textureSelector": "essenctiondistillizerjei.png",
     "width": 176,
     "height": 83,
-    "icon": {
-      "value": "CUSTOM:Essenctiondistilizer"
-    },
+    "icon": "CUSTOM:Essenctiondistilizer",
     "craftingtables": [
-      {
-        "value": "CUSTOM:Essenctiondistilizer"
-      }
+      "CUSTOM:Essenctiondistilizer"
     ],
     "enableCraftingtable": true,
     "enableIntList": false,

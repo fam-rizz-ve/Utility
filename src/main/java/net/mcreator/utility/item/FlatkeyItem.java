@@ -35,4 +35,8 @@ public class FlatkeyItem extends Item {
 		FlatkeyRightclickedOnBlockProcedure.execute(entity);
 		return ar;
 	}
+
+	public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {
+		return slotChanged && !oldStack.equals(newStack);
+	}
 }

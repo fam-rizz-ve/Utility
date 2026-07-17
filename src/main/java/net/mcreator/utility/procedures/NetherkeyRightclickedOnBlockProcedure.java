@@ -53,10 +53,12 @@ public class NetherkeyRightclickedOnBlockProcedure {
 		}
 		{
 			Entity _ent = entity;
-			_ent.teleportTo(entity.getData(UtilityModVariables.PLAYER_VARIABLES).ultima_x_nether, entity.getData(UtilityModVariables.PLAYER_VARIABLES).ultima_y_nether, entity.getData(UtilityModVariables.PLAYER_VARIABLES).ultima_z_nether);
+			double _tx = entity.getData(UtilityModVariables.PLAYER_VARIABLES).ultima_x_nether;
+			double _ty = entity.getData(UtilityModVariables.PLAYER_VARIABLES).ultima_y_nether;
+			double _tz = entity.getData(UtilityModVariables.PLAYER_VARIABLES).ultima_z_nether;
+			_ent.teleportTo(_tx, _ty, _tz);
 			if (_ent instanceof ServerPlayer _serverPlayer)
-				_serverPlayer.connection.teleport(entity.getData(UtilityModVariables.PLAYER_VARIABLES).ultima_x_nether, entity.getData(UtilityModVariables.PLAYER_VARIABLES).ultima_y_nether,
-						entity.getData(UtilityModVariables.PLAYER_VARIABLES).ultima_z_nether, _ent.getYRot(), _ent.getXRot());
+				_serverPlayer.connection.teleport(_tx, _ty, _tz, _ent.getYRot(), _ent.getXRot());
 		}
 		{
 			UtilityModVariables.PlayerVariables _vars = entity.getData(UtilityModVariables.PLAYER_VARIABLES);

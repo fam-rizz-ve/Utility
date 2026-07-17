@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "medi_kit_advancment_2_0": {
+    "medi_kit_advancment_2_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

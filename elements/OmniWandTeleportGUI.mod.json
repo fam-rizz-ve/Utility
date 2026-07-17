@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -33,9 +33,7 @@
           "name": "button_empty",
           "text": "<",
           "isUndecorated": false,
-          "onClick": {
-            "name": "OmniWandPulsanteSinistraCambioPlayer1"
-          },
+          "onClick": "OmniWandPulsanteSinistraCambioPlayer1",
           "width": 30,
           "height": 20,
           "x": 137,
@@ -49,9 +47,7 @@
           "name": "button_empty1",
           "text": ">",
           "isUndecorated": false,
-          "onClick": {
-            "name": "OmniWandPulsanteDestraCambioPlayer1"
-          },
+          "onClick": "OmniWandPulsanteDestraCambioPlayer1",
           "width": 30,
           "height": 20,
           "x": 263,
@@ -82,9 +78,7 @@
           "name": "button_empty2",
           "text": "<",
           "isUndecorated": false,
-          "onClick": {
-            "name": "OmniWandPulsanteSinistraCambioPlayer2"
-          },
+          "onClick": "OmniWandPulsanteSinistraCambioPlayer2",
           "width": 30,
           "height": 20,
           "x": 137,
@@ -98,9 +92,7 @@
           "name": "button_empty3",
           "text": ">",
           "isUndecorated": false,
-          "onClick": {
-            "name": "OmniWandPulsanteDestraCambioPlayer2"
-          },
+          "onClick": "OmniWandPulsanteDestraCambioPlayer2",
           "width": 30,
           "height": 20,
           "x": 263,
@@ -184,9 +176,7 @@
         }
       }
     ],
-    "onOpen": {
-      "name": "OmniWandTeleportGUIQuandoQuestaGUIVieneAperta"
-    },
+    "onOpen": "OmniWandTeleportGUIQuandoQuestaGUIVieneAperta",
     "gridSettings": {
       "sx": 9,
       "sy": 9,

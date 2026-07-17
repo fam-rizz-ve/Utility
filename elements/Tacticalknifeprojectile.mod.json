@@ -1,14 +1,10 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "projectile",
   "definition": {
-    "projectileItem": {
-      "value": "CUSTOM:Tacticalknife"
-    },
+    "projectileItem": "CUSTOM:Tacticalknife",
     "showParticles": false,
-    "actionSound": {
-      "value": "entity.arrow.shoot"
-    },
+    "actionSound": "entity.arrow.shoot",
     "igniteFire": false,
     "disableGravity": false,
     "disableDiscarding": false,
@@ -19,8 +15,6 @@
     "customModelTexture": "chatgpt_image_6_ago_2025_15_57_35_custom.png",
     "modelWidth": 0.5,
     "modelHeight": 0.5,
-    "onHitsBlock": {
-      "name": "TacticalknifeprojectileQuandoIlProiettileColpisceIlBlocco"
-    }
+    "onHitsBlock": "TacticalknifeprojectileQuandoIlProiettileColpisceIlBlocco"
   }
 }

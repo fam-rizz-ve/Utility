@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.LAPIS_BLOCK"
-      },
-      {
-        "value": "CUSTOM:Endessece"
-      },
-      {
-        "value": "Blocks.LAPIS_BLOCK"
-      },
-      {
-        "value": "Items.CHORUS_FRUIT"
-      },
-      {
-        "value": "CUSTOM:Emptykey"
-      },
-      {
-        "value": "Items.CHORUS_FRUIT"
-      },
-      {
-        "value": "Blocks.EMERALD_BLOCK"
-      },
-      {
-        "value": "Blocks.AMETHYST_CLUSTER"
-      },
-      {
-        "value": "Blocks.EMERALD_BLOCK"
-      }
+      "Blocks.LAPIS_BLOCK",
+      "CUSTOM:Endessece",
+      "Blocks.LAPIS_BLOCK",
+      "Items.CHORUS_FRUIT",
+      "CUSTOM:Emptykey",
+      "Items.CHORUS_FRUIT",
+      "Blocks.EMERALD_BLOCK",
+      "Blocks.AMETHYST_CLUSTER",
+      "Blocks.EMERALD_BLOCK"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Endkey"
-    },
+    "recipeReturnStack": "CUSTOM:Endkey",
     "name": "end_key_recipes",
     "namespace": "mod"
   }

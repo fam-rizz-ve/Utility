@@ -20,7 +20,7 @@ import net.mcreator.utility.network.AttivadisattivanighthelmetMessage;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class UtilityModKeyMappings {
-	public static final KeyMapping ATTIVADISATTIVANIGHTHELMET = new KeyMapping("key.utility.attivadisattivanighthelmet", GLFW.GLFW_KEY_H, "key.categories.gameplay") {
+	public static final KeyMapping ATTIVADISATTIVANIGHTHELMET = new KeyMapping("key.utility.attivadisattivanighthelmet", GLFW.GLFW_KEY_H, "key.category.utility.gameplay") {
 		private boolean isDownOld = false;
 
 		@Override
@@ -33,7 +33,7 @@ public class UtilityModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping EXPLOSIVESUITATTIVAZIONE = new KeyMapping("key.utility.explosivesuitattivazione", GLFW.GLFW_KEY_J, "key.categories.gameplay") {
+	public static final KeyMapping EXPLOSIVESUITATTIVAZIONE = new KeyMapping("key.utility.explosivesuitattivazione", GLFW.GLFW_KEY_J, "key.category.utility.gameplay") {
 		private boolean isDownOld = false;
 
 		@Override

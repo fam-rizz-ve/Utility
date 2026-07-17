@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "thechosenone_0": {
+    "thechosenone_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -29,7 +29,7 @@
         ]
       }
     },
-    "thechosenone_1": {
+    "thechosenone_3": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -43,7 +43,7 @@
         ]
       }
     },
-    "thechosenone_2": {
+    "thechosenone_5": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -57,7 +57,7 @@
         ]
       }
     },
-    "thechosenone_3": {
+    "thechosenone_7": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

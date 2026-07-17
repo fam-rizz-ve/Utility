@@ -16,7 +16,7 @@
     "hidden": false
   },
   "criteria": {
-    "liminalkeyadvancment_0": {
+    "liminalkeyadvancment_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

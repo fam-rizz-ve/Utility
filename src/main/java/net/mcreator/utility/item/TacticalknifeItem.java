@@ -108,4 +108,8 @@ public class TacticalknifeItem extends Item {
 	private ItemStack findAmmo(Player player) {
 		return new ItemStack(TacticalknifeprojectileEntity.PROJECTILE_ITEM.getItem());
 	}
+
+	public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {
+		return slotChanged && !oldStack.equals(newStack);
+	}
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.IRON_BLOCK"
-      },
-      {
-        "value": "Items.NETHERITE_INGOT"
-      },
-      {
-        "value": "Blocks.IRON_BLOCK"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.NETHERITE_INGOT"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.NETHERITE_INGOT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      }
+      "Blocks.IRON_BLOCK",
+      "Items.NETHERITE_INGOT",
+      "Blocks.IRON_BLOCK",
+      "",
+      "Items.NETHERITE_INGOT",
+      "",
+      "",
+      "Items.NETHERITE_INGOT",
+      "Items.IRON_INGOT"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Emptykey"
-    },
+    "recipeReturnStack": "CUSTOM:Emptykey",
     "name": "empitkey",
     "namespace": "mod"
   }

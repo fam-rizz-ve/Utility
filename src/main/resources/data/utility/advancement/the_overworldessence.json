@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "the_overworldessence_0": {
+    "the_overworldessence_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

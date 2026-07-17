@@ -55,10 +55,12 @@ public class FlatkeyRightclickedOnBlockProcedure {
 		}
 		{
 			Entity _ent = entity;
-			_ent.teleportTo(entity.getData(UtilityModVariables.PLAYER_VARIABLES).ultima_x_flat, entity.getData(UtilityModVariables.PLAYER_VARIABLES).ultima_y_flat, entity.getData(UtilityModVariables.PLAYER_VARIABLES).ultima_z_flat);
+			double _tx = entity.getData(UtilityModVariables.PLAYER_VARIABLES).ultima_x_flat;
+			double _ty = entity.getData(UtilityModVariables.PLAYER_VARIABLES).ultima_y_flat;
+			double _tz = entity.getData(UtilityModVariables.PLAYER_VARIABLES).ultima_z_flat;
+			_ent.teleportTo(_tx, _ty, _tz);
 			if (_ent instanceof ServerPlayer _serverPlayer)
-				_serverPlayer.connection.teleport(entity.getData(UtilityModVariables.PLAYER_VARIABLES).ultima_x_flat, entity.getData(UtilityModVariables.PLAYER_VARIABLES).ultima_y_flat,
-						entity.getData(UtilityModVariables.PLAYER_VARIABLES).ultima_z_flat, _ent.getYRot(), _ent.getXRot());
+				_serverPlayer.connection.teleport(_tx, _ty, _tz, _ent.getYRot(), _ent.getXRot());
 		}
 		{
 			UtilityModVariables.PlayerVariables _vars = entity.getData(UtilityModVariables.PLAYER_VARIABLES);

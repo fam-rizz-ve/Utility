@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "block",
   "definition": {
     "texture": "essenction_distilizer_ico",
@@ -53,14 +53,10 @@
     "rarity": "EPIC",
     "immuneToFire": false,
     "creativeTabs": [
-      {
-        "value": "CUSTOM:Utilitymagic"
-      }
+      "CUSTOM:Utilitymagic"
     ],
     "destroyTool": "Not specified",
-    "customDrop": {
-      "value": ""
-    },
+    "customDrop": "",
     "dropAmount": 1,
     "xpAmountMin": 0,
     "xpAmountMax": 0,
@@ -80,14 +76,10 @@
     },
     "colorOnMap": "DEFAULT",
     "noteBlockInstrument": "harp",
-    "creativePickItem": {
-      "value": ""
-    },
+    "creativePickItem": "",
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "strippingResult": {
-      "value": ""
-    },
+    "strippingResult": "",
     "ignitedByLava": false,
     "flammability": 0,
     "fireSpreadSpeed": 0,
@@ -97,25 +89,13 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "IGNORE",
     "isNotColidable": false,
+    "soundOnStep": "SMALL_AMETHYST_BUD",
     "isCustomSoundType": false,
-    "soundOnStep": {
-      "value": "SMALL_AMETHYST_BUD"
-    },
-    "breakSound": {
-      "value": ""
-    },
-    "fallSound": {
-      "value": ""
-    },
-    "hitSound": {
-      "value": ""
-    },
-    "placeSound": {
-      "value": ""
-    },
-    "stepSound": {
-      "value": ""
-    },
+    "breakSound": "",
+    "fallSound": "",
+    "hitSound": "",
+    "placeSound": "",
+    "stepSound": "",
     "luminance": {
       "fixedValue": 0.0
     },

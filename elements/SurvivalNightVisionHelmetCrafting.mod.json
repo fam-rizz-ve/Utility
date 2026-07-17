@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smithing",
@@ -11,18 +11,10 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "CUSTOM:TacticalTemplate"
-    },
-    "smithingInputAdditionStack": {
-      "value": "Items.PHANTOM_MEMBRANE"
-    },
-    "smithingInputTemplateStack": {
-      "value": "CUSTOM:Occhiali"
-    },
-    "smithingReturnStack": {
-      "value": "CUSTOM:SurvivalNightVisionGogglesItem"
-    },
+    "smithingInputStack": "CUSTOM:TacticalTemplate",
+    "smithingInputAdditionStack": "Items.PHANTOM_MEMBRANE",
+    "smithingInputTemplateStack": "CUSTOM:Occhiali",
+    "smithingReturnStack": "CUSTOM:SurvivalNightVisionGogglesItem",
     "name": "survival_night_vision_helmet_crafting",
     "namespace": "mod"
   }

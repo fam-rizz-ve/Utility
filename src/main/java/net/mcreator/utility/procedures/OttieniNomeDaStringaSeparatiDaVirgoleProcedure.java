@@ -10,7 +10,7 @@ public class OttieniNomeDaStringaSeparatiDaVirgoleProcedure {
 		double Indice_locale = 0;
 		temp_lista = Lista + ",";
 		Indice_locale = indice;
-		for (int index0 = 0; index0 < (int) (Indice_locale + 1); index0++) {
+		for (int index4 = 0; index4 < (int) (Indice_locale + 1); index4++) {
 			posizioneVirgola = temp_lista.indexOf(",", 0);
 			if (posizioneVirgola > 0) {
 				GiocatoreEstratto = temp_lista.substring(0, (int) posizioneVirgola);

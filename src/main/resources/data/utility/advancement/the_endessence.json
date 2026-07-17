@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "the_endessence_0": {
+    "the_endessence_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

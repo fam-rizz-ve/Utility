@@ -53,9 +53,12 @@ public class DungeongeneratorblockBlock extends Block {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		BlockState state = super.getStateForPlacement(context);
+		if (state == null)
+			return null;
 		if (context.getClickedFace().getAxis() == Direction.Axis.Y)
-			return super.getStateForPlacement(context).setValue(FACING, Direction.NORTH);
-		return super.getStateForPlacement(context).setValue(FACING, context.getClickedFace());
+			return state.setValue(FACING, Direction.NORTH);
+		return state.setValue(FACING, context.getClickedFace());
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {

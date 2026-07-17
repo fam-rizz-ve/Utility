@@ -13,4 +13,8 @@ public class SurvivalNightVisionGogglesItemItem extends Item {
 	public boolean isPiglinCurrency(ItemStack stack) {
 		return true;
 	}
+
+	public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {
+		return slotChanged && !oldStack.equals(newStack);
+	}
 }

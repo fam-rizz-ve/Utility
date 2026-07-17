@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.LAPIS_BLOCK"
-      },
-      {
-        "value": "CUSTOM:Nehteressence"
-      },
-      {
-        "value": "Blocks.LAPIS_BLOCK"
-      },
-      {
-        "value": "Blocks.NETHERRACK"
-      },
-      {
-        "value": "CUSTOM:Emptykey"
-      },
-      {
-        "value": "Blocks.NETHERRACK"
-      },
-      {
-        "value": "Blocks.EMERALD_BLOCK"
-      },
-      {
-        "value": "Blocks.AMETHYST_CLUSTER"
-      },
-      {
-        "value": "Blocks.EMERALD_BLOCK"
-      }
+      "Blocks.LAPIS_BLOCK",
+      "CUSTOM:Nehteressence",
+      "Blocks.LAPIS_BLOCK",
+      "Blocks.NETHERRACK",
+      "CUSTOM:Emptykey",
+      "Blocks.NETHERRACK",
+      "Blocks.EMERALD_BLOCK",
+      "Blocks.AMETHYST_CLUSTER",
+      "Blocks.EMERALD_BLOCK"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Netherkey"
-    },
+    "recipeReturnStack": "CUSTOM:Netherkey",
     "name": "nether_key_recipes",
     "namespace": "mod"
   }
