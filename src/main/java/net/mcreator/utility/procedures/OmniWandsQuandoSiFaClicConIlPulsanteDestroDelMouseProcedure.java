@@ -12,6 +12,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.gui.screens.Screen;
 
+import net.mcreator.utility.world.inventory.OmniWandTeleportGUIMenu;
 import net.mcreator.utility.world.inventory.OmniWandGUIMenu;
 import net.mcreator.utility.network.UtilityModVariables;
 
@@ -38,6 +39,26 @@ public class OmniWandsQuandoSiFaClicConIlPulsanteDestroDelMouseProcedure {
 					@Override
 					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
 						return new OmniWandGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+					}
+				}, _bpos);
+			}
+		} else if (entity.getData(UtilityModVariables.PLAYER_VARIABLES).ModalitaOmniWand == 3) {
+			if (entity instanceof ServerPlayer _ent) {
+				BlockPos _bpos = BlockPos.containing(x, y, z);
+				_ent.openMenu(new MenuProvider() {
+					@Override
+					public Component getDisplayName() {
+						return Component.literal("OmniWandTeleportGUI");
+					}
+
+					@Override
+					public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+						return false;
+					}
+
+					@Override
+					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+						return new OmniWandTeleportGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 					}
 				}, _bpos);
 			}

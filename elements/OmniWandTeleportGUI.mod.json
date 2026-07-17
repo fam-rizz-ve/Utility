@@ -1,0 +1,198 @@
+{
+  "_fv": 85,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 146,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_teleport",
+          "text": {
+            "fixedValue": "Teleport"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 191,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "<",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OmniWandPulsanteSinistraCambioPlayer1"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 137,
+          "y": 67,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty1",
+          "text": ">",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OmniWandPulsanteDestraCambioPlayer1"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 263,
+          "y": 67,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_to",
+          "text": {
+            "fixedValue": "To"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 209,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty2",
+          "text": "<",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OmniWandPulsanteSinistraCambioPlayer2"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 137,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty3",
+          "text": ">",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OmniWandPulsanteDestraCambioPlayer2"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 263,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_confirm",
+          "text": "Confirm",
+          "isUndecorated": false,
+          "width": 60,
+          "height": 20,
+          "x": 182,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_player1",
+          "text": {
+            "fixedValue": "Player1",
+            "name": "OmniWandSCrittaPlayer1"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 177,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_player2",
+          "text": {
+            "fixedValue": "Player2",
+            "name": "OmniWandSCrittaPlayer2"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 177,
+          "y": 121,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty4",
+          "text": "           ",
+          "isUndecorated": false,
+          "width": 80,
+          "height": 20,
+          "x": 173,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty5",
+          "text": "           ",
+          "isUndecorated": false,
+          "width": 80,
+          "height": 20,
+          "x": 173,
+          "y": 67,
+          "locked": false
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "OmniWandTeleportGUIQuandoQuestaGUIVieneAperta"
+    },
+    "gridSettings": {
+      "sx": 9,
+      "sy": 9,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

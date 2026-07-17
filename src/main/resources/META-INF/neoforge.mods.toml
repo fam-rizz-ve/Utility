@@ -4,7 +4,7 @@ license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
 modId="utility"
-version="0.0.9"
+version="0.1.0"
 displayName="Utility"
 displayURL="https://mcreator.net"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
@@ -31,6 +31,12 @@ authors="MCreator"
     ordering="AFTER"
     side="BOTH"
 
+[[dependencies.utility]]
+    modId="curios"
+    type="required"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 [[dependencies.utility]]
     modId="curios_api"

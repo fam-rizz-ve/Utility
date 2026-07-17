@@ -8,6 +8,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import net.mcreator.utility.client.gui.OmniWandTeleportGUIScreen;
 import net.mcreator.utility.client.gui.OmniWandGUIScreen;
 import net.mcreator.utility.client.gui.EssenctiondistilizerGUIScreen;
 
@@ -17,6 +18,7 @@ public class UtilityModScreens {
 	public static void clientLoad(RegisterMenuScreensEvent event) {
 		event.register(UtilityModMenus.ESSENCTIONDISTILIZER_GUI.get(), EssenctiondistilizerGUIScreen::new);
 		event.register(UtilityModMenus.OMNI_WAND_GUI.get(), OmniWandGUIScreen::new);
+		event.register(UtilityModMenus.OMNI_WAND_TELEPORT_GUI.get(), OmniWandTeleportGUIScreen::new);
 	}
 
 	public interface ScreenAccessor {

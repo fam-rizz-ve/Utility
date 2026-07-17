@@ -148,5 +148,18 @@
   "gui.utility.omni_wand_gui.label_build": "Build",
   "gui.utility.omni_wand_gui.label_wand_mode": "wand mode",
   "gui.utility.omni_wand_gui.label_select_the_wand_mode": "Select the",
-  "gui.utility.omni_wand_gui.label_destrucion": "Despawn"
+  "gui.utility.omni_wand_gui.label_destrucion": "Despawn",
+  "gui.utility.omni_wand_teleport_gui.label_to": "To",
+  "gui.utility.omni_wand_teleport_gui.label_teleport": "Teleport",
+  "gui.utility.omni_wand_teleport_gui.button_empty": "\u003c",
+  "gui.utility.omni_wand_teleport_gui.button_empty1": "\u003e",
+  "gui.utility.omni_wand_teleport_gui.button_empty2": "\u003c",
+  "gui.utility.omni_wand_teleport_gui.button_player2": "Player2",
+  "gui.utility.omni_wand_teleport_gui.button_empty3": "\u003e",
+  "gui.utility.omni_wand_teleport_gui.button_player1": "Player1",
+  "gui.utility.omni_wand_teleport_gui.button_confirm": "Confirm",
+  "gui.utility.omni_wand_teleport_gui.button_empty4": "           ",
+  "gui.utility.omni_wand_teleport_gui.button_empty5": "           ",
+  "gui.utility.omni_wand_teleport_gui.label_player2": "Player2",
+  "gui.utility.omni_wand_teleport_gui.label_player1": "Player1"
 }

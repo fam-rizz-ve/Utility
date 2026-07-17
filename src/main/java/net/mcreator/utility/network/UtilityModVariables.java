@@ -104,6 +104,10 @@ public class UtilityModVariables {
 		clone.CreativeNightVisionGoglesIsEquped = original.CreativeNightVisionGoglesIsEquped;
 		clone.SurvivalNightVisionGogglesEquiped = original.SurvivalNightVisionGogglesEquiped;
 		clone.SurvivalNightVisionGogglesCanActivate = original.SurvivalNightVisionGogglesCanActivate;
+		clone.NomeMostratoOmniWand1 = original.NomeMostratoOmniWand1;
+		clone.NomeMostratoOmniWand2 = original.NomeMostratoOmniWand2;
+		clone.indiceCorrenteOmniWand2 = original.indiceCorrenteOmniWand2;
+		clone.indice_correnteOmniWand1 = original.indice_correnteOmniWand1;
 		if (!event.isWasDeath()) {
 			clone.modalita_explosive_chessplate = original.modalita_explosive_chessplate;
 			clone.ultima_gamemode = original.ultima_gamemode;
@@ -194,6 +198,8 @@ public class UtilityModVariables {
 		public static final String DATA_NAME = "utility_mapvars";
 		boolean _syncDirty = false;
 		public boolean liminal_generato = false;
+		public String lista_giocatori = "\"\"";
+		public double numeroDiGIocatori = 0;
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			MapVariables data = new MapVariables();
@@ -203,11 +209,15 @@ public class UtilityModVariables {
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			liminal_generato = nbt.getBoolean("liminal_generato");
+			lista_giocatori = nbt.getString("lista_giocatori");
+			numeroDiGIocatori = nbt.getDouble("numeroDiGIocatori");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			nbt.putBoolean("liminal_generato", liminal_generato);
+			nbt.putString("lista_giocatori", lista_giocatori);
+			nbt.putDouble("numeroDiGIocatori", numeroDiGIocatori);
 			return nbt;
 		}
 
@@ -294,6 +304,10 @@ public class UtilityModVariables {
 		public boolean SUrvivalNIghtVisionGogglesIsActiveBefereUnequip = false;
 		public boolean UtilizzateLeLentiDelSurvivalNIghtVisionGoggles = false;
 		public double ModalitaOmniWand = 0;
+		public String NomeMostratoOmniWand1 = "\"\"";
+		public String NomeMostratoOmniWand2 = "\"\"";
+		public double indiceCorrenteOmniWand2 = 0;
+		public double indice_correnteOmniWand1 = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -323,6 +337,10 @@ public class UtilityModVariables {
 			nbt.putBoolean("SUrvivalNIghtVisionGogglesIsActiveBefereUnequip", SUrvivalNIghtVisionGogglesIsActiveBefereUnequip);
 			nbt.putBoolean("UtilizzateLeLentiDelSurvivalNIghtVisionGoggles", UtilizzateLeLentiDelSurvivalNIghtVisionGoggles);
 			nbt.putDouble("ModalitaOmniWand", ModalitaOmniWand);
+			nbt.putString("NomeMostratoOmniWand1", NomeMostratoOmniWand1);
+			nbt.putString("NomeMostratoOmniWand2", NomeMostratoOmniWand2);
+			nbt.putDouble("indiceCorrenteOmniWand2", indiceCorrenteOmniWand2);
+			nbt.putDouble("indice_correnteOmniWand1", indice_correnteOmniWand1);
 			return nbt;
 		}
 
@@ -353,6 +371,10 @@ public class UtilityModVariables {
 			SUrvivalNIghtVisionGogglesIsActiveBefereUnequip = nbt.getBoolean("SUrvivalNIghtVisionGogglesIsActiveBefereUnequip");
 			UtilizzateLeLentiDelSurvivalNIghtVisionGoggles = nbt.getBoolean("UtilizzateLeLentiDelSurvivalNIghtVisionGoggles");
 			ModalitaOmniWand = nbt.getDouble("ModalitaOmniWand");
+			NomeMostratoOmniWand1 = nbt.getString("NomeMostratoOmniWand1");
+			NomeMostratoOmniWand2 = nbt.getString("NomeMostratoOmniWand2");
+			indiceCorrenteOmniWand2 = nbt.getDouble("indiceCorrenteOmniWand2");
+			indice_correnteOmniWand1 = nbt.getDouble("indice_correnteOmniWand1");
 		}
 
 		public void markSyncDirty() {
