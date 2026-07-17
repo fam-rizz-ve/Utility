@@ -49,7 +49,7 @@ public class IceEssenceProcedureProcedure {
 				createTimedLoop(6, 20, _timedLoop -> {
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) != 0) {
 						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.ITEM_SNOWBALL, (entity.getX()), (entity.getY()), (entity.getZ()), 30, 1, 1, 1, 1);
+							_level.sendParticles(ParticleTypes.ITEM_SNOWBALL, (entity.getX()), (entity.getY()), (entity.getZ()), 50, 1, 1, 1, 1);
 					}
 					return true;
 				});

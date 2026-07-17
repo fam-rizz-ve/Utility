@@ -48,7 +48,7 @@ public class WaterEssenceProcedureProcedure {
 					entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.DROWN)), 2);
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) != 0) {
 						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.BUBBLE_COLUMN_UP, (entity.getX()), (entity.getY()), (entity.getZ()), 50, 1, 1, 1, 1);
+							_level.sendParticles(ParticleTypes.BUBBLE_COLUMN_UP, (entity.getX()), (entity.getY()), (entity.getZ()), 50, 1, 1, 1, 0.1);
 					}
 					return true;
 				});
