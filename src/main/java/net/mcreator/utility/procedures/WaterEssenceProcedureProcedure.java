@@ -26,7 +26,7 @@ import javax.annotation.Nullable;
 import java.util.function.Function;
 
 @EventBusSubscriber
-public class LavaEssenceProcedureProcedure {
+public class WaterEssenceProcedureProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingIncomingDamageEvent event) {
 		if (event.getEntity() != null) {
@@ -42,14 +42,13 @@ public class LavaEssenceProcedureProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-				.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("utility:lavaessence")))) != 0) {
+				.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("utility:wateressence")))) != 0) {
 			if (Mth.nextInt(RandomSource.create(), 1, 5) == 2) {
-				entity.igniteForSeconds(60);
-				entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.LAVA)), 5);
-				createTimedLoop(3, 20, _timedLoop -> {
+				createTimedLoop(5, 20, _timedLoop -> {
+					entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.DROWN)), 2);
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) != 0) {
 						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.LAVA, (entity.getX()), (entity.getY()), (entity.getZ()), 30, 1, 1, 1, 1);
+							_level.sendParticles(ParticleTypes.BUBBLE_COLUMN_UP, (entity.getX()), (entity.getY()), (entity.getZ()), 50, 1, 1, 1, 1);
 					}
 					return true;
 				});

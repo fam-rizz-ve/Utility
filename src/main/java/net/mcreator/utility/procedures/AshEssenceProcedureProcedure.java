@@ -9,8 +9,8 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
@@ -26,7 +26,7 @@ import javax.annotation.Nullable;
 import java.util.function.Function;
 
 @EventBusSubscriber
-public class LavaEssenceProcedureProcedure {
+public class AshEssenceProcedureProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingIncomingDamageEvent event) {
 		if (event.getEntity() != null) {
@@ -42,14 +42,14 @@ public class LavaEssenceProcedureProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-				.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("utility:lavaessence")))) != 0) {
-			if (Mth.nextInt(RandomSource.create(), 1, 5) == 2) {
-				entity.igniteForSeconds(60);
-				entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.LAVA)), 5);
+				.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("utility:ashessece")))) != 0) {
+			if (Mth.nextInt(RandomSource.create(), 1, 3) == 2) {
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 60, 10, false, false));
 				createTimedLoop(3, 20, _timedLoop -> {
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) != 0) {
 						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.LAVA, (entity.getX()), (entity.getY()), (entity.getZ()), 30, 1, 1, 1, 1);
+							_level.sendParticles(ParticleTypes.WHITE_ASH, (entity.getX()), (entity.getY()), (entity.getZ()), 30, 1, 1, 1, 1);
 					}
 					return true;
 				});

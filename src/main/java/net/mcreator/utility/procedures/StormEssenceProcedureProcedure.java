@@ -5,12 +5,13 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.LightningBolt;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
@@ -18,6 +19,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.BlockPos;
 
 import net.mcreator.utility.UtilityMod;
 
@@ -26,7 +28,7 @@ import javax.annotation.Nullable;
 import java.util.function.Function;
 
 @EventBusSubscriber
-public class LavaEssenceProcedureProcedure {
+public class StormEssenceProcedureProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingIncomingDamageEvent event) {
 		if (event.getEntity() != null) {
@@ -42,14 +44,17 @@ public class LavaEssenceProcedureProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-				.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("utility:lavaessence")))) != 0) {
+				.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("utility:stormessece")))) != 0) {
 			if (Mth.nextInt(RandomSource.create(), 1, 5) == 2) {
-				entity.igniteForSeconds(60);
-				entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.LAVA)), 5);
+				if (world instanceof ServerLevel _level) {
+					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+					entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())));;
+					_level.addFreshEntity(entityToSpawn);
+				}
 				createTimedLoop(3, 20, _timedLoop -> {
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) != 0) {
 						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.LAVA, (entity.getX()), (entity.getY()), (entity.getZ()), 30, 1, 1, 1, 1);
+							_level.sendParticles(ParticleTypes.ELECTRIC_SPARK, (entity.getX()), (entity.getY()), (entity.getZ()), 30, 1, 1, 1, 1);
 					}
 					return true;
 				});

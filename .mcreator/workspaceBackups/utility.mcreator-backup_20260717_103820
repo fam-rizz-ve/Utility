@@ -3051,29 +3051,6 @@
         ]
       },
       "path": "~/enchantements/power essence enchant"
-    },
-    {
-      "name": "FuryEssenceProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fury_essence_procedure",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/utility/procedures/FuryEssenceProcedureProcedure.java"
-        ]
-      },
-      "path": "~/enchantements/power essence enchant"
     }
   ],
   "variable_elements": [
