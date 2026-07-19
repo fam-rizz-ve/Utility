@@ -113,7 +113,9 @@
     "damageVsEntity": 4.0,
     "attackSpeed": 1.2,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "you can press alt+right clock for switch the mode of the wand"
+      ]
     },
     "glowCondition": {
       "fixedValue": false

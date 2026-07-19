@@ -108,6 +108,8 @@ public class UtilityModVariables {
 		clone.NomeMostratoOmniWand2 = original.NomeMostratoOmniWand2;
 		clone.indiceCorrenteOmniWand2 = original.indiceCorrenteOmniWand2;
 		clone.indice_correnteOmniWand1 = original.indice_correnteOmniWand1;
+		clone.GrandezzaCuboXZOmniWandDistruzione = original.GrandezzaCuboXZOmniWandDistruzione;
+		clone.GrandezzaCuboYOmniWandDistruzione = original.GrandezzaCuboYOmniWandDistruzione;
 		if (!event.isWasDeath()) {
 			clone.modalita_explosive_chessplate = original.modalita_explosive_chessplate;
 			clone.ultima_gamemode = original.ultima_gamemode;
@@ -308,6 +310,8 @@ public class UtilityModVariables {
 		public String NomeMostratoOmniWand2 = "\"\"";
 		public double indiceCorrenteOmniWand2 = 0;
 		public double indice_correnteOmniWand1 = 0;
+		public double GrandezzaCuboXZOmniWandDistruzione = 1.0;
+		public double GrandezzaCuboYOmniWandDistruzione = 1.0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -341,6 +345,8 @@ public class UtilityModVariables {
 			nbt.putString("NomeMostratoOmniWand2", NomeMostratoOmniWand2);
 			nbt.putDouble("indiceCorrenteOmniWand2", indiceCorrenteOmniWand2);
 			nbt.putDouble("indice_correnteOmniWand1", indice_correnteOmniWand1);
+			nbt.putDouble("GrandezzaCuboXZOmniWandDistruzione", GrandezzaCuboXZOmniWandDistruzione);
+			nbt.putDouble("GrandezzaCuboYOmniWandDistruzione", GrandezzaCuboYOmniWandDistruzione);
 			return nbt;
 		}
 
@@ -375,6 +381,8 @@ public class UtilityModVariables {
 			NomeMostratoOmniWand2 = nbt.getString("NomeMostratoOmniWand2");
 			indiceCorrenteOmniWand2 = nbt.getDouble("indiceCorrenteOmniWand2");
 			indice_correnteOmniWand1 = nbt.getDouble("indice_correnteOmniWand1");
+			GrandezzaCuboXZOmniWandDistruzione = nbt.getDouble("GrandezzaCuboXZOmniWandDistruzione");
+			GrandezzaCuboYOmniWandDistruzione = nbt.getDouble("GrandezzaCuboYOmniWandDistruzione");
 		}
 
 		public void markSyncDirty() {

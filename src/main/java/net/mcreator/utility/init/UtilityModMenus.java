@@ -17,6 +17,7 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.utility.world.inventory.OmniWandTeleportGUIMenu;
 import net.mcreator.utility.world.inventory.OmniWandGUIMenu;
+import net.mcreator.utility.world.inventory.GUIOmniWandDIstruzioneMenu;
 import net.mcreator.utility.world.inventory.EssenctiondistilizerGUIMenu;
 import net.mcreator.utility.network.MenuStateUpdateMessage;
 import net.mcreator.utility.UtilityMod;
@@ -28,6 +29,7 @@ public class UtilityModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<EssenctiondistilizerGUIMenu>> ESSENCTIONDISTILIZER_GUI = REGISTRY.register("essenctiondistilizer_gui", () -> IMenuTypeExtension.create(EssenctiondistilizerGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<OmniWandGUIMenu>> OMNI_WAND_GUI = REGISTRY.register("omni_wand_gui", () -> IMenuTypeExtension.create(OmniWandGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<OmniWandTeleportGUIMenu>> OMNI_WAND_TELEPORT_GUI = REGISTRY.register("omni_wand_teleport_gui", () -> IMenuTypeExtension.create(OmniWandTeleportGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<GUIOmniWandDIstruzioneMenu>> GUI_OMNI_WAND_D_ISTRUZIONE = REGISTRY.register("gui_omni_wand_d_istruzione", () -> IMenuTypeExtension.create(GUIOmniWandDIstruzioneMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

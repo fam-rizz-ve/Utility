@@ -3046,6 +3046,20 @@
         ]
       },
       "path": "~/enchantements/power essence enchant"
+    },
+    {
+      "name": "GUIOmniWandDIstruzione",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_omni_wand_d_istruzione",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/client/gui/GUIOmniWandDIstruzioneScreen.java",
+          "src/main/java/net/mcreator/utility/world/inventory/GUIOmniWandDIstruzioneMenu.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand/funzione destruzione"
     }
   ],
   "variable_elements": [
@@ -3246,6 +3260,18 @@
       "type": "number",
       "scope": "map",
       "value": "0"
+    },
+    {
+      "name": "GrandezzaCuboXZOmniWandDistruzione",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "GrandezzaCuboYOmniWandDistruzione",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
     }
   ],
   "sound_elements": [
@@ -3522,7 +3548,10 @@
       "gui.utility.omni_wand_teleport_gui.button_empty4": "           ",
       "gui.utility.omni_wand_teleport_gui.button_empty5": "           ",
       "gui.utility.omni_wand_teleport_gui.label_player2": "Player2",
-      "gui.utility.omni_wand_teleport_gui.label_player1": "Player1"
+      "gui.utility.omni_wand_teleport_gui.label_player1": "Player1",
+      "item.utility.omni_wands.description_0": "you can press alt+right clock for switch the mode of the wand",
+      "gui.utility.gui_omni_wand_d_istruzione.WidthAndDepth_prefix": "Width and Depth",
+      "gui.utility.gui_omni_wand_d_istruzione.WidthAndDepth_suffix": ""
     }
   },
   "metadata": {
@@ -3693,6 +3722,10 @@
                         "children": []
                       }
                     ]
+                  },
+                  {
+                    "name": "funzione destruzione",
+                    "children": []
                   }
                 ]
               }

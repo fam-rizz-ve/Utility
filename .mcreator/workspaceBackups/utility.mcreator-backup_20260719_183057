@@ -2227,34 +2227,6 @@
       "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/occhiali night vision"
     },
     {
-      "name": "BuildingTool",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "building_tool",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/utility/models/item/building_tool.json",
-          "src/main/java/net/mcreator/utility/item/BuildingToolItem.java"
-        ]
-      },
-      "path": "~/quality of life/Wands/Construction tool"
-    },
-    {
-      "name": "BuildingToolRightclicked",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "building_tool_rightclicked",
-      "metadata": {
-        "dependencies": [],
-        "files": [
-          "src/main/java/net/mcreator/utility/procedures/BuildingToolRightclickedProcedure.java"
-        ]
-      },
-      "path": "~/quality of life/Wands/Construction tool"
-    },
-    {
       "name": "LentiSurvivalNightVisionGogglesQuandoSiFaClicConIlPulsanteDestroDelMouse",
       "type": "procedure",
       "compiles": true,
@@ -2379,12 +2351,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/utility/models/item/omni_wands.json",
-          "src/main/resources/assets/utility/models/item/omni_wands_0.json",
           "src/main/resources/assets/utility/models/item/omni_wands_1.json",
+          "src/main/java/net/mcreator/utility/item/OmniWandsItem.java",
           "src/main/resources/assets/utility/models/item/omni_wands_2.json",
-          "src/main/resources/assets/utility/models/item/omni_wands_4.json",
+          "src/main/resources/assets/utility/models/item/omni_wands_0.json",
           "src/main/resources/assets/utility/models/item/omni_wands_3.json",
-          "src/main/java/net/mcreator/utility/item/OmniWandsItem.java"
+          "src/main/resources/assets/utility/models/item/omni_wands_4.json"
         ]
       },
       "path": "~/quality of life/Wands/Omni Wand"
@@ -3360,22 +3332,22 @@
       "~Nightelmet@CUSTOM:Nightelmet.boots"
     ],
     "ENCHANTMENTS:minecraft:tradeable": [
-      "~Lavaessence@CUSTOM:Lavaessence",
-      "~Wateressence@CUSTOM:Wateressence"
+      "~Wateressence@CUSTOM:Wateressence",
+      "~Lavaessence@CUSTOM:Lavaessence"
     ],
     "ENCHANTMENTS:minecraft:on_random_loot": [
-      "~Lavaessence@CUSTOM:Lavaessence",
-      "~Wateressence@CUSTOM:Wateressence"
+      "~Wateressence@CUSTOM:Wateressence",
+      "~Lavaessence@CUSTOM:Lavaessence"
     ],
     "ENCHANTMENTS:minecraft:non_treasure": [
-      "~Lavaessence@CUSTOM:Lavaessence",
       "~Furyessece@CUSTOM:Furyessece",
       "~Sporetouch@CUSTOM:Sporetouch",
       "~Windessece@CUSTOM:Windessece",
       "~Stormessece@CUSTOM:Stormessece",
       "~Ashessece@CUSTOM:Ashessece",
       "~Iceessence@CUSTOM:Iceessence",
-      "~Wateressence@CUSTOM:Wateressence"
+      "~Wateressence@CUSTOM:Wateressence",
+      "~Lavaessence@CUSTOM:Lavaessence"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~FadedConcrete@CUSTOM:FadedConcrete"
@@ -3481,11 +3453,11 @@
       "enchantment.utility.lavaessence": "Lava essence",
       "enchantment.utility.wateressence": "Water essence",
       "enchantment.utility.iceessence": "Ice essence",
-      "enchantment.utility.ashessece": "Ash essece",
-      "enchantment.utility.stormessece": "Storm essece",
-      "enchantment.utility.windessece": "Wind essece",
+      "enchantment.utility.ashessece": "Ash essence",
+      "enchantment.utility.stormessece": "Storm essence",
+      "enchantment.utility.windessece": "Wind essence",
       "enchantment.utility.sporetouch": "Spore essence",
-      "enchantment.utility.furyessece": "Fury essece ",
+      "enchantment.utility.furyessece": "Fury essence ",
       "item.utility.power_essence.description_0": "You can fell the power, You can fell the power!, You can fell the power!!, You can fell the power!!!,",
       "item.utility.power_essence": "Power Essence",
       "item.utility.overworldessence.description_0": "The power in YOUR hand, but from a familliar place",
@@ -3528,7 +3500,6 @@
       "item.utility.survival_night_vision_goggles_item": "Night Vision Goggles",
       "item.utility.lenti_survival_night_vision_goggles": "lenses Night Vision Goggles",
       "effect.utility.survival_n_ight_vision_goggles_effect": "Survival NIght Vision Goggles Effect",
-      "item.utility.building_tool": "Building Tool",
       "item.utility.lente": "Lenses",
       "item.utility.lenti_survival_night_vision_goggles.description_0": "You can use this lenses for repair your night vision googles",
       "item.utility.occhiali": "Goggles",
@@ -3551,7 +3522,8 @@
       "gui.utility.omni_wand_teleport_gui.button_empty4": "           ",
       "gui.utility.omni_wand_teleport_gui.button_empty5": "           ",
       "gui.utility.omni_wand_teleport_gui.label_player2": "Player2",
-      "gui.utility.omni_wand_teleport_gui.label_player1": "Player1"
+      "gui.utility.omni_wand_teleport_gui.label_player1": "Player1",
+      "item.utility.omni_wands.description_0": "you can press alt+right clock for switch the mode of the wand"
     }
   },
   "metadata": {
@@ -3722,16 +3694,12 @@
                         "children": []
                       }
                     ]
+                  },
+                  {
+                    "name": "funzione destruzione",
+                    "children": []
                   }
                 ]
-              },
-              {
-                "name": "Construction tool",
-                "children": []
-              },
-              {
-                "name": "Destruction Wand",
-                "children": []
               }
             ]
           }
@@ -3807,13 +3775,13 @@
   "workspaceSettings": {
     "modid": "utility",
     "modName": "Utility",
-    "version": "0.1.0",
+    "version": "0.2.1",
     "author": "MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "GNU General Public License version 3 (GPLv3)",
     "serverSideOnly": false,
     "requiredMods": [
-      "curios"
+      "item_tooltips"
     ],
     "dependencies": [],
     "dependants": [],
