@@ -1,0 +1,100 @@
+package net.mcreator.utility.procedures;
+
+import net.neoforged.neoforge.network.handling.IPayloadContext;
+import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
+import net.neoforged.api.distmarker.Dist;
+
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.Vec2;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.ClipContext;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.network.protocol.PacketFlow;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.chat.MutableComponent;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.core.SectionPos;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
+import net.minecraft.client.gui.screens.Screen;
+
+import net.mcreator.utility.network.UtilityModVariables;
+import net.mcreator.utility.init.UtilityModItems;
+import net.mcreator.utility.UtilityMod;
+
+import javax.annotation.Nullable;
+
+@EventBusSubscriber(Dist.CLIENT)
+public class QuandoGiocatoreUsaModalitaDistruzioneOmniWandProcedure {
+	@SubscribeEvent
+	public static void onLeftClick(PlayerInteractEvent.LeftClickEmpty event) {
+		PacketDistributor.sendToServer(new QuandoGiocatoreUsaModalitaDistruzioneOmniWandMessage());
+		execute(event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getEntity());
+	}
+
+	@EventBusSubscriber
+	public record QuandoGiocatoreUsaModalitaDistruzioneOmniWandMessage() implements CustomPacketPayload {
+		public static final Type<QuandoGiocatoreUsaModalitaDistruzioneOmniWandMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(UtilityMod.MODID, "procedure_quando_giocatore_usa_modalita_distruzione_omni_wand"));
+		public static final StreamCodec<RegistryFriendlyByteBuf, QuandoGiocatoreUsaModalitaDistruzioneOmniWandMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, QuandoGiocatoreUsaModalitaDistruzioneOmniWandMessage message) -> {
+		}, (RegistryFriendlyByteBuf buffer) -> new QuandoGiocatoreUsaModalitaDistruzioneOmniWandMessage());
+
+		@Override
+		public Type<QuandoGiocatoreUsaModalitaDistruzioneOmniWandMessage> type() {
+			return TYPE;
+		}
+
+		public static void handleData(final QuandoGiocatoreUsaModalitaDistruzioneOmniWandMessage message, final IPayloadContext context) {
+			if (context.flow() == PacketFlow.SERVERBOUND) {
+				context.enqueueWork(() -> {
+					if (!context.player().level().getChunkSource().hasChunk(SectionPos.blockToSectionCoord(context.player().getX()), SectionPos.blockToSectionCoord(context.player().getZ())))
+						return;
+					execute(context.player().level(), context.player().getX(), context.player().getY(), context.player().getZ(), context.player());
+				}).exceptionally(e -> {
+					context.connection().disconnect(Component.literal(e.getMessage()));
+					return null;
+				});
+			}
+		}
+
+		@SubscribeEvent
+		public static void registerMessage(FMLCommonSetupEvent event) {
+			UtilityMod.addNetworkMessage(QuandoGiocatoreUsaModalitaDistruzioneOmniWandMessage.TYPE, QuandoGiocatoreUsaModalitaDistruzioneOmniWandMessage.STREAM_CODEC, QuandoGiocatoreUsaModalitaDistruzioneOmniWandMessage::handleData);
+		}
+	}
+
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		execute(null, world, x, y, z, entity);
+	}
+
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
+		if (entity == null)
+			return;
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == UtilityModItems.OMNI_WANDS.get() && entity.getData(UtilityModVariables.PLAYER_VARIABLES).ModalitaOmniWand == 2) {
+			if (Screen.hasControlDown()) {
+				{
+					UtilityModVariables.PlayerVariables _vars = entity.getData(UtilityModVariables.PLAYER_VARIABLES);
+					_vars.YGuardataPlayerOmniWandDistruzione = entity.level()
+							.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(500)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getY();
+					_vars.markSyncDirty();
+				}
+			} else {
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							("execute at " + ((MutableComponent) entity.getDisplayName()).getString() + "run fill ~" + entity.getData(UtilityModVariables.PLAYER_VARIABLES).GrandezzaCuboXZOmniWandDistruzione + " "
+									+ entity.getData(UtilityModVariables.PLAYER_VARIABLES).YGuardataPlayerOmniWandDistruzione + " ~" + entity.getData(UtilityModVariables.PLAYER_VARIABLES).GrandezzaCuboXZOmniWandDistruzione + " ~ "
+									+ entity.getData(UtilityModVariables.PLAYER_VARIABLES).GrandezzaCuboYOmniWandDistruzione + "~ minecraft:air"));
+			}
+		}
+	}
+}

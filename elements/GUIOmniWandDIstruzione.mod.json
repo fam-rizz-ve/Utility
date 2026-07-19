@@ -3,8 +3,8 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 176,
-    "height": 166,
+    "width": 146,
+    "height": 116,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
@@ -22,8 +22,55 @@
           "suffix": "",
           "width": 120,
           "height": 20,
+          "x": 152,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "slider",
+        "data": {
+          "name": "altezza",
+          "min": 1.0,
+          "max": 99.0,
+          "value": 5.0,
+          "step": 1.0,
+          "prefix": "     Height     ",
+          "suffix": "",
+          "width": 125,
+          "height": 20,
           "x": 150,
-          "y": 57,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_configure_the_cube_size",
+          "text": {
+            "fixedValue": "Configure the cube size"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 150,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_confirm",
+          "text": "Confirm",
+          "isUndecorated": false,
+          "width": 60,
+          "height": 20,
+          "x": 177,
+          "y": 143,
           "locked": false
         }
       }

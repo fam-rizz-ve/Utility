@@ -1,7 +1,6 @@
 package net.mcreator.utility.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -15,6 +14,7 @@ import net.minecraft.client.gui.screens.Screen;
 
 import net.mcreator.utility.world.inventory.OmniWandTeleportGUIMenu;
 import net.mcreator.utility.world.inventory.OmniWandGUIMenu;
+import net.mcreator.utility.world.inventory.GUIOmniWandDIstruzioneMenu;
 import net.mcreator.utility.network.UtilityModVariables;
 
 import io.netty.buffer.Unpooled;
@@ -23,7 +23,6 @@ public class OmniWandsQuandoSiFaClicConIlPulsanteDestroDelMouseProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		double YBloccoGuardato = 0;
 		if (Screen.hasAltDown() || entity.getData(UtilityModVariables.PLAYER_VARIABLES).ModalitaOmniWand == 0) {
 			if (entity instanceof ServerPlayer _ent) {
 				BlockPos _bpos = BlockPos.containing(x, y, z);
@@ -45,7 +44,25 @@ public class OmniWandsQuandoSiFaClicConIlPulsanteDestroDelMouseProcedure {
 				}, _bpos);
 			}
 		} else if (entity.getData(UtilityModVariables.PLAYER_VARIABLES).ModalitaOmniWand == 2) {
-			YBloccoGuardato = entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(5)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getY();
+			if (entity instanceof ServerPlayer _ent) {
+				BlockPos _bpos = BlockPos.containing(x, y, z);
+				_ent.openMenu(new MenuProvider() {
+					@Override
+					public Component getDisplayName() {
+						return Component.literal("GUIOmniWandDIstruzione");
+					}
+
+					@Override
+					public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+						return false;
+					}
+
+					@Override
+					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+						return new GUIOmniWandDIstruzioneMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+					}
+				}, _bpos);
+			}
 		} else if (entity.getData(UtilityModVariables.PLAYER_VARIABLES).ModalitaOmniWand == 3) {
 			if (entity instanceof ServerPlayer _ent) {
 				BlockPos _bpos = BlockPos.containing(x, y, z);

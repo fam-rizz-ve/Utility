@@ -8,6 +8,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.utility.world.inventory.GUIOmniWandDIstruzioneMenu;
@@ -20,8 +21,10 @@ public class GUIOmniWandDIstruzioneScreen extends AbstractContainerScreen<GUIOmn
 	private final int x, y, z;
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
+	private Button button_confirm;
 	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("utility:textures/screens/gui_omni_wand_d_istruzione.png");
 	private ExtendedSlider WidthAndDepth;
+	private ExtendedSlider altezza;
 
 	public GUIOmniWandDIstruzioneScreen(GUIOmniWandDIstruzioneMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -30,8 +33,8 @@ public class GUIOmniWandDIstruzioneScreen extends AbstractContainerScreen<GUIOmn
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
-		this.imageHeight = 166;
+		this.imageWidth = 146;
+		this.imageHeight = 116;
 	}
 
 	@Override
@@ -40,6 +43,8 @@ public class GUIOmniWandDIstruzioneScreen extends AbstractContainerScreen<GUIOmn
 		if (elementType == 2 && elementState instanceof Number n) {
 			if (name.equals("WidthAndDepth"))
 				WidthAndDepth.setValue(n.doubleValue());
+			else if (name.equals("altezza"))
+				altezza.setValue(n.doubleValue());
 		}
 		menuStateUpdateActive = false;
 	}
@@ -75,12 +80,16 @@ public class GUIOmniWandDIstruzioneScreen extends AbstractContainerScreen<GUIOmn
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.utility.gui_omni_wand_d_istruzione.label_configure_the_cube_size"), 9, 9, -12829636, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		WidthAndDepth = new ExtendedSlider(this.leftPos + 24, this.topPos + 20, 120, 20, Component.translatable("gui.utility.gui_omni_wand_d_istruzione.WidthAndDepth_prefix"),
+		button_confirm = Button.builder(Component.translatable("gui.utility.gui_omni_wand_d_istruzione.button_confirm"), e -> {
+		}).bounds(this.leftPos + 36, this.topPos + 81, 60, 20).build();
+		this.addRenderableWidget(button_confirm);
+		WidthAndDepth = new ExtendedSlider(this.leftPos + 11, this.topPos + 27, 120, 20, Component.translatable("gui.utility.gui_omni_wand_d_istruzione.WidthAndDepth_prefix"),
 				Component.translatable("gui.utility.gui_omni_wand_d_istruzione.WidthAndDepth_suffix"), 1, 99, 5, 1, 0, true) {
 			@Override
 			protected void applyValue() {
@@ -91,5 +100,16 @@ public class GUIOmniWandDIstruzioneScreen extends AbstractContainerScreen<GUIOmn
 		this.addRenderableWidget(WidthAndDepth);
 		if (!menuStateUpdateActive)
 			menu.sendMenuStateUpdate(entity, 2, "WidthAndDepth", WidthAndDepth.getValue(), false);
+		altezza = new ExtendedSlider(this.leftPos + 9, this.topPos + 54, 125, 20, Component.translatable("gui.utility.gui_omni_wand_d_istruzione.altezza_prefix"), Component.translatable("gui.utility.gui_omni_wand_d_istruzione.altezza_suffix"), 1, 99,
+				5, 1, 0, true) {
+			@Override
+			protected void applyValue() {
+				if (!menuStateUpdateActive)
+					menu.sendMenuStateUpdate(entity, 2, "altezza", this.getValue(), false);
+			}
+		};
+		this.addRenderableWidget(altezza);
+		if (!menuStateUpdateActive)
+			menu.sendMenuStateUpdate(entity, 2, "altezza", altezza.getValue(), false);
 	}
 }

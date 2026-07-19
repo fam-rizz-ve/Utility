@@ -26,7 +26,7 @@ public class GUIOmniWandDIstruzioneMenu extends AbstractContainerMenu implements
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 1)
+			if (!this.containsKey(key) && this.size() >= 4)
 				return null;
 			return super.put(key, value);
 		}

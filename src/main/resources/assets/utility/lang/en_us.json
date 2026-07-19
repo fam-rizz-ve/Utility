@@ -162,5 +162,9 @@
   "gui.utility.omni_wand_teleport_gui.label_player1": "Player1",
   "item.utility.omni_wands.description_0": "you can press alt+right clock for switch the mode of the wand",
   "gui.utility.gui_omni_wand_d_istruzione.WidthAndDepth_prefix": "Width and Depth",
-  "gui.utility.gui_omni_wand_d_istruzione.WidthAndDepth_suffix": ""
+  "gui.utility.gui_omni_wand_d_istruzione.WidthAndDepth_suffix": "",
+  "gui.utility.gui_omni_wand_d_istruzione.altezza_suffix": "",
+  "gui.utility.gui_omni_wand_d_istruzione.altezza_prefix": "     Height     ",
+  "gui.utility.gui_omni_wand_d_istruzione.label_configure_the_cube_size": "Configure the cube size",
+  "gui.utility.gui_omni_wand_d_istruzione.button_confirm": "Confirm"
 }

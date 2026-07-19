@@ -2351,12 +2351,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/utility/models/item/omni_wands.json",
-          "src/main/resources/assets/utility/models/item/omni_wands_0.json",
           "src/main/resources/assets/utility/models/item/omni_wands_1.json",
+          "src/main/java/net/mcreator/utility/item/OmniWandsItem.java",
           "src/main/resources/assets/utility/models/item/omni_wands_2.json",
-          "src/main/resources/assets/utility/models/item/omni_wands_4.json",
+          "src/main/resources/assets/utility/models/item/omni_wands_0.json",
           "src/main/resources/assets/utility/models/item/omni_wands_3.json",
-          "src/main/java/net/mcreator/utility/item/OmniWandsItem.java"
+          "src/main/resources/assets/utility/models/item/omni_wands_4.json"
         ]
       },
       "path": "~/quality of life/Wands/Omni Wand"
@@ -3046,6 +3046,39 @@
         ]
       },
       "path": "~/enchantements/power essence enchant"
+    },
+    {
+      "name": "GUIOmniWandDIstruzione",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_omni_wand_d_istruzione",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/client/gui/GUIOmniWandDIstruzioneScreen.java",
+          "src/main/java/net/mcreator/utility/world/inventory/GUIOmniWandDIstruzioneMenu.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand/funzione destruzione"
+    },
+    {
+      "name": "PulsanteConfirmOmniWandDistruzioneCLiccato",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pulsante_confirm_omni_wand_distruzione_c_liccato",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/PulsanteConfirmOmniWandDistruzioneCLiccatoProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand/funzione destruzione"
     }
   ],
   "variable_elements": [
@@ -3246,6 +3279,18 @@
       "type": "number",
       "scope": "map",
       "value": "0"
+    },
+    {
+      "name": "GrandezzaCuboXZOmniWandDistruzione",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "GrandezzaCuboYOmniWandDistruzione",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
     }
   ],
   "sound_elements": [
@@ -3522,41 +3567,48 @@
       "gui.utility.omni_wand_teleport_gui.button_empty4": "           ",
       "gui.utility.omni_wand_teleport_gui.button_empty5": "           ",
       "gui.utility.omni_wand_teleport_gui.label_player2": "Player2",
-      "gui.utility.omni_wand_teleport_gui.label_player1": "Player1"
+      "gui.utility.omni_wand_teleport_gui.label_player1": "Player1",
+      "item.utility.omni_wands.description_0": "you can press alt+right clock for switch the mode of the wand",
+      "gui.utility.gui_omni_wand_d_istruzione.WidthAndDepth_prefix": "Width and Depth",
+      "gui.utility.gui_omni_wand_d_istruzione.WidthAndDepth_suffix": "",
+      "gui.utility.gui_omni_wand_d_istruzione.altezza_suffix": "",
+      "gui.utility.gui_omni_wand_d_istruzione.altezza_prefix": "     Height     ",
+      "gui.utility.gui_omni_wand_d_istruzione.label_configure_the_cube_size": "Configure the cube size",
+      "gui.utility.gui_omni_wand_d_istruzione.button_confirm": "Confirm"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/utility/init/UtilityModKeyMappings.java",
       "src/main/java/net/mcreator/utility/init/UtilityModConfigs.java",
-      "src/main/resources/data/utility/curios/entities/slots.json",
-      "src/main/resources/data/curios/tags/item/head.json",
       "src/main/resources/data/utility/curios/slots/head.json",
       "src/main/java/net/mcreator/utility/init/UtilityModCuriosCompat.java",
+      "src/main/resources/data/utility/curios/entities/slots.json",
+      "src/main/resources/data/curios/tags/item/head.json",
+      "src/main/java/net/mcreator/utility/init/UtilityModMobEffects.java",
       "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
       "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
       "src/main/java/net/mcreator/utility/init/UtilityModJeiInformation.java",
       "src/main/resources/data/utility/tags/item/jei_empty_tag.json",
       "src/main/java/net/mcreator/utility/init/UtilityModJeiPlugin.java",
       "src/main/java/net/mcreator/utility/init/UtilityModRecipeTypes.java",
-      "src/main/java/net/mcreator/utility/init/UtilityModKeyMappings.java",
       "src/main/resources/data/neoforge/loot_modifiers/global_loot_modifiers.json",
-      "src/main/java/net/mcreator/utility/init/UtilityModMobEffects.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBrewingRecipes.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlocks.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlockEntities.java",
       "src/main/java/net/mcreator/utility/init/UtilityModItems.java",
-      "src/main/java/net/mcreator/utility/init/UtilityModEntities.java",
       "src/main/java/net/mcreator/utility/init/UtilityModEntityRenderers.java",
-      "src/main/java/net/mcreator/utility/client/ClientHelper.java",
-      "src/main/resources/assets/utility/sounds.json",
+      "src/main/java/net/mcreator/utility/init/UtilityModEntities.java",
       "src/main/java/net/mcreator/utility/UtilityMod.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/utility/init/UtilityModSounds.java",
-      "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
+      "src/main/java/net/mcreator/utility/client/ClientHelper.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/utility/init/UtilityModTabs.java",
-      "src/main/resources/META-INF/accesstransformer.cfg"
+      "src/main/java/net/mcreator/utility/init/UtilityModSounds.java",
+      "src/main/resources/assets/utility/sounds.json",
+      "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModTabs.java"
     ]
   },
   "foldersRoot": {
@@ -3693,6 +3745,10 @@
                         "children": []
                       }
                     ]
+                  },
+                  {
+                    "name": "funzione destruzione",
+                    "children": []
                   }
                 ]
               }
@@ -3770,13 +3826,13 @@
   "workspaceSettings": {
     "modid": "utility",
     "modName": "Utility",
-    "version": "0.1.0",
+    "version": "0.2.1",
     "author": "MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "GNU General Public License version 3 (GPLv3)",
     "serverSideOnly": false,
     "requiredMods": [
-      "curios"
+      "item_tooltips"
     ],
     "dependencies": [],
     "dependants": [],

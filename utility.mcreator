@@ -3060,6 +3060,60 @@
         ]
       },
       "path": "~/quality of life/Wands/Omni Wand/funzione destruzione"
+    },
+    {
+      "name": "PulsanteConfirmOmniWandDistruzioneCLiccato",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pulsante_confirm_omni_wand_distruzione_c_liccato",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/PulsanteConfirmOmniWandDistruzioneCLiccatoProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand/funzione destruzione"
+    },
+    {
+      "name": "QuandoGiocatoreUsaModalitaDistruzioneOmniWand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quando_giocatore_usa_modalita_distruzione_omni_wand",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/QuandoGiocatoreUsaModalitaDistruzioneOmniWandProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/Omni Wand/funzione destruzione"
     }
   ],
   "variable_elements": [
@@ -3272,6 +3326,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "1.0"
+    },
+    {
+      "name": "YGuardataPlayerOmniWandDistruzione",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -3551,7 +3611,11 @@
       "gui.utility.omni_wand_teleport_gui.label_player1": "Player1",
       "item.utility.omni_wands.description_0": "you can press alt+right clock for switch the mode of the wand",
       "gui.utility.gui_omni_wand_d_istruzione.WidthAndDepth_prefix": "Width and Depth",
-      "gui.utility.gui_omni_wand_d_istruzione.WidthAndDepth_suffix": ""
+      "gui.utility.gui_omni_wand_d_istruzione.WidthAndDepth_suffix": "",
+      "gui.utility.gui_omni_wand_d_istruzione.altezza_suffix": "",
+      "gui.utility.gui_omni_wand_d_istruzione.altezza_prefix": "     Height     ",
+      "gui.utility.gui_omni_wand_d_istruzione.label_configure_the_cube_size": "Configure the cube size",
+      "gui.utility.gui_omni_wand_d_istruzione.button_confirm": "Confirm"
     }
   },
   "metadata": {

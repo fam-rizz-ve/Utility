@@ -118,6 +118,7 @@ public class UtilityModVariables {
 			clone.SUrvivalNIghtVisionGogglesIsActiveBefereUnequip = original.SUrvivalNIghtVisionGogglesIsActiveBefereUnequip;
 			clone.UtilizzateLeLentiDelSurvivalNIghtVisionGoggles = original.UtilizzateLeLentiDelSurvivalNIghtVisionGoggles;
 			clone.ModalitaOmniWand = original.ModalitaOmniWand;
+			clone.YGuardataPlayerOmniWandDistruzione = original.YGuardataPlayerOmniWandDistruzione;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -312,6 +313,7 @@ public class UtilityModVariables {
 		public double indice_correnteOmniWand1 = 0;
 		public double GrandezzaCuboXZOmniWandDistruzione = 1.0;
 		public double GrandezzaCuboYOmniWandDistruzione = 1.0;
+		public double YGuardataPlayerOmniWandDistruzione = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -347,6 +349,7 @@ public class UtilityModVariables {
 			nbt.putDouble("indice_correnteOmniWand1", indice_correnteOmniWand1);
 			nbt.putDouble("GrandezzaCuboXZOmniWandDistruzione", GrandezzaCuboXZOmniWandDistruzione);
 			nbt.putDouble("GrandezzaCuboYOmniWandDistruzione", GrandezzaCuboYOmniWandDistruzione);
+			nbt.putDouble("YGuardataPlayerOmniWandDistruzione", YGuardataPlayerOmniWandDistruzione);
 			return nbt;
 		}
 
@@ -383,6 +386,7 @@ public class UtilityModVariables {
 			indice_correnteOmniWand1 = nbt.getDouble("indice_correnteOmniWand1");
 			GrandezzaCuboXZOmniWandDistruzione = nbt.getDouble("GrandezzaCuboXZOmniWandDistruzione");
 			GrandezzaCuboYOmniWandDistruzione = nbt.getDouble("GrandezzaCuboYOmniWandDistruzione");
+			YGuardataPlayerOmniWandDistruzione = nbt.getDouble("YGuardataPlayerOmniWandDistruzione");
 		}
 
 		public void markSyncDirty() {
