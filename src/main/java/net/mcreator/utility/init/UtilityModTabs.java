@@ -50,7 +50,6 @@ public class UtilityModTabs {
 				tabData.accept(UtilityModItems.CREATIVE_NIGHT_VISION_GOGGLES.get());
 				tabData.accept(UtilityModItems.SURVIVAL_NIGHT_VISION_GOGGLES_ITEM.get());
 				tabData.accept(UtilityModItems.LENTI_SURVIVAL_NIGHT_VISION_GOGGLES.get());
-				tabData.accept(UtilityModItems.BUILDING_TOOL.get());
 				tabData.accept(UtilityModItems.LENTE.get());
 				tabData.accept(UtilityModItems.OCCHIALI.get());
 				tabData.accept(UtilityModItems.OMNI_WANDS.get());

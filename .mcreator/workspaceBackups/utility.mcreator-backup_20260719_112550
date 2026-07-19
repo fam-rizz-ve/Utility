@@ -2864,25 +2864,6 @@
       "path": "~/quality of life/Wands/Omni Wand/GUI tp/CounterGIocatori"
     },
     {
-      "name": "Df",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "df",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/utility/procedures/DfProcedure.java"
-        ]
-      },
-      "path": "~/quality of life/Wands/Omni Wand/GUI tp"
-    },
-    {
       "name": "LavaEssenceProcedure",
       "type": "procedure",
       "compiles": true,
@@ -2932,6 +2913,164 @@
         ],
         "files": [
           "src/main/java/net/mcreator/utility/procedures/WaterEssenceProcedureProcedure.java"
+        ]
+      },
+      "path": "~/enchantements/power essence enchant"
+    },
+    {
+      "name": "IceEssenceProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_essence_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/IceEssenceProcedureProcedure.java"
+        ]
+      },
+      "path": "~/enchantements/power essence enchant"
+    },
+    {
+      "name": "AshEssenceProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ash_essence_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/AshEssenceProcedureProcedure.java"
+        ]
+      },
+      "path": "~/enchantements/power essence enchant"
+    },
+    {
+      "name": "StormEssenceProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "storm_essence_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/StormEssenceProcedureProcedure.java"
+        ]
+      },
+      "path": "~/enchantements/power essence enchant"
+    },
+    {
+      "name": "WindEssenceProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wind_essence_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/WindEssenceProcedureProcedure.java"
+        ]
+      },
+      "path": "~/enchantements/power essence enchant"
+    },
+    {
+      "name": "SporeEssenceProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spore_essence_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/SporeEssenceProcedureProcedure.java"
+        ]
+      },
+      "path": "~/enchantements/power essence enchant"
+    },
+    {
+      "name": "FuryEssenceProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fury_essence_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/FuryEssenceProcedureProcedure.java"
         ]
       },
       "path": "~/enchantements/power essence enchant"
@@ -3221,22 +3360,22 @@
       "~Nightelmet@CUSTOM:Nightelmet.boots"
     ],
     "ENCHANTMENTS:minecraft:tradeable": [
-      "~Lavaessence@CUSTOM:Lavaessence",
-      "~Wateressence@CUSTOM:Wateressence"
+      "~Wateressence@CUSTOM:Wateressence",
+      "~Lavaessence@CUSTOM:Lavaessence"
     ],
     "ENCHANTMENTS:minecraft:on_random_loot": [
-      "~Lavaessence@CUSTOM:Lavaessence",
-      "~Wateressence@CUSTOM:Wateressence"
+      "~Wateressence@CUSTOM:Wateressence",
+      "~Lavaessence@CUSTOM:Lavaessence"
     ],
     "ENCHANTMENTS:minecraft:non_treasure": [
-      "~Lavaessence@CUSTOM:Lavaessence",
       "~Furyessece@CUSTOM:Furyessece",
       "~Sporetouch@CUSTOM:Sporetouch",
       "~Windessece@CUSTOM:Windessece",
       "~Stormessece@CUSTOM:Stormessece",
       "~Ashessece@CUSTOM:Ashessece",
       "~Iceessence@CUSTOM:Iceessence",
-      "~Wateressence@CUSTOM:Wateressence"
+      "~Wateressence@CUSTOM:Wateressence",
+      "~Lavaessence@CUSTOM:Lavaessence"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~FadedConcrete@CUSTOM:FadedConcrete"
@@ -3342,11 +3481,11 @@
       "enchantment.utility.lavaessence": "Lava essence",
       "enchantment.utility.wateressence": "Water essence",
       "enchantment.utility.iceessence": "Ice essence",
-      "enchantment.utility.ashessece": "Ash essece",
-      "enchantment.utility.stormessece": "Storm essece",
-      "enchantment.utility.windessece": "Wind essece",
+      "enchantment.utility.ashessece": "Ash essence",
+      "enchantment.utility.stormessece": "Storm essence",
+      "enchantment.utility.windessece": "Wind essence",
       "enchantment.utility.sporetouch": "Spore essence",
-      "enchantment.utility.furyessece": "Fury essece ",
+      "enchantment.utility.furyessece": "Fury essence ",
       "item.utility.power_essence.description_0": "You can fell the power, You can fell the power!, You can fell the power!!, You can fell the power!!!,",
       "item.utility.power_essence": "Power Essence",
       "item.utility.overworldessence.description_0": "The power in YOUR hand, but from a familliar place",
@@ -3588,6 +3727,10 @@
               },
               {
                 "name": "Construction tool",
+                "children": []
+              },
+              {
+                "name": "Destruction Wand",
                 "children": []
               }
             ]

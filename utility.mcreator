@@ -2227,34 +2227,6 @@
       "path": "~/quality of life/armor/Curoius/SurvivalNIghtVisionGoggles/occhiali night vision"
     },
     {
-      "name": "BuildingTool",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "building_tool",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/utility/models/item/building_tool.json",
-          "src/main/java/net/mcreator/utility/item/BuildingToolItem.java"
-        ]
-      },
-      "path": "~/quality of life/Wands/Construction tool"
-    },
-    {
-      "name": "BuildingToolRightclicked",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "building_tool_rightclicked",
-      "metadata": {
-        "dependencies": [],
-        "files": [
-          "src/main/java/net/mcreator/utility/procedures/BuildingToolRightclickedProcedure.java"
-        ]
-      },
-      "path": "~/quality of life/Wands/Construction tool"
-    },
-    {
       "name": "LentiSurvivalNightVisionGogglesQuandoSiFaClicConIlPulsanteDestroDelMouse",
       "type": "procedure",
       "compiles": true,
@@ -3528,7 +3500,6 @@
       "item.utility.survival_night_vision_goggles_item": "Night Vision Goggles",
       "item.utility.lenti_survival_night_vision_goggles": "lenses Night Vision Goggles",
       "effect.utility.survival_n_ight_vision_goggles_effect": "Survival NIght Vision Goggles Effect",
-      "item.utility.building_tool": "Building Tool",
       "item.utility.lente": "Lenses",
       "item.utility.lenti_survival_night_vision_goggles.description_0": "You can use this lenses for repair your night vision googles",
       "item.utility.occhiali": "Goggles",
@@ -3724,14 +3695,6 @@
                     ]
                   }
                 ]
-              },
-              {
-                "name": "Construction tool",
-                "children": []
-              },
-              {
-                "name": "Destruction Wand",
-                "children": []
               }
             ]
           }

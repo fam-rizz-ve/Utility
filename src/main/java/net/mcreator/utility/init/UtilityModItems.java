@@ -58,7 +58,6 @@ public class UtilityModItems {
 	public static final DeferredItem<Item> CREATIVE_NIGHT_VISION_GOGGLES;
 	public static final DeferredItem<Item> SURVIVAL_NIGHT_VISION_GOGGLES_ITEM;
 	public static final DeferredItem<Item> LENTI_SURVIVAL_NIGHT_VISION_GOGGLES;
-	public static final DeferredItem<Item> BUILDING_TOOL;
 	public static final DeferredItem<Item> LENTE;
 	public static final DeferredItem<Item> OCCHIALI;
 	public static final DeferredItem<Item> OMNI_WANDS;
@@ -96,7 +95,6 @@ public class UtilityModItems {
 		CREATIVE_NIGHT_VISION_GOGGLES = REGISTRY.register("creative_night_vision_goggles", CreativeNightVisionGogglesItem::new);
 		SURVIVAL_NIGHT_VISION_GOGGLES_ITEM = REGISTRY.register("survival_night_vision_goggles_item", SurvivalNightVisionGogglesItemItem::new);
 		LENTI_SURVIVAL_NIGHT_VISION_GOGGLES = REGISTRY.register("lenti_survival_night_vision_goggles", LentiSurvivalNightVisionGogglesItem::new);
-		BUILDING_TOOL = REGISTRY.register("building_tool", BuildingToolItem::new);
 		LENTE = REGISTRY.register("lente", LenteItem::new);
 		OCCHIALI = REGISTRY.register("occhiali", OcchialiItem::new);
 		OMNI_WANDS = REGISTRY.register("omni_wands", OmniWandsItem::new);
