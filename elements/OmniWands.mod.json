@@ -4,7 +4,7 @@
   "definition": {
     "renderType": 0,
     "texture": "omniwand_base",
-    "customModelName": "Normal",
+    "customModelName": "Tool",
     "guiTexture": "",
     "customProperties": {
       "modalita": "OmniWandsFornitoreDiValoriDiProprieta"

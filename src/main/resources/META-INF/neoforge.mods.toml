@@ -4,7 +4,7 @@ license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
 modId="utility"
-version="0.1.0"
+version="0.2.1"
 displayName="Utility"
 displayURL="https://mcreator.net"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
@@ -32,7 +32,7 @@ authors="MCreator"
     side="BOTH"
 
 [[dependencies.utility]]
-    modId="curios"
+    modId="item_tooltips"
     type="required"
     versionRange="[0,)"
     ordering="NONE"
