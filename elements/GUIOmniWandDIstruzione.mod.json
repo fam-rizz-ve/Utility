@@ -18,12 +18,12 @@
           "max": 99.0,
           "value": 5.0,
           "step": 1.0,
-          "prefix": "Width and Depth",
+          "prefix": "Width and Depth ",
           "suffix": "",
           "width": 120,
           "height": 20,
           "x": 152,
-          "y": 89,
+          "y": 88,
           "locked": false
         }
       },
@@ -39,7 +39,7 @@
           "suffix": "",
           "width": 125,
           "height": 20,
-          "x": 150,
+          "x": 151,
           "y": 116,
           "locked": false
         }
@@ -67,6 +67,7 @@
           "name": "button_confirm",
           "text": "Confirm",
           "isUndecorated": false,
+          "onClick": "PulsanteConfirmOmniWandDistruzioneCLiccato",
           "width": 60,
           "height": 20,
           "x": 177,
@@ -75,6 +76,7 @@
         }
       }
     ],
+    "onOpen": "GUIOmniWandDIstruzioneQuandoQuestaGUIVieneAperta",
     "gridSettings": {
       "sx": 18,
       "sy": 18,

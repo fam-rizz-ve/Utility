@@ -12,7 +12,7 @@ public class PulsanteConfirmOmniWandDistruzioneCLiccatoProcedure {
 			return;
 		{
 			UtilityModVariables.PlayerVariables _vars = entity.getData(UtilityModVariables.PLAYER_VARIABLES);
-			_vars.GrandezzaCuboXZOmniWandDistruzione = (entity instanceof Player _entity0 && _entity0.containerMenu instanceof UtilityModMenus.MenuAccessor _menu0) ? _menu0.getMenuState(2, "BaseCubo", 0.0) : 0.0;
+			_vars.GrandezzaCuboXZOmniWandDistruzione = (entity instanceof Player _entity0 && _entity0.containerMenu instanceof UtilityModMenus.MenuAccessor _menu0) ? _menu0.getMenuState(2, "WidthAndDepth", 0.0) : 0.0;
 			_vars.GrandezzaCuboYOmniWandDistruzione = (entity instanceof Player _entity1 && _entity1.containerMenu instanceof UtilityModMenus.MenuAccessor _menu1) ? _menu1.getMenuState(2, "altezza", 0.0) : 0.0;
 			_vars.markSyncDirty();
 		}

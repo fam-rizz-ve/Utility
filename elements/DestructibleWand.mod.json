@@ -1,0 +1,64 @@
+{
+  "_fv": 89,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "8ed0332c-a4b6-4846-b5d4-5188b706f9fa",
+    "customModelName": "Tool",
+    "guiTexture": "",
+    "customProperties": {},
+    "states": [],
+    "animations": [],
+    "name": "Destruction Wand",
+    "rarity": "EPIC",
+    "creativeTabs": [
+      "CUSTOM:Utility"
+    ],
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 0.0,
+    "damageCount": 0,
+    "recipeRemainder": "",
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "isPiglinCurrency": false,
+    "repairItems": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 4.0,
+    "attackSpeed": 1.2,
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "openGUIOnRightClick": {
+      "fixedValue": false
+    },
+    "inventorySize": 9,
+    "inventoryStackSize": 99,
+    "onRightClickedInAir": "DestructibleWandQuandoSiFaClicConIlPulsanteDestroDelMouse",
+    "enableRanged": false,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectile": "CUSTOM:Tacticalknifeprojectile",
+    "projectileDisableAmmoCheck": false,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": "",
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none",
+    "isMusicDisc": false,
+    "musicDiscMusic": "",
+    "musicDiscDescription": "",
+    "musicDiscLengthInTicks": 100,
+    "musicDiscAnalogOutput": 0,
+    "providedBannerPatterns": [],
+    "attributeModifiers": []
+  }
+}

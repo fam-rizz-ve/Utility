@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "utility:item/8ed0332c-a4b6-4846-b5d4-5188b706f9fa"
+  }
+}

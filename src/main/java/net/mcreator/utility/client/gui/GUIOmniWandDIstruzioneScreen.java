@@ -1,5 +1,6 @@
 package net.mcreator.utility.client.gui;
 
+import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.client.gui.widget.ExtendedSlider;
 
 import net.minecraft.world.level.Level;
@@ -12,6 +13,7 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.utility.world.inventory.GUIOmniWandDIstruzioneMenu;
+import net.mcreator.utility.network.GUIOmniWandDIstruzioneButtonMessage;
 import net.mcreator.utility.init.UtilityModScreens;
 
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -87,9 +89,15 @@ public class GUIOmniWandDIstruzioneScreen extends AbstractContainerScreen<GUIOmn
 	public void init() {
 		super.init();
 		button_confirm = Button.builder(Component.translatable("gui.utility.gui_omni_wand_d_istruzione.button_confirm"), e -> {
+			int x = GUIOmniWandDIstruzioneScreen.this.x;
+			int y = GUIOmniWandDIstruzioneScreen.this.y;
+			if (true) {
+				PacketDistributor.sendToServer(new GUIOmniWandDIstruzioneButtonMessage(0, x, y, z));
+				GUIOmniWandDIstruzioneButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}).bounds(this.leftPos + 36, this.topPos + 81, 60, 20).build();
 		this.addRenderableWidget(button_confirm);
-		WidthAndDepth = new ExtendedSlider(this.leftPos + 11, this.topPos + 27, 120, 20, Component.translatable("gui.utility.gui_omni_wand_d_istruzione.WidthAndDepth_prefix"),
+		WidthAndDepth = new ExtendedSlider(this.leftPos + 11, this.topPos + 26, 120, 20, Component.translatable("gui.utility.gui_omni_wand_d_istruzione.WidthAndDepth_prefix"),
 				Component.translatable("gui.utility.gui_omni_wand_d_istruzione.WidthAndDepth_suffix"), 1, 99, 5, 1, 0, true) {
 			@Override
 			protected void applyValue() {
@@ -100,8 +108,8 @@ public class GUIOmniWandDIstruzioneScreen extends AbstractContainerScreen<GUIOmn
 		this.addRenderableWidget(WidthAndDepth);
 		if (!menuStateUpdateActive)
 			menu.sendMenuStateUpdate(entity, 2, "WidthAndDepth", WidthAndDepth.getValue(), false);
-		altezza = new ExtendedSlider(this.leftPos + 9, this.topPos + 54, 125, 20, Component.translatable("gui.utility.gui_omni_wand_d_istruzione.altezza_prefix"), Component.translatable("gui.utility.gui_omni_wand_d_istruzione.altezza_suffix"), 1, 99,
-				5, 1, 0, true) {
+		altezza = new ExtendedSlider(this.leftPos + 10, this.topPos + 54, 125, 20, Component.translatable("gui.utility.gui_omni_wand_d_istruzione.altezza_prefix"), Component.translatable("gui.utility.gui_omni_wand_d_istruzione.altezza_suffix"), 1,
+				99, 5, 1, 0, true) {
 			@Override
 			protected void applyValue() {
 				if (!menuStateUpdateActive)

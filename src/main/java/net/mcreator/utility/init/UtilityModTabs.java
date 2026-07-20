@@ -53,5 +53,6 @@ public class UtilityModTabs {
 				tabData.accept(UtilityModItems.LENTE.get());
 				tabData.accept(UtilityModItems.OCCHIALI.get());
 				tabData.accept(UtilityModItems.OMNI_WANDS.get());
+				tabData.accept(UtilityModItems.DESTRUCTIBLE_WAND.get());
 			}).withTabsBefore(UTILITYMAGIC.getId()).build());
 }

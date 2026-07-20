@@ -61,6 +61,7 @@ public class UtilityModItems {
 	public static final DeferredItem<Item> LENTE;
 	public static final DeferredItem<Item> OCCHIALI;
 	public static final DeferredItem<Item> OMNI_WANDS;
+	public static final DeferredItem<Item> DESTRUCTIBLE_WAND;
 	static {
 		FLATKEY = REGISTRY.register("flatkey", FlatkeyItem::new);
 		OVERWORDKEY = REGISTRY.register("overwordkey", OverwordkeyItem::new);
@@ -98,6 +99,7 @@ public class UtilityModItems {
 		LENTE = REGISTRY.register("lente", LenteItem::new);
 		OCCHIALI = REGISTRY.register("occhiali", OcchialiItem::new);
 		OMNI_WANDS = REGISTRY.register("omni_wands", OmniWandsItem::new);
+		DESTRUCTIBLE_WAND = REGISTRY.register("destructible_wand", DestructibleWandItem::new);
 	}
 
 	// Start of user code block custom items

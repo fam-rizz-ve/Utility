@@ -1,10 +1,10 @@
 <?xml version="1.0" ?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
-    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Utility_MCCreator"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="NeoForge-1.21.1"></stringAttribute>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="net.neoforged.devlaunch.Main"></stringAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=" @C:\\Users\\gianl\\Desktop\\Utility_MCCreator\\build\\moddev\\serverRunProgramArgs.txt"></stringAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=" @C:\\Users\\gianl\\Desktop\\Utility_MCCreator\\build\\moddev\\serverRunVmArgs.txt -Dfml.modFolders=mcreator%%C:\\Users\\gianl\\Desktop\\Utility_MCCreator\\bin\\main"></stringAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="C:\Users\gianl\Desktop\Utility_MCCreator\run"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=" &quot;@/home/andrea/Documenti/MCreatorWorkspaces/Utility neoforge/NeoForge-1.21.1/build/moddev/serverRunProgramArgs.txt&quot;"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=" &quot;@/home/andrea/Documenti/MCreatorWorkspaces/Utility neoforge/NeoForge-1.21.1/build/moddev/serverRunVmArgs.txt&quot; &quot;-Dfml.modFolders=mcreator%%/home/andrea/Documenti/MCreatorWorkspaces/Utility neoforge/NeoForge-1.21.1/bin/main&quot;"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="/home/andrea/Documenti/MCreatorWorkspaces/Utility neoforge/NeoForge-1.21.1/run"></stringAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.STOP_IN_MAIN" value="false"></booleanAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_ATTR_USE_ARGFILE" value="false"></booleanAttribute>
 </launchConfiguration>

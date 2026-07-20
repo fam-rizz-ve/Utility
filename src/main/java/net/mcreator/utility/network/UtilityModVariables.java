@@ -313,7 +313,7 @@ public class UtilityModVariables {
 		public double indice_correnteOmniWand1 = 0;
 		public double GrandezzaCuboXZOmniWandDistruzione = 1.0;
 		public double GrandezzaCuboYOmniWandDistruzione = 1.0;
-		public double YGuardataPlayerOmniWandDistruzione = 0;
+		public double YGuardataPlayerOmniWandDistruzione = 0.0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {

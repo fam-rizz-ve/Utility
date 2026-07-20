@@ -9,24 +9,20 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 import net.neoforged.api.distmarker.Dist;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.Vec2;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.protocol.PacketFlow;
 import net.minecraft.network.codec.StreamCodec;
-import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.SectionPos;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
+import net.minecraft.core.BlockPos;
 import net.minecraft.client.gui.screens.Screen;
 
 import net.mcreator.utility.network.UtilityModVariables;
@@ -40,7 +36,7 @@ public class QuandoGiocatoreUsaModalitaDistruzioneOmniWandProcedure {
 	@SubscribeEvent
 	public static void onLeftClick(PlayerInteractEvent.LeftClickEmpty event) {
 		PacketDistributor.sendToServer(new QuandoGiocatoreUsaModalitaDistruzioneOmniWandMessage());
-		execute(event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getEntity());
+		execute(event.getLevel(), event.getEntity());
 	}
 
 	@EventBusSubscriber
@@ -59,7 +55,7 @@ public class QuandoGiocatoreUsaModalitaDistruzioneOmniWandProcedure {
 				context.enqueueWork(() -> {
 					if (!context.player().level().getChunkSource().hasChunk(SectionPos.blockToSectionCoord(context.player().getX()), SectionPos.blockToSectionCoord(context.player().getZ())))
 						return;
-					execute(context.player().level(), context.player().getX(), context.player().getY(), context.player().getZ(), context.player());
+					execute(context.player().level(), context.player());
 				}).exceptionally(e -> {
 					context.connection().disconnect(Component.literal(e.getMessage()));
 					return null;
@@ -73,27 +69,47 @@ public class QuandoGiocatoreUsaModalitaDistruzioneOmniWandProcedure {
 		}
 	}
 
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		execute(null, world, x, y, z, entity);
+	public static void execute(LevelAccessor world, Entity entity) {
+		execute(null, world, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == UtilityModItems.OMNI_WANDS.get() && entity.getData(UtilityModVariables.PLAYER_VARIABLES).ModalitaOmniWand == 2) {
+		double BloccoX = 0;
+		double BloccoY = 0;
+		double BloccoZ = 0;
+		double InizialeX = 0;
+		double InizialeZ = 0;
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == UtilityModItems.OMNI_WANDS.get() && entity.getData(UtilityModVariables.PLAYER_VARIABLES).ModalitaOmniWand == 2
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == UtilityModItems.DESTRUCTIBLE_WAND.get()) {
 			if (Screen.hasControlDown()) {
 				{
 					UtilityModVariables.PlayerVariables _vars = entity.getData(UtilityModVariables.PLAYER_VARIABLES);
 					_vars.YGuardataPlayerOmniWandDistruzione = entity.level()
-							.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(500)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getY();
+							.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(500)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getY() + 1;
 					_vars.markSyncDirty();
 				}
 			} else {
-				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							("execute at " + ((MutableComponent) entity.getDisplayName()).getString() + "run fill ~" + entity.getData(UtilityModVariables.PLAYER_VARIABLES).GrandezzaCuboXZOmniWandDistruzione + " "
-									+ entity.getData(UtilityModVariables.PLAYER_VARIABLES).YGuardataPlayerOmniWandDistruzione + " ~" + entity.getData(UtilityModVariables.PLAYER_VARIABLES).GrandezzaCuboXZOmniWandDistruzione + " ~ "
-									+ entity.getData(UtilityModVariables.PLAYER_VARIABLES).GrandezzaCuboYOmniWandDistruzione + "~ minecraft:air"));
+				BloccoY = entity.getData(UtilityModVariables.PLAYER_VARIABLES).YGuardataPlayerOmniWandDistruzione;
+				BloccoX = entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(500)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getX()
+						- entity.getData(UtilityModVariables.PLAYER_VARIABLES).GrandezzaCuboXZOmniWandDistruzione / 2;
+				BloccoZ = entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(500)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ()
+						- entity.getData(UtilityModVariables.PLAYER_VARIABLES).GrandezzaCuboXZOmniWandDistruzione / 2;
+				InizialeX = BloccoX;
+				InizialeZ = BloccoZ;
+				for (int index207 = 0; index207 < (int) entity.getData(UtilityModVariables.PLAYER_VARIABLES).GrandezzaCuboYOmniWandDistruzione; index207++) {
+					for (int index208 = 0; index208 < (int) entity.getData(UtilityModVariables.PLAYER_VARIABLES).GrandezzaCuboXZOmniWandDistruzione; index208++) {
+						for (int index209 = 0; index209 < (int) entity.getData(UtilityModVariables.PLAYER_VARIABLES).GrandezzaCuboXZOmniWandDistruzione; index209++) {
+							world.setBlock(BlockPos.containing(BloccoX, BloccoY, BloccoZ), Blocks.AIR.defaultBlockState(), 3);
+							BloccoX = BloccoX + 1;
+						}
+						BloccoZ = BloccoZ + 1;
+						BloccoX = InizialeX;
+					}
+					BloccoY = BloccoY + 1;
+					BloccoZ = InizialeZ;
+				}
 			}
 		}
 	}
