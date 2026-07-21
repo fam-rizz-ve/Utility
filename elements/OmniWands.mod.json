@@ -13,7 +13,7 @@
       {
         "renderType": 0,
         "texture": "omniwand_base",
-        "customModelName": "Normal",
+        "customModelName": "Tool",
         "stateMap": [
           {
             "property": {
@@ -29,7 +29,7 @@
       {
         "renderType": 0,
         "texture": "omniwand_despawn",
-        "customModelName": "Normal",
+        "customModelName": "Tool",
         "stateMap": [
           {
             "property": {
@@ -45,7 +45,7 @@
       {
         "renderType": 0,
         "texture": "omniwand_distruzione",
-        "customModelName": "Normal",
+        "customModelName": "Tool",
         "stateMap": [
           {
             "property": {
@@ -61,7 +61,7 @@
       {
         "renderType": 0,
         "texture": "omniwand_teleport",
-        "customModelName": "Normal",
+        "customModelName": "Tool",
         "stateMap": [
           {
             "property": {
@@ -77,7 +77,7 @@
       {
         "renderType": 0,
         "texture": "omniwand_build",
-        "customModelName": "Normal",
+        "customModelName": "Tool",
         "stateMap": [
           {
             "property": {
@@ -115,7 +115,8 @@
     "specialInformation": {
       "fixedValue": [
         "you can press alt+right clock for switch the mode of the wand"
-      ]
+      ],
+      "name": "OmniWandsInformazioniSpeciali"
     },
     "glowCondition": {
       "fixedValue": false

@@ -2541,15 +2541,12 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "tooltip",
-            "type": "tooltip"
           }
         ],
         "files": [
           "src/main/java/net/mcreator/utility/procedures/OmniWandsInformazioniSpecialiProcedure.java"
-        ]
+        ],
+        "return_type": "string"
       },
       "path": "~/quality of life/Wands/Omni Wand"
     },

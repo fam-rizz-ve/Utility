@@ -11,12 +11,15 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.utility.procedures.OmniWandsQuandoUnentitaViventeEColpitaConLoggettoProcedure;
 import net.mcreator.utility.procedures.OmniWandsQuandoSiFaClicConIlPulsanteDestroDelMouseProcedure;
+import net.mcreator.utility.procedures.OmniWandsInformazioniSpecialiProcedure;
 
 import java.util.List;
 
@@ -34,7 +37,13 @@ public class OmniWandsItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.translatable("item.utility.omni_wands.description_0"));
+		Entity entity = itemstack.getEntityRepresentation() != null ? itemstack.getEntityRepresentation() : Minecraft.getInstance().player;
+		String hoverText = OmniWandsInformazioniSpecialiProcedure.execute(entity);
+		if (hoverText != null) {
+			for (String line : hoverText.split("\n")) {
+				list.add(Component.literal(line));
+			}
+		}
 	}
 
 	@Override
