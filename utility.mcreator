@@ -3102,19 +3102,6 @@
       "path": "~/quality of life/Wands/Omni Wand/funzione destruzione"
     },
     {
-      "name": "ParticleSpawner",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "particle_spawner",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/utility/command/ParticleSpawnerCommand.java"
-        ]
-      },
-      "path": "~/quality of life/Particles spawner"
-    },
-    {
       "name": "GUIOmniWandDIstruzioneQuandoQuestaGUIVieneAperta",
       "type": "procedure",
       "compiles": true,
@@ -3688,36 +3675,36 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/utility/init/UtilityModKeyMappings.java",
       "src/main/java/net/mcreator/utility/init/UtilityModConfigs.java",
-      "src/main/resources/data/utility/curios/slots/head.json",
-      "src/main/java/net/mcreator/utility/init/UtilityModCuriosCompat.java",
       "src/main/resources/data/utility/curios/entities/slots.json",
       "src/main/resources/data/curios/tags/item/head.json",
-      "src/main/java/net/mcreator/utility/init/UtilityModMobEffects.java",
+      "src/main/resources/data/utility/curios/slots/head.json",
+      "src/main/java/net/mcreator/utility/init/UtilityModCuriosCompat.java",
       "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",
       "src/main/java/net/mcreator/utility/init/UtilityModJeiInformation.java",
       "src/main/resources/data/utility/tags/item/jei_empty_tag.json",
       "src/main/java/net/mcreator/utility/init/UtilityModJeiPlugin.java",
       "src/main/java/net/mcreator/utility/init/UtilityModRecipeTypes.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModKeyMappings.java",
       "src/main/resources/data/neoforge/loot_modifiers/global_loot_modifiers.json",
+      "src/main/java/net/mcreator/utility/init/UtilityModMobEffects.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBrewingRecipes.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlocks.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlockEntities.java",
       "src/main/java/net/mcreator/utility/init/UtilityModItems.java",
-      "src/main/java/net/mcreator/utility/init/UtilityModEntityRenderers.java",
       "src/main/java/net/mcreator/utility/init/UtilityModEntities.java",
-      "src/main/java/net/mcreator/utility/UtilityMod.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/utility/init/UtilityModEntityRenderers.java",
       "src/main/java/net/mcreator/utility/client/ClientHelper.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/utility/init/UtilityModSounds.java",
       "src/main/resources/assets/utility/sounds.json",
+      "src/main/java/net/mcreator/utility/UtilityMod.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/utility/init/UtilityModSounds.java",
       "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
-      "src/main/java/net/mcreator/utility/init/UtilityModTabs.java"
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/utility/init/UtilityModTabs.java",
+      "src/main/resources/META-INF/accesstransformer.cfg"
     ]
   },
   "foldersRoot": {
@@ -3871,10 +3858,6 @@
                 "children": []
               }
             ]
-          },
-          {
-            "name": "Particles spawner",
-            "children": []
           }
         ]
       },

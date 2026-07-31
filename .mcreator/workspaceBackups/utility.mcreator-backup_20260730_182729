@@ -2541,15 +2541,12 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "tooltip",
-            "type": "tooltip"
           }
         ],
         "files": [
           "src/main/java/net/mcreator/utility/procedures/OmniWandsInformazioniSpecialiProcedure.java"
-        ]
+        ],
+        "return_type": "string"
       },
       "path": "~/quality of life/Wands/Omni Wand"
     },
@@ -3135,6 +3132,69 @@
         ]
       },
       "path": "~/quality of life/Wands/Omni Wand/funzione destruzione/GUI"
+    },
+    {
+      "name": "DestructibleWand",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "destructible_wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/item/DestructibleWandItem.java",
+          "src/main/resources/assets/utility/models/item/destructible_wand.json"
+        ]
+      },
+      "path": "~/quality of life/Wands/destruction wand"
+    },
+    {
+      "name": "DestructibleWandQuandoSiFaClicConIlPulsanteDestroDelMouse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "destructible_wand_quando_si_fa_clic_con_il_pulsante_destro_del_mouse",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/DestructibleWandQuandoSiFaClicConIlPulsanteDestroDelMouseProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/destruction wand"
+    },
+    {
+      "name": "Spawnparticle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawnparticle",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/SpawnparticleProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Particles spawner"
     }
   ],
   "variable_elements": [
@@ -3636,41 +3696,42 @@
       "gui.utility.gui_omni_wand_d_istruzione.altezza_suffix": "",
       "gui.utility.gui_omni_wand_d_istruzione.altezza_prefix": "     Height     ",
       "gui.utility.gui_omni_wand_d_istruzione.label_configure_the_cube_size": "Configure the cube size",
-      "gui.utility.gui_omni_wand_d_istruzione.button_confirm": "Confirm"
+      "gui.utility.gui_omni_wand_d_istruzione.button_confirm": "Confirm",
+      "item.utility.destructible_wand": "Destruction Wand"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/utility/init/UtilityModKeyMappings.java",
       "src/main/java/net/mcreator/utility/init/UtilityModConfigs.java",
-      "src/main/resources/data/utility/curios/slots/head.json",
-      "src/main/java/net/mcreator/utility/init/UtilityModCuriosCompat.java",
       "src/main/resources/data/utility/curios/entities/slots.json",
       "src/main/resources/data/curios/tags/item/head.json",
-      "src/main/java/net/mcreator/utility/init/UtilityModMobEffects.java",
+      "src/main/resources/data/utility/curios/slots/head.json",
+      "src/main/java/net/mcreator/utility/init/UtilityModCuriosCompat.java",
       "src/main/java/net/mcreator/utility/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",
       "src/main/java/net/mcreator/utility/init/UtilityModMenus.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModScreens.java",
       "src/main/java/net/mcreator/utility/init/UtilityModJeiInformation.java",
       "src/main/resources/data/utility/tags/item/jei_empty_tag.json",
       "src/main/java/net/mcreator/utility/init/UtilityModJeiPlugin.java",
       "src/main/java/net/mcreator/utility/init/UtilityModRecipeTypes.java",
+      "src/main/java/net/mcreator/utility/init/UtilityModKeyMappings.java",
       "src/main/resources/data/neoforge/loot_modifiers/global_loot_modifiers.json",
+      "src/main/java/net/mcreator/utility/init/UtilityModMobEffects.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBrewingRecipes.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlocks.java",
       "src/main/java/net/mcreator/utility/init/UtilityModBlockEntities.java",
       "src/main/java/net/mcreator/utility/init/UtilityModItems.java",
-      "src/main/java/net/mcreator/utility/init/UtilityModEntityRenderers.java",
       "src/main/java/net/mcreator/utility/init/UtilityModEntities.java",
-      "src/main/java/net/mcreator/utility/UtilityMod.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/utility/init/UtilityModEntityRenderers.java",
       "src/main/java/net/mcreator/utility/client/ClientHelper.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/utility/init/UtilityModSounds.java",
       "src/main/resources/assets/utility/sounds.json",
+      "src/main/java/net/mcreator/utility/UtilityMod.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/utility/init/UtilityModSounds.java",
       "src/main/java/net/mcreator/utility/network/UtilityModVariables.java",
-      "src/main/java/net/mcreator/utility/init/UtilityModTabs.java"
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/utility/init/UtilityModTabs.java",
+      "src/main/resources/META-INF/accesstransformer.cfg"
     ]
   },
   "foldersRoot": {
@@ -3818,6 +3879,10 @@
                     ]
                   }
                 ]
+              },
+              {
+                "name": "destruction wand",
+                "children": []
               }
             ]
           },

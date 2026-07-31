@@ -2541,15 +2541,12 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "tooltip",
-            "type": "tooltip"
           }
         ],
         "files": [
           "src/main/java/net/mcreator/utility/procedures/OmniWandsInformazioniSpecialiProcedure.java"
-        ]
+        ],
+        "return_type": "string"
       },
       "path": "~/quality of life/Wands/Omni Wand"
     },
@@ -3060,7 +3057,7 @@
           "src/main/java/net/mcreator/utility/network/GUIOmniWandDIstruzioneButtonMessage.java"
         ]
       },
-      "path": "~/quality of life/Wands/Omni Wand/funzione destruzione"
+      "path": "~/quality of life/Wands/Omni Wand/funzione destruzione/GUI"
     },
     {
       "name": "PulsanteConfirmOmniWandDistruzioneCLiccato",
@@ -3079,7 +3076,7 @@
           "src/main/java/net/mcreator/utility/procedures/PulsanteConfirmOmniWandDistruzioneCLiccatoProcedure.java"
         ]
       },
-      "path": "~/quality of life/Wands/Omni Wand/funzione destruzione"
+      "path": "~/quality of life/Wands/Omni Wand/funzione destruzione/GUI"
     },
     {
       "name": "QuandoGiocatoreUsaModalitaDistruzioneOmniWand",
@@ -3092,18 +3089,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
@@ -3146,7 +3131,56 @@
           "src/main/java/net/mcreator/utility/procedures/GUIOmniWandDIstruzioneQuandoQuestaGUIVieneApertaProcedure.java"
         ]
       },
-      "path": "~/quality of life/Wands/Omni Wand/funzione destruzione"
+      "path": "~/quality of life/Wands/Omni Wand/funzione destruzione/GUI"
+    },
+    {
+      "name": "DestructibleWand",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "destructible_wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/utility/item/DestructibleWandItem.java",
+          "src/main/resources/assets/utility/models/item/destructible_wand.json"
+        ]
+      },
+      "path": "~/quality of life/Wands/destruction wand"
+    },
+    {
+      "name": "DestructibleWandQuandoSiFaClicConIlPulsanteDestroDelMouse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "destructible_wand_quando_si_fa_clic_con_il_pulsante_destro_del_mouse",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/utility/procedures/DestructibleWandQuandoSiFaClicConIlPulsanteDestroDelMouseProcedure.java"
+        ]
+      },
+      "path": "~/quality of life/Wands/destruction wand"
     }
   ],
   "variable_elements": [
@@ -3364,7 +3398,7 @@
       "name": "YGuardataPlayerOmniWandDistruzione",
       "type": "number",
       "scope": "player_lifetime",
-      "value": "0"
+      "value": "0.0"
     }
   ],
   "sound_elements": [
@@ -3648,7 +3682,8 @@
       "gui.utility.gui_omni_wand_d_istruzione.altezza_suffix": "",
       "gui.utility.gui_omni_wand_d_istruzione.altezza_prefix": "     Height     ",
       "gui.utility.gui_omni_wand_d_istruzione.label_configure_the_cube_size": "Configure the cube size",
-      "gui.utility.gui_omni_wand_d_istruzione.button_confirm": "Confirm"
+      "gui.utility.gui_omni_wand_d_istruzione.button_confirm": "Confirm",
+      "item.utility.destructible_wand": "Destruction Wand"
     }
   },
   "metadata": {
@@ -3822,9 +3857,18 @@
                   },
                   {
                     "name": "funzione destruzione",
-                    "children": []
+                    "children": [
+                      {
+                        "name": "GUI",
+                        "children": []
+                      }
+                    ]
                   }
                 ]
+              },
+              {
+                "name": "destruction wand",
+                "children": []
               }
             ]
           },
