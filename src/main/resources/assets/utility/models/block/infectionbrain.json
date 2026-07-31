@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "utility:block/infection_brain_block_2",
+    "up": "utility:block/infection_brain_block_2",
+    "north": "utility:block/infection_brain_block_3",
+    "east": "utility:block/infection_brain_block",
+    "south": "utility:block/infection_brain_block_3",
+    "west": "utility:block/infection_brain_block",
+    "particle": "utility:block/infection_brain_block_2"
+  },
+  "render_type": "solid"
+}

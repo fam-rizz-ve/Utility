@@ -110,6 +110,7 @@ public class UtilityModVariables {
 		clone.indice_correnteOmniWand1 = original.indice_correnteOmniWand1;
 		clone.GrandezzaCuboXZOmniWandDistruzione = original.GrandezzaCuboXZOmniWandDistruzione;
 		clone.GrandezzaCuboYOmniWandDistruzione = original.GrandezzaCuboYOmniWandDistruzione;
+		clone.Infection_territorie = original.Infection_territorie;
 		if (!event.isWasDeath()) {
 			clone.modalita_explosive_chessplate = original.modalita_explosive_chessplate;
 			clone.ultima_gamemode = original.ultima_gamemode;
@@ -314,6 +315,7 @@ public class UtilityModVariables {
 		public double GrandezzaCuboXZOmniWandDistruzione = 1.0;
 		public double GrandezzaCuboYOmniWandDistruzione = 1.0;
 		public double YGuardataPlayerOmniWandDistruzione = 0.0;
+		public double Infection_territorie = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -350,6 +352,7 @@ public class UtilityModVariables {
 			nbt.putDouble("GrandezzaCuboXZOmniWandDistruzione", GrandezzaCuboXZOmniWandDistruzione);
 			nbt.putDouble("GrandezzaCuboYOmniWandDistruzione", GrandezzaCuboYOmniWandDistruzione);
 			nbt.putDouble("YGuardataPlayerOmniWandDistruzione", YGuardataPlayerOmniWandDistruzione);
+			nbt.putDouble("Infection_territorie", Infection_territorie);
 			return nbt;
 		}
 
@@ -387,6 +390,7 @@ public class UtilityModVariables {
 			GrandezzaCuboXZOmniWandDistruzione = nbt.getDouble("GrandezzaCuboXZOmniWandDistruzione");
 			GrandezzaCuboYOmniWandDistruzione = nbt.getDouble("GrandezzaCuboYOmniWandDistruzione");
 			YGuardataPlayerOmniWandDistruzione = nbt.getDouble("YGuardataPlayerOmniWandDistruzione");
+			Infection_territorie = nbt.getDouble("Infection_territorie");
 		}
 
 		public void markSyncDirty() {

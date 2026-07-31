@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "utility:block/tentacle_start_block",
+    "up": "utility:block/tentacle_start_block",
+    "north": "utility:block/tentacle_start_block",
+    "east": "utility:block/tentacle_start_block",
+    "south": "utility:block/tentacle_start_block",
+    "west": "utility:block/tentacle_start_block",
+    "particle": "utility:block/tentacle_start_block"
+  },
+  "render_type": "solid"
+}

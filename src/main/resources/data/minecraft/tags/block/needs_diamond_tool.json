@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "utility:faded_concrete"
+    "utility:faded_concrete",
+    "utility:infectionbrain"
   ]
 }

@@ -62,6 +62,8 @@ public class UtilityModItems {
 	public static final DeferredItem<Item> OCCHIALI;
 	public static final DeferredItem<Item> OMNI_WANDS;
 	public static final DeferredItem<Item> DESTRUCTIBLE_WAND;
+	public static final DeferredItem<Item> INFECTIONBRAIN;
+	public static final DeferredItem<Item> INFECTIONTENTACLESBLOCK;
 	static {
 		FLATKEY = REGISTRY.register("flatkey", FlatkeyItem::new);
 		OVERWORDKEY = REGISTRY.register("overwordkey", OverwordkeyItem::new);
@@ -100,6 +102,8 @@ public class UtilityModItems {
 		OCCHIALI = REGISTRY.register("occhiali", OcchialiItem::new);
 		OMNI_WANDS = REGISTRY.register("omni_wands", OmniWandsItem::new);
 		DESTRUCTIBLE_WAND = REGISTRY.register("destructible_wand", DestructibleWandItem::new);
+		INFECTIONBRAIN = block(UtilityModBlocks.INFECTIONBRAIN, new Item.Properties().stacksTo(1).rarity(Rarity.RARE).fireResistant());
+		INFECTIONTENTACLESBLOCK = block(UtilityModBlocks.INFECTIONTENTACLESBLOCK, new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON));
 	}
 
 	// Start of user code block custom items

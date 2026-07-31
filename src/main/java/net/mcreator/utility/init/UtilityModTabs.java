@@ -31,6 +31,8 @@ public class UtilityModTabs {
 				tabData.accept(UtilityModItems.ENDESSECE.get());
 				tabData.accept(UtilityModItems.FLATESSENCE.get());
 				tabData.accept(UtilityModBlocks.ESSENCTIONDISTILIZER.get().asItem());
+				tabData.accept(UtilityModBlocks.INFECTIONBRAIN.get().asItem());
+				tabData.accept(UtilityModBlocks.INFECTIONTENTACLESBLOCK.get().asItem());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> UTILITY = REGISTRY.register("utility",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.utility.utility")).icon(() -> new ItemStack(UtilityModItems.NIGHTELMET_HELMET.get())).displayItems((parameters, tabData) -> {

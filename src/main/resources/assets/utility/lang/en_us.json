@@ -167,5 +167,7 @@
   "gui.utility.gui_omni_wand_d_istruzione.altezza_prefix": "     Height     ",
   "gui.utility.gui_omni_wand_d_istruzione.label_configure_the_cube_size": "Configure the cube size",
   "gui.utility.gui_omni_wand_d_istruzione.button_confirm": "Confirm",
-  "item.utility.destructible_wand": "Destruction Wand"
+  "item.utility.destructible_wand": "Destruction Wand",
+  "block.utility.infectionbrain": "Infection Brain",
+  "block.utility.infectiontentaclesblock": "Infected block"
 }
