@@ -6,13 +6,10 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.Mth;
 import net.minecraft.core.BlockPos;
-
-import net.mcreator.utility.procedures.InfectionbrainBlockAddedProcedure;
 
 public class InfectionbrainBlock extends Block {
 	public InfectionbrainBlock() {
@@ -22,11 +19,5 @@ public class InfectionbrainBlock extends Block {
 	@Override
 	public int getExpDrop(BlockState state, LevelAccessor level, BlockPos pos, BlockEntity blockEntity, Entity breaker, ItemStack tool) {
 		return Mth.randomBetweenInclusive(level.getRandom(), 5, 10);
-	}
-
-	@Override
-	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
-		super.onPlace(blockstate, world, pos, oldState, moving);
-		InfectionbrainBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 }
