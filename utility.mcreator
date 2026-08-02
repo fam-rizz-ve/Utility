@@ -3168,38 +3168,6 @@
         ]
       },
       "path": "~/quality of life/Wands/destruction wand"
-    },
-    {
-      "name": "EffectsremoverActiveTickCondition",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "effectsremover_active_tick_condition",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/utility/procedures/EffectsremoverActiveTickConditionProcedure.java"
-        ]
-      },
-      "path": "~/quality of life/Effects remover"
-    },
-    {
-      "name": "Effectsremover",
-      "type": "potioneffect",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "effectsremover",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/utility/potion/EffectsremoverMobEffect.java"
-        ]
-      },
-      "path": "~/quality of life/Effects remover"
     }
   ],
   "variable_elements": [
@@ -3708,8 +3676,7 @@
       "gui.utility.gui_omni_wand_d_istruzione.altezza_prefix": "     Height     ",
       "gui.utility.gui_omni_wand_d_istruzione.label_configure_the_cube_size": "Configure the cube size",
       "gui.utility.gui_omni_wand_d_istruzione.button_confirm": "Confirm",
-      "item.utility.destructible_wand": "Destruction Wand",
-      "effect.utility.effectsremover": "Effects remover"
+      "item.utility.destructible_wand": "Destruction Wand"
     }
   },
   "metadata": {
@@ -3897,10 +3864,6 @@
                 "children": []
               }
             ]
-          },
-          {
-            "name": "Effects remover",
-            "children": []
           }
         ]
       },
