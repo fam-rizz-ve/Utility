@@ -3170,37 +3170,6 @@
       "path": "~/quality of life/Wands/destruction wand"
     },
     {
-      "name": "InfectionbrainBlockAdded",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "infectionbrain_block_added",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/utility/procedures/InfectionbrainBlockAddedProcedure.java"
-        ]
-      },
-      "path": "~/Liminal_infection"
-    },
-    {
       "name": "Infectionbrain",
       "type": "block",
       "compiles": true,
@@ -3213,37 +3182,6 @@
           "src/main/java/net/mcreator/utility/block/InfectionbrainBlock.java",
           "src/main/resources/assets/utility/models/block/infectionbrain.json",
           "src/main/resources/data/utility/loot_table/blocks/infectionbrain.json"
-        ]
-      },
-      "path": "~/Liminal_infection"
-    },
-    {
-      "name": "InfectiontentaclesblockOnTickUpdate",
-      "type": "procedure",
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "infectiontentaclesblock_on_tick_update",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/utility/procedures/InfectiontentaclesblockOnTickUpdateProcedure.java"
         ]
       },
       "path": "~/Liminal_infection"
@@ -3482,6 +3420,12 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0.0"
+    },
+    {
+      "name": "Infection_territorie",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -3586,8 +3530,8 @@
       "~Lavaessence@CUSTOM:Lavaessence"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
-      "~Infectiontentaclesblock@CUSTOM:Infectiontentaclesblock",
       "~Infectionbrain@CUSTOM:Infectionbrain",
+      "~Infectiontentaclesblock@CUSTOM:Infectiontentaclesblock",
       "~FadedConcrete@CUSTOM:FadedConcrete"
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
@@ -3774,7 +3718,7 @@
       "gui.utility.gui_omni_wand_d_istruzione.button_confirm": "Confirm",
       "item.utility.destructible_wand": "Destruction Wand",
       "block.utility.infectionbrain": "Infection Brain",
-      "block.utility.infectiontentaclesblock": "Infection tentacles"
+      "block.utility.infectiontentaclesblock": "Infected block"
     }
   },
   "metadata": {

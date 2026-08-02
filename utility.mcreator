@@ -3168,40 +3168,6 @@
         ]
       },
       "path": "~/quality of life/Wands/destruction wand"
-    },
-    {
-      "name": "Infectionbrain",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "infectionbrain",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/utility/models/item/infectionbrain.json",
-          "src/main/resources/assets/utility/blockstates/infectionbrain.json",
-          "src/main/java/net/mcreator/utility/block/InfectionbrainBlock.java",
-          "src/main/resources/assets/utility/models/block/infectionbrain.json",
-          "src/main/resources/data/utility/loot_table/blocks/infectionbrain.json"
-        ]
-      },
-      "path": "~/Liminal_infection"
-    },
-    {
-      "name": "Infectiontentaclesblock",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "infectiontentaclesblock",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/utility/loot_table/blocks/infectiontentaclesblock.json",
-          "src/main/resources/assets/utility/blockstates/infectiontentaclesblock.json",
-          "src/main/java/net/mcreator/utility/block/InfectiontentaclesblockBlock.java",
-          "src/main/resources/assets/utility/models/item/infectiontentaclesblock.json",
-          "src/main/resources/assets/utility/models/block/infectiontentaclesblock.json"
-        ]
-      },
-      "path": "~/Liminal_infection"
     }
   ],
   "variable_elements": [
@@ -3530,19 +3496,13 @@
       "~Lavaessence@CUSTOM:Lavaessence"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
-      "~Infectionbrain@CUSTOM:Infectionbrain",
-      "~Infectiontentaclesblock@CUSTOM:Infectiontentaclesblock",
       "~FadedConcrete@CUSTOM:FadedConcrete"
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
-      "~Infectionbrain@CUSTOM:Infectionbrain",
       "~FadedConcrete@CUSTOM:FadedConcrete"
     ],
     "ITEMS:minecraft:piglin_loved": [
       "~SurvivalNightVisionGogglesItem@CUSTOM:SurvivalNightVisionGogglesItem"
-    ],
-    "BLOCKS:minecraft:needs_iron_tool": [
-      "~Infectiontentaclesblock@CUSTOM:Infectiontentaclesblock"
     ]
   },
   "tab_element_order": {},
@@ -3716,9 +3676,7 @@
       "gui.utility.gui_omni_wand_d_istruzione.altezza_prefix": "     Height     ",
       "gui.utility.gui_omni_wand_d_istruzione.label_configure_the_cube_size": "Configure the cube size",
       "gui.utility.gui_omni_wand_d_istruzione.button_confirm": "Confirm",
-      "item.utility.destructible_wand": "Destruction Wand",
-      "block.utility.infectionbrain": "Infection Brain",
-      "block.utility.infectiontentaclesblock": "Infected block"
+      "item.utility.destructible_wand": "Destruction Wand"
     }
   },
   "metadata": {
@@ -3973,10 +3931,6 @@
             "children": []
           }
         ]
-      },
-      {
-        "name": "Liminal_infection",
-        "children": []
       }
     ]
   },
